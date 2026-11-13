@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>CiRcA by R.B. | ERP Contable Cloud (Ágata Michi, S.L.U.)</title>
+  <title>CiRcA by R.B. | ERP Contable & Facturación Cloud (Ágata Michi, S.L.U.)</title>
 
   <!-- Metadatos PWA -->
   <meta name="theme-color" content="#0f172a">
@@ -21,24 +21,39 @@
     @keyframes pulse-sync { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
     .anim-sync { animation: pulse-sync 1.2s infinite; }
 
-    /* Estilos específicos para Impresión y Generación de PDF Oficial */
+    /* Estilos de Impresión para Libros Contables y Facturas Individuales PDF */
     @media print {
       body { background-color: #ffffff !important; color: #000000 !important; font-size: 11px !important; }
       header, nav, .no-print { display: none !important; }
-      #cabecera-impresion-pdf { display: flex !important; }
       main { max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
-      .shadow-sm, .shadow-md, .rounded-xl { box-shadow: none !important; border-radius: 4px !important; }
-      table { page-break-inside: auto; width: 100% !important; }
-      tr { page-break-inside: avoid; page-break-after: auto; }
-      thead { display: table-header-group; }
-      tfoot { display: table-footer-group; }
+      .shadow-sm, .shadow-md, .shadow-2xl, .rounded-xl, .rounded-2xl { box-shadow: none !important; border-radius: 4px !important; }
       * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+
+      /* Modo Impresión de Libros Contables */
+      body:not(.modo-impresion-factura) #cabecera-impresion-pdf { display: flex !important; }
+      body:not(.modo-impresion-factura) #modal-factura-pdf { display: none !important; }
+
+      /* Modo Impresión de Factura / Documento Individual */
+      body.modo-impresion-factura main,
+      body.modo-impresion-factura #cabecera-impresion-pdf { display: none !important; }
+      body.modo-impresion-factura #modal-factura-pdf {
+        display: block !important;
+        position: static !important;
+        background: #ffffff !important;
+        padding: 0 !important;
+      }
+      body.modo-impresion-factura #contenedor-hoja-factura {
+        box-shadow: none !important;
+        border: none !important;
+        max-width: 100% !important;
+        width: 100% !important;
+      }
     }
   </style>
 </head>
 <body class="text-slate-800">
 
-  <!-- CABECERA EXCLUSIVA PARA IMPRESIÓN PDF OFICIAL -->
+  <!-- CABECERA EXCLUSIVA PARA IMPRESIÓN DE LIBROS CONTABLES EN PDF -->
   <div id="cabecera-impresion-pdf" class="hidden justify-between items-center border-b-2 border-slate-900 pb-4 mb-6">
     <div class="flex items-center gap-4">
       <div class="bg-white p-1 rounded border border-slate-200 w-28 h-16 flex items-center justify-center">
@@ -70,7 +85,6 @@
       <!-- Esquina Superior Izquierda: LOGO ÁGATA MICHI + TÍTULO -->
       <div class="flex items-center gap-4">
         <div class="bg-white px-2.5 py-1.5 rounded-lg shadow-inner flex items-center justify-center h-14 w-24 shrink-0 border border-amber-400/40">
-          <!-- Carga Logo Ágata Michi.jpg y si no encuentra el archivo muestra el SVG vectorial exacto -->
           <img src="Logo Ágata Michi.jpg" alt="Logo Ágata Michi" class="max-h-12 max-w-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <svg style="display:none;" viewBox="0 0 260 150" class="w-20 h-12" aria-label="Logo Ágata Michi">
             <polygon points="68,8 82,8 73,28 58,28" fill="#f59e0b"/>
@@ -83,7 +97,7 @@
         </div>
         <div>
           <span class="text-[11px] uppercase tracking-widest text-amber-400 font-semibold block">Ágata Michi, S.L.U.</span>
-          <h1 class="text-xl sm:text-2xl font-bold tracking-tight">CiRcA by R.B. <span class="font-light text-slate-400 text-base sm:text-xl">| ERP Contable PGC & REBU</span></h1>
+          <h1 class="text-xl sm:text-2xl font-bold tracking-tight">CiRcA by R.B. <span class="font-light text-slate-400 text-base sm:text-xl">| ERP Contable & Facturación</span></h1>
         </div>
       </div>
 
@@ -93,7 +107,7 @@
           <span>📲</span> Instalar App
         </button>
 
-        <div id="badge-github-status" onclick="abrirModalGitHub()" class="cursor-pointer bg-slate-800 hover:bg-slate-700 border border-slate-700 px-3 py-1.5 rounded-md flex items-center gap-2 transition" title="Configurar sincronización con GitHub">
+        <div id="badge-github-status" onclick="abrirModalGitHub()" class="cursor-pointer bg-slate-800 hover:bg-slate-700 border border-slate-700 px-3 py-1.5 rounded-md flex items-center gap-2 transition">
           <span id="dot-github-status" class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
           <span id="texto-github-status" class="font-medium text-slate-300">GitHub: Local</span>
         </div>
@@ -106,7 +120,7 @@
           ⚙️ Cloud GitHub
         </button>
 
-        <button onclick="imprimirPestanaActualPDF()" class="bg-white hover:bg-slate-100 text-slate-900 font-bold px-3 py-1.5 rounded-md shadow transition flex items-center gap-1" title="Imprimir o guardar en PDF la pestaña actual">
+        <button onclick="imprimirPestanaActualPDF()" class="bg-white hover:bg-slate-100 text-slate-900 font-bold px-3 py-1.5 rounded-md shadow transition flex items-center gap-1">
           🖨️ Imprimir PDF
         </button>
 
@@ -120,19 +134,44 @@
       </div>
     </div>
 
-    <!-- Barra de Navegación por Módulos (7 Módulos) -->
+    <!-- Barra de Navegación por Módulos (8 Módulos) -->
     <nav class="bg-white text-slate-600 border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 flex space-x-2 sm:space-x-4 overflow-x-auto text-xs sm:text-sm">
-        <button onclick="cambiarTab('diario')" id="tab-diario" class="py-3 px-3 tab-active transition whitespace-nowrap">1. Libro Diario</button>
-        <button onclick="cambiarTab('mayor')" id="tab-mayor" class="py-3 px-3 hover:text-slate-900 transition whitespace-nowrap">2. Mayor y Sumas/Saldos</button>
-        <button onclick="cambiarTab('pyg')" id="tab-pyg" class="py-3 px-3 hover:text-slate-900 transition whitespace-nowrap">3. Pérdidas y Ganancias</button>
-        <button onclick="cambiarTab('balance')" id="tab-balance" class="py-3 px-3 hover:text-slate-900 transition whitespace-nowrap">4. Balance de Situación</button>
-        <button onclick="cambiarTab('terceros')" id="tab-terceros" class="py-3 px-3 hover:text-slate-900 transition whitespace-nowrap">5. Proveedores / Clientes</button>
-        <button onclick="cambiarTab('inventario')" id="tab-inventario" class="py-3 px-3 hover:text-slate-900 transition whitespace-nowrap">6. Inventario REBU</button>
-        <button onclick="cambiarTab('cuentas')" id="tab-cuentas" class="py-3 px-3 hover:text-slate-900 transition whitespace-nowrap">7. Plan de Cuentas PGC</button>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 flex space-x-1 sm:space-x-3 overflow-x-auto text-xs sm:text-sm">
+        <button onclick="cambiarTab('diario')" id="tab-diario" class="py-3 px-2.5 tab-active transition whitespace-nowrap">1. Libro Diario</button>
+        <button onclick="cambiarTab('facturacion')" id="tab-facturacion" class="py-3 px-2.5 hover:text-slate-900 transition whitespace-nowrap font-semibold text-amber-700">2. Facturación (FV/FC/FR/FA)</button>
+        <button onclick="cambiarTab('mayor')" id="tab-mayor" class="py-3 px-2.5 hover:text-slate-900 transition whitespace-nowrap">3. Mayor y Sumas/Saldos</button>
+        <button onclick="cambiarTab('pyg')" id="tab-pyg" class="py-3 px-2.5 hover:text-slate-900 transition whitespace-nowrap">4. Pérdidas y Ganancias</button>
+        <button onclick="cambiarTab('balance')" id="tab-balance" class="py-3 px-2.5 hover:text-slate-900 transition whitespace-nowrap">5. Balance de Situación</button>
+        <button onclick="cambiarTab('terceros')" id="tab-terceros" class="py-3 px-2.5 hover:text-slate-900 transition whitespace-nowrap">6. Proveedores / Clientes</button>
+        <button onclick="cambiarTab('inventario')" id="tab-inventario" class="py-3 px-2.5 hover:text-slate-900 transition whitespace-nowrap">7. Inventario REBU</button>
+        <button onclick="cambiarTab('cuentas')" id="tab-cuentas" class="py-3 px-2.5 hover:text-slate-900 transition whitespace-nowrap">8. Plan Cuentas PGC</button>
       </div>
     </nav>
   </header>
+
+  <!-- ================= MODAL DE VISTA PREVIA E IMPRESIÓN DE FACTURA OFICIAL PDF ================= -->
+  <div id="modal-factura-pdf" class="fixed inset-0 bg-slate-950/80 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4 overflow-y-auto">
+    <div id="contenedor-hoja-factura" class="bg-white rounded-xl shadow-2xl border border-slate-200 max-w-3xl w-full p-8 my-8 text-slate-900">
+      
+      <!-- Barra de botones superior (No se imprime en el PDF) -->
+      <div class="no-print flex justify-between items-center pb-4 mb-6 border-b border-slate-200">
+        <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Vista Previa de Documento Oficial</span>
+        <div class="flex gap-2">
+          <button onclick="imprimirDocumentoFacturaActual()" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-4 py-2 rounded-lg shadow">
+            🖨️ Imprimir / Guardar Factura en PDF
+          </button>
+          <button onclick="cerrarModalFacturaPDF()" class="bg-slate-200 hover:bg-slate-300 text-slate-800 text-xs font-bold px-3 py-2 rounded-lg">
+            Cerrar ×
+          </button>
+        </div>
+      </div>
+
+      <!-- Contenido Imprimible de la Factura / Documento -->
+      <div id="contenido-imprimible-factura" class="space-y-6 text-xs">
+        <!-- Se inyecta dinámicamente al abrir cualquier FV, FC, FR o FA -->
+      </div>
+    </div>
+  </div>
 
   <!-- ================= MODAL DE CONFIGURACIÓN GITHUB CLOUD ================= -->
   <div id="modal-github" class="fixed inset-0 bg-slate-950/70 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4 no-print">
@@ -147,7 +186,7 @@
 
       <div class="p-6 space-y-4 text-xs">
         <div class="bg-amber-50 border border-amber-200 text-amber-900 p-3 rounded-lg">
-          <strong>🔒 Privacidad total:</strong> Tu Token PAT se guarda solo en el almacenamiento privado de tu dispositivo. Sincroniza Diario, Cuentas, Proveedores/Clientes e Inventario REBU.
+          <strong>🔒 Privacidad total:</strong> Tu Token PAT se guarda solo en este dispositivo. Sincroniza Diario, Facturas (FV/FC/FR/FA), Cuentas, Terceros e Inventario REBU.
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -180,7 +219,7 @@
         <div class="flex items-center justify-between bg-slate-50 p-3 rounded-lg border border-slate-200">
           <div>
             <span class="font-bold text-slate-800 block">Auto-sincronización en tiempo real</span>
-            <span class="text-[11px] text-slate-500">Sube cada cambio al instante y revisa novedades cada 30 seg.</span>
+            <span class="text-[11px] text-slate-500">Sube cada factura y asiento al instante y revisa novedades cada 30 seg.</span>
           </div>
           <input type="checkbox" id="gh-autosync" checked class="w-4 h-4 accent-slate-900">
         </div>
@@ -210,12 +249,12 @@
     <!-- ================= MÓDULO 1: LIBRO DIARIO ================= -->
     <section id="vista-diario" class="space-y-8">
 
-      <!-- Tarjeta: Asistente Inteligente REBU, ISP, Exento, IVA Normal e IRPF (No se imprime en PDF) -->
+      <!-- Tarjeta: Asistente Inteligente REBU, ISP, Exento, IVA Normal e IRPF -->
       <div class="bg-slate-900 text-white p-6 rounded-xl shadow-md border border-slate-800 no-print">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-5 pb-4 border-b border-slate-800 gap-3">
           <div>
             <span class="text-[11px] uppercase tracking-widest text-amber-400 font-bold">Automatización Contable y Fiscal CiRcA</span>
-            <h2 class="text-lg font-bold text-white">Asistente Inteligente de Asientos (REBU, ISP, IVA e IRPF)</h2>
+            <h2 class="text-lg font-bold text-white">Asistente Rápido de Asientos (REBU, ISP, IVA e IRPF)</h2>
           </div>
           <div class="flex flex-wrap bg-slate-800 p-1 rounded-lg text-xs font-semibold gap-1">
             <button type="button" onclick="cambiarModoAsistente('venta_rebu')" id="btn-modo-venta_rebu" class="px-3 py-1.5 rounded-md bg-amber-500 text-slate-950 transition">
@@ -245,7 +284,7 @@
             </div>
             <div>
               <label class="block text-xs text-slate-400 mb-1">Cliente / Plataforma</label>
-              <input type="text" id="rebu-venta-plataforma" placeholder="Ej: Catawiki / Web CiRcA" value="Web CiRcA / Shopify" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white">
+              <input type="text" id="rebu-venta-plataforma" value="Web CiRcA / Shopify" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white">
             </div>
             <div>
               <label class="block text-xs text-amber-400 font-semibold mb-1">Coste Adquisición (€)</label>
@@ -284,11 +323,11 @@
           </div>
 
           <div class="flex justify-end gap-3 pt-2">
-            <button type="button" onclick="ejecutarAsistenteVentaREBU(false)" class="px-4 py-2 text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg border border-slate-700 transition">
-              ↓ Pasar al editor para revisar
+            <button type="button" onclick="ejecutarAsistenteVentaREBU(false)" class="px-4 py-2 text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg border border-slate-700">
+              ↓ Pasar al editor
             </button>
-            <button type="button" onclick="ejecutarAsistenteVentaREBU(true)" class="px-4 py-2 text-xs font-bold bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-lg shadow transition">
-              ⚡ Contabilizar Venta REBU directamente
+            <button type="button" onclick="ejecutarAsistenteVentaREBU(true)" class="px-4 py-2 text-xs font-bold bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-lg shadow">
+              ⚡ Contabilizar Venta REBU
             </button>
           </div>
         </div>
@@ -297,7 +336,7 @@
         <div id="panel-asistente-compra_rebu" class="hidden space-y-4">
           <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
             <div class="md:col-span-2">
-              <label class="block text-xs text-slate-400 mb-1">Descripción de la pieza adquirida (Contrato / Recibo REBU)</label>
+              <label class="block text-xs text-slate-400 mb-1">Descripción de la pieza adquirida</label>
               <input type="text" id="rebu-compra-concepto" placeholder="Ej: Compra aparador danés años 60 a particular" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white">
             </div>
             <div>
@@ -309,8 +348,8 @@
               <select id="rebu-compra-pago" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white">
                 <option value="572.0">572.0 - Bancos c/c (Transferencia/Tarjeta)</option>
                 <option value="570.0">570.0 - Caja, euros (Efectivo)</option>
-                <option value="551.0">551.0 - Cuenta con socios (Adelantado por socia)</option>
-                <option value="400.0">400.0 - Proveedores (Pendiente de pago)</option>
+                <option value="551.0">551.0 - Cuenta con socios</option>
+                <option value="400.0">400.0 - Proveedores</option>
               </select>
             </div>
           </div>
@@ -319,13 +358,13 @@
               <input type="checkbox" id="rebu-compra-crear-stock" checked class="w-4 h-4 accent-amber-500">
               Añadir también automáticamente esta pieza al <strong>Inventario REBU (En Stock)</strong>
             </label>
-            <button type="button" onclick="ejecutarAsistenteCompraREBU()" class="px-4 py-2 text-xs font-bold bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-lg shadow transition">
+            <button type="button" onclick="ejecutarAsistenteCompraREBU()" class="px-4 py-2 text-xs font-bold bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-lg shadow">
               ⚡ Contabilizar Compra REBU
             </button>
           </div>
         </div>
 
-        <!-- MODO 3: FACTURA DE GASTO / ACREEDOR (IVA NORMAL, INVERSIÓN SUJETO PASIVO, EXENTO, IRPF) -->
+        <!-- MODO 3: FACTURA DE GASTO / ACREEDOR -->
         <div id="panel-asistente-gasto_iva" class="hidden space-y-4">
           <div class="grid grid-cols-1 md:grid-cols-4 gap-3">
             <div>
@@ -363,7 +402,7 @@
           <div class="grid grid-cols-1 md:grid-cols-4 gap-3 pt-1">
             <div>
               <label class="block text-xs text-emerald-400 font-semibold mb-1">Base Imponible Neto (€)</label>
-              <input type="number" step="0.01" min="0" id="gasto-base" oninput="calcularPreviewGasto()" placeholder="Ej: 100.00" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-right mono-num text-white">
+              <input type="number" step="0.01" min="0" id="gasto-base" oninput="calcularPreviewGasto()" placeholder="100.00" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-right mono-num text-white">
             </div>
             <div>
               <label class="block text-xs text-amber-400 font-semibold mb-1">Tipo de IVA Fiscal</label>
@@ -396,14 +435,14 @@
             <button type="button" onclick="ejecutarAsistenteGastoIVA(false)" class="px-4 py-2 text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg border border-slate-700">
               ↓ Pasar al editor
             </button>
-            <button type="button" onclick="ejecutarAsistenteGastoIVA(true)" class="px-4 py-2 text-xs font-bold bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-lg shadow transition">
+            <button type="button" onclick="ejecutarAsistenteGastoIVA(true)" class="px-4 py-2 text-xs font-bold bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-lg shadow">
               ⚡ Contabilizar Factura de Gasto
             </button>
           </div>
         </div>
       </div>
       
-      <!-- Tarjeta: Nuevo Asiento Contable Manual (No se imprime en PDF) -->
+      <!-- Editor Manual de Asientos -->
       <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 no-print">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 pb-4 border-b border-slate-100 gap-2">
           <div>
@@ -423,8 +462,8 @@
             <input type="text" id="asiento-concepto" placeholder="Ej: Aportación inicial / Liquidación / Factura..." class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm">
           </div>
           <div>
-            <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Doc. / Tercero / Ref.</label>
-            <input type="text" id="asiento-ref" placeholder="Ej: Etsy / Fact. 001" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm">
+            <label class="block text-xs font-semibold uppercase text-slate-500 mb-1"> Nº Doc. / Factura Ref.</label>
+            <input type="text" id="asiento-ref" placeholder="Ej: FV/2026/00001" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm mono-num">
           </div>
         </div>
 
@@ -470,7 +509,7 @@
         </div>
       </div>
 
-      <!-- Tarjeta: Histórico del Libro Diario (Se imprime en PDF) -->
+      <!-- Histórico del Libro Diario -->
       <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
           <div>
@@ -483,7 +522,7 @@
               <span class="text-slate-300">|</span>
               <div>Total Haber: <strong id="diario-acumulado-haber" class="mono-num text-slate-900">0,00 €</strong></div>
             </div>
-            <button onclick="imprimirInformeEspecifico('Libro Diario Oficial — CiRcA by R.B.')" class="no-print text-xs bg-slate-900 hover:bg-slate-800 text-white font-semibold px-3.5 py-2 rounded-lg transition">
+            <button onclick="imprimirInformeEspecifico('Libro Diario Oficial — CiRcA by R.B.')" class="no-print text-xs bg-slate-900 hover:bg-slate-800 text-white font-semibold px-3.5 py-2 rounded-lg">
               🖨️ Imprimir Libro Diario PDF
             </button>
           </div>
@@ -494,7 +533,197 @@
 
     </section>
 
-    <!-- ================= MÓDULO 2: LIBRO MAYOR Y SUMAS Y SALDOS ================= -->
+    <!-- ================= MÓDULO 2: FACTURACIÓN Y DOCUMENTOS OFICIALES (FV / FC / FR / FA) ================= -->
+    <section id="vista-facturacion" class="hidden space-y-8">
+
+      <!-- Tarjetas de contadores correlativos actuales -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 no-print">
+        <div onclick="seleccionarSerieFacturacion('FV')" class="cursor-pointer bg-white hover:border-slate-900 p-4 rounded-xl shadow-sm border-2 border-slate-200 transition">
+          <span class="text-[11px] font-bold uppercase text-emerald-700 block">Serie Ventas Clientes</span>
+          <strong id="contador-serie-FV" class="text-xl font-bold mono-num text-slate-900">FV/2026/00001</strong>
+          <span class="text-[11px] text-slate-500 block mt-0.5">Próxima Factura de Venta</span>
+        </div>
+        <div onclick="seleccionarSerieFacturacion('FC')" class="cursor-pointer bg-white hover:border-slate-900 p-4 rounded-xl shadow-sm border-2 border-slate-200 transition">
+          <span class="text-[11px] font-bold uppercase text-amber-700 block">Serie Compras REBU</span>
+          <strong id="contador-serie-FC" class="text-xl font-bold mono-num text-slate-900">FC/2026/00001</strong>
+          <span class="text-[11px] text-slate-500 block mt-0.5">Próximo Documento Compra</span>
+        </div>
+        <div onclick="seleccionarSerieFacturacion('FR')" class="cursor-pointer bg-white hover:border-slate-900 p-4 rounded-xl shadow-sm border-2 border-slate-200 transition">
+          <span class="text-[11px] font-bold uppercase text-rose-700 block">Devolución de Venta</span>
+          <strong id="contador-serie-FR" class="text-xl font-bold mono-num text-slate-900">FR/2026/00001</strong>
+          <span class="text-[11px] text-slate-500 block mt-0.5">Próxima Fact. Rectificativa</span>
+        </div>
+        <div onclick="seleccionarSerieFacturacion('FA')" class="cursor-pointer bg-white hover:border-slate-900 p-4 rounded-xl shadow-sm border-2 border-slate-200 transition">
+          <span class="text-[11px] font-bold uppercase text-purple-700 block">Devolución de Compra</span>
+          <strong id="contador-serie-FA" class="text-xl font-bold mono-num text-slate-900">FA/2026/00001</strong>
+          <span class="text-[11px] text-slate-500 block mt-0.5">Próximo Doc. Abono Compra</span>
+        </div>
+      </div>
+
+      <!-- Formulario Generador de Documentos Oficiales y Contabilización Simultánea -->
+      <div class="bg-slate-900 text-white p-6 rounded-xl shadow-md border border-slate-800 no-print">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 pb-4 border-b border-slate-800 gap-3">
+          <div>
+            <span class="text-[11px] uppercase tracking-widest text-amber-400 font-bold">Emisión Oficial RD 1619/2012 + Asiento Automático</span>
+            <h2 class="text-lg font-bold text-white">Generador de Facturas y Documentos REBU</h2>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="text-xs text-slate-400">Número correlativo asignado:</span>
+            <span id="badge-numero-documento-actual" class="bg-amber-500 text-slate-950 font-bold mono-num px-3.5 py-1.5 rounded-lg text-sm shadow">
+              FV/2026/00001
+            </span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs mb-4">
+          <div>
+            <label class="block text-amber-400 font-semibold mb-1">1. Serie Documental</label>
+            <select id="fact-serie" onchange="alCambiarSerieFacturacion()" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-white font-semibold">
+              <option value="FV">FV — Factura de Venta (Cliente)</option>
+              <option value="FC">FC — Documento de Compra (REBU)</option>
+              <option value="FR">FR — Devolución de Venta (Rectificativa)</option>
+              <option value="FA">FA — Devolución de Compra (Abono)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-slate-400 mb-1">Fecha de Emisión</label>
+            <input type="date" id="fact-fecha" onchange="actualizarPreviewNumeracionFactura()" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-white mono-num">
+          </div>
+          <div id="contenedor-doc-rectificado" class="hidden">
+            <label class="block text-rose-400 font-semibold mb-1">Documento Original que Rectifica</label>
+            <select id="fact-doc-origen" onchange="alSeleccionarFacturaOrigenRectificar()" class="w-full bg-slate-800 border border-rose-500/50 rounded-lg px-3 py-2 text-white mono-num">
+              <option value="">-- Selecciona FV o FC original --</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-slate-400 mb-1">Régimen Fiscal del Documento</label>
+            <select id="fact-regimen" onchange="recalcularTotalesGeneradorFactura()" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-white">
+              <option value="REBU">REBU (IVA incluido no desglosable en PDF)</option>
+              <option value="GENERAL_21">Régimen General (Desglosa 21% IVA en PDF)</option>
+              <option value="EXENTO">Exportación / Exento de IVA (0%)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Datos del Cliente / Transmitente -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs mb-4 pt-3 border-t border-slate-800">
+          <div>
+            <label class="block text-amber-400 font-semibold mb-1">Cargar Cliente / Proveedor</label>
+            <select id="fact-tercero-select" onchange="alSeleccionarTerceroEnFacturacion()" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-white">
+              <option value="">-- Escribir manualmente o elegir --</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-slate-400 mb-1">Nombre Completo / Razón Social</label>
+            <input type="text" id="fact-tercero-nombre" placeholder="Ej: Marie Dubois (Pedido Etsy #9921)" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-white">
+          </div>
+          <div>
+            <label class="block text-slate-400 mb-1">NIF / DNI / Pasaporte / VAT</label>
+            <input type="text" id="fact-tercero-nif" placeholder="Opcional si Consumidor Final < 3.000€" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-white mono-num">
+          </div>
+          <div>
+            <label class="block text-slate-400 mb-1">Dirección / País / Plataforma</label>
+            <input type="text" id="fact-tercero-dir" placeholder="Ej: París, Francia (Vía Catawiki)" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-white">
+          </div>
+        </div>
+
+        <!-- Datos de la Pieza / Importes -->
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 text-xs pt-3 border-t border-slate-800">
+          <div>
+            <label class="block text-amber-400 font-semibold mb-1">Vincular Pieza Inventario</label>
+            <select id="fact-pieza-select" onchange="alSeleccionarPiezaEnFacturacion()" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-2.5 py-2 text-white">
+              <option value="">-- Concepto libre --</option>
+            </select>
+          </div>
+          <div class="md:col-span-2">
+            <label class="block text-slate-400 mb-1">Descripción del Artículo Vintage en la Factura</label>
+            <input type="text" id="fact-concepto" placeholder="Ej: Lámpara de sobremesa Space Age Fase Boomerang años 70" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-white">
+          </div>
+          <div id="bloque-fact-coste">
+            <label class="block text-amber-400 font-semibold mb-1" title="Solo para cálculo interno del asiento REBU. Nunca aparece en el PDF del cliente.">Coste Compra REBU (€)</label>
+            <input type="number" step="0.01" min="0" id="fact-coste" oninput="recalcularTotalesGeneradorFactura()" placeholder="100.00" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-right mono-num text-white">
+          </div>
+          <div>
+            <label class="block text-emerald-400 font-semibold mb-1">Importe Total Factura (€)</label>
+            <input type="number" step="0.01" min="0" id="fact-total" oninput="recalcularTotalesGeneradorFactura()" placeholder="221.00" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-right mono-num text-white">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center pt-4 mt-4 border-t border-slate-800 text-xs">
+          <div>
+            <label class="block text-slate-400 mb-1">Cuenta Tesorería / Tercero (Contrapartida Diario)</label>
+            <select id="fact-cuenta-tesoreria" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-white">
+              <option value="572.0">572.0 - Bancos c/c (Transferencia / Tarjeta)</option>
+              <option value="572.1">572.1 - Pasarelas de cobro (Stripe / PayPal)</option>
+              <option value="430.1">430.1 - Clientes Web CiRcA / Shopify</option>
+              <option value="430.2">430.2 - Clientes Etsy / Catawiki / Pamono</option>
+              <option value="570.0">570.0 - Caja, euros (Efectivo)</option>
+              <option value="400.0">400.0 - Proveedores / Anticuarios</option>
+            </select>
+          </div>
+
+          <div class="bg-slate-950/90 border border-slate-800 rounded-lg p-3 flex justify-between items-center">
+            <div>
+              <span class="text-slate-400 block text-[11px]">En PDF del Cliente se mostrará:</span>
+              <strong id="fact-preview-pdf-texto" class="text-white mono-num text-sm">Total: 0,00 € (IVA REBU incluido)</strong>
+            </div>
+            <div class="text-right border-l border-slate-800 pl-3">
+              <span class="text-amber-400 block text-[11px]">IVA Interno Diario (477):</span>
+              <strong id="fact-preview-iva-interno" class="text-amber-400 mono-num text-sm">0,00 €</strong>
+            </div>
+          </div>
+
+          <div class="flex justify-end">
+            <button type="button" onclick="emitirYContabilizarDocumento()" class="w-full md:w-auto bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2.5 rounded-lg shadow transition">
+              ⚡ Emitir Documento + Contabilizar + Abrir PDF
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Libro Registro de Facturas Emitidas, Documentos de Compra y Rectificativas -->
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-3">
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">Registro Histórico de Facturas y Documentos (FV / FC / FR / FA)</h3>
+            <p class="text-xs text-slate-500">Haz clic en "Ver / PDF" en cualquier documento para imprimir la factura con el membrete de Ágata Michi, S.L.U.</p>
+          </div>
+          <div class="flex gap-2 no-print">
+            <select id="filtro-serie-tabla" onchange="renderizarModuloFacturacion()" class="border border-slate-300 rounded-lg px-3 py-1.5 text-xs bg-white font-semibold">
+              <option value="TODAS">Todas las series (FV, FC, FR, FA)</option>
+              <option value="FV">Solo FV (Facturas de Venta)</option>
+              <option value="FC">Solo FC (Documentos de Compra)</option>
+              <option value="FR">Solo FR (Devoluciones de Venta)</option>
+              <option value="FA">Solo FA (Devoluciones de Compra)</option>
+            </select>
+            <button onclick="imprimirInformeEspecifico('Libro Registro de Facturas y Documentos REBU — CiRcA by R.B.')" class="text-xs bg-slate-900 hover:bg-slate-800 text-white font-semibold px-3.5 py-2 rounded-lg">
+              🖨️ Imprimir listado PDF
+            </button>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead>
+              <tr class="bg-slate-50 border-b border-slate-200 uppercase text-slate-500">
+                <th class="py-2.5 px-3">Nº Documento</th>
+                <th class="py-2.5 px-3">Serie / Tipo</th>
+                <th class="py-2.5 px-3">Fecha</th>
+                <th class="py-2.5 px-3">Cliente / Proveedor</th>
+                <th class="py-2.5 px-3">Artículo / Concepto</th>
+                <th class="py-2.5 px-3 text-right">Total Doc.</th>
+                <th class="py-2.5 px-3 text-right">IVA Interno</th>
+                <th class="py-2.5 px-3 text-center no-print">Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="tabla-documentos-facturacion" class="divide-y divide-slate-100"></tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ================= MÓDULO 3: LIBRO MAYOR Y SUMAS Y SALDOS ================= -->
     <section id="vista-mayor" class="hidden space-y-8">
 
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 no-print">
@@ -560,13 +789,13 @@
         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
           <div>
             <h2 class="text-lg font-bold text-slate-900">Balance de Comprobación de Sumas y Saldos</h2>
-            <p class="text-xs text-slate-500">Resumen oficial de todas las subcuentas activas. Haz clic en una cuenta para filtrar su Mayor.</p>
+            <p class="text-xs text-slate-500">Resumen oficial de todas las subcuentas activas.</p>
           </div>
           <div class="flex gap-2 no-print">
-            <button onclick="imprimirInformeEspecifico('Balance de Sumas y Saldos y Libro Mayor — CiRcA by R.B.')" class="text-xs bg-slate-800 hover:bg-slate-700 text-white font-semibold px-3.5 py-2 rounded-lg transition">
+            <button onclick="imprimirInformeEspecifico('Balance de Sumas y Saldos y Libro Mayor — CiRcA by R.B.')" class="text-xs bg-slate-800 hover:bg-slate-700 text-white font-semibold px-3.5 py-2 rounded-lg">
               🖨️ Imprimir Mayor / Sumas PDF
             </button>
-            <button onclick="exportarSumasYSaldosCSV()" class="text-xs bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-3.5 py-2 rounded-lg transition">
+            <button onclick="exportarSumasYSaldosCSV()" class="text-xs bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-3.5 py-2 rounded-lg">
               ↓ Exportar CSV
             </button>
           </div>
@@ -598,7 +827,7 @@
 
     </section>
 
-    <!-- ================= MÓDULO 3: CUENTA DE PÉRDIDAS Y GANANCIAS (PyG) ================= -->
+    <!-- ================= MÓDULO 4: CUENTA DE PÉRDIDAS Y GANANCIAS (PyG) ================= -->
     <section id="vista-pyg" class="hidden space-y-8">
 
       <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 no-print">
@@ -684,7 +913,7 @@
 
     </section>
 
-    <!-- ================= MÓDULO 4: BALANCE DE SITUACIÓN OFICIAL ================= -->
+    <!-- ================= MÓDULO 5: BALANCE DE SITUACIÓN OFICIAL ================= -->
     <section id="vista-balance" class="hidden space-y-8">
 
       <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 no-print">
@@ -762,10 +991,8 @@
 
     </section>
 
-    <!-- ================= MÓDULO 5: PROVEEDORES, ACREEDORES Y CLIENTES (TERCEROS) ================= -->
+    <!-- ================= MÓDULO 6: PROVEEDORES, ACREEDORES Y CLIENTES (TERCEROS) ================= -->
     <section id="vista-terceros" class="hidden space-y-6">
-      
-      <!-- Formulario de Alta de Tercero -->
       <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 no-print">
         <div class="mb-4 pb-3 border-b border-slate-100">
           <span class="text-[11px] uppercase tracking-widest text-amber-600 font-bold">Maestro de Terceros y Configuración Fiscal</span>
@@ -776,14 +1003,14 @@
           <div>
             <label class="block font-semibold text-slate-600 mb-1">Tipo de Tercero</label>
             <select id="tercero-tipo" class="w-full border border-slate-300 rounded-lg px-3 py-2 bg-white">
+              <option value="Cliente">Cliente (Comprador - 430)</option>
               <option value="Proveedor">Proveedor (Piezas / Embalajes - 400)</option>
               <option value="Acreedor">Acreedor (Plataformas / Envíos / Prof. - 410)</option>
-              <option value="Cliente">Cliente (Comprador - 430)</option>
             </select>
           </div>
           <div>
             <label class="block font-semibold text-slate-600 mb-1">Nombre / Razón Social</label>
-            <input type="text" id="tercero-nombre" placeholder="Ej: Catawiki B.V. / Gestoría..." class="w-full border border-slate-300 rounded-lg px-3 py-2">
+            <input type="text" id="tercero-nombre" placeholder="Ej: Catawiki B.V. / Cliente..." class="w-full border border-slate-300 rounded-lg px-3 py-2">
           </div>
           <div>
             <label class="block font-semibold text-slate-600 mb-1">NIF / CIF / VAT Intracomunitario</label>
@@ -808,11 +1035,11 @@
           <div>
             <label class="block font-semibold text-slate-600 mb-1">Régimen de IVA por Defecto</label>
             <select id="tercero-iva" class="w-full border border-slate-300 rounded-lg px-3 py-2 bg-white font-semibold text-slate-900">
+              <option value="REBU">REBU (Régimen Especial Bienes Usados)</option>
               <option value="IVA_21">IVA Normal General (21%)</option>
               <option value="IVA_10">IVA Reducido (10%)</option>
               <option value="IVA_4">IVA Superreducido (4%)</option>
               <option value="ISP_21">Inversión del Sujeto Pasivo (ISP 21% UE)</option>
-              <option value="REBU">REBU (Régimen Especial Bienes Usados)</option>
               <option value="EXENTO">Exento de IVA (0%)</option>
             </select>
           </div>
@@ -826,19 +1053,18 @@
             </select>
           </div>
           <div class="flex items-end">
-            <button onclick="guardarTercero()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded-lg shadow transition">
+            <button onclick="guardarTercero()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded-lg shadow">
               + Guardar Ficha de Tercero
             </button>
           </div>
         </div>
       </div>
 
-      <!-- Listado de Terceros -->
       <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-3">
           <div>
             <h3 class="text-lg font-bold text-slate-900">Directorio Fiscal de Proveedores, Acreedores y Clientes</h3>
-            <p class="text-xs text-slate-500">Se sincroniza automáticamente con el Asistente de Facturas del Libro Diario.</p>
+            <p class="text-xs text-slate-500">Se sincroniza automáticamente con Facturación y el Libro Diario.</p>
           </div>
           <button onclick="imprimirInformeEspecifico('Directorio de Proveedores, Acreedores y Clientes — CiRcA by R.B.')" class="no-print text-xs bg-slate-900 hover:bg-slate-800 text-white font-semibold px-3.5 py-2 rounded-lg">
             🖨️ Imprimir Directorio PDF
@@ -865,10 +1091,9 @@
       </div>
     </section>
 
-    <!-- ================= MÓDULO 6: INVENTARIO DE ARTÍCULOS Y LIBRO REGISTRO REBU ================= -->
+    <!-- ================= MÓDULO 7: INVENTARIO DE ARTÍCULOS Y LIBRO REGISTRO REBU ================= -->
     <section id="vista-inventario" class="hidden space-y-6">
 
-      <!-- KPIs de Stock Vintage -->
       <div class="grid grid-cols-1 sm:grid-cols-4 gap-4">
         <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
           <span class="text-xs text-slate-400 font-semibold uppercase block">Piezas En Stock</span>
@@ -888,7 +1113,6 @@
         </div>
       </div>
 
-      <!-- Formulario de Alta de Pieza en Inventario -->
       <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 no-print">
         <div class="mb-4 pb-3 border-b border-slate-100">
           <span class="text-[11px] uppercase tracking-widest text-amber-600 font-bold">Catálogo y Libro Registro Oficial Bienes Usados (REBU)</span>
@@ -924,19 +1148,18 @@
           </div>
         </div>
         <div class="mt-4 flex justify-between items-center pt-3 border-t border-slate-100">
-          <span class="text-xs text-slate-500">💡 Desde la tabla inferior puedes contabilizar la venta REBU de cualquier pieza en 1 clic.</span>
-          <button onclick="guardarArticuloInventario()" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold py-2 px-5 rounded-lg shadow transition">
+          <span class="text-xs text-slate-500">💡 Puedes emitir directamente su Factura de Venta (`FV/2026/...`) pulsando el botón de la tabla.</span>
+          <button onclick="guardarArticuloInventario()" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold py-2 px-5 rounded-lg shadow">
             + Añadir Pieza al Inventario
           </button>
         </div>
       </div>
 
-      <!-- Tabla del Inventario / Libro Registro REBU -->
       <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-3">
           <div>
             <h3 class="text-lg font-bold text-slate-900">Inventario de Artículos y Libro Registro REBU</h3>
-            <p class="text-xs text-slate-500">Control de costes de adquisición, estado de stock y márgenes fiscales REBU.</p>
+            <p class="text-xs text-slate-500">Control de costes de adquisición, estado de stock y facturación vinculada.</p>
           </div>
           <button onclick="imprimirInformeEspecifico('Inventario y Libro Registro Oficial REBU — CiRcA by R.B.')" class="no-print text-xs bg-slate-900 hover:bg-slate-800 text-white font-semibold px-3.5 py-2 rounded-lg">
             🖨️ Imprimir Inventario REBU PDF
@@ -954,7 +1177,7 @@
                 <th class="py-2.5 px-3 text-right">Coste REBU</th>
                 <th class="py-2.5 px-3 text-right">PVP / Venta Real</th>
                 <th class="py-2.5 px-3 text-center">Estado</th>
-                <th class="py-2.5 px-3 text-center no-print">Acción Contable</th>
+                <th class="py-2.5 px-3 text-center no-print">Acción</th>
               </tr>
             </thead>
             <tbody id="tabla-inventario" class="divide-y divide-slate-100"></tbody>
@@ -963,7 +1186,7 @@
       </div>
     </section>
 
-    <!-- ================= MÓDULO 7: PLAN DE CUENTAS (PGC) ================= -->
+    <!-- ================= MÓDULO 8: PLAN DE CUENTAS (PGC) ================= -->
     <section id="vista-cuentas" class="hidden space-y-6">
       <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
@@ -996,7 +1219,7 @@
             </select>
           </div>
           <div>
-            <button onclick="crearNuevaCuenta()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs py-2 px-4 rounded transition">
+            <button onclick="crearNuevaCuenta()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs py-2 px-4 rounded">
               + Añadir Subcuenta al PGC
             </button>
           </div>
@@ -1025,6 +1248,7 @@
     const STORAGE_ASIENTOS = 'circa_erp_asientos_v1';
     const STORAGE_TERCEROS = 'circa_erp_terceros_v1';
     const STORAGE_INVENTARIO = 'circa_erp_inventario_v1';
+    const STORAGE_DOCUMENTOS = 'circa_erp_documentos_v1';
     const STORAGE_GH_CONFIG = 'circa_erp_github_config_v1';
 
     const CUENTAS_POR_DEFECTO = [
@@ -1068,20 +1292,21 @@
       { id: 2, tipo: 'Acreedor', nombre: 'Etsy Ireland UC', nif: 'IE9777587C', cuentaPGC: '410.1', formaPago: 'Compensación Plataforma', regimenIVA: 'ISP_21', irpf: 0 },
       { id: 3, tipo: 'Acreedor', nombre: 'Pamono GmbH', nif: 'DE289341234', cuentaPGC: '410.1', formaPago: 'Compensación Plataforma', regimenIVA: 'ISP_21', irpf: 0 },
       { id: 4, tipo: 'Acreedor', nombre: 'Gestoría / Asesoría Fiscal Profesional', nif: 'B00000000', cuentaPGC: '410.2', formaPago: 'Domiciliación Bancaria', regimenIVA: 'IVA_21', irpf: 15 },
-      { id: 5, tipo: 'Proveedor', nombre: 'Vendedor Particular / Anticuario (REBU)', nif: 'PARTICULAR', cuentaPGC: '400.0', formaPago: 'Transferencia Bancaria', regimenIVA: 'REBU', irpf: 0 }
+      { id: 5, tipo: 'Proveedor', nombre: 'Vendedor Particular / Anticuario (REBU)', nif: 'PARTICULAR', cuentaPGC: '400.0', formaPago: 'Transferencia Bancaria', regimenIVA: 'REBU', irpf: 0 },
+      { id: 6, tipo: 'Cliente', nombre: 'Cliente Particular Web CiRcA / Catawiki / Etsy', nif: 'CONSUMIDOR FINAL', cuentaPGC: '430.1', formaPago: 'Stripe / PayPal', regimenIVA: 'REBU', irpf: 0 }
     ];
 
     let cuentas = [];
     let asientos = [];
     let terceros = [];
     let inventario = [];
+    let documentos = [];
     let ghConfig = null;
     let ultimoShaRemoto = null;
     let sincronizando = false;
     let deferredInstallPrompt = null;
     let tabActual = 'diario';
 
-    // Registro PWA
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('./sw.js').catch(() => {});
@@ -1105,6 +1330,7 @@
     document.addEventListener('DOMContentLoaded', async () => {
       cargarDatosLocalStorage();
       document.getElementById('asiento-fecha').valueAsDate = new Date();
+      document.getElementById('fact-fecha').valueAsDate = new Date();
       refrescarTodasLasVistas();
 
       cargarConfigGitHub();
@@ -1129,7 +1355,6 @@
       const cuentasGuardadas = localStorage.getItem(STORAGE_CUENTAS);
       if (cuentasGuardadas) {
         cuentas = JSON.parse(cuentasGuardadas);
-        // Asegurar subcuentas nuevas de ISP e IRPF
         CUENTAS_POR_DEFECTO.forEach(def => {
           if (!cuentas.some(c => c.codigo === def.codigo)) cuentas.push(def);
         });
@@ -1139,8 +1364,7 @@
         localStorage.setItem(STORAGE_CUENTAS, JSON.stringify(cuentas));
       }
 
-      const asientosGuardados = localStorage.getItem(STORAGE_ASIENTOS);
-      asientos = asientosGuardados ? JSON.parse(asientosGuardados) : [];
+      asientos = JSON.parse(localStorage.getItem(STORAGE_ASIENTOS) || '[]');
 
       const tercerosGuardados = localStorage.getItem(STORAGE_TERCEROS);
       if (tercerosGuardados) {
@@ -1150,8 +1374,8 @@
         localStorage.setItem(STORAGE_TERCEROS, JSON.stringify(terceros));
       }
 
-      const inventarioGuardado = localStorage.getItem(STORAGE_INVENTARIO);
-      inventario = inventarioGuardado ? JSON.parse(inventarioGuardado) : [];
+      inventario = JSON.parse(localStorage.getItem(STORAGE_INVENTARIO) || '[]');
+      documentos = JSON.parse(localStorage.getItem(STORAGE_DOCUMENTOS) || '[]');
     }
 
     function refrescarTodasLasVistas() {
@@ -1164,11 +1388,13 @@
       renderizarModuloBalance();
       renderizarModuloTerceros();
       renderizarModuloInventario();
+      renderizarModuloFacturacion();
     }
 
-    // ================= FUNCIÓN DE IMPRESIÓN PDF OFICIAL EN TODAS LAS PESTAÑAS =================
+    // ================= IMPRESIÓN PDF OFICIAL =================
 
     function imprimirInformeEspecifico(tituloInforme) {
+      document.body.classList.remove('modo-impresion-factura');
       document.getElementById('pdf-subtitulo-informe').textContent = tituloInforme;
       document.getElementById('pdf-fecha-emision').textContent = new Date().toLocaleDateString('es-ES');
       window.print();
@@ -1177,6 +1403,7 @@
     function imprimirPestanaActualPDF() {
       const titulosPorTab = {
         'diario': 'Libro Diario Oficial — CiRcA by R.B.',
+        'facturacion': 'Libro Registro de Facturas y Documentos (FV / FC / FR / FA)',
         'mayor': 'Libro Mayor y Balance de Sumas y Saldos — CiRcA by R.B.',
         'pyg': 'Cuenta de Pérdidas y Ganancias Oficial — CiRcA by R.B.',
         'balance': 'Balance de Situación Oficial — Ágata Michi, S.L.U.',
@@ -1185,6 +1412,519 @@
         'cuentas': 'Cuadro de Cuentas PGC — Ágata Michi, S.L.U.'
       };
       imprimirInformeEspecifico(titulosPorTab[tabActual] || 'Informe Contable Oficial');
+    }
+
+    function imprimirDocumentoFacturaActual() {
+      document.body.classList.add('modo-impresion-factura');
+      window.print();
+      setTimeout(() => document.body.classList.remove('modo-impresion-factura'), 500);
+    }
+
+    function cerrarModalFacturaPDF() {
+      document.body.classList.remove('modo-impresion-factura');
+      document.getElementById('modal-factura-pdf').classList.add('hidden');
+    }
+
+    // ================= MÓDULO 2: MOTOR DE FACTURACIÓN CORRELATIVA (FV / FC / FR / FA) =================
+
+    // Calcula el siguiente código correlativo con formato SERIE/AÑO/00001
+    function obtenerSiguienteNumeroDocumento(serie, fechaStr) {
+      const anio = fechaStr ? parseInt(fechaStr.slice(0, 4)) : new Date().getFullYear();
+      const docsSerieAnio = documentos.filter(d => d.serie === serie && d.ejercicio === anio);
+      const maxSecuencia = docsSerieAnio.length > 0
+        ? Math.max(...docsSerieAnio.map(d => d.secuencia || 0))
+        : 0;
+      const siguienteSecuencia = maxSecuencia + 1;
+      const codigoFormateado = `${serie}/${anio}/${String(siguienteSecuencia).padStart(5, '0')}`;
+      return { anio, secuencia: siguienteSecuencia, codigoFormateado };
+    }
+
+    function seleccionarSerieFacturacion(serie) {
+      document.getElementById('fact-serie').value = serie;
+      alCambiarSerieFacturacion();
+    }
+
+    function actualizarPreviewNumeracionFactura() {
+      const serie = document.getElementById('fact-serie').value;
+      const fecha = document.getElementById('fact-fecha').value;
+      const { codigoFormateado } = obtenerSiguienteNumeroDocumento(serie, fecha);
+      document.getElementById('badge-numero-documento-actual').textContent = codigoFormateado;
+
+      // Actualizar las 4 tarjetas superiores
+      ['FV', 'FC', 'FR', 'FA'].forEach(s => {
+        const info = obtenerSiguienteNumeroDocumento(s, fecha);
+        const el = document.getElementById(`contador-serie-${s}`);
+        if (el) el.textContent = info.codigoFormateado;
+      });
+    }
+
+    function alCambiarSerieFacturacion() {
+      const serie = document.getElementById('fact-serie').value;
+      const esRectificativa = (serie === 'FR' || serie === 'FA');
+      document.getElementById('contenedor-doc-rectificado').classList.toggle('hidden', !esRectificativa);
+
+      // En compras FC o FA, el coste REBU es el propio total del documento
+      document.getElementById('bloque-fact-coste').classList.toggle('hidden', serie === 'FC' || serie === 'FA');
+
+      // Poblar selector de facturas originales si es FR o FA
+      if (esRectificativa) {
+        const serieBuscada = serie === 'FR' ? 'FV' : 'FC';
+        const originales = documentos.filter(d => d.serie === serieBuscada);
+        const selectOrigen = document.getElementById('fact-doc-origen');
+        selectOrigen.innerHTML = `<option value="">-- Selecciona ${serieBuscada} original --</option>` +
+          originales.map(o => `<option value="${o.id}">${o.numeroDocumento} — ${o.terceroNombre} (${formatearMoneda(o.importeTotal)})</option>`).join('');
+      }
+
+      actualizarSelectoresFacturacion();
+      actualizarPreviewNumeracionFactura();
+      recalcularTotalesGeneradorFactura();
+    }
+
+    function actualizarSelectoresFacturacion() {
+      const serie = document.getElementById('fact-serie').value;
+      const selectTercero = document.getElementById('fact-tercero-select');
+      if (selectTercero) {
+        selectTercero.innerHTML = `<option value="">-- Escribir manualmente o elegir --</option>` +
+          terceros.map(t => `<option value="${t.id}">[${t.tipo}] ${t.nombre} (${t.nif})</option>`).join('');
+      }
+
+      const selectPieza = document.getElementById('fact-pieza-select');
+      if (selectPieza) {
+        const piezasDisponibles = (serie === 'FV')
+          ? inventario.filter(i => i.estado === 'En Stock')
+          : inventario;
+        selectPieza.innerHTML = `<option value="">-- Concepto libre / Nueva pieza --</option>` +
+          piezasDisponibles.map(p => `<option value="${p.id}">[${p.sku}] ${p.nombre} (Coste: ${formatearMoneda(p.coste)})</option>`).join('');
+      }
+    }
+
+    function alSeleccionarTerceroEnFacturacion() {
+      const id = parseInt(document.getElementById('fact-tercero-select').value);
+      const t = terceros.find(x => x.id === id);
+      if (!t) return;
+      document.getElementById('fact-tercero-nombre').value = t.nombre;
+      document.getElementById('fact-tercero-nif').value = t.nif;
+      document.getElementById('fact-cuenta-tesoreria').value = t.cuentaPGC;
+    }
+
+    function alSeleccionarPiezaEnFacturacion() {
+      const id = parseInt(document.getElementById('fact-pieza-select').value);
+      const p = inventario.find(x => x.id === id);
+      if (!p) return;
+      document.getElementById('fact-concepto').value = `[${p.sku}] ${p.nombre} (${p.epoca})`;
+      document.getElementById('fact-coste').value = p.coste.toFixed(2);
+      const serie = document.getElementById('fact-serie').value;
+      if (serie === 'FV' && p.pvpEstimado > 0) {
+        document.getElementById('fact-total').value = p.pvpEstimado.toFixed(2);
+      } else {
+        document.getElementById('fact-total').value = p.coste.toFixed(2);
+      }
+      recalcularTotalesGeneradorFactura();
+    }
+
+    function alSeleccionarFacturaOrigenRectificar() {
+      const idOrigen = parseInt(document.getElementById('fact-doc-origen').value);
+      const docOrig = documentos.find(d => d.id === idOrigen);
+      if (!docOrig) return;
+
+      document.getElementById('fact-regimen').value = docOrig.regimen;
+      document.getElementById('fact-tercero-nombre').value = docOrig.terceroNombre;
+      document.getElementById('fact-tercero-nif').value = docOrig.terceroNif;
+      document.getElementById('fact-tercero-dir').value = docOrig.terceroDireccion || '';
+      document.getElementById('fact-concepto').value = `DEVOLUCIÓN / RECTIFICACIÓN DE ${docOrig.numeroDocumento}: ${docOrig.conceptoArticulo}`;
+      document.getElementById('fact-coste').value = (docOrig.costeREBU || 0).toFixed(2);
+      document.getElementById('fact-total').value = (docOrig.importeTotal || 0).toFixed(2);
+      if (docOrig.piezaId) document.getElementById('fact-pieza-select').value = String(docOrig.piezaId);
+      recalcularTotalesGeneradorFactura();
+    }
+
+    function recalcularTotalesGeneradorFactura() {
+      const serie = document.getElementById('fact-serie').value;
+      const regimen = document.getElementById('fact-regimen').value;
+      const coste = Math.round((parseFloat(document.getElementById('fact-coste').value) || 0) * 100) / 100;
+      const total = Math.round((parseFloat(document.getElementById('fact-total').value) || 0) * 100) / 100;
+
+      let baseImponibleMostrarPDF = total;
+      let cuotaIVAMostrarPDF = 0;
+      let ivaInternoContable = 0;
+      let ingresoOGastoNetoContable = total;
+
+      if (serie === 'FC' || serie === 'FA') {
+        // En compras REBU o abonos de compra REBU no hay IVA deducible
+        ivaInternoContable = 0;
+        ingresoOGastoNetoContable = total;
+        document.getElementById('fact-preview-pdf-texto').textContent = `Total Doc. Compra: ${formatearMoneda(total)} (REBU)`;
+        document.getElementById('fact-preview-iva-interno').textContent = `0,00 € (No deducible)`;
+      } else {
+        // Ventas FV o Devoluciones de Venta FR
+        if (regimen === 'REBU') {
+          const margen = total - coste;
+          if (margen > 0 && total > 0) {
+            const baseMargen = margen / 1.21;
+            ivaInternoContable = Math.round((margen - baseMargen) * 100) / 100;
+            ingresoOGastoNetoContable = Math.round((total - ivaInternoContable) * 100) / 100;
+          }
+          document.getElementById('fact-preview-pdf-texto').textContent = `Total PDF: ${formatearMoneda(total)} (IVA REBU incl.)`;
+          document.getElementById('fact-preview-iva-interno').textContent = `${formatearMoneda(ivaInternoContable)} (s/ margen)`;
+        } else if (regimen === 'GENERAL_21') {
+          baseImponibleMostrarPDF = Math.round((total / 1.21) * 100) / 100;
+          cuotaIVAMostrarPDF = Math.round((total - baseImponibleMostrarPDF) * 100) / 100;
+          ivaInternoContable = cuotaIVAMostrarPDF;
+          ingresoOGastoNetoContable = baseImponibleMostrarPDF;
+          document.getElementById('fact-preview-pdf-texto').textContent = `Base: ${formatearMoneda(baseImponibleMostrarPDF)} + IVA: ${formatearMoneda(cuotaIVAMostrarPDF)}`;
+          document.getElementById('fact-preview-iva-interno').textContent = formatearMoneda(ivaInternoContable);
+        } else {
+          document.getElementById('fact-preview-pdf-texto').textContent = `Total Exento: ${formatearMoneda(total)}`;
+          document.getElementById('fact-preview-iva-interno').textContent = `0,00 € (Exento)`;
+        }
+      }
+
+      return { serie, regimen, coste, total, baseImponibleMostrarPDF, cuotaIVAMostrarPDF, ivaInternoContable, ingresoOGastoNetoContable };
+    }
+
+    function emitirYContabilizarDocumento() {
+      const serie = document.getElementById('fact-serie').value;
+      const fecha = document.getElementById('fact-fecha').value || new Date().toISOString().slice(0, 10);
+      const { anio, secuencia, codigoFormateado } = obtenerSiguienteNumeroDocumento(serie, fecha);
+
+      const terceroNombre = document.getElementById('fact-tercero-nombre').value.trim() || 'Consumidor Final';
+      const terceroNif = document.getElementById('fact-tercero-nif').value.trim() || 'S/N';
+      const terceroDireccion = document.getElementById('fact-tercero-dir').value.trim() || '';
+      const conceptoArticulo = document.getElementById('fact-concepto').value.trim();
+      const cuentaTesoreria = document.getElementById('fact-cuenta-tesoreria').value;
+      const piezaId = parseInt(document.getElementById('fact-pieza-select').value) || null;
+
+      const idOrigen = parseInt(document.getElementById('fact-doc-origen').value) || null;
+      const docOrig = idOrigen ? documentos.find(d => d.id === idOrigen) : null;
+      const numeroDocRectificado = docOrig ? docOrig.numeroDocumento : '';
+
+      const calc = recalcularTotalesGeneradorFactura();
+
+      if (!conceptoArticulo || calc.total <= 0) {
+        return alert('Indica la descripción del artículo y un importe total mayor que cero.');
+      }
+
+      // 1. Construir automáticamente las líneas del Asiento Contable en el Libro Diario según la Serie (FV, FC, FR, FA)
+      let lineasAsiento = [];
+      let conceptoAsientoDiario = `${codigoFormateado} — ${terceroNombre} (${conceptoArticulo})`;
+
+      if (serie === 'FV') {
+        // Factura de Venta: Entra dinero/cliente al Debe, sale Venta (700.1 / 700.2) e IVA (477.1 / 477.21) al Haber
+        const cuentaVenta = calc.regimen === 'REBU' ? '700.1' : '700.2';
+        const cuentaIVA = calc.regimen === 'REBU' ? '477.1' : '477.21';
+        lineasAsiento.push({ cuenta: cuentaTesoreria, debe: calc.total, haber: 0 });
+        lineasAsiento.push({ cuenta: cuentaVenta, debe: 0, haber: calc.ingresoOGastoNetoContable });
+        if (calc.ivaInternoContable > 0) {
+          lineasAsiento.push({ cuenta: cuentaIVA, debe: 0, haber: calc.ivaInternoContable });
+        }
+        // Si estaba vinculada a una pieza del inventario, pasarla a Vendido
+        if (piezaId) {
+          const p = inventario.find(i => i.id === piezaId);
+          if (p) { p.estado = 'Vendido'; p.precioVentaReal = calc.total; p.fechaVenta = fecha; }
+        }
+      } else if (serie === 'FC') {
+        // Documento de Compra REBU: Entra compra (600.1) al Debe, sale dinero/proveedor al Haber
+        lineasAsiento.push({ cuenta: '600.1', debe: calc.total, haber: 0 });
+        lineasAsiento.push({ cuenta: cuentaTesoreria, debe: 0, haber: calc.total });
+        // Si no seleccionó pieza existente, la añade automáticamente al stock REBU
+        if (!piezaId) {
+          const numSku = inventario.length + 1;
+          inventario.push({
+            id: Date.now() + 2,
+            sku: `CIRCA-${String(numSku).padStart(3, '0')}`,
+            nombre: conceptoArticulo,
+            epoca: 'Mid-Century',
+            fechaCompra: fecha,
+            coste: calc.total,
+            pvpEstimado: Math.round(calc.total * 2.2 * 100) / 100,
+            estado: 'En Stock',
+            precioVentaReal: 0,
+            fechaVenta: ''
+          });
+        }
+      } else if (serie === 'FR') {
+        // Factura Rectificativa (Devolución de Venta): INVIERTE el asiento de venta (700 y 477 al Debe, salida de dinero/cliente al Haber)
+        const cuentaVenta = calc.regimen === 'REBU' ? '700.1' : '700.2';
+        const cuentaIVA = calc.regimen === 'REBU' ? '477.1' : '477.21';
+        lineasAsiento.push({ cuenta: cuentaVenta, debe: calc.ingresoOGastoNetoContable, haber: 0 });
+        if (calc.ivaInternoContable > 0) {
+          lineasAsiento.push({ cuenta: cuentaIVA, debe: calc.ivaInternoContable, haber: 0 });
+        }
+        lineasAsiento.push({ cuenta: cuentaTesoreria, debe: 0, haber: calc.total });
+        // Devolver la pieza al estado En Stock
+        if (piezaId) {
+          const p = inventario.find(i => i.id === piezaId);
+          if (p) { p.estado = 'En Stock'; p.precioVentaReal = 0; p.fechaVenta = ''; }
+        }
+      } else if (serie === 'FA') {
+        // Devolución de Compra (Abono de proveedor): INVIERTE el asiento de compra (Entra dinero al Debe, sale 600.1 al Haber)
+        lineasAsiento.push({ cuenta: cuentaTesoreria, debe: calc.total, haber: 0 });
+        lineasAsiento.push({ cuenta: '600.1', debe: 0, haber: calc.total });
+        if (piezaId) {
+          inventario = inventario.filter(i => i.id !== piezaId);
+        }
+      }
+
+      // 2. Guardar Asiento en el Libro Diario
+      const proximoNumeroAsiento = asientos.length > 0 ? Math.max(...asientos.map(a => a.numero)) + 1 : 1;
+      const asientoId = Date.now();
+      const apuntesFormateados = lineasAsiento.map(l => {
+        const objC = cuentas.find(c => c.codigo === l.cuenta);
+        return { cuenta: l.cuenta, nombreCuenta: objC ? objC.nombre : 'Subcuenta', debe: l.debe, haber: l.haber };
+      });
+
+      asientos.push({
+        id: asientoId,
+        numero: proximoNumeroAsiento,
+        fecha,
+        concepto: conceptoAsientoDiario,
+        referencia: codigoFormateado,
+        apuntes: apuntesFormateados
+      });
+
+      // 3. Guardar el Documento Oficial en el Registro de Facturación
+      const nuevoDoc = {
+        id: Date.now() + 1,
+        serie,
+        ejercicio: anio,
+        secuencia,
+        numeroDocumento: codigoFormateado,
+        fecha,
+        docRectificado: numeroDocRectificado,
+        terceroNombre,
+        terceroNif,
+        terceroDireccion,
+        regimen: calc.regimen,
+        conceptoArticulo,
+        costeREBU: calc.coste,
+        importeTotal: calc.total,
+        baseImponiblePDF: calc.baseImponibleMostrarPDF,
+        cuotaIVAPDF: calc.cuotaIVAMostrarPDF,
+        ivaInternoContable: calc.ivaInternoContable,
+        piezaId,
+        asientoIdVinculado: asientoId
+      };
+
+      documentos.push(nuevoDoc);
+      localStorage.setItem(STORAGE_ASIENTOS, JSON.stringify(asientos));
+      localStorage.setItem(STORAGE_INVENTARIO, JSON.stringify(inventario));
+      localStorage.setItem(STORAGE_DOCUMENTOS, JSON.stringify(documentos));
+
+      // Limpiar campos del generador
+      document.getElementById('fact-concepto').value = '';
+      document.getElementById('fact-coste').value = '';
+      document.getElementById('fact-total').value = '';
+      document.getElementById('fact-pieza-select').value = '';
+
+      refrescarTodasLasVistas();
+
+      if (ghConfig && ghConfig.token && ghConfig.autoSync) {
+        subirDatosAGitHub(`Emisión documento ${codigoFormateado}`);
+      }
+
+      // Abrir directamente el PDF listo para imprimir
+      verDocumentoFacturaPDF(nuevoDoc.id);
+    }
+
+    function renderizarModuloFacturacion() {
+      alCambiarSerieFacturacion();
+      const filtroSerie = document.getElementById('filtro-serie-tabla').value || 'TODAS';
+      const tbody = document.getElementById('tabla-documentos-facturacion');
+
+      const docsFiltrados = (filtroSerie === 'TODAS' ? documentos : documentos.filter(d => d.serie === filtroSerie))
+        .slice().sort((a, b) => b.id - a.id);
+
+      if (docsFiltrados.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="8" class="py-8 text-center text-slate-400">No hay documentos emitidos en esta serie. Usa el generador superior para emitir el primero (ej. FV/2026/00001).</td></tr>`;
+        return;
+      }
+
+      const badgesSerie = {
+        'FV': '<span class="bg-emerald-100 text-emerald-900 font-bold px-2 py-0.5 rounded">FV · Factura Venta</span>',
+        'FC': '<span class="bg-amber-100 text-amber-900 font-bold px-2 py-0.5 rounded">FC · Doc. Compra REBU</span>',
+        'FR': '<span class="bg-rose-100 text-rose-900 font-bold px-2 py-0.5 rounded">FR · Rectificativa Venta</span>',
+        'FA': '<span class="bg-purple-100 text-purple-900 font-bold px-2 py-0.5 rounded">FA · Abono Compra</span>'
+      };
+
+      tbody.innerHTML = docsFiltrados.map(d => {
+        const esNegativo = (d.serie === 'FR' || d.serie === 'FA');
+        return `
+          <tr class="hover:bg-slate-50">
+            <td class="py-2.5 px-3 font-bold mono-num text-slate-900">${d.numeroDocumento}</td>
+            <td class="py-2.5 px-3">${badgesSerie[d.serie] || d.serie}</td>
+            <td class="py-2.5 px-3 mono-num text-slate-600">${d.fecha}</td>
+            <td class="py-2.5 px-3 font-medium text-slate-800">${d.terceroNombre} <span class="text-slate-400 mono-num">(${d.terceroNif})</span></td>
+            <td class="py-2.5 px-3 text-slate-700">
+              ${d.conceptoArticulo}
+              ${d.docRectificado ? `<span class="block text-[10px] text-rose-600 font-semibold">Rectifica a: ${d.docRectificado}</span>` : ''}
+            </td>
+            <td class="py-2.5 px-3 text-right mono-num font-bold ${esNegativo ? 'text-rose-700' : 'text-slate-900'}">
+              ${esNegativo ? '-' : ''}${formatearMoneda(d.importeTotal)}
+            </td>
+            <td class="py-2.5 px-3 text-right mono-num text-slate-500">${formatearMoneda(d.ivaInternoContable || 0)}</td>
+            <td class="py-2.5 px-3 text-center no-print flex justify-center gap-2">
+              <button onclick="verDocumentoFacturaPDF(${d.id})" class="bg-slate-900 hover:bg-slate-700 text-white font-semibold px-2.5 py-1 rounded shadow-xs">
+                📄 Ver / PDF
+              </button>
+              <button onclick="eliminarDocumentoFacturacion(${d.id})" class="text-slate-400 hover:text-red-600 font-bold px-1" title="Eliminar documento y su asiento">×</button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function verDocumentoFacturaPDF(idDoc) {
+      const d = documentos.find(x => x.id === idDoc);
+      if (!d) return;
+
+      const titulosDocumento = {
+        'FV': 'FACTURA DE VENTA',
+        'FC': 'DOCUMENTO DE COMPRA EN RÉGIMEN ESPECIAL (REBU)',
+        'FR': 'FACTURA RECTIFICATIVA (ABONO POR DEVOLUCIÓN DE VENTA)',
+        'FA': 'DOCUMENTO RECTIFICATIVO DE COMPRA (DEVOLUCIÓN A PROVEEDOR)'
+      };
+
+      const signo = (d.serie === 'FR' || d.serie === 'FA') ? '-' : '';
+      let desgloseImpuestosHTML = '';
+      let notaLegalPie = '';
+
+      if (d.serie === 'FC' || d.serie === 'FA') {
+        desgloseImpuestosHTML = `
+          <tr class="border-t border-slate-200">
+            <td class="py-3 px-4 text-right font-semibold text-slate-600">IMPORTE ÍNTEGRO DE LA ADQUISICIÓN (REBU):</td>
+            <td class="py-3 px-4 text-right mono-num font-bold text-base text-slate-900 w-40">${signo}${formatearMoneda(d.importeTotal)}</td>
+          </tr>
+        `;
+        notaLegalPie = `Documento de compra emitido conforme al artículo 16.3 del Reglamento de Facturación (RD 1619/2012) y artículos 135-139 de la Ley 37/1992 del IVA (Régimen Especial de los Bienes Usados, Objetos de Arte, Antigüedades y Objetos de Colección). El transmitente declara que la pieza descrita no ha estado sujeta a deducción de IVA.`;
+      } else if (d.regimen === 'REBU') {
+        // En Factura de Venta REBU NUNCA se desglosa el IVA del margen en el documento del cliente
+        desgloseImpuestosHTML = `
+          <tr class="border-t border-slate-200">
+            <td class="py-3 px-4 text-right font-semibold text-slate-600">IMPORTE TOTAL (IVA INCLUIDO EN RÉGIMEN REBU):</td>
+            <td class="py-3 px-4 text-right mono-num font-bold text-base text-slate-900 w-40">${signo}${formatearMoneda(d.importeTotal)}</td>
+          </tr>
+        `;
+        notaLegalPie = `Factura emitida bajo el Régimen Especial de los Bienes Usados, Objetos de Arte, Antigüedades y Objetos de Colección (REBU), regulado en los artículos 135 a 139 de la Ley 37/1992 del Impuesto sobre el Valor Añadido y Directiva 2006/112/CE. El IVA está incluido en el precio total sin que proceda su desglose ni deducción en factura (Art. 138 Ley 37/1992).`;
+      } else if (d.regimen === 'GENERAL_21') {
+        desgloseImpuestosHTML = `
+          <tr class="border-t border-slate-200">
+            <td class="py-2 px-4 text-right text-slate-600">Base Imponible:</td>
+            <td class="py-2 px-4 text-right mono-num font-semibold w-40">${signo}${formatearMoneda(d.baseImponiblePDF)}</td>
+          </tr>
+          <tr>
+            <td class="py-2 px-4 text-right text-slate-600">Cuota IVA General (21%):</td>
+            <td class="py-2 px-4 text-right mono-num font-semibold w-40">${signo}${formatearMoneda(d.cuotaIVAPDF)}</td>
+          </tr>
+          <tr class="border-t-2 border-slate-900 bg-slate-50">
+            <td class="py-3 px-4 text-right font-bold text-slate-900">TOTAL FACTURA:</td>
+            <td class="py-3 px-4 text-right mono-num font-bold text-base text-slate-900 w-40">${signo}${formatearMoneda(d.importeTotal)}</td>
+          </tr>
+        `;
+        notaLegalPie = `Operación sujeta al Régimen General del Impuesto sobre el Valor Añadido (Ley 37/1992).`;
+      } else {
+        desgloseImpuestosHTML = `
+          <tr class="border-t-2 border-slate-900 bg-slate-50">
+            <td class="py-3 px-4 text-right font-bold text-slate-900">TOTAL FACTURA (EXENTO DE IVA):</td>
+            <td class="py-3 px-4 text-right mono-num font-bold text-base text-slate-900 w-40">${signo}${formatearMoneda(d.importeTotal)}</td>
+          </tr>
+        `;
+        notaLegalPie = `Operación exenta de IVA por exportación / entrega intracomunitaria conforme a la Ley 37/1992.`;
+      }
+
+      const contenedor = document.getElementById('contenido-imprimible-factura');
+      contenedor.innerHTML = `
+        <!-- Membrete Corporativo Ágata Michi / CiRcA by R.B. -->
+        <div class="flex justify-between items-start border-b-2 border-slate-900 pb-6">
+          <div class="flex items-center gap-4">
+            <div class="bg-white p-1 rounded border border-slate-200 w-28 h-16 flex items-center justify-center">
+              <img src="Logo Ágata Michi.jpg" alt="Ágata Michi" class="max-h-14 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+              <svg style="display:none;" viewBox="0 0 260 150" class="w-24 h-14">
+                <polygon points="68,8 82,8 73,28 58,28" fill="#eab308"/>
+                <path d="M18,125 L56,32 L76,32 L106,112 L88,112 L66,52 L35,125 Z" fill="#eab308"/>
+                <text x="95" y="62" font-family="sans-serif" font-size="34" fill="#eab308" font-weight="500">gata</text>
+                <path d="M22,144 L38,100 L54,106 L39,144 Z" fill="#111827"/>
+                <path d="M45,86 C75,92 98,115 112,140 L102,65 L120,65 L142,144 L124,144 L111,92 L95,122 C82,102 64,92 42,88 Z" fill="#111827"/>
+                <text x="148" y="142" font-family="sans-serif" font-size="44" fill="#111827" font-weight="600">iChi</text>
+              </svg>
+            </div>
+            <div>
+              <h2 class="text-base font-bold text-slate-900">ÁGATA MICHI, S.L.U.</h2>
+              <p class="text-xs font-semibold text-amber-600">CiRcA by R.B. — Vintage & Mid-Century Design</p>
+              <p class="text-[11px] text-slate-500">Tarragona, España | www.circabyrb.com</p>
+            </div>
+          </div>
+
+          <div class="text-right">
+            <span class="bg-slate-900 text-white font-bold px-3 py-1 rounded text-xs uppercase tracking-wider inline-block mb-2">
+              ${titulosDocumento[d.serie] || 'DOCUMENTO OFICIAL'}
+            </span>
+            <div class="text-base font-bold mono-num text-slate-900">Nº: ${d.numeroDocumento}</div>
+            <div class="text-xs text-slate-600 mono-num">Fecha de expedición: ${d.fecha}</div>
+            ${d.docRectificado ? `<div class="text-xs font-bold text-rose-700 mono-num mt-1">Documento Rectificado: ${d.docRectificado}</div>` : ''}
+          </div>
+        </div>
+
+        <!-- Datos del Destinatario / Transmitente -->
+        <div class="bg-slate-50 p-4 rounded-lg border border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <span class="text-[10px] font-bold uppercase text-slate-400 block mb-1">
+              ${(d.serie === 'FC' || d.serie === 'FA') ? 'Datos del Transmitente / Vendedor:' : 'Datos del Cliente / Comprador:'}
+            </span>
+            <strong class="text-sm text-slate-900 block">${d.terceroNombre}</strong>
+            <span class="text-xs text-slate-600 mono-num block">NIF / ID Fiscal: ${d.terceroNif}</span>
+            ${d.terceroDireccion ? `<span class="text-xs text-slate-600 block mt-0.5">${d.terceroDireccion}</span>` : ''}
+          </div>
+          <div class="sm:text-right flex flex-col justify-center">
+            <span class="text-[10px] font-bold uppercase text-slate-400 block">Régimen Fiscal Aplicado:</span>
+            <strong class="text-xs text-slate-800">${d.regimen === 'REBU' ? 'Régimen Especial de Bienes Usados (REBU)' : d.regimen}</strong>
+          </div>
+        </div>
+
+        <!-- Tabla de Conceptos del Documento -->
+        <div class="border border-slate-200 rounded-lg overflow-hidden">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="bg-slate-900 text-white text-[11px] uppercase">
+                <th class="py-2.5 px-4">Descripción de la Pieza / Concepto</th>
+                <th class="py-2.5 px-4 text-center w-24">Unidades</th>
+                <th class="py-2.5 px-4 text-right w-40">Importe</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-slate-100">
+                <td class="py-4 px-4 font-medium text-slate-900">${d.conceptoArticulo}</td>
+                <td class="py-4 px-4 text-center mono-num">${(d.serie === 'FR' || d.serie === 'FA') ? '-1' : '1'}</td>
+                <td class="py-4 px-4 text-right mono-num font-semibold">${signo}${formatearMoneda(d.regimen === 'GENERAL_21' ? d.baseImponiblePDF : d.importeTotal)}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              ${desgloseImpuestosHTML}
+            </tfoot>
+          </table>
+        </div>
+
+        <!-- Pie Legal Obligatorio -->
+        <div class="pt-4 border-t border-slate-200 text-[10px] text-slate-500 leading-relaxed">
+          <strong>Mención Legal y Fiscal:</strong> ${notaLegalPie}
+        </div>
+      `;
+
+      document.getElementById('modal-factura-pdf').classList.remove('hidden');
+    }
+
+    function eliminarDocumentoFacturacion(idDoc) {
+      const d = documentos.find(x => x.id === idDoc);
+      if (!d) return;
+      if (!confirm(`¿Seguro que deseas anular y eliminar el documento ${d.numeroDocumento}? También se eliminará su asiento vinculado del Libro Diario.`)) return;
+
+      if (d.asientoIdVinculado) {
+        asientos = asientos.filter(a => a.id !== d.asientoIdVinculado);
+        localStorage.setItem(STORAGE_ASIENTOS, JSON.stringify(asientos));
+      }
+      documentos = documentos.filter(x => x.id !== idDoc);
+      localStorage.setItem(STORAGE_DOCUMENTOS, JSON.stringify(documentos));
+      refrescarTodasLasVistas();
+      if (ghConfig && ghConfig.token && ghConfig.autoSync) subirDatosAGitHub(`Eliminación documento ${d.numeroDocumento}`);
     }
 
     // ================= MOTOR CLOUD GITHUB REST API =================
@@ -1258,9 +1998,7 @@
       const token = document.getElementById('gh-token').value.trim();
       const autoSync = document.getElementById('gh-autosync').checked;
 
-      if (!owner || !repo || !token) {
-        return mostrarFeedbackModal('⚠️ Introduce usuario, repositorio y Token PAT.', true);
-      }
+      if (!owner || !repo || !token) return mostrarFeedbackModal('⚠️ Introduce usuario, repositorio y Token PAT.', true);
 
       ghConfig = { owner, repo, branch, path, token, autoSync };
       localStorage.setItem(STORAGE_GH_CONFIG, JSON.stringify(ghConfig));
@@ -1311,6 +2049,7 @@
           if (Array.isArray(contenido.asientos)) { asientos = contenido.asientos; localStorage.setItem(STORAGE_ASIENTOS, JSON.stringify(asientos)); }
           if (Array.isArray(contenido.terceros)) { terceros = contenido.terceros; localStorage.setItem(STORAGE_TERCEROS, JSON.stringify(terceros)); }
           if (Array.isArray(contenido.inventario)) { inventario = contenido.inventario; localStorage.setItem(STORAGE_INVENTARIO, JSON.stringify(inventario)); }
+          if (Array.isArray(contenido.documentos)) { documentos = contenido.documentos; localStorage.setItem(STORAGE_DOCUMENTOS, JSON.stringify(documentos)); }
           refrescarTodasLasVistas();
         }
 
@@ -1350,7 +2089,8 @@
           cuentas,
           asientos,
           terceros,
-          inventario
+          inventario,
+          documentos
         };
 
         const bodyPut = {
@@ -1391,10 +2131,10 @@
       else mostrarFeedbackModal('❌ Error al subir datos.', true);
     }
 
-    // ================= NAVEGACIÓN ENTRE LOS 7 MÓDULOS =================
+    // ================= NAVEGACIÓN ENTRE LOS 8 MÓDULOS =================
 
     function cambiarTab(tab) {
-      const tabsActivas = ['diario', 'mayor', 'pyg', 'balance', 'terceros', 'inventario', 'cuentas'];
+      const tabsActivas = ['diario', 'facturacion', 'mayor', 'pyg', 'balance', 'terceros', 'inventario', 'cuentas'];
       if (!tabsActivas.includes(tab)) return;
       tabActual = tab;
 
@@ -1403,24 +2143,23 @@
         document.getElementById(`tab-${t}`).classList.toggle('tab-active', t === tab);
       });
 
-      if (tab === 'mayor') { actualizarSelectorFiltroMayor(); renderizarModuloMayor(); }
+      if (tab === 'facturacion') renderizarModuloFacturacion();
+      else if (tab === 'mayor') { actualizarSelectorFiltroMayor(); renderizarModuloMayor(); }
       else if (tab === 'pyg') renderizarModuloPyG();
       else if (tab === 'balance') renderizarModuloBalance();
       else if (tab === 'terceros') renderizarModuloTerceros();
       else if (tab === 'inventario') renderizarModuloInventario();
     }
 
-    // ================= MÓDULO 5: GESTIÓN DE TERCEROS (PROVEEDORES, ACREEDORES, CLIENTES) =================
+    // ================= TERCEROS E INVENTARIO =================
 
     function renderizarModuloTerceros() {
-      // Llenar selector de cuentas de terceros (Grupos 400, 410, 430)
       const selectCuenta = document.getElementById('tercero-cuenta');
       if (selectCuenta) {
         const cuentasTerceros = cuentas.filter(c => c.codigo.startsWith('40') || c.codigo.startsWith('41') || c.codigo.startsWith('43') || c.codigo.startsWith('55'));
         selectCuenta.innerHTML = cuentasTerceros.map(c => `<option value="${c.codigo}">${c.codigo} - ${c.nombre}</option>`).join('');
       }
 
-      // Actualizar selector de terceros en el Asistente de Gastos del Diario
       const selectGastoTercero = document.getElementById('gasto-tercero-select');
       if (selectGastoTercero) {
         let html = `<option value="">-- Seleccionar Proveedor/Acreedor registrado --</option>`;
@@ -1432,7 +2171,7 @@
 
       const tbody = document.getElementById('tabla-terceros');
       if (terceros.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="8" class="py-6 text-center text-slate-400">No hay proveedores, acreedores ni clientes registrados.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="8" class="py-6 text-center text-slate-400">No hay terceros registrados.</td></tr>`;
         return;
       }
 
@@ -1477,22 +2216,19 @@
 
       document.getElementById('tercero-nombre').value = '';
       document.getElementById('tercero-nif').value = '';
-      renderizarModuloTerceros();
+      refrescarTodasLasVistas();
 
-      if (ghConfig && ghConfig.token && ghConfig.autoSync) {
-        subirDatosAGitHub(`Alta de tercero: ${nombre}`);
-      }
+      if (ghConfig && ghConfig.token && ghConfig.autoSync) subirDatosAGitHub(`Alta de tercero: ${nombre}`);
     }
 
     function eliminarTercero(id) {
       if (!confirm('¿Eliminar esta ficha de tercero?')) return;
       terceros = terceros.filter(t => t.id !== id);
       localStorage.setItem(STORAGE_TERCEROS, JSON.stringify(terceros));
-      renderizarModuloTerceros();
+      refrescarTodasLasVistas();
       if (ghConfig && ghConfig.token && ghConfig.autoSync) subirDatosAGitHub('Baja de tercero');
     }
 
-    // Autocompletado fiscal cuando seleccionas un Proveedor/Acreedor en el Asistente de Gastos
     function alSeleccionarTerceroEnGasto() {
       const id = parseInt(document.getElementById('gasto-tercero-select').value);
       const t = terceros.find(x => x.id === id);
@@ -1509,8 +2245,6 @@
       calcularPreviewGasto();
     }
 
-    // ================= MÓDULO 6: INVENTARIO Y LIBRO REGISTRO REBU =================
-
     function renderizarModuloInventario() {
       const enStock = inventario.filter(i => i.estado === 'En Stock');
       const vendidas = inventario.filter(i => i.estado === 'Vendido');
@@ -1523,14 +2257,10 @@
       document.getElementById('kpi-inv-pvp').textContent = formatearMoneda(sumaPvpStock);
       document.getElementById('kpi-inv-vendidas').textContent = vendidas.length;
 
-      // Actualizar selector de piezas en el Asistente de Venta REBU del Diario
       const selectVentaPieza = document.getElementById('rebu-venta-pieza-id');
       if (selectVentaPieza) {
-        let html = `<option value="">-- Venta libre sin vincular --</option>`;
-        enStock.forEach(p => {
-          html += `<option value="${p.id}">[${p.sku}] ${p.nombre} (Coste: ${formatearMoneda(p.coste)})</option>`;
-        });
-        selectVentaPieza.innerHTML = html;
+        selectVentaPieza.innerHTML = `<option value="">-- Venta libre sin vincular --</option>` +
+          enStock.map(p => `<option value="${p.id}">[${p.sku}] ${p.nombre} (Coste: ${formatearMoneda(p.coste)})</option>`).join('');
       }
 
       const tbody = document.getElementById('tabla-inventario');
@@ -1545,8 +2275,8 @@
           : `<span class="bg-slate-200 text-slate-700 px-2.5 py-0.5 rounded-full font-semibold">Vendido (${p.fechaVenta || ''})</span>`;
 
         const botonAccion = p.estado === 'En Stock'
-          ? `<button onclick="prepararVentaDesdeInventario(${p.id})" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-2.5 py-1 rounded shadow-xs transition">⚡ Vender REBU</button>`
-          : `<span class="text-slate-400 text-[11px]">Contabilizado</span>`;
+          ? `<button onclick="irAFacturarPiezaInventario(${p.id})" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-2.5 py-1 rounded shadow-xs">🧾 Emitir FV</button>`
+          : `<span class="text-slate-400 text-[11px]">Facturado</span>`;
 
         return `
           <tr class="hover:bg-slate-50">
@@ -1561,11 +2291,19 @@
             <td class="py-2.5 px-3 text-center">${badgeEstado}</td>
             <td class="py-2.5 px-3 text-center no-print flex items-center justify-center gap-2">
               ${botonAccion}
-              <button onclick="eliminarPiezaInventario(${p.id})" class="text-slate-400 hover:text-red-600 font-bold px-1" title="Eliminar">×</button>
+              <button onclick="eliminarPiezaInventario(${p.id})" class="text-slate-400 hover:text-red-600 font-bold px-1">×</button>
             </td>
           </tr>
         `;
       }).join('');
+    }
+
+    function irAFacturarPiezaInventario(idPieza) {
+      cambiarTab('facturacion');
+      seleccionarSerieFacturacion('FV');
+      document.getElementById('fact-pieza-select').value = String(idPieza);
+      alSeleccionarPiezaEnFacturacion();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function guardarArticuloInventario() {
@@ -1576,7 +2314,7 @@
       const coste = Math.round((parseFloat(document.getElementById('inv-coste').value) || 0) * 100) / 100;
       const pvpEstimado = Math.round((parseFloat(document.getElementById('inv-pvp').value) || 0) * 100) / 100;
 
-      if (!nombre) return alert('Indica el nombre o descripción de la pieza vintage.');
+      if (!nombre) return alert('Indica el nombre de la pieza.');
 
       inventario.push({
         id: Date.now(),
@@ -1596,29 +2334,17 @@
       document.getElementById('inv-nombre').value = '';
       document.getElementById('inv-coste').value = '';
       document.getElementById('inv-pvp').value = '';
-      renderizarModuloInventario();
+      refrescarTodasLasVistas();
 
-      if (ghConfig && ghConfig.token && ghConfig.autoSync) {
-        subirDatosAGitHub(`Alta inventario REBU: ${sku} - ${nombre}`);
-      }
+      if (ghConfig && ghConfig.token && ghConfig.autoSync) subirDatosAGitHub(`Alta inventario REBU: ${sku}`);
     }
 
     function eliminarPiezaInventario(id) {
       if (!confirm('¿Eliminar esta pieza del inventario?')) return;
       inventario = inventario.filter(i => i.id !== id);
       localStorage.setItem(STORAGE_INVENTARIO, JSON.stringify(inventario));
-      renderizarModuloInventario();
+      refrescarTodasLasVistas();
       if (ghConfig && ghConfig.token && ghConfig.autoSync) subirDatosAGitHub('Baja artículo inventario');
-    }
-
-    function prepararVentaDesdeInventario(idPieza) {
-      const p = inventario.find(i => i.id === idPieza);
-      if (!p) return;
-      cambiarTab('diario');
-      cambiarModoAsistente('venta_rebu');
-      document.getElementById('rebu-venta-pieza-id').value = String(p.id);
-      alSeleccionarPiezaInventarioVenta();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function alSeleccionarPiezaInventarioVenta() {
@@ -1631,7 +2357,7 @@
       calcularPreviewVentaREBU();
     }
 
-    // ================= LÓGICA CONTABLE CORE Y ASISTENTE FISCAL AVANZADO =================
+    // ================= LÓGICA CONTABLE CORE =================
 
     function obtenerOpcionesCuentasHTML(seleccionada = '') {
       const ordenadas = [...cuentas].sort((a, b) => a.codigo.localeCompare(b.codigo));
@@ -1799,7 +2525,7 @@
                 <span class="bg-slate-900 text-white font-bold px-2.5 py-0.5 rounded">Asiento #${asiento.numero}</span>
                 <span class="font-semibold text-slate-700 mono-num">${asiento.fecha}</span>
                 <span class="text-slate-900 font-bold">${asiento.concepto}</span>
-                ${asiento.referencia ? `<span class="bg-amber-100 text-amber-900 px-2 py-0.5 rounded font-medium">${asiento.referencia}</span>` : ''}
+                ${asiento.referencia ? `<span class="bg-amber-100 text-amber-900 px-2 py-0.5 rounded font-bold mono-num">${asiento.referencia}</span>` : ''}
               </div>
               <button onclick="eliminarAsiento(${asiento.id})" class="no-print text-slate-400 hover:text-red-600 font-medium">Anular asiento</button>
             </div>
@@ -1858,7 +2584,6 @@
 
       if (!conceptoInput || precioVenta <= 0) return alert('Indica concepto y precio de venta.');
 
-      // Si había una pieza del inventario seleccionada, marcarla como Vendida
       if (idPieza) {
         const pieza = inventario.find(i => i.id === idPieza);
         if (pieza) {
@@ -1918,25 +2643,19 @@
       document.getElementById('rebu-compra-importe').value = '';
     }
 
-    // Cálculo en vivo de Factura de Gasto con IVA Normal, Inversión Sujeto Pasivo (ISP), Exento e IRPF
     function calcularPreviewGasto() {
       const base = Math.round((parseFloat(document.getElementById('gasto-base').value) || 0) * 100) / 100;
       const tipoIVA = document.getElementById('gasto-tipo-iva').value;
       const pctIRPF = parseFloat(document.getElementById('gasto-irpf').value) || 0;
 
-      let cuotaIVA = 0;
-      let esISP = false;
-
+      let cuotaIVA = 0, esISP = false;
       if (tipoIVA === 'IVA_21') cuotaIVA = Math.round(base * 0.21 * 100) / 100;
       else if (tipoIVA === 'IVA_10') cuotaIVA = Math.round(base * 0.10 * 100) / 100;
       else if (tipoIVA === 'IVA_4') cuotaIVA = Math.round(base * 0.04 * 100) / 100;
       else if (tipoIVA === 'ISP_21') { cuotaIVA = Math.round(base * 0.21 * 100) / 100; esISP = true; }
 
       const cuotaIRPF = Math.round(base * (pctIRPF / 100) * 100) / 100;
-      // En ISP el IVA se autorrepercute (472.ISP Debe y 477.ISP Haber), por lo que no se paga al proveedor extranjero
-      const liquidoPagar = esISP
-        ? Math.round((base - cuotaIRPF) * 100) / 100
-        : Math.round((base + cuotaIVA - cuotaIRPF) * 100) / 100;
+      const liquidoPagar = esISP ? Math.round((base - cuotaIRPF) * 100) / 100 : Math.round((base + cuotaIVA - cuotaIRPF) * 100) / 100;
 
       document.getElementById('preview-gasto-liquido').textContent = formatearMoneda(liquidoPagar);
       document.getElementById('preview-gasto-detalle').textContent = `${esISP ? 'IVA ISP' : 'IVA'}: ${formatearMoneda(cuotaIVA)} | IRPF: -${formatearMoneda(cuotaIRPF)}`;
@@ -1953,19 +2672,13 @@
       if (!concepto || base <= 0) return alert('Indica el concepto de la factura y la Base Imponible.');
 
       const lineas = [{ cuenta: cuentaGasto, debe: base, haber: 0 }];
-
       if (esISP && cuotaIVA > 0) {
-        // Autoliquidación Inversión del Sujeto Pasivo (Debe 472.ISP y Haber 477.ISP)
         lineas.push({ cuenta: '472.ISP', debe: cuotaIVA, haber: 0 });
         lineas.push({ cuenta: '477.ISP', debe: 0, haber: cuotaIVA });
       } else if (cuotaIVA > 0) {
         lineas.push({ cuenta: '472.21', debe: cuotaIVA, haber: 0 });
       }
-
-      if (cuotaIRPF > 0) {
-        lineas.push({ cuenta: '4751.0', debe: 0, haber: cuotaIRPF });
-      }
-
+      if (cuotaIRPF > 0) lineas.push({ cuenta: '4751.0', debe: 0, haber: cuotaIRPF });
       lineas.push({ cuenta: cuentaHaber, debe: 0, haber: liquidoPagar });
 
       aplicarAsientoDesdeAsistente(concepto, tipoIVA, lineas, guardarDirecto);
@@ -1985,8 +2698,6 @@
       recalcularTotalesAsiento();
       if (guardarDirecto) guardarAsiento();
     }
-
-    // ================= PLAN DE CUENTAS, LIBRO MAYOR, PYG Y BALANCE =================
 
     function renderizarPlanCuentas() {
       const tbody = document.getElementById('tabla-plan-cuentas');
@@ -2177,7 +2888,7 @@
             <td class="py-2 px-3 mono-num font-semibold">#${mov.asientoNumero}</td>
             <td class="py-2 px-3 mono-num">${mov.fecha}</td>
             <td class="py-2 px-3 font-medium">${mov.concepto}</td>
-            <td class="py-2 px-3 text-slate-500">${mov.referencia}</td>
+            <td class="py-2 px-3 text-slate-500 mono-num">${mov.referencia}</td>
             <td class="py-2 px-3 text-right mono-num">${mov.debe > 0 ? formatearMoneda(mov.debe) : '-'}</td>
             <td class="py-2 px-3 text-right mono-num">${mov.haber > 0 ? formatearMoneda(mov.haber) : '-'}</td>
             <td class="py-2 px-3 text-right mono-num font-bold bg-slate-50">${formatearMoneda(Math.abs(mov.saldoAcumulado))}</td>
@@ -2365,7 +3076,7 @@
     }
 
     function exportarBackupJSON() {
-      const data = { empresa: 'Ágata Michi, S.L.U. - CiRcA by R.B.', fechaExportacion: new Date().toISOString(), cuentas, asientos, terceros, inventario };
+      const data = { empresa: 'Ágata Michi, S.L.U. - CiRcA by R.B.', fechaExportacion: new Date().toISOString(), cuentas, asientos, terceros, inventario, documentos };
       const a = document.createElement('a');
       a.href = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }));
       a.download = `backup_erp_circa_${new Date().toISOString().slice(0,10)}.json`;
@@ -2383,10 +3094,12 @@
           if (Array.isArray(c.asientos)) asientos = c.asientos;
           if (Array.isArray(c.terceros)) terceros = c.terceros;
           if (Array.isArray(c.inventario)) inventario = c.inventario;
+          if (Array.isArray(c.documentos)) documentos = c.documentos;
           localStorage.setItem(STORAGE_CUENTAS, JSON.stringify(cuentas));
           localStorage.setItem(STORAGE_ASIENTOS, JSON.stringify(asientos));
           localStorage.setItem(STORAGE_TERCEROS, JSON.stringify(terceros));
           localStorage.setItem(STORAGE_INVENTARIO, JSON.stringify(inventario));
+          localStorage.setItem(STORAGE_DOCUMENTOS, JSON.stringify(documentos));
           refrescarTodasLasVistas();
           if (ghConfig && ghConfig.token && ghConfig.autoSync) await subirDatosAGitHub('Restauración Backup JSON');
           alert('✓ Copia de seguridad restaurada.');
