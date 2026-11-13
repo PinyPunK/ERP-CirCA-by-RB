@@ -1,0 +1,25 @@
+{
+  "name": "CiRcA by R.B. | ERP Contable PGC & REBU",
+  "short_name": "CiRcA ERP",
+  "description": "Sistema de Gestión Contable PGC y REBU para CiRcA by R.B. (Ágata Michi, S.L.U.)",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='110' fill='%230f172a'/%3E%3Crect x='36' y='36' width='440' height='440' rx='84' fill='none' stroke='%23f59e0b' stroke-width='14'/%3E%3Ctext x='256' y='255' font-family='system-ui, sans-serif' font-size='120' font-weight='800' fill='%23ffffff' text-anchor='middle'%3ECiRcA%3C/text%3E%3Ctext x='256' y='360' font-family='monospace' font-size='56' font-weight='700' fill='%23f59e0b' text-anchor='middle' letter-spacing='6'%3EERP·REBU%3C/text%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='110' fill='%230f172a'/%3E%3Crect x='36' y='36' width='440' height='440' rx='84' fill='none' stroke='%23f59e0b' stroke-width='14'/%3E%3Ctext x='256' y='255' font-family='system-ui, sans-serif' font-size='120' font-weight='800' fill='%23ffffff' text-anchor='middle'%3ECiRcA%3C/text%3E%3Ctext x='256' y='360' font-family='monospace' font-size='56' font-weight='700' fill='%23f59e0b' text-anchor='middle' letter-spacing='6'%3EERP·REBU%3C/text%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
