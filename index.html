@@ -5,130 +5,182 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>CiRcA by R.B. | ERP Contable Cloud (Ágata Michi, S.L.U.)</title>
 
-  <!-- Metadatos PWA para Instalación en Móvil (Android / iOS) y Escritorio -->
+  <!-- Metadatos PWA -->
   <meta name="theme-color" content="#0f172a">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="CiRcA ERP">
   <link rel="manifest" href="./manifest.json">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='110' fill='%230f172a'/%3E%3Crect x='36' y='36' width='440' height='440' rx='84' fill='none' stroke='%23f59e0b' stroke-width='14'/%3E%3Ctext x='256' y='255' font-family='system-ui, sans-serif' font-size='120' font-weight='800' fill='%23ffffff' text-anchor='middle'%3ECiRcA%3C/text%3E%3Ctext x='256' y='360' font-family='monospace' font-size='56' font-weight='700' fill='%23f59e0b' text-anchor='middle' letter-spacing='6'%3EERP·REBU%3C/text%3E%3C/svg%3E">
-  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='110' fill='%230f172a'/%3E%3Crect x='36' y='36' width='440' height='440' rx='84' fill='none' stroke='%23f59e0b' stroke-width='14'/%3E%3Ctext x='256' y='255' font-family='system-ui, sans-serif' font-size='120' font-weight='800' fill='%23ffffff' text-anchor='middle'%3ECiRcA%3C/text%3E%3Ctext x='256' y='360' font-family='monospace' font-size='56' font-weight='700' fill='%23f59e0b' text-anchor='middle' letter-spacing='6'%3EERP·REBU%3C/text%3E%3C/svg%3E">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background-color: #f8fafc; }
-    .tab-active { border-bottom: 3px solid #0f172a; color: #0f172a; font-weight: 700; }
+    .tab-active { border-bottom: 3px solid #0f172a; color: #0f172a; font-weight: 700; background-color: #f1f5f9; }
     .mono-num { font-variant-numeric: tabular-nums; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
     @keyframes pulse-sync { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
     .anim-sync { animation: pulse-sync 1.2s infinite; }
+
+    /* Estilos específicos para Impresión y Generación de PDF Oficial */
+    @media print {
+      body { background-color: #ffffff !important; color: #000000 !important; font-size: 11px !important; }
+      header, nav, .no-print { display: none !important; }
+      #cabecera-impresion-pdf { display: flex !important; }
+      main { max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
+      .shadow-sm, .shadow-md, .rounded-xl { box-shadow: none !important; border-radius: 4px !important; }
+      table { page-break-inside: auto; width: 100% !important; }
+      tr { page-break-inside: avoid; page-break-after: auto; }
+      thead { display: table-header-group; }
+      tfoot { display: table-footer-group; }
+      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+    }
   </style>
 </head>
 <body class="text-slate-800">
 
-  <!-- Cabecera Principal -->
-  <header class="bg-slate-900 text-white shadow-md">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col lg:flex-row justify-between items-center gap-4">
+  <!-- CABECERA EXCLUSIVA PARA IMPRESIÓN PDF OFICIAL -->
+  <div id="cabecera-impresion-pdf" class="hidden justify-between items-center border-b-2 border-slate-900 pb-4 mb-6">
+    <div class="flex items-center gap-4">
+      <div class="bg-white p-1 rounded border border-slate-200 w-28 h-16 flex items-center justify-center">
+        <img src="Logo Ágata Michi.jpg" alt="Ágata Michi" class="max-h-14 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <svg style="display:none;" viewBox="0 0 260 150" class="w-24 h-14">
+          <polygon points="68,8 82,8 73,28 58,28" fill="#eab308"/>
+          <path d="M18,125 L56,32 L76,32 L106,112 L88,112 L66,52 L35,125 Z" fill="#eab308"/>
+          <text x="95" y="62" font-family="sans-serif" font-size="34" fill="#eab308" font-weight="500">gata</text>
+          <path d="M22,144 L38,100 L54,106 L39,144 Z" fill="#111827"/>
+          <path d="M45,86 C75,92 98,115 112,140 L102,65 L120,65 L142,144 L124,144 L111,92 L95,122 C82,102 64,92 42,88 Z" fill="#111827"/>
+          <text x="148" y="142" font-family="sans-serif" font-size="44" fill="#111827" font-weight="600">iChi</text>
+        </svg>
+      </div>
       <div>
-        <span class="text-xs uppercase tracking-widest text-amber-400 font-semibold">Ágata Michi, S.L.U.</span>
-        <h1 class="text-2xl font-bold tracking-tight">CiRcA by R.B. <span class="font-light text-slate-400">| ERP Contable PGC & REBU</span></h1>
+        <h1 class="text-lg font-bold text-slate-900">ÁGATA MICHI, S.L.U. — CiRcA by R.B.</h1>
+        <p id="pdf-subtitulo-informe" class="text-xs font-semibold text-slate-600">Informe Oficial Contable (PGC & REBU)</p>
+      </div>
+    </div>
+    <div class="text-right text-xs text-slate-600 mono-num">
+      <div>Ejercicio Contable: <strong>2026</strong></div>
+      <div>Fecha emisión: <span id="pdf-fecha-emision"></span></div>
+    </div>
+  </div>
+
+  <!-- Cabecera Principal de la Aplicación -->
+  <header class="bg-slate-900 text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex flex-col lg:flex-row justify-between items-center gap-4">
+      
+      <!-- Esquina Superior Izquierda: LOGO ÁGATA MICHI + TÍTULO -->
+      <div class="flex items-center gap-4">
+        <div class="bg-white px-2.5 py-1.5 rounded-lg shadow-inner flex items-center justify-center h-14 w-24 shrink-0 border border-amber-400/40">
+          <!-- Carga Logo Ágata Michi.jpg y si no encuentra el archivo muestra el SVG vectorial exacto -->
+          <img src="Logo Ágata Michi.jpg" alt="Logo Ágata Michi" class="max-h-12 max-w-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <svg style="display:none;" viewBox="0 0 260 150" class="w-20 h-12" aria-label="Logo Ágata Michi">
+            <polygon points="68,8 82,8 73,28 58,28" fill="#f59e0b"/>
+            <path d="M18,125 L56,32 L76,32 L106,112 L88,112 L66,52 L35,125 Z" fill="#f59e0b"/>
+            <text x="95" y="62" font-family="sans-serif" font-size="34" fill="#f59e0b" font-weight="500">gata</text>
+            <path d="M22,144 L38,100 L54,106 L39,144 Z" fill="#0f172a"/>
+            <path d="M45,86 C75,92 98,115 112,140 L102,65 L120,65 L142,144 L124,144 L111,92 L95,122 C82,102 64,92 42,88 Z" fill="#0f172a"/>
+            <text x="148" y="142" font-family="sans-serif" font-size="44" fill="#0f172a" font-weight="600">iChi</text>
+          </svg>
+        </div>
+        <div>
+          <span class="text-[11px] uppercase tracking-widest text-amber-400 font-semibold block">Ágata Michi, S.L.U.</span>
+          <h1 class="text-xl sm:text-2xl font-bold tracking-tight">CiRcA by R.B. <span class="font-light text-slate-400 text-base sm:text-xl">| ERP Contable PGC & REBU</span></h1>
+        </div>
       </div>
 
-      <!-- Barra de Estado Cloud GitHub, Instalación PWA y Backups -->
-      <div class="flex flex-wrap items-center justify-center gap-2.5 text-xs">
-        
-        <!-- Botón de Instalación PWA (aparece automáticamente cuando el navegador lo permite) -->
-        <button id="btn-instalar-pwa" onclick="instalarPWA()" class="hidden bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-3 py-1.5 rounded-md shadow transition flex items-center gap-1.5">
+      <!-- Barra de Estado Cloud GitHub, Impresión PDF, PWA y Backups -->
+      <div class="flex flex-wrap items-center justify-center gap-2 text-xs">
+        <button id="btn-instalar-pwa" onclick="instalarPWA()" class="hidden bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-3 py-1.5 rounded-md shadow transition flex items-center gap-1">
           <span>📲</span> Instalar App
         </button>
 
-        <!-- Indicador de Estado de Sincronización GitHub -->
-        <div id="badge-github-status" onclick="abrirModalGitHub()" class="cursor-pointer bg-slate-800 hover:bg-slate-700 border border-slate-700 px-3 py-1.5 rounded-md flex items-center gap-2 transition" title="Haz clic para configurar la sincronización con GitHub">
+        <div id="badge-github-status" onclick="abrirModalGitHub()" class="cursor-pointer bg-slate-800 hover:bg-slate-700 border border-slate-700 px-3 py-1.5 rounded-md flex items-center gap-2 transition" title="Configurar sincronización con GitHub">
           <span id="dot-github-status" class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
-          <span id="texto-github-status" class="font-medium text-slate-300">GitHub: Modo Local</span>
+          <span id="texto-github-status" class="font-medium text-slate-300">GitHub: Local</span>
         </div>
 
-        <!-- Botón de Sincronización Instantánea Manual -->
-        <button id="btn-sync-ahora" onclick="sincronizarDesdeGitHub(true)" class="hidden bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-3 py-1.5 rounded-md transition flex items-center gap-1.5" title="Descargar últimos datos del repositorio ahora">
-          <span>↻</span> Sincronizar
+        <button id="btn-sync-ahora" onclick="sincronizarDesdeGitHub(true)" class="hidden bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-2.5 py-1.5 rounded-md transition">
+          ↻ Sync
         </button>
 
-        <!-- Botón Configurar GitHub -->
-        <button onclick="abrirModalGitHub()" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-amber-400 font-semibold px-3 py-1.5 rounded-md transition">
+        <button onclick="abrirModalGitHub()" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-amber-400 font-semibold px-2.5 py-1.5 rounded-md transition">
           ⚙️ Cloud GitHub
         </button>
 
-        <input type="file" id="input-importar-json" accept=".json" class="hidden" onchange="importarBackupJSON(event)">
-        <button onclick="document.getElementById('input-importar-json').click()" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold px-3 py-1.5 rounded-md transition">
-          ↑ Importar JSON
+        <button onclick="imprimirPestanaActualPDF()" class="bg-white hover:bg-slate-100 text-slate-900 font-bold px-3 py-1.5 rounded-md shadow transition flex items-center gap-1" title="Imprimir o guardar en PDF la pestaña actual">
+          🖨️ Imprimir PDF
         </button>
-        <button onclick="exportarBackupJSON()" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-semibold px-3 py-1.5 rounded-md transition">
-          ↓ Backup JSON
+
+        <input type="file" id="input-importar-json" accept=".json" class="hidden" onchange="importarBackupJSON(event)">
+        <button onclick="document.getElementById('input-importar-json').click()" class="bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold px-2.5 py-1.5 rounded-md transition">
+          ↑ Importar
+        </button>
+        <button onclick="exportarBackupJSON()" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-semibold px-2.5 py-1.5 rounded-md transition">
+          ↓ Backup
         </button>
       </div>
     </div>
 
-    <!-- Barra de Navegación por Módulos -->
+    <!-- Barra de Navegación por Módulos (7 Módulos) -->
     <nav class="bg-white text-slate-600 border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-6 flex space-x-6 overflow-x-auto text-sm">
-        <button onclick="cambiarTab('diario')" id="tab-diario" class="py-3.5 px-2 tab-active transition whitespace-nowrap">1. Libro Diario</button>
-        <button onclick="cambiarTab('cuentas')" id="tab-cuentas" class="py-3.5 px-2 hover:text-slate-900 transition whitespace-nowrap">2. Plan de Cuentas (PGC)</button>
-        <button onclick="cambiarTab('mayor')" id="tab-mayor" class="py-3.5 px-2 hover:text-slate-900 transition whitespace-nowrap">3. Libro Mayor y Sumas/Saldos</button>
-        <button onclick="cambiarTab('pyg')" id="tab-pyg" class="py-3.5 px-2 hover:text-slate-900 transition whitespace-nowrap">4. Pérdidas y Ganancias (PyG)</button>
-        <button onclick="cambiarTab('balance')" id="tab-balance" class="py-3.5 px-2 hover:text-slate-900 transition whitespace-nowrap">5. Balance de Situación</button>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 flex space-x-2 sm:space-x-4 overflow-x-auto text-xs sm:text-sm">
+        <button onclick="cambiarTab('diario')" id="tab-diario" class="py-3 px-3 tab-active transition whitespace-nowrap">1. Libro Diario</button>
+        <button onclick="cambiarTab('mayor')" id="tab-mayor" class="py-3 px-3 hover:text-slate-900 transition whitespace-nowrap">2. Mayor y Sumas/Saldos</button>
+        <button onclick="cambiarTab('pyg')" id="tab-pyg" class="py-3 px-3 hover:text-slate-900 transition whitespace-nowrap">3. Pérdidas y Ganancias</button>
+        <button onclick="cambiarTab('balance')" id="tab-balance" class="py-3 px-3 hover:text-slate-900 transition whitespace-nowrap">4. Balance de Situación</button>
+        <button onclick="cambiarTab('terceros')" id="tab-terceros" class="py-3 px-3 hover:text-slate-900 transition whitespace-nowrap">5. Proveedores / Clientes</button>
+        <button onclick="cambiarTab('inventario')" id="tab-inventario" class="py-3 px-3 hover:text-slate-900 transition whitespace-nowrap">6. Inventario REBU</button>
+        <button onclick="cambiarTab('cuentas')" id="tab-cuentas" class="py-3 px-3 hover:text-slate-900 transition whitespace-nowrap">7. Plan de Cuentas PGC</button>
       </div>
     </nav>
   </header>
 
   <!-- ================= MODAL DE CONFIGURACIÓN GITHUB CLOUD ================= -->
-  <div id="modal-github" class="fixed inset-0 bg-slate-950/70 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4">
+  <div id="modal-github" class="fixed inset-0 bg-slate-950/70 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4 no-print">
     <div class="bg-white rounded-2xl shadow-2xl border border-slate-200 max-w-lg w-full overflow-hidden">
       <div class="bg-slate-900 text-white px-6 py-4 flex justify-between items-center">
         <div>
           <span class="text-[10px] uppercase tracking-widest text-amber-400 font-bold">Sincronización Multi-Dispositivo</span>
           <h3 class="text-base font-bold">Conexión en Tiempo Real con Repositorio GitHub</h3>
         </div>
-        <button onclick="cerrarModalGitHub()" class="text-slate-400 hover:text-white text-xl font-bold">&times;</button>
+        <button onclick="cerrarModalGitHub()" class="text-slate-400 hover:text-white text-xl font-bold">×</button>
       </div>
 
       <div class="p-6 space-y-4 text-xs">
-        <div class="bg-amber-50 border border-amber-200 text-amber-900 p-3 rounded-lg leading-relaxed">
-          <strong>🔒 Privacidad total:</strong> Tu Token de GitHub se guarda exclusivamente en el <code>localStorage</code> privado de este navegador/dispositivo. Nunca se incluye en el código fuente.
+        <div class="bg-amber-50 border border-amber-200 text-amber-900 p-3 rounded-lg">
+          <strong>🔒 Privacidad total:</strong> Tu Token PAT se guarda solo en el almacenamiento privado de tu dispositivo. Sincroniza Diario, Cuentas, Proveedores/Clientes e Inventario REBU.
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
             <label class="block font-semibold text-slate-700 mb-1">Usuario de GitHub (Owner)</label>
-            <input type="text" id="gh-owner" placeholder="Ej: lorenaborrell" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-slate-900 focus:outline-none">
+            <input type="text" id="gh-owner" placeholder="Ej: lorenaborrell" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm">
           </div>
           <div>
             <label class="block font-semibold text-slate-700 mb-1">Nombre del Repositorio</label>
-            <input type="text" id="gh-repo" placeholder="Ej: erp-circa" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-slate-900 focus:outline-none">
+            <input type="text" id="gh-repo" placeholder="Ej: erp-circa" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm">
           </div>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
             <label class="block font-semibold text-slate-700 mb-1">Rama (Branch)</label>
-            <input type="text" id="gh-branch" value="main" placeholder="main" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-slate-900 focus:outline-none">
+            <input type="text" id="gh-branch" value="main" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm">
           </div>
           <div>
-            <label class="block font-semibold text-slate-700 mb-1">Archivo JSON de Datos en el Repo</label>
-            <input type="text" id="gh-path" value="datos_contabilidad_circa.json" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm mono-num focus:ring-2 focus:ring-slate-900 focus:outline-none">
+            <label class="block font-semibold text-slate-700 mb-1">Archivo JSON de Datos</label>
+            <input type="text" id="gh-path" value="datos_contabilidad_circa.json" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm mono-num">
           </div>
         </div>
 
         <div>
           <label class="block font-semibold text-slate-700 mb-1">Personal Access Token (PAT) de GitHub</label>
-          <input type="password" id="gh-token" placeholder="ghp_... o github_pat_..." class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm mono-num focus:ring-2 focus:ring-slate-900 focus:outline-none">
-          <p class="text-[11px] text-slate-500 mt-1">
-            Requiere permiso <code>repo</code> (Classic Token) o permiso <code>Contents: Read and write</code> (Fine-grained Token).
-          </p>
+          <input type="password" id="gh-token" placeholder="ghp_... o github_pat_..." class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm mono-num">
         </div>
 
         <div class="flex items-center justify-between bg-slate-50 p-3 rounded-lg border border-slate-200">
           <div>
             <span class="font-bold text-slate-800 block">Auto-sincronización en tiempo real</span>
-            <span class="text-[11px] text-slate-500">Sube cada asiento al instante y comprueba cambios cada 30 seg.</span>
+            <span class="text-[11px] text-slate-500">Sube cada cambio al instante y revisa novedades cada 30 seg.</span>
           </div>
           <input type="checkbox" id="gh-autosync" checked class="w-4 h-4 accent-slate-900">
         </div>
@@ -136,14 +188,14 @@
         <div id="gh-feedback" class="hidden p-3 rounded-lg font-medium"></div>
 
         <div class="flex flex-wrap justify-between items-center gap-2 pt-3 border-t border-slate-200">
-          <button type="button" onclick="desconectarGitHub()" class="px-3 py-2 text-rose-600 hover:bg-rose-50 rounded-lg font-semibold transition">
-            Desconectar en este dispositivo
+          <button type="button" onclick="desconectarGitHub()" class="px-3 py-2 text-rose-600 hover:bg-rose-50 rounded-lg font-semibold">
+            Desconectar
           </button>
           <div class="flex gap-2">
-            <button type="button" onclick="forzarSubidaAGitHub()" class="px-3 py-2 bg-slate-200 hover:bg-slate-300 text-slate-800 rounded-lg font-semibold transition" title="Sobrescribe el archivo de GitHub con los datos actuales de esta pantalla">
-              ↑ Subir datos locales al Repo
+            <button type="button" onclick="forzarSubidaAGitHub()" class="px-3 py-2 bg-slate-200 hover:bg-slate-300 text-slate-800 rounded-lg font-semibold">
+              ↑ Subir al Repo
             </button>
-            <button type="button" onclick="guardarYProbarGitHub()" class="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-lg font-bold shadow transition">
+            <button type="button" onclick="guardarYProbarGitHub()" class="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-lg font-bold shadow">
               Guardar y Conectar
             </button>
           </div>
@@ -153,17 +205,17 @@
   </div>
 
   <!-- Contenedor Principal -->
-  <main class="max-w-7xl mx-auto px-6 py-8">
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-6">
 
     <!-- ================= MÓDULO 1: LIBRO DIARIO ================= -->
     <section id="vista-diario" class="space-y-8">
 
-      <!-- Tarjeta: Asistente Inteligente REBU y Operaciones Rápidas -->
-      <div class="bg-slate-900 text-white p-6 rounded-xl shadow-md border border-slate-800">
+      <!-- Tarjeta: Asistente Inteligente REBU, ISP, Exento, IVA Normal e IRPF (No se imprime en PDF) -->
+      <div class="bg-slate-900 text-white p-6 rounded-xl shadow-md border border-slate-800 no-print">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-5 pb-4 border-b border-slate-800 gap-3">
           <div>
-            <span class="text-[11px] uppercase tracking-widest text-amber-400 font-bold">Automatización Contable CiRcA</span>
-            <h2 class="text-lg font-bold text-white">Asistente Inteligente de Asientos (REBU y Gastos 21%)</h2>
+            <span class="text-[11px] uppercase tracking-widest text-amber-400 font-bold">Automatización Contable y Fiscal CiRcA</span>
+            <h2 class="text-lg font-bold text-white">Asistente Inteligente de Asientos (REBU, ISP, IVA e IRPF)</h2>
           </div>
           <div class="flex flex-wrap bg-slate-800 p-1 rounded-lg text-xs font-semibold gap-1">
             <button type="button" onclick="cambiarModoAsistente('venta_rebu')" id="btn-modo-venta_rebu" class="px-3 py-1.5 rounded-md bg-amber-500 text-slate-950 transition">
@@ -173,7 +225,7 @@
               2. Compra Pieza REBU
             </button>
             <button type="button" onclick="cambiarModoAsistente('gasto_iva')" id="btn-modo-gasto_iva" class="px-3 py-1.5 rounded-md text-slate-300 hover:text-white transition">
-              3. Gasto / Comisión (IVA 21%)
+              3. Factura Gasto / Acreedor (IVA, ISP, Exento, IRPF)
             </button>
           </div>
         </div>
@@ -181,27 +233,27 @@
         <!-- MODO 1: CALCULADORA VENTA REBU -->
         <div id="panel-asistente-venta_rebu" class="space-y-4">
           <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
-            <div class="md:col-span-2">
-              <label class="block text-xs text-slate-400 mb-1">Pieza vendida / Concepto</label>
-              <input type="text" id="rebu-venta-concepto" placeholder="Ej: Venta Lámpara Fase Boomerang" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-400">
-            </div>
             <div>
-              <label class="block text-xs text-slate-400 mb-1">Plataforma / Ref.</label>
-              <select id="rebu-venta-plataforma" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-400">
-                <option value="Web CiRcA / Shopify">Web CiRcA / Shopify</option>
-                <option value="Catawiki">Catawiki</option>
-                <option value="Etsy">Etsy</option>
-                <option value="Pamono">Pamono</option>
-                <option value="Venta Directa">Venta Directa</option>
+              <label class="block text-xs text-amber-400 font-semibold mb-1">Vincular Pieza Stock (Opcional)</label>
+              <select id="rebu-venta-pieza-id" onchange="alSeleccionarPiezaInventarioVenta()" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-2.5 py-2 text-xs text-white">
+                <option value="">-- Venta libre sin vincular --</option>
               </select>
             </div>
             <div>
+              <label class="block text-xs text-slate-400 mb-1">Pieza vendida / Concepto</label>
+              <input type="text" id="rebu-venta-concepto" placeholder="Ej: Venta Lámpara Fase Boomerang" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white">
+            </div>
+            <div>
+              <label class="block text-xs text-slate-400 mb-1">Cliente / Plataforma</label>
+              <input type="text" id="rebu-venta-plataforma" placeholder="Ej: Catawiki / Web CiRcA" value="Web CiRcA / Shopify" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white">
+            </div>
+            <div>
               <label class="block text-xs text-amber-400 font-semibold mb-1">Coste Adquisición (€)</label>
-              <input type="number" step="0.01" min="0" id="rebu-venta-coste" oninput="calcularPreviewVentaREBU()" placeholder="Ej: 100.00" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-right mono-num text-white focus:outline-none focus:border-amber-400">
+              <input type="number" step="0.01" min="0" id="rebu-venta-coste" oninput="calcularPreviewVentaREBU()" placeholder="100.00" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-right mono-num text-white">
             </div>
             <div>
               <label class="block text-xs text-emerald-400 font-semibold mb-1">Precio Venta Final (€)</label>
-              <input type="number" step="0.01" min="0" id="rebu-venta-precio" oninput="calcularPreviewVentaREBU()" placeholder="Ej: 221.00" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-right mono-num text-white focus:outline-none focus:border-emerald-400">
+              <input type="number" step="0.01" min="0" id="rebu-venta-precio" oninput="calcularPreviewVentaREBU()" placeholder="221.00" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-right mono-num text-white">
             </div>
           </div>
 
@@ -250,68 +302,109 @@
             </div>
             <div>
               <label class="block text-xs text-amber-400 font-semibold mb-1">Importe Total Pagado (€)</label>
-              <input type="number" step="0.01" min="0" id="rebu-compra-importe" placeholder="Ej: 180.00" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-right mono-num text-white">
+              <input type="number" step="0.01" min="0" id="rebu-compra-importe" placeholder="180.00" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-right mono-num text-white">
             </div>
             <div>
-              <label class="block text-xs text-slate-400 mb-1">Pagado desde (Haber)</label>
+              <label class="block text-xs text-slate-400 mb-1">Pagado desde / Proveedor (Haber)</label>
               <select id="rebu-compra-pago" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white">
                 <option value="572.0">572.0 - Bancos c/c (Transferencia/Tarjeta)</option>
                 <option value="570.0">570.0 - Caja, euros (Efectivo)</option>
-                <option value="551.0">551.0 - Cuenta con socios (Adelantado por Lorena)</option>
+                <option value="551.0">551.0 - Cuenta con socios (Adelantado por socia)</option>
                 <option value="400.0">400.0 - Proveedores (Pendiente de pago)</option>
               </select>
             </div>
           </div>
           <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center pt-2 gap-3">
-            <span class="text-xs text-slate-400">ℹ️ En REBU el coste íntegro se imputa a la cuenta <strong>600.1</strong> (sin IVA deducible).</span>
+            <label class="flex items-center gap-2 text-xs text-amber-300 cursor-pointer">
+              <input type="checkbox" id="rebu-compra-crear-stock" checked class="w-4 h-4 accent-amber-500">
+              Añadir también automáticamente esta pieza al <strong>Inventario REBU (En Stock)</strong>
+            </label>
             <button type="button" onclick="ejecutarAsistenteCompraREBU()" class="px-4 py-2 text-xs font-bold bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-lg shadow transition">
               ⚡ Contabilizar Compra REBU
             </button>
           </div>
         </div>
 
-        <!-- MODO 3: GASTO / COMISIÓN CON IVA GENERAL 21% -->
+        <!-- MODO 3: FACTURA DE GASTO / ACREEDOR (IVA NORMAL, INVERSIÓN SUJETO PASIVO, EXENTO, IRPF) -->
         <div id="panel-asistente-gasto_iva" class="hidden space-y-4">
-          <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-3">
             <div>
-              <label class="block text-xs text-slate-400 mb-1">Tipo de Gasto (Grupo 6)</label>
-              <select id="gasto-cuenta-debe" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white">
+              <label class="block text-xs text-amber-400 font-semibold mb-1">Seleccionar Proveedor/Acreedor</label>
+              <select id="gasto-tercero-select" onchange="alSeleccionarTerceroEnGasto()" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-2.5 py-2 text-xs text-white">
+                <option value="">-- Seleccionar de tu ficha (Opcional) --</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs text-slate-400 mb-1">Subcuenta de Gasto (Debe)</label>
+              <select id="gasto-cuenta-debe" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-2.5 py-2 text-xs text-white">
                 <option value="626.1">626.1 - Comisiones plataformas (Etsy/Catawiki/Shopify)</option>
                 <option value="624.0">624.0 - Transportes y envíos a clientes</option>
                 <option value="602.0">602.0 - Compras de embalajes y protección</option>
-                <option value="623.0">623.0 - Servicios profesionales (Gestoría / Web)</option>
+                <option value="623.0">623.0 - Servicios profesionales (Gestoría/Web/Abogado)</option>
                 <option value="629.0">629.0 - Otros servicios y suministros</option>
               </select>
             </div>
             <div>
               <label class="block text-xs text-slate-400 mb-1">Concepto / Nº Factura</label>
-              <input type="text" id="gasto-concepto" placeholder="Ej: Factura comisiones Etsy mes actual" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white">
+              <input type="text" id="gasto-concepto" placeholder="Ej: Factura comisiones Catawiki / Gestoría" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white">
             </div>
             <div>
-              <label class="block text-xs text-amber-400 font-semibold mb-1">Total Factura IVA 21% incl. (€)</label>
-              <input type="number" step="0.01" min="0" id="gasto-total-iva" placeholder="Ej: 121.00" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-right mono-num text-white">
-            </div>
-            <div>
-              <label class="block text-xs text-slate-400 mb-1">Cuenta de Pago / Acreedor (Haber)</label>
-              <select id="gasto-cuenta-haber" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white">
+              <label class="block text-xs text-slate-400 mb-1">Cuenta Pago / Acreedor (Haber)</label>
+              <select id="gasto-cuenta-haber" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-2.5 py-2 text-xs text-white">
                 <option value="572.0">572.0 - Bancos c/c</option>
                 <option value="410.1">410.1 - Acreedores plataformas</option>
-                <option value="410.2">410.2 - Acreedores transporte</option>
+                <option value="410.2">410.2 - Acreedores transporte/servicios</option>
+                <option value="400.0">400.0 - Proveedores</option>
                 <option value="551.0">551.0 - Cuenta con socios</option>
               </select>
             </div>
           </div>
-          <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center pt-2 gap-3">
-            <span class="text-xs text-slate-400">ℹ️ Desglosa automáticamente Base Imponible (Gasto) + 21% de IVA Soportado Deducible (<strong>472.21</strong>).</span>
-            <button type="button" onclick="ejecutarAsistenteGastoIVA()" class="px-4 py-2 text-xs font-bold bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-lg shadow transition">
-              ⚡ Contabilizar Gasto con IVA
+
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-3 pt-1">
+            <div>
+              <label class="block text-xs text-emerald-400 font-semibold mb-1">Base Imponible Neto (€)</label>
+              <input type="number" step="0.01" min="0" id="gasto-base" oninput="calcularPreviewGasto()" placeholder="Ej: 100.00" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-right mono-num text-white">
+            </div>
+            <div>
+              <label class="block text-xs text-amber-400 font-semibold mb-1">Tipo de IVA Fiscal</label>
+              <select id="gasto-tipo-iva" onchange="calcularPreviewGasto()" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-2.5 py-2 text-xs text-white">
+                <option value="IVA_21">IVA Normal 21%</option>
+                <option value="IVA_10">IVA Reducido 10%</option>
+                <option value="IVA_4">IVA Superreducido 4%</option>
+                <option value="ISP_21">Inversión Sujeto Pasivo (ISP 21% Intracomunitario)</option>
+                <option value="EXENTO">Exento de IVA (0%)</option>
+                <option value="REBU">Régimen REBU (IVA no desglosable)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs text-purple-300 font-semibold mb-1">Retención IRPF Factura</label>
+              <select id="gasto-irpf" onchange="calcularPreviewGasto()" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-2.5 py-2 text-xs text-white">
+                <option value="0">Sin IRPF (0%)</option>
+                <option value="15">15% IRPF Profesional (4751.0)</option>
+                <option value="7">7% IRPF Nuevo Profesional (4751.0)</option>
+                <option value="19">19% IRPF Arrendamiento (4751.0)</option>
+              </select>
+            </div>
+            <div class="bg-slate-950/90 border border-slate-800 rounded-lg p-2.5 flex flex-col justify-center text-right">
+              <span class="text-[10px] text-slate-400">Total Líquido a Pagar:</span>
+              <strong id="preview-gasto-liquido" class="mono-num text-sm text-amber-400">0,00 €</strong>
+              <span id="preview-gasto-detalle" class="text-[10px] text-slate-400 mono-num">IVA: 0,00 € | IRPF: 0,00 €</span>
+            </div>
+          </div>
+
+          <div class="flex justify-end gap-3 pt-2">
+            <button type="button" onclick="ejecutarAsistenteGastoIVA(false)" class="px-4 py-2 text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg border border-slate-700">
+              ↓ Pasar al editor
+            </button>
+            <button type="button" onclick="ejecutarAsistenteGastoIVA(true)" class="px-4 py-2 text-xs font-bold bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-lg shadow transition">
+              ⚡ Contabilizar Factura de Gasto
             </button>
           </div>
         </div>
       </div>
       
-      <!-- Tarjeta: Nuevo Asiento Contable Manual -->
-      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+      <!-- Tarjeta: Nuevo Asiento Contable Manual (No se imprime en PDF) -->
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 no-print">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 pb-4 border-b border-slate-100 gap-2">
           <div>
             <h2 class="text-lg font-bold text-slate-900">Editor Manual de Asientos del Libro Diario</h2>
@@ -323,15 +416,15 @@
         <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
           <div>
             <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Fecha del Asiento</label>
-            <input type="date" id="asiento-fecha" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-slate-900 focus:outline-none">
+            <input type="date" id="asiento-fecha" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm">
           </div>
           <div class="md:col-span-2">
             <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Concepto / Descripción de la operación</label>
-            <input type="text" id="asiento-concepto" placeholder="Ej: Aportación inicial / Liquidación / Factura..." class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-slate-900 focus:outline-none">
+            <input type="text" id="asiento-concepto" placeholder="Ej: Aportación inicial / Liquidación / Factura..." class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm">
           </div>
           <div>
-            <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Doc. / Plataforma Ref.</label>
-            <input type="text" id="asiento-ref" placeholder="Ej: Etsy / Fact. 001" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-slate-900 focus:outline-none">
+            <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Doc. / Tercero / Ref.</label>
+            <input type="text" id="asiento-ref" placeholder="Ej: Etsy / Fact. 001" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm">
           </div>
         </div>
 
@@ -349,7 +442,7 @@
             <tfoot>
               <tr class="bg-slate-50 font-bold border-t-2 border-slate-300 text-sm">
                 <td class="py-3 px-3 flex justify-between items-center">
-                  <button type="button" onclick="agregarLineaApunte()" class="text-xs bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-semibold px-3 py-1.5 rounded-md shadow-sm transition">
+                  <button type="button" onclick="agregarLineaApunte()" class="text-xs bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-semibold px-3 py-1.5 rounded-md shadow-sm">
                     + Añadir línea de apunte
                   </button>
                   <span class="text-slate-600">TOTALES DEL ASIENTO:</span>
@@ -367,27 +460,32 @@
         <div class="mt-6 flex flex-col sm:flex-row justify-between items-center gap-4 pt-4 border-t border-slate-100">
           <div id="mensaje-error" class="text-xs text-red-600 font-medium hidden"></div>
           <div class="flex gap-3 ml-auto">
-            <button type="button" onclick="reiniciarFormularioAsiento()" class="px-4 py-2 text-xs font-semibold text-slate-600 hover:text-slate-900 border border-slate-300 rounded-lg transition">
+            <button type="button" onclick="reiniciarFormularioAsiento()" class="px-4 py-2 text-xs font-semibold text-slate-600 hover:text-slate-900 border border-slate-300 rounded-lg">
               Limpiar formulario
             </button>
-            <button type="button" onclick="guardarAsiento()" class="px-5 py-2 text-xs font-bold text-white bg-slate-900 hover:bg-slate-800 rounded-lg shadow transition">
+            <button type="button" onclick="guardarAsiento()" class="px-5 py-2 text-xs font-bold text-white bg-slate-900 hover:bg-slate-800 rounded-lg shadow">
               Contabilizar Asiento en el Diario
             </button>
           </div>
         </div>
       </div>
 
-      <!-- Tarjeta: Histórico del Libro Diario -->
+      <!-- Tarjeta: Histórico del Libro Diario (Se imprime en PDF) -->
       <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
           <div>
-            <h2 class="text-lg font-bold text-slate-900">Libro Diario Oficial</h2>
+            <h2 class="text-lg font-bold text-slate-900">Libro Diario Oficial — Ágata Michi, S.L.U.</h2>
             <p class="text-xs text-slate-500">Registro cronológico de todas las operaciones contabilizadas de CiRcA by R.B.</p>
           </div>
-          <div class="flex items-center gap-4 bg-slate-100 px-4 py-2 rounded-lg text-xs">
-            <div>Total Debe Diario: <strong id="diario-acumulado-debe" class="mono-num text-slate-900">0,00 €</strong></div>
-            <span class="text-slate-300">|</span>
-            <div>Total Haber Diario: <strong id="diario-acumulado-haber" class="mono-num text-slate-900">0,00 €</strong></div>
+          <div class="flex flex-wrap items-center gap-3">
+            <div class="flex items-center gap-4 bg-slate-100 px-4 py-2 rounded-lg text-xs">
+              <div>Total Debe: <strong id="diario-acumulado-debe" class="mono-num text-slate-900">0,00 €</strong></div>
+              <span class="text-slate-300">|</span>
+              <div>Total Haber: <strong id="diario-acumulado-haber" class="mono-num text-slate-900">0,00 €</strong></div>
+            </div>
+            <button onclick="imprimirInformeEspecifico('Libro Diario Oficial — CiRcA by R.B.')" class="no-print text-xs bg-slate-900 hover:bg-slate-800 text-white font-semibold px-3.5 py-2 rounded-lg transition">
+              🖨️ Imprimir Libro Diario PDF
+            </button>
           </div>
         </div>
 
@@ -396,94 +494,46 @@
 
     </section>
 
-    <!-- ================= MÓDULO 2: PLAN DE CUENTAS ================= -->
-    <section id="vista-cuentas" class="hidden space-y-6">
-      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
-          <div>
-            <h2 class="text-lg font-bold text-slate-900">Cuadro de Cuentas PGC adaptado a CiRcA by R.B.</h2>
-            <p class="text-xs text-slate-500">Incluye las subcuentas específicas para el Régimen Especial de Bienes Usados (REBU) y plataformas e-commerce.</p>
-          </div>
-        </div>
-
-        <div class="bg-slate-50 p-4 rounded-lg border border-slate-200 mb-6 grid grid-cols-1 md:grid-cols-4 gap-3 items-end">
-          <div>
-            <label class="block text-xs font-semibold text-slate-600 mb-1">Código Subcuenta (Ej: 430.5)</label>
-            <input type="text" id="nueva-cuenta-codigo" placeholder="Código PGC" class="w-full border border-slate-300 rounded px-3 py-1.5 text-sm">
-          </div>
-          <div>
-            <label class="block text-xs font-semibold text-slate-600 mb-1">Nombre de la Cuenta</label>
-            <input type="text" id="nueva-cuenta-nombre" placeholder="Ej: Clientes Wallapop" class="w-full border border-slate-300 rounded px-3 py-1.5 text-sm">
-          </div>
-          <div>
-            <label class="block text-xs font-semibold text-slate-600 mb-1">Masa Patrimonial (Para Balances)</label>
-            <select id="nueva-cuenta-tipo" class="w-full border border-slate-300 rounded px-3 py-1.5 text-sm bg-white">
-              <option value="Activo">Activo (Bienes y Derechos)</option>
-              <option value="Pasivo">Pasivo (Deudas y Obligaciones)</option>
-              <option value="Patrimonio Neto">Patrimonio Neto (Capital y Reservas)</option>
-              <option value="Ingreso">Ingreso (Grupo 7 - PyG)</option>
-              <option value="Gasto">Gasto (Grupo 6 - PyG)</option>
-            </select>
-          </div>
-          <div>
-            <button onclick="crearNuevaCuenta()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs py-2 px-4 rounded transition">
-              + Añadir Subcuenta al PGC
-            </button>
-          </div>
-        </div>
-
-        <div class="overflow-x-auto">
-          <table class="w-full text-left border-collapse text-sm">
-            <thead>
-              <tr class="border-b border-slate-200 text-xs uppercase text-slate-500 bg-slate-50">
-                <th class="py-2.5 px-4">Código</th>
-                <th class="py-2.5 px-4">Nombre de la Subcuenta</th>
-                <th class="py-2.5 px-4">Masa Contable / Destino</th>
-              </tr>
-            </thead>
-            <tbody id="tabla-plan-cuentas" class="divide-y divide-slate-100"></tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= MÓDULO 3: LIBRO MAYOR Y SUMAS Y SALDOS ================= -->
+    <!-- ================= MÓDULO 2: LIBRO MAYOR Y SUMAS Y SALDOS ================= -->
     <section id="vista-mayor" class="hidden space-y-8">
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 no-print">
         <div class="lg:col-span-2 bg-slate-900 text-white p-6 rounded-xl shadow-md border border-slate-800 flex flex-col justify-between">
           <div class="flex flex-wrap justify-between items-start mb-4 gap-2">
             <div>
-              <span class="text-[11px] uppercase tracking-widest text-amber-400 font-bold">Control Fiscal en Vivo (Modelo 303)</span>
-              <h2 class="text-lg font-bold">Posición de IVA (REBU + Régimen General)</h2>
+              <span class="text-[11px] uppercase tracking-widest text-amber-400 font-bold">Control Fiscal en Vivo (Modelo 303 + Modelo 111/115)</span>
+              <h2 class="text-lg font-bold">Posición de IVA (REBU + General + ISP) y Retenciones IRPF</h2>
             </div>
             <div class="flex items-center gap-2">
               <span id="badge-resultado-iva" class="text-xs px-3 py-1 rounded-full bg-slate-800 text-slate-300 font-semibold">Sin actividad</span>
-              <button onclick="generarAsientoLiquidacionIVA()" class="text-xs bg-slate-800 hover:bg-slate-700 border border-slate-700 text-amber-400 font-semibold px-3 py-1 rounded-lg transition">
+              <button onclick="generarAsientoLiquidacionIVA()" class="text-xs bg-slate-800 hover:bg-slate-700 border border-slate-700 text-amber-400 font-semibold px-3 py-1 rounded-lg">
                 Liquidar IVA (303)
               </button>
             </div>
           </div>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 bg-slate-950/70 p-4 rounded-lg border border-slate-800 text-xs">
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-slate-950/70 p-4 rounded-lg border border-slate-800 text-xs">
             <div>
-              <span class="text-slate-400 block mb-1">IVA Repercutido (477.1 + 477.21)</span>
-              <strong id="mayor-iva-repercutido" class="mono-num text-base text-amber-400">0,00 €</strong>
+              <span class="text-slate-400 block mb-1">IVA Repercutido Total</span>
+              <strong id="mayor-iva-repercutido" class="mono-num text-sm text-amber-400">0,00 €</strong>
             </div>
             <div>
-              <span class="text-slate-400 block mb-1">IVA Soportado Deducible (472.21)</span>
-              <strong id="mayor-iva-soportado" class="mono-num text-base text-emerald-400">0,00 €</strong>
+              <span class="text-slate-400 block mb-1">IVA Soportado Deduc.</span>
+              <strong id="mayor-iva-soportado" class="mono-num text-sm text-emerald-400">0,00 €</strong>
             </div>
-            <div class="border-t sm:border-t-0 sm:border-l border-slate-800 pt-2 sm:pt-0 sm:pl-4">
-              <span class="text-slate-400 block mb-1">Diferencia (A ingresar / A compensar)</span>
-              <strong id="mayor-iva-diferencia" class="mono-num text-base text-white">0,00 €</strong>
+            <div>
+              <span class="text-slate-400 block mb-1">Diferencia IVA (303)</span>
+              <strong id="mayor-iva-diferencia" class="mono-num text-sm text-white">0,00 €</strong>
+            </div>
+            <div class="border-l border-slate-800 pl-3">
+              <span class="text-purple-300 block mb-1">IRPF Retenido (4751)</span>
+              <strong id="mayor-irpf-retenido" class="mono-num text-sm text-purple-300">0,00 €</strong>
             </div>
           </div>
         </div>
 
-        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between space-y-4">
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between space-y-3">
           <div>
             <h3 class="text-sm font-bold text-slate-900 mb-1">Filtrar Extracto del Mayor</h3>
-            <p class="text-xs text-slate-500 mb-3">Consulta una subcuenta concreta o filtra por fechas.</p>
             <label class="block text-xs font-semibold text-slate-600 mb-1">Subcuenta Contable</label>
             <select id="filtro-mayor-cuenta" onchange="renderizarModuloMayor()" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-xs bg-white">
               <option value="TODAS">-- Ver todas las cuentas con movimientos --</option>
@@ -505,15 +555,21 @@
         </div>
       </div>
 
+      <!-- Balance de Comprobación de Sumas y Saldos -->
       <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
           <div>
             <h2 class="text-lg font-bold text-slate-900">Balance de Comprobación de Sumas y Saldos</h2>
-            <p class="text-xs text-slate-500">Resumen oficial de todas las subcuentas activas. Haz clic en cualquier cuenta para ver su ficha del Mayor.</p>
+            <p class="text-xs text-slate-500">Resumen oficial de todas las subcuentas activas. Haz clic en una cuenta para filtrar su Mayor.</p>
           </div>
-          <button onclick="exportarSumasYSaldosCSV()" class="text-xs bg-slate-900 hover:bg-slate-800 text-white font-semibold px-3.5 py-2 rounded-lg transition">
-            ↓ Exportar Sumas y Saldos (CSV / Excel)
-          </button>
+          <div class="flex gap-2 no-print">
+            <button onclick="imprimirInformeEspecifico('Balance de Sumas y Saldos y Libro Mayor — CiRcA by R.B.')" class="text-xs bg-slate-800 hover:bg-slate-700 text-white font-semibold px-3.5 py-2 rounded-lg transition">
+              🖨️ Imprimir Mayor / Sumas PDF
+            </button>
+            <button onclick="exportarSumasYSaldosCSV()" class="text-xs bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-3.5 py-2 rounded-lg transition">
+              ↓ Exportar CSV
+            </button>
+          </div>
         </div>
 
         <div class="overflow-x-auto">
@@ -542,15 +598,15 @@
 
     </section>
 
-    <!-- ================= MÓDULO 4: CUENTA DE PÉRDIDAS Y GANANCIAS (PyG) ================= -->
+    <!-- ================= MÓDULO 3: CUENTA DE PÉRDIDAS Y GANANCIAS (PyG) ================= -->
     <section id="vista-pyg" class="hidden space-y-8">
 
-      <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+      <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 no-print">
         <div>
           <span class="text-[11px] uppercase tracking-widest text-slate-400 font-bold">Cuentas Anuales / Trimestrales PGC</span>
           <h2 class="text-lg font-bold text-slate-900">Cuenta de Pérdidas y Ganancias Analítica (CiRcA by R.B.)</h2>
         </div>
-        <div class="flex flex-wrap items-end gap-3 text-xs">
+        <div class="flex flex-wrap items-end gap-2.5 text-xs">
           <div>
             <label class="block text-[11px] font-semibold text-slate-500 mb-1">Desde fecha</label>
             <input type="date" id="pyg-desde" onchange="renderizarModuloPyG()" class="border border-slate-300 rounded-lg px-2.5 py-1.5">
@@ -563,16 +619,16 @@
             <label class="block text-[11px] font-semibold text-slate-500 mb-1">Simular Impuesto Sociedades (IS)</label>
             <select id="pyg-tasa-impuesto" onchange="renderizarModuloPyG()" class="border border-slate-300 rounded-lg px-2.5 py-1.5 bg-white font-semibold">
               <option value="0">0% (Resultado antes de impuestos)</option>
-              <option value="23" selected>23% (Tipo reducido PYME / Microempresa)</option>
-              <option value="20">20% (Tipo microempresa tramo reducido)</option>
+              <option value="23" selected>23% (Tipo PYME / Microempresa)</option>
+              <option value="20">20% (Microempresa reducido)</option>
               <option value="25">25% (Tipo general IS)</option>
             </select>
           </div>
-          <button onclick="limpiarFiltrosPyG()" class="px-3 py-1.5 border border-slate-300 rounded-lg text-slate-600 hover:text-slate-900 font-medium">
-            Todo el año
+          <button onclick="imprimirInformeEspecifico('Cuenta de Pérdidas y Ganancias Oficial — CiRcA by R.B.')" class="px-3.5 py-1.5 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-lg">
+            🖨️ Imprimir PyG PDF
           </button>
-          <button onclick="exportarPyGCSV()" class="px-3.5 py-1.5 bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-lg transition">
-            ↓ Exportar PyG (CSV)
+          <button onclick="exportarPyGCSV()" class="px-3.5 py-1.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-lg">
+            ↓ CSV
           </button>
         </div>
       </div>
@@ -628,15 +684,15 @@
 
     </section>
 
-    <!-- ================= MÓDULO 5: BALANCE DE SITUACIÓN OFICIAL ================= -->
+    <!-- ================= MÓDULO 4: BALANCE DE SITUACIÓN OFICIAL ================= -->
     <section id="vista-balance" class="hidden space-y-8">
 
-      <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+      <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 no-print">
         <div>
           <span class="text-[11px] uppercase tracking-widest text-slate-400 font-bold">Estado Patrimonial PGC PYMES</span>
           <h2 class="text-lg font-bold text-slate-900">Balance de Situación Oficial (Ágata Michi, S.L.U.)</h2>
         </div>
-        <div class="flex flex-wrap items-end gap-3 text-xs">
+        <div class="flex flex-wrap items-end gap-2.5 text-xs">
           <div>
             <label class="block text-[11px] font-semibold text-slate-500 mb-1">Fecha de corte del Balance</label>
             <input type="date" id="balance-fecha-corte" onchange="renderizarModuloBalance()" class="border border-slate-300 rounded-lg px-2.5 py-1.5">
@@ -644,8 +700,11 @@
           <button onclick="document.getElementById('balance-fecha-corte').value=''; renderizarModuloBalance();" class="px-3 py-1.5 border border-slate-300 rounded-lg text-slate-600 hover:text-slate-900 font-medium">
             Ver acumulado total
           </button>
-          <button onclick="exportarBalanceCSV()" class="px-3.5 py-1.5 bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-lg transition">
-            ↓ Exportar Balance (CSV)
+          <button onclick="imprimirInformeEspecifico('Balance de Situación Oficial — Ágata Michi, S.L.U.')" class="px-3.5 py-1.5 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-lg">
+            🖨️ Imprimir Balance PDF
+          </button>
+          <button onclick="exportarBalanceCSV()" class="px-3.5 py-1.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-lg">
+            ↓ CSV
           </button>
         </div>
       </div>
@@ -703,12 +762,269 @@
 
     </section>
 
+    <!-- ================= MÓDULO 5: PROVEEDORES, ACREEDORES Y CLIENTES (TERCEROS) ================= -->
+    <section id="vista-terceros" class="hidden space-y-6">
+      
+      <!-- Formulario de Alta de Tercero -->
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 no-print">
+        <div class="mb-4 pb-3 border-b border-slate-100">
+          <span class="text-[11px] uppercase tracking-widest text-amber-600 font-bold">Maestro de Terceros y Configuración Fiscal</span>
+          <h2 class="text-lg font-bold text-slate-900">Registrar Proveedor, Acreedor o Cliente</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+          <div>
+            <label class="block font-semibold text-slate-600 mb-1">Tipo de Tercero</label>
+            <select id="tercero-tipo" class="w-full border border-slate-300 rounded-lg px-3 py-2 bg-white">
+              <option value="Proveedor">Proveedor (Piezas / Embalajes - 400)</option>
+              <option value="Acreedor">Acreedor (Plataformas / Envíos / Prof. - 410)</option>
+              <option value="Cliente">Cliente (Comprador - 430)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-semibold text-slate-600 mb-1">Nombre / Razón Social</label>
+            <input type="text" id="tercero-nombre" placeholder="Ej: Catawiki B.V. / Gestoría..." class="w-full border border-slate-300 rounded-lg px-3 py-2">
+          </div>
+          <div>
+            <label class="block font-semibold text-slate-600 mb-1">NIF / CIF / VAT Intracomunitario</label>
+            <input type="text" id="tercero-nif" placeholder="Ej: NL850192837B01 / B12345678" class="w-full border border-slate-300 rounded-lg px-3 py-2 mono-num">
+          </div>
+          <div>
+            <label class="block font-semibold text-slate-600 mb-1">Subcuenta PGC Vinculada</label>
+            <select id="tercero-cuenta" class="w-full border border-slate-300 rounded-lg px-3 py-2 bg-white"></select>
+          </div>
+
+          <div>
+            <label class="block font-semibold text-slate-600 mb-1">Forma de Pago Habitual</label>
+            <select id="tercero-pago" class="w-full border border-slate-300 rounded-lg px-3 py-2 bg-white">
+              <option value="Transferencia Bancaria">Transferencia Bancaria (572.0)</option>
+              <option value="Domiciliación Bancaria">Domiciliación Bancaria (572.0)</option>
+              <option value="Tarjeta / TPV">Tarjeta / TPV (572.0)</option>
+              <option value="Stripe / PayPal">Pasarela Stripe / PayPal (572.1)</option>
+              <option value="Compensación Plataforma">Compensación en liquidación plataforma</option>
+              <option value="Efectivo">Efectivo Caja (570.0)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-semibold text-slate-600 mb-1">Régimen de IVA por Defecto</label>
+            <select id="tercero-iva" class="w-full border border-slate-300 rounded-lg px-3 py-2 bg-white font-semibold text-slate-900">
+              <option value="IVA_21">IVA Normal General (21%)</option>
+              <option value="IVA_10">IVA Reducido (10%)</option>
+              <option value="IVA_4">IVA Superreducido (4%)</option>
+              <option value="ISP_21">Inversión del Sujeto Pasivo (ISP 21% UE)</option>
+              <option value="REBU">REBU (Régimen Especial Bienes Usados)</option>
+              <option value="EXENTO">Exento de IVA (0%)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-semibold text-slate-600 mb-1">Retención IRPF en Factura</label>
+            <select id="tercero-irpf" class="w-full border border-slate-300 rounded-lg px-3 py-2 bg-white">
+              <option value="0">No aplica IRPF (0%)</option>
+              <option value="15">Sí — 15% IRPF Profesional (4751.0)</option>
+              <option value="7">Sí — 7% IRPF Nuevo Autónomo (4751.0)</option>
+              <option value="19">Sí — 19% IRPF Alquileres (4751.0)</option>
+            </select>
+          </div>
+          <div class="flex items-end">
+            <button onclick="guardarTercero()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded-lg shadow transition">
+              + Guardar Ficha de Tercero
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Listado de Terceros -->
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-3">
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">Directorio Fiscal de Proveedores, Acreedores y Clientes</h3>
+            <p class="text-xs text-slate-500">Se sincroniza automáticamente con el Asistente de Facturas del Libro Diario.</p>
+          </div>
+          <button onclick="imprimirInformeEspecifico('Directorio de Proveedores, Acreedores y Clientes — CiRcA by R.B.')" class="no-print text-xs bg-slate-900 hover:bg-slate-800 text-white font-semibold px-3.5 py-2 rounded-lg">
+            🖨️ Imprimir Directorio PDF
+          </button>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead>
+              <tr class="bg-slate-50 border-b border-slate-200 uppercase text-slate-500">
+                <th class="py-2.5 px-3">Tipo</th>
+                <th class="py-2.5 px-3">Nombre / Razón Social</th>
+                <th class="py-2.5 px-3">NIF / VAT</th>
+                <th class="py-2.5 px-3">Cuenta PGC</th>
+                <th class="py-2.5 px-3">Forma de Pago</th>
+                <th class="py-2.5 px-3">Régimen IVA</th>
+                <th class="py-2.5 px-3 text-center">IRPF</th>
+                <th class="py-2.5 px-3 text-center no-print">Acción</th>
+              </tr>
+            </thead>
+            <tbody id="tabla-terceros" class="divide-y divide-slate-100"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MÓDULO 6: INVENTARIO DE ARTÍCULOS Y LIBRO REGISTRO REBU ================= -->
+    <section id="vista-inventario" class="hidden space-y-6">
+
+      <!-- KPIs de Stock Vintage -->
+      <div class="grid grid-cols-1 sm:grid-cols-4 gap-4">
+        <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+          <span class="text-xs text-slate-400 font-semibold uppercase block">Piezas En Stock</span>
+          <strong id="kpi-inv-unidades" class="text-2xl font-bold mono-num text-slate-900">0</strong>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+          <span class="text-xs text-slate-400 font-semibold uppercase block">Valor Coste Stock REBU (300.1)</span>
+          <strong id="kpi-inv-coste" class="text-2xl font-bold mono-num text-blue-800">0,00 €</strong>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200">
+          <span class="text-xs text-slate-400 font-semibold uppercase block">Valor PVP Estimado Stock</span>
+          <strong id="kpi-inv-pvp" class="text-2xl font-bold mono-num text-emerald-700">0,00 €</strong>
+        </div>
+        <div class="bg-slate-900 text-white p-4 rounded-xl shadow-md">
+          <span class="text-xs text-amber-400 font-semibold uppercase block">Piezas Vendidas (REBU)</span>
+          <strong id="kpi-inv-vendidas" class="text-2xl font-bold mono-num text-white">0</strong>
+        </div>
+      </div>
+
+      <!-- Formulario de Alta de Pieza en Inventario -->
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 no-print">
+        <div class="mb-4 pb-3 border-b border-slate-100">
+          <span class="text-[11px] uppercase tracking-widest text-amber-600 font-bold">Catálogo y Libro Registro Oficial Bienes Usados (REBU)</span>
+          <h2 class="text-lg font-bold text-slate-900">Registrar Pieza Vintage en Inventario</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3 text-xs items-end">
+          <div>
+            <label class="block font-semibold text-slate-600 mb-1">Ref. / SKU</label>
+            <input type="text" id="inv-sku" placeholder="Ej: CIRCA-001" class="w-full border border-slate-300 rounded-lg px-3 py-2 mono-num">
+          </div>
+          <div class="lg:col-span-2">
+            <label class="block font-semibold text-slate-600 mb-1">Nombre / Descripción de la Pieza</label>
+            <input type="text" id="inv-nombre" placeholder="Ej: Lámpara Fase Boomerang años 70" class="w-full border border-slate-300 rounded-lg px-3 py-2">
+          </div>
+          <div>
+            <label class="block font-semibold text-slate-600 mb-1">Estilo / Época</label>
+            <select id="inv-epoca" class="w-full border border-slate-300 rounded-lg px-3 py-2 bg-white">
+              <option value="Space Age">Space Age</option>
+              <option value="Mid-Century">Mid-Century Modern</option>
+              <option value="Pop Art">Pop Art</option>
+              <option value="Art Déco">Art Déco</option>
+              <option value="Industrial / Otros">Industrial / Otros</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-semibold text-slate-600 mb-1">Coste Compra REBU (€)</label>
+            <input type="number" step="0.01" min="0" id="inv-coste" placeholder="100.00" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-right mono-num">
+          </div>
+          <div>
+            <label class="block font-semibold text-slate-600 mb-1">PVP Estimado (€)</label>
+            <input type="number" step="0.01" min="0" id="inv-pvp" placeholder="250.00" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-right mono-num">
+          </div>
+        </div>
+        <div class="mt-4 flex justify-between items-center pt-3 border-t border-slate-100">
+          <span class="text-xs text-slate-500">💡 Desde la tabla inferior puedes contabilizar la venta REBU de cualquier pieza en 1 clic.</span>
+          <button onclick="guardarArticuloInventario()" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold py-2 px-5 rounded-lg shadow transition">
+            + Añadir Pieza al Inventario
+          </button>
+        </div>
+      </div>
+
+      <!-- Tabla del Inventario / Libro Registro REBU -->
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-3">
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">Inventario de Artículos y Libro Registro REBU</h3>
+            <p class="text-xs text-slate-500">Control de costes de adquisición, estado de stock y márgenes fiscales REBU.</p>
+          </div>
+          <button onclick="imprimirInformeEspecifico('Inventario y Libro Registro Oficial REBU — CiRcA by R.B.')" class="no-print text-xs bg-slate-900 hover:bg-slate-800 text-white font-semibold px-3.5 py-2 rounded-lg">
+            🖨️ Imprimir Inventario REBU PDF
+          </button>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead>
+              <tr class="bg-slate-50 border-b border-slate-200 uppercase text-slate-500">
+                <th class="py-2.5 px-3">SKU</th>
+                <th class="py-2.5 px-3">Pieza Vintage</th>
+                <th class="py-2.5 px-3">Época</th>
+                <th class="py-2.5 px-3">F. Alta</th>
+                <th class="py-2.5 px-3 text-right">Coste REBU</th>
+                <th class="py-2.5 px-3 text-right">PVP / Venta Real</th>
+                <th class="py-2.5 px-3 text-center">Estado</th>
+                <th class="py-2.5 px-3 text-center no-print">Acción Contable</th>
+              </tr>
+            </thead>
+            <tbody id="tabla-inventario" class="divide-y divide-slate-100"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MÓDULO 7: PLAN DE CUENTAS (PGC) ================= -->
+    <section id="vista-cuentas" class="hidden space-y-6">
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
+          <div>
+            <h2 class="text-lg font-bold text-slate-900">Cuadro de Cuentas PGC adaptado a CiRcA by R.B.</h2>
+            <p class="text-xs text-slate-500">Incluye subcuentas para REBU, Inversión del Sujeto Pasivo (ISP) y Retenciones IRPF.</p>
+          </div>
+          <button onclick="imprimirInformeEspecifico('Cuadro de Cuentas PGC — Ágata Michi, S.L.U.')" class="no-print text-xs bg-slate-900 hover:bg-slate-800 text-white font-semibold px-3.5 py-2 rounded-lg">
+            🖨️ Imprimir Plan de Cuentas PDF
+          </button>
+        </div>
+
+        <div class="bg-slate-50 p-4 rounded-lg border border-slate-200 mb-6 grid grid-cols-1 md:grid-cols-4 gap-3 items-end no-print">
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Código Subcuenta (Ej: 430.5)</label>
+            <input type="text" id="nueva-cuenta-codigo" placeholder="Código PGC" class="w-full border border-slate-300 rounded px-3 py-1.5 text-sm">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Nombre de la Cuenta</label>
+            <input type="text" id="nueva-cuenta-nombre" placeholder="Ej: Clientes Wallapop" class="w-full border border-slate-300 rounded px-3 py-1.5 text-sm">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1">Masa Patrimonial (Para Balances)</label>
+            <select id="nueva-cuenta-tipo" class="w-full border border-slate-300 rounded px-3 py-1.5 text-sm bg-white">
+              <option value="Activo">Activo (Bienes y Derechos)</option>
+              <option value="Pasivo">Pasivo (Deudas y Obligaciones)</option>
+              <option value="Patrimonio Neto">Patrimonio Neto (Capital y Reservas)</option>
+              <option value="Ingreso">Ingreso (Grupo 7 - PyG)</option>
+              <option value="Gasto">Gasto (Grupo 6 - PyG)</option>
+            </select>
+          </div>
+          <div>
+            <button onclick="crearNuevaCuenta()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs py-2 px-4 rounded transition">
+              + Añadir Subcuenta al PGC
+            </button>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-sm">
+            <thead>
+              <tr class="border-b border-slate-200 text-xs uppercase text-slate-500 bg-slate-50">
+                <th class="py-2.5 px-4">Código</th>
+                <th class="py-2.5 px-4">Nombre de la Subcuenta</th>
+                <th class="py-2.5 px-4">Masa Contable / Destino</th>
+              </tr>
+            </thead>
+            <tbody id="tabla-plan-cuentas" class="divide-y divide-slate-100"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <!-- ================= LÓGICA JAVASCRIPT DEL ERP + MOTOR CLOUD GITHUB + PWA ================= -->
+  <!-- ================= LÓGICA JAVASCRIPT DEL ERP ================= -->
   <script>
     const STORAGE_CUENTAS = 'circa_erp_cuentas_v1';
     const STORAGE_ASIENTOS = 'circa_erp_asientos_v1';
+    const STORAGE_TERCEROS = 'circa_erp_terceros_v1';
+    const STORAGE_INVENTARIO = 'circa_erp_inventario_v1';
     const STORAGE_GH_CONFIG = 'circa_erp_github_config_v1';
 
     const CUENTAS_POR_DEFECTO = [
@@ -720,14 +1036,17 @@
       { codigo: '300.1', nombre: 'Existencias de piezas Vintage (REBU)', tipo: 'Activo' },
       { codigo: '400.0', nombre: 'Proveedores y anticuarios (Compras generales)', tipo: 'Pasivo' },
       { codigo: '410.1', nombre: 'Acreedores por plataformas (Etsy, Catawiki, Pamono, Shopify)', tipo: 'Pasivo' },
-      { codigo: '410.2', nombre: 'Acreedores por transporte y envíos', tipo: 'Pasivo' },
+      { codigo: '410.2', nombre: 'Acreedores por transporte y servicios profesionales', tipo: 'Pasivo' },
       { codigo: '430.1', nombre: 'Clientes Web CiRcA / Shopify', tipo: 'Activo' },
       { codigo: '430.2', nombre: 'Clientes Etsy / Catawiki / Pamono', tipo: 'Activo' },
       { codigo: '4700.0', nombre: 'H.P. Deudora por IVA (A compensar)', tipo: 'Activo' },
-      { codigo: '472.21', nombre: 'H.P. IVA Soportado Deducible (Gastos 21%)', tipo: 'Activo' },
+      { codigo: '472.21', nombre: 'H.P. IVA Soportado Deducible Régimen General', tipo: 'Activo' },
+      { codigo: '472.ISP', nombre: 'H.P. IVA Soportado Inversión Sujeto Pasivo (ISP Intracomunitario)', tipo: 'Activo' },
       { codigo: '477.1', nombre: 'H.P. IVA Repercutido sobre Margen REBU (21%)', tipo: 'Pasivo' },
       { codigo: '477.21', nombre: 'H.P. IVA Repercutido Régimen General (21%)', tipo: 'Pasivo' },
-      { codigo: '4750.0', nombre: 'H.P. Acreedora por IVA (Liquidación Trimestral)', tipo: 'Pasivo' },
+      { codigo: '477.ISP', nombre: 'H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP Intracomunitario)', tipo: 'Pasivo' },
+      { codigo: '4750.0', nombre: 'H.P. Acreedora por IVA (Liquidación Trimestral 303)', tipo: 'Pasivo' },
+      { codigo: '4751.0', nombre: 'H.P. Acreedora por retenciones practicadas IRPF (Mod. 111/115)', tipo: 'Pasivo' },
       { codigo: '551.0', nombre: 'Cuenta corriente con socios y administradores', tipo: 'Pasivo' },
       { codigo: '570.0', nombre: 'Caja, euros (Efectivo mercadillos / compras particulares)', tipo: 'Activo' },
       { codigo: '572.0', nombre: 'Bancos c/c (Cuenta Bancaria Principal)', tipo: 'Activo' },
@@ -735,7 +1054,7 @@
       { codigo: '600.1', nombre: 'Compras de piezas y mercaderías REBU (IVA incluido no deducible)', tipo: 'Gasto' },
       { codigo: '602.0', nombre: 'Compras de embalajes, cajas y material protección', tipo: 'Gasto' },
       { codigo: '610.0', nombre: 'Variación de existencias de mercaderías', tipo: 'Gasto' },
-      { codigo: '623.0', nombre: 'Servicios de profesionales independientes (Gestoría/Hosting)', tipo: 'Gasto' },
+      { codigo: '623.0', nombre: 'Servicios de profesionales independientes (Gestoría/Hosting/Legal)', tipo: 'Gasto' },
       { codigo: '624.0', nombre: 'Transportes y envíos de ventas a clientes', tipo: 'Gasto' },
       { codigo: '626.1', nombre: 'Comisiones de venta plataformas (Etsy, Catawiki, Pamono, Shopify)', tipo: 'Gasto' },
       { codigo: '629.0', nombre: 'Otros servicios y suministros operativos', tipo: 'Gasto' },
@@ -744,19 +1063,28 @@
       { codigo: '759.0', nombre: 'Ingresos por portes y envíos facturados al cliente', tipo: 'Ingreso' }
     ];
 
+    const TERCEROS_POR_DEFECTO = [
+      { id: 1, tipo: 'Acreedor', nombre: 'Catawiki B.V.', nif: 'NL850192837B01', cuentaPGC: '410.1', formaPago: 'Compensación Plataforma', regimenIVA: 'ISP_21', irpf: 0 },
+      { id: 2, tipo: 'Acreedor', nombre: 'Etsy Ireland UC', nif: 'IE9777587C', cuentaPGC: '410.1', formaPago: 'Compensación Plataforma', regimenIVA: 'ISP_21', irpf: 0 },
+      { id: 3, tipo: 'Acreedor', nombre: 'Pamono GmbH', nif: 'DE289341234', cuentaPGC: '410.1', formaPago: 'Compensación Plataforma', regimenIVA: 'ISP_21', irpf: 0 },
+      { id: 4, tipo: 'Acreedor', nombre: 'Gestoría / Asesoría Fiscal Profesional', nif: 'B00000000', cuentaPGC: '410.2', formaPago: 'Domiciliación Bancaria', regimenIVA: 'IVA_21', irpf: 15 },
+      { id: 5, tipo: 'Proveedor', nombre: 'Vendedor Particular / Anticuario (REBU)', nif: 'PARTICULAR', cuentaPGC: '400.0', formaPago: 'Transferencia Bancaria', regimenIVA: 'REBU', irpf: 0 }
+    ];
+
     let cuentas = [];
     let asientos = [];
+    let terceros = [];
+    let inventario = [];
     let ghConfig = null;
     let ultimoShaRemoto = null;
     let sincronizando = false;
     let deferredInstallPrompt = null;
+    let tabActual = 'diario';
 
-    // Registro del Service Worker (PWA) y captura del evento de instalación
+    // Registro PWA
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js').catch(err => {
-          console.warn('Aviso registro SW:', err);
-        });
+        navigator.serviceWorker.register('./sw.js').catch(() => {});
       });
     }
 
@@ -766,18 +1094,11 @@
       document.getElementById('btn-instalar-pwa').classList.remove('hidden');
     });
 
-    window.addEventListener('appinstalled', () => {
-      deferredInstallPrompt = null;
-      document.getElementById('btn-instalar-pwa').classList.add('hidden');
-    });
-
     async function instalarPWA() {
       if (!deferredInstallPrompt) return;
       deferredInstallPrompt.prompt();
       const { outcome } = await deferredInstallPrompt.userChoice;
-      if (outcome === 'accepted') {
-        document.getElementById('btn-instalar-pwa').classList.add('hidden');
-      }
+      if (outcome === 'accepted') document.getElementById('btn-instalar-pwa').classList.add('hidden');
       deferredInstallPrompt = null;
     }
 
@@ -804,6 +1125,35 @@
       }, 30000);
     });
 
+    function cargarDatosLocalStorage() {
+      const cuentasGuardadas = localStorage.getItem(STORAGE_CUENTAS);
+      if (cuentasGuardadas) {
+        cuentas = JSON.parse(cuentasGuardadas);
+        // Asegurar subcuentas nuevas de ISP e IRPF
+        CUENTAS_POR_DEFECTO.forEach(def => {
+          if (!cuentas.some(c => c.codigo === def.codigo)) cuentas.push(def);
+        });
+        localStorage.setItem(STORAGE_CUENTAS, JSON.stringify(cuentas));
+      } else {
+        cuentas = [...CUENTAS_POR_DEFECTO];
+        localStorage.setItem(STORAGE_CUENTAS, JSON.stringify(cuentas));
+      }
+
+      const asientosGuardados = localStorage.getItem(STORAGE_ASIENTOS);
+      asientos = asientosGuardados ? JSON.parse(asientosGuardados) : [];
+
+      const tercerosGuardados = localStorage.getItem(STORAGE_TERCEROS);
+      if (tercerosGuardados) {
+        terceros = JSON.parse(tercerosGuardados);
+      } else {
+        terceros = [...TERCEROS_POR_DEFECTO];
+        localStorage.setItem(STORAGE_TERCEROS, JSON.stringify(terceros));
+      }
+
+      const inventarioGuardado = localStorage.getItem(STORAGE_INVENTARIO);
+      inventario = inventarioGuardado ? JSON.parse(inventarioGuardado) : [];
+    }
+
     function refrescarTodasLasVistas() {
       reiniciarFormularioAsiento();
       renderizarLibroDiario();
@@ -812,42 +1162,44 @@
       renderizarModuloMayor();
       renderizarModuloPyG();
       renderizarModuloBalance();
+      renderizarModuloTerceros();
+      renderizarModuloInventario();
     }
 
-    function cargarDatosLocalStorage() {
-      const cuentasGuardadas = localStorage.getItem(STORAGE_CUENTAS);
-      if (cuentasGuardadas) {
-        cuentas = JSON.parse(cuentasGuardadas);
-        if (!cuentas.some(c => c.codigo === '4700.0')) {
-          cuentas.push({ codigo: '4700.0', nombre: 'H.P. Deudora por IVA (A compensar)', tipo: 'Activo' });
-          localStorage.setItem(STORAGE_CUENTAS, JSON.stringify(cuentas));
-        }
-      } else {
-        cuentas = [...CUENTAS_POR_DEFECTO];
-        localStorage.setItem(STORAGE_CUENTAS, JSON.stringify(cuentas));
-      }
+    // ================= FUNCIÓN DE IMPRESIÓN PDF OFICIAL EN TODAS LAS PESTAÑAS =================
 
-      const asientosGuardados = localStorage.getItem(STORAGE_ASIENTOS);
-      asientos = asientosGuardados ? JSON.parse(asientosGuardados) : [];
+    function imprimirInformeEspecifico(tituloInforme) {
+      document.getElementById('pdf-subtitulo-informe').textContent = tituloInforme;
+      document.getElementById('pdf-fecha-emision').textContent = new Date().toLocaleDateString('es-ES');
+      window.print();
     }
 
-    // ================= MOTOR CLOUD GITHUB REST API (UTF-8 BASE64) =================
+    function imprimirPestanaActualPDF() {
+      const titulosPorTab = {
+        'diario': 'Libro Diario Oficial — CiRcA by R.B.',
+        'mayor': 'Libro Mayor y Balance de Sumas y Saldos — CiRcA by R.B.',
+        'pyg': 'Cuenta de Pérdidas y Ganancias Oficial — CiRcA by R.B.',
+        'balance': 'Balance de Situación Oficial — Ágata Michi, S.L.U.',
+        'terceros': 'Directorio Fiscal de Proveedores, Acreedores y Clientes',
+        'inventario': 'Inventario y Libro Registro Oficial REBU — CiRcA by R.B.',
+        'cuentas': 'Cuadro de Cuentas PGC — Ágata Michi, S.L.U.'
+      };
+      imprimirInformeEspecifico(titulosPorTab[tabActual] || 'Informe Contable Oficial');
+    }
+
+    // ================= MOTOR CLOUD GITHUB REST API =================
 
     function utf8ToBase64(str) {
       const bytes = new TextEncoder().encode(str);
       let binString = '';
-      for (let i = 0; i < bytes.byteLength; i++) {
-        binString += String.fromCharCode(bytes[i]);
-      }
+      for (let i = 0; i < bytes.byteLength; i++) binString += String.fromCharCode(bytes[i]);
       return btoa(binString);
     }
 
     function base64ToUtf8(base64) {
       const binString = atob(base64.replace(/\s/g, ''));
       const bytes = new Uint8Array(binString.length);
-      for (let i = 0; i < binString.length; i++) {
-        bytes[i] = binString.charCodeAt(i);
-      }
+      for (let i = 0; i < binString.length; i++) bytes[i] = binString.charCodeAt(i);
       return new TextDecoder().decode(bytes);
     }
 
@@ -859,7 +1211,7 @@
         document.getElementById('btn-sync-ahora').classList.remove('hidden');
       } else {
         ghConfig = null;
-        actualizarIndicadorGitHub('local', 'GitHub: Modo Local');
+        actualizarIndicadorGitHub('local', 'GitHub: Local');
         document.getElementById('btn-sync-ahora').classList.add('hidden');
       }
     }
@@ -868,16 +1220,10 @@
       const dot = document.getElementById('dot-github-status');
       const label = document.getElementById('texto-github-status');
       label.textContent = texto;
-
-      if (estado === 'sincronizando') {
-        dot.className = 'w-2.5 h-2.5 rounded-full bg-amber-400 anim-sync';
-      } else if (estado === 'conectado') {
-        dot.className = 'w-2.5 h-2.5 rounded-full bg-emerald-400';
-      } else if (estado === 'error') {
-        dot.className = 'w-2.5 h-2.5 rounded-full bg-rose-500';
-      } else {
-        dot.className = 'w-2.5 h-2.5 rounded-full bg-slate-400';
-      }
+      if (estado === 'sincronizando') dot.className = 'w-2.5 h-2.5 rounded-full bg-amber-400 anim-sync';
+      else if (estado === 'conectado') dot.className = 'w-2.5 h-2.5 rounded-full bg-emerald-400';
+      else if (estado === 'error') dot.className = 'w-2.5 h-2.5 rounded-full bg-rose-500';
+      else dot.className = 'w-2.5 h-2.5 rounded-full bg-slate-400';
     }
 
     function abrirModalGitHub() {
@@ -913,24 +1259,23 @@
       const autoSync = document.getElementById('gh-autosync').checked;
 
       if (!owner || !repo || !token) {
-        mostrarFeedbackModal('⚠️ Introduce tu usuario de GitHub, el nombre del repositorio y tu Token PAT.', true);
-        return;
+        return mostrarFeedbackModal('⚠️ Introduce usuario, repositorio y Token PAT.', true);
       }
 
       ghConfig = { owner, repo, branch, path, token, autoSync };
       localStorage.setItem(STORAGE_GH_CONFIG, JSON.stringify(ghConfig));
       document.getElementById('btn-sync-ahora').classList.remove('hidden');
 
-      mostrarFeedbackModal('⏳ Verificando conexión con el repositorio de GitHub...', false);
+      mostrarFeedbackModal('⏳ Verificando conexión con GitHub...', false);
       const exito = await sincronizarDesdeGitHub(true);
       if (exito) {
-        mostrarFeedbackModal('✓ ¡Conectado y sincronizado en tiempo real con GitHub!', false);
+        mostrarFeedbackModal('✓ ¡Conectado y sincronizado en tiempo real!', false);
         setTimeout(() => cerrarModalGitHub(), 1200);
       }
     }
 
     function desconectarGitHub() {
-      if (!confirm('¿Desconectar la sincronización con GitHub en este navegador? Los datos locales seguirán intactos.')) return;
+      if (!confirm('¿Desconectar GitHub en este dispositivo?')) return;
       localStorage.removeItem(STORAGE_GH_CONFIG);
       ghConfig = null;
       ultimoShaRemoto = null;
@@ -941,42 +1286,32 @@
     async function sincronizarDesdeGitHub(mostrarMensajes = false) {
       if (!ghConfig || !ghConfig.token || sincronizando) return false;
       sincronizando = true;
-      actualizarIndicadorGitHub('sincronizando', 'Sincronizando con GitHub...');
+      actualizarIndicadorGitHub('sincronizando', 'Sincronizando...');
 
       const url = `https://api.github.com/repos/${ghConfig.owner}/${ghConfig.repo}/contents/${ghConfig.path}?ref=${ghConfig.branch}&t=${Date.now()}`;
 
       try {
         const resp = await fetch(url, {
-          headers: {
-            'Authorization': `Bearer ${ghConfig.token}`,
-            'Accept': 'application/vnd.github.v3+json'
-          },
+          headers: { 'Authorization': `Bearer ${ghConfig.token}`, 'Accept': 'application/vnd.github.v3+json' },
           cache: 'no-store'
         });
 
         if (resp.status === 404) {
           sincronizando = false;
-          const creado = await subirDatosAGitHub('Inicialización de base de datos contable CiRcA by R.B.');
-          return creado;
+          return await subirDatosAGitHub('Inicialización ERP CiRcA by R.B.');
         }
-
-        if (!resp.ok) {
-          throw new Error(`Código HTTP ${resp.status}. Verifica usuario, repositorio, rama y permisos del Token.`);
-        }
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
 
         const dataArchivo = await resp.json();
         if (dataArchivo.sha !== ultimoShaRemoto || mostrarMensajes) {
           ultimoShaRemoto = dataArchivo.sha;
-          const jsonTexto = base64ToUtf8(dataArchivo.content);
-          const contenido = JSON.parse(jsonTexto);
+          const contenido = JSON.parse(base64ToUtf8(dataArchivo.content));
 
-          if (Array.isArray(contenido.cuentas) && Array.isArray(contenido.asientos)) {
-            cuentas = contenido.cuentas;
-            asientos = contenido.asientos;
-            localStorage.setItem(STORAGE_CUENTAS, JSON.stringify(cuentas));
-            localStorage.setItem(STORAGE_ASIENTOS, JSON.stringify(asientos));
-            refrescarTodasLasVistas();
-          }
+          if (Array.isArray(contenido.cuentas)) { cuentas = contenido.cuentas; localStorage.setItem(STORAGE_CUENTAS, JSON.stringify(cuentas)); }
+          if (Array.isArray(contenido.asientos)) { asientos = contenido.asientos; localStorage.setItem(STORAGE_ASIENTOS, JSON.stringify(asientos)); }
+          if (Array.isArray(contenido.terceros)) { terceros = contenido.terceros; localStorage.setItem(STORAGE_TERCEROS, JSON.stringify(terceros)); }
+          if (Array.isArray(contenido.inventario)) { inventario = contenido.inventario; localStorage.setItem(STORAGE_INVENTARIO, JSON.stringify(inventario)); }
+          refrescarTodasLasVistas();
         }
 
         const hora = new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
@@ -985,27 +1320,22 @@
         return true;
       } catch (err) {
         sincronizando = false;
-        actualizarIndicadorGitHub('error', 'Error Sync GitHub');
-        if (mostrarMensajes) {
-          mostrarFeedbackModal(`❌ No se pudo sincronizar: ${err.message}`, true);
-        }
+        actualizarIndicadorGitHub('error', 'Error Sync');
+        if (mostrarMensajes) mostrarFeedbackModal(`❌ Error: ${err.message}`, true);
         return false;
       }
     }
 
-    async function subirDatosAGitHub(mensajeCommit = 'Actualización contable CiRcA by R.B.') {
+    async function subirDatosAGitHub(mensajeCommit = 'Actualización ERP CiRcA by R.B.') {
       if (!ghConfig || !ghConfig.token) return false;
       sincronizando = true;
-      actualizarIndicadorGitHub('sincronizando', 'Guardando en GitHub...');
+      actualizarIndicadorGitHub('sincronizando', 'Guardando Cloud...');
 
       const baseUrl = `https://api.github.com/repos/${ghConfig.owner}/${ghConfig.repo}/contents/${ghConfig.path}`;
 
       try {
         const getResp = await fetch(`${baseUrl}?ref=${ghConfig.branch}&t=${Date.now()}`, {
-          headers: {
-            'Authorization': `Bearer ${ghConfig.token}`,
-            'Accept': 'application/vnd.github.v3+json'
-          },
+          headers: { 'Authorization': `Bearer ${ghConfig.token}`, 'Accept': 'application/vnd.github.v3+json' },
           cache: 'no-store'
         });
 
@@ -1018,7 +1348,9 @@
           empresa: 'Ágata Michi, S.L.U. - CiRcA by R.B.',
           ultimaModificacion: new Date().toISOString(),
           cuentas,
-          asientos
+          asientos,
+          terceros,
+          inventario
         };
 
         const bodyPut = {
@@ -1026,10 +1358,7 @@
           content: utf8ToBase64(JSON.stringify(payloadDatos, null, 2)),
           branch: ghConfig.branch
         };
-
-        if (ultimoShaRemoto) {
-          bodyPut.sha = ultimoShaRemoto;
-        }
+        if (ultimoShaRemoto) bodyPut.sha = ultimoShaRemoto;
 
         const putResp = await fetch(baseUrl, {
           method: 'PUT',
@@ -1041,56 +1370,268 @@
           body: JSON.stringify(bodyPut)
         });
 
-        if (!putResp.ok) {
-          throw new Error(`Error al guardar en GitHub (HTTP ${putResp.status})`);
-        }
-
+        if (!putResp.ok) throw new Error(`HTTP ${putResp.status}`);
         const resultadoPut = await putResp.json();
-        if (resultadoPut.content && resultadoPut.content.sha) {
-          ultimoShaRemoto = resultadoPut.content.sha;
-        }
+        if (resultadoPut.content && resultadoPut.content.sha) ultimoShaRemoto = resultadoPut.content.sha;
 
         const hora = new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
-        actualizarIndicadorGitHub('conectado', `Guardado en Cloud (${hora})`);
+        actualizarIndicadorGitHub('conectado', `Cloud OK (${hora})`);
         sincronizando = false;
         return true;
       } catch (err) {
         sincronizando = false;
-        actualizarIndicadorGitHub('error', 'Error al subir a GitHub');
-        console.error(err);
+        actualizarIndicadorGitHub('error', 'Error Subida');
         return false;
       }
     }
 
     async function forzarSubidaAGitHub() {
-      const ok = await subirDatosAGitHub('Subida manual desde dispositivo CiRcA by R.B.');
-      if (ok) {
-        mostrarFeedbackModal('✓ Datos locales subidos correctamente al repositorio de GitHub.', false);
-      } else {
-        mostrarFeedbackModal('❌ Error al subir los datos. Revisa tus credenciales.', true);
-      }
+      const ok = await subirDatosAGitHub('Subida manual completa ERP CiRcA');
+      if (ok) mostrarFeedbackModal('✓ Datos subidos correctamente a GitHub.', false);
+      else mostrarFeedbackModal('❌ Error al subir datos.', true);
     }
 
-    // ================= LÓGICA CONTABLE CORE (DIARIO, PGC, MAYOR, PYG, BALANCE) =================
+    // ================= NAVEGACIÓN ENTRE LOS 7 MÓDULOS =================
 
     function cambiarTab(tab) {
-      const tabsActivas = ['diario', 'cuentas', 'mayor', 'pyg', 'balance'];
+      const tabsActivas = ['diario', 'mayor', 'pyg', 'balance', 'terceros', 'inventario', 'cuentas'];
       if (!tabsActivas.includes(tab)) return;
+      tabActual = tab;
 
       tabsActivas.forEach(t => {
         document.getElementById(`vista-${t}`).classList.toggle('hidden', t !== tab);
         document.getElementById(`tab-${t}`).classList.toggle('tab-active', t === tab);
       });
 
-      if (tab === 'mayor') {
-        actualizarSelectorFiltroMayor();
-        renderizarModuloMayor();
-      } else if (tab === 'pyg') {
-        renderizarModuloPyG();
-      } else if (tab === 'balance') {
-        renderizarModuloBalance();
+      if (tab === 'mayor') { actualizarSelectorFiltroMayor(); renderizarModuloMayor(); }
+      else if (tab === 'pyg') renderizarModuloPyG();
+      else if (tab === 'balance') renderizarModuloBalance();
+      else if (tab === 'terceros') renderizarModuloTerceros();
+      else if (tab === 'inventario') renderizarModuloInventario();
+    }
+
+    // ================= MÓDULO 5: GESTIÓN DE TERCEROS (PROVEEDORES, ACREEDORES, CLIENTES) =================
+
+    function renderizarModuloTerceros() {
+      // Llenar selector de cuentas de terceros (Grupos 400, 410, 430)
+      const selectCuenta = document.getElementById('tercero-cuenta');
+      if (selectCuenta) {
+        const cuentasTerceros = cuentas.filter(c => c.codigo.startsWith('40') || c.codigo.startsWith('41') || c.codigo.startsWith('43') || c.codigo.startsWith('55'));
+        selectCuenta.innerHTML = cuentasTerceros.map(c => `<option value="${c.codigo}">${c.codigo} - ${c.nombre}</option>`).join('');
+      }
+
+      // Actualizar selector de terceros en el Asistente de Gastos del Diario
+      const selectGastoTercero = document.getElementById('gasto-tercero-select');
+      if (selectGastoTercero) {
+        let html = `<option value="">-- Seleccionar Proveedor/Acreedor registrado --</option>`;
+        terceros.filter(t => t.tipo !== 'Cliente').forEach(t => {
+          html += `<option value="${t.id}">${t.nombre} (${t.nif}) — [${t.regimenIVA}]</option>`;
+        });
+        selectGastoTercero.innerHTML = html;
+      }
+
+      const tbody = document.getElementById('tabla-terceros');
+      if (terceros.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="8" class="py-6 text-center text-slate-400">No hay proveedores, acreedores ni clientes registrados.</td></tr>`;
+        return;
+      }
+
+      const etiquetasIVA = {
+        'IVA_21': '<span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-semibold">IVA Normal 21%</span>',
+        'IVA_10': '<span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-semibold">IVA Reducido 10%</span>',
+        'IVA_4': '<span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-semibold">IVA 4%</span>',
+        'ISP_21': '<span class="bg-purple-100 text-purple-900 px-2 py-0.5 rounded font-bold">Inversión Sujeto Pasivo (ISP)</span>',
+        'REBU': '<span class="bg-amber-100 text-amber-900 px-2 py-0.5 rounded font-bold">Régimen REBU</span>',
+        'EXENTO': '<span class="bg-slate-200 text-slate-700 px-2 py-0.5 rounded font-semibold">Exento (0%)</span>'
+      };
+
+      tbody.innerHTML = terceros.map(t => `
+        <tr class="hover:bg-slate-50">
+          <td class="py-2.5 px-3 font-bold text-slate-700">${t.tipo}</td>
+          <td class="py-2.5 px-3 font-semibold text-slate-900">${t.nombre}</td>
+          <td class="py-2.5 px-3 mono-num text-slate-600">${t.nif}</td>
+          <td class="py-2.5 px-3 mono-num font-bold text-slate-800">${t.cuentaPGC}</td>
+          <td class="py-2.5 px-3 text-slate-600">${t.formaPago}</td>
+          <td class="py-2.5 px-3">${etiquetasIVA[t.regimenIVA] || t.regimenIVA}</td>
+          <td class="py-2.5 px-3 text-center mono-num font-bold ${t.irpf > 0 ? 'text-rose-700' : 'text-slate-400'}">${t.irpf > 0 ? t.irpf + '%' : 'No'}</td>
+          <td class="py-2.5 px-3 text-center no-print">
+            <button onclick="eliminarTercero(${t.id})" class="text-slate-400 hover:text-red-600 font-bold">Eliminar</button>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    function guardarTercero() {
+      const tipo = document.getElementById('tercero-tipo').value;
+      const nombre = document.getElementById('tercero-nombre').value.trim();
+      const nif = document.getElementById('tercero-nif').value.trim() || 'S/N';
+      const cuentaPGC = document.getElementById('tercero-cuenta').value;
+      const formaPago = document.getElementById('tercero-pago').value;
+      const regimenIVA = document.getElementById('tercero-iva').value;
+      const irpf = parseFloat(document.getElementById('tercero-irpf').value) || 0;
+
+      if (!nombre) return alert('Introduce el nombre o razón social del tercero.');
+
+      terceros.push({ id: Date.now(), tipo, nombre, nif, cuentaPGC, formaPago, regimenIVA, irpf });
+      localStorage.setItem(STORAGE_TERCEROS, JSON.stringify(terceros));
+
+      document.getElementById('tercero-nombre').value = '';
+      document.getElementById('tercero-nif').value = '';
+      renderizarModuloTerceros();
+
+      if (ghConfig && ghConfig.token && ghConfig.autoSync) {
+        subirDatosAGitHub(`Alta de tercero: ${nombre}`);
       }
     }
+
+    function eliminarTercero(id) {
+      if (!confirm('¿Eliminar esta ficha de tercero?')) return;
+      terceros = terceros.filter(t => t.id !== id);
+      localStorage.setItem(STORAGE_TERCEROS, JSON.stringify(terceros));
+      renderizarModuloTerceros();
+      if (ghConfig && ghConfig.token && ghConfig.autoSync) subirDatosAGitHub('Baja de tercero');
+    }
+
+    // Autocompletado fiscal cuando seleccionas un Proveedor/Acreedor en el Asistente de Gastos
+    function alSeleccionarTerceroEnGasto() {
+      const id = parseInt(document.getElementById('gasto-tercero-select').value);
+      const t = terceros.find(x => x.id === id);
+      if (!t) return;
+
+      document.getElementById('gasto-tipo-iva').value = t.regimenIVA;
+      document.getElementById('gasto-irpf').value = String(t.irpf || 0);
+      document.getElementById('gasto-cuenta-haber').value = t.cuentaPGC;
+      document.getElementById('gasto-concepto').value = `Factura ${t.nombre} (${t.nif})`;
+
+      if (t.cuentaPGC === '410.1') document.getElementById('gasto-cuenta-debe').value = '626.1';
+      else if (t.irpf > 0) document.getElementById('gasto-cuenta-debe').value = '623.0';
+
+      calcularPreviewGasto();
+    }
+
+    // ================= MÓDULO 6: INVENTARIO Y LIBRO REGISTRO REBU =================
+
+    function renderizarModuloInventario() {
+      const enStock = inventario.filter(i => i.estado === 'En Stock');
+      const vendidas = inventario.filter(i => i.estado === 'Vendido');
+
+      const sumaCosteStock = enStock.reduce((acc, i) => acc + (i.coste || 0), 0);
+      const sumaPvpStock = enStock.reduce((acc, i) => acc + (i.pvpEstimado || 0), 0);
+
+      document.getElementById('kpi-inv-unidades').textContent = enStock.length;
+      document.getElementById('kpi-inv-coste').textContent = formatearMoneda(sumaCosteStock);
+      document.getElementById('kpi-inv-pvp').textContent = formatearMoneda(sumaPvpStock);
+      document.getElementById('kpi-inv-vendidas').textContent = vendidas.length;
+
+      // Actualizar selector de piezas en el Asistente de Venta REBU del Diario
+      const selectVentaPieza = document.getElementById('rebu-venta-pieza-id');
+      if (selectVentaPieza) {
+        let html = `<option value="">-- Venta libre sin vincular --</option>`;
+        enStock.forEach(p => {
+          html += `<option value="${p.id}">[${p.sku}] ${p.nombre} (Coste: ${formatearMoneda(p.coste)})</option>`;
+        });
+        selectVentaPieza.innerHTML = html;
+      }
+
+      const tbody = document.getElementById('tabla-inventario');
+      if (inventario.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="8" class="py-8 text-center text-slate-400">No hay piezas registradas en el Inventario REBU.</td></tr>`;
+        return;
+      }
+
+      tbody.innerHTML = inventario.map(p => {
+        const badgeEstado = p.estado === 'En Stock'
+          ? `<span class="bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-full font-bold">En Stock</span>`
+          : `<span class="bg-slate-200 text-slate-700 px-2.5 py-0.5 rounded-full font-semibold">Vendido (${p.fechaVenta || ''})</span>`;
+
+        const botonAccion = p.estado === 'En Stock'
+          ? `<button onclick="prepararVentaDesdeInventario(${p.id})" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-2.5 py-1 rounded shadow-xs transition">⚡ Vender REBU</button>`
+          : `<span class="text-slate-400 text-[11px]">Contabilizado</span>`;
+
+        return `
+          <tr class="hover:bg-slate-50">
+            <td class="py-2.5 px-3 font-bold mono-num text-slate-900">${p.sku}</td>
+            <td class="py-2.5 px-3 font-semibold text-slate-800">${p.nombre}</td>
+            <td class="py-2.5 px-3 text-slate-600">${p.epoca}</td>
+            <td class="py-2.5 px-3 mono-num text-slate-500">${p.fechaCompra}</td>
+            <td class="py-2.5 px-3 text-right mono-num font-semibold text-slate-900">${formatearMoneda(p.coste)}</td>
+            <td class="py-2.5 px-3 text-right mono-num font-bold ${p.estado === 'Vendido' ? 'text-emerald-700' : 'text-slate-600'}">
+              ${formatearMoneda(p.estado === 'Vendido' ? p.precioVentaReal : p.pvpEstimado)}
+            </td>
+            <td class="py-2.5 px-3 text-center">${badgeEstado}</td>
+            <td class="py-2.5 px-3 text-center no-print flex items-center justify-center gap-2">
+              ${botonAccion}
+              <button onclick="eliminarPiezaInventario(${p.id})" class="text-slate-400 hover:text-red-600 font-bold px-1" title="Eliminar">×</button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    function guardarArticuloInventario() {
+      const proximoNum = inventario.length + 1;
+      const sku = document.getElementById('inv-sku').value.trim() || `CIRCA-${String(proximoNum).padStart(3, '0')}`;
+      const nombre = document.getElementById('inv-nombre').value.trim();
+      const epoca = document.getElementById('inv-epoca').value;
+      const coste = Math.round((parseFloat(document.getElementById('inv-coste').value) || 0) * 100) / 100;
+      const pvpEstimado = Math.round((parseFloat(document.getElementById('inv-pvp').value) || 0) * 100) / 100;
+
+      if (!nombre) return alert('Indica el nombre o descripción de la pieza vintage.');
+
+      inventario.push({
+        id: Date.now(),
+        sku,
+        nombre,
+        epoca,
+        fechaCompra: new Date().toISOString().slice(0, 10),
+        coste,
+        pvpEstimado,
+        estado: 'En Stock',
+        precioVentaReal: 0,
+        fechaVenta: ''
+      });
+
+      localStorage.setItem(STORAGE_INVENTARIO, JSON.stringify(inventario));
+      document.getElementById('inv-sku').value = '';
+      document.getElementById('inv-nombre').value = '';
+      document.getElementById('inv-coste').value = '';
+      document.getElementById('inv-pvp').value = '';
+      renderizarModuloInventario();
+
+      if (ghConfig && ghConfig.token && ghConfig.autoSync) {
+        subirDatosAGitHub(`Alta inventario REBU: ${sku} - ${nombre}`);
+      }
+    }
+
+    function eliminarPiezaInventario(id) {
+      if (!confirm('¿Eliminar esta pieza del inventario?')) return;
+      inventario = inventario.filter(i => i.id !== id);
+      localStorage.setItem(STORAGE_INVENTARIO, JSON.stringify(inventario));
+      renderizarModuloInventario();
+      if (ghConfig && ghConfig.token && ghConfig.autoSync) subirDatosAGitHub('Baja artículo inventario');
+    }
+
+    function prepararVentaDesdeInventario(idPieza) {
+      const p = inventario.find(i => i.id === idPieza);
+      if (!p) return;
+      cambiarTab('diario');
+      cambiarModoAsistente('venta_rebu');
+      document.getElementById('rebu-venta-pieza-id').value = String(p.id);
+      alSeleccionarPiezaInventarioVenta();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function alSeleccionarPiezaInventarioVenta() {
+      const id = parseInt(document.getElementById('rebu-venta-pieza-id').value);
+      const p = inventario.find(i => i.id === id);
+      if (!p) return;
+      document.getElementById('rebu-venta-concepto').value = `Venta [${p.sku}] ${p.nombre}`;
+      document.getElementById('rebu-venta-coste').value = p.coste.toFixed(2);
+      document.getElementById('rebu-venta-precio').value = p.pvpEstimado > 0 ? p.pvpEstimado.toFixed(2) : '';
+      calcularPreviewVentaREBU();
+    }
+
+    // ================= LÓGICA CONTABLE CORE Y ASISTENTE FISCAL AVANZADO =================
 
     function obtenerOpcionesCuentasHTML(seleccionada = '') {
       const ordenadas = [...cuentas].sort((a, b) => a.codigo.localeCompare(b.codigo));
@@ -1108,18 +1649,18 @@
       tr.className = 'linea-apunte hover:bg-slate-50';
       tr.innerHTML = `
         <td class="py-2 px-3">
-          <select class="select-cuenta w-full border border-slate-300 rounded-md px-2.5 py-1.5 text-sm bg-white focus:ring-2 focus:ring-slate-900 focus:outline-none">
+          <select class="select-cuenta w-full border border-slate-300 rounded-md px-2.5 py-1.5 text-sm bg-white">
             ${obtenerOpcionesCuentasHTML(cuenta)}
           </select>
         </td>
         <td class="py-2 px-3">
-          <input type="number" step="0.01" min="0" value="${debe}" placeholder="0.00" oninput="alEscribirImporte(this, 'debe')" class="input-debe w-full text-right mono-num border border-slate-300 rounded-md px-2.5 py-1.5 text-sm focus:ring-2 focus:ring-slate-900 focus:outline-none">
+          <input type="number" step="0.01" min="0" value="${debe}" placeholder="0.00" oninput="alEscribirImporte(this, 'debe')" class="input-debe w-full text-right mono-num border border-slate-300 rounded-md px-2.5 py-1.5 text-sm">
         </td>
         <td class="py-2 px-3">
-          <input type="number" step="0.01" min="0" value="${haber}" placeholder="0.00" oninput="alEscribirImporte(this, 'haber')" class="input-haber w-full text-right mono-num border border-slate-300 rounded-md px-2.5 py-1.5 text-sm focus:ring-2 focus:ring-slate-900 focus:outline-none">
+          <input type="number" step="0.01" min="0" value="${haber}" placeholder="0.00" oninput="alEscribirImporte(this, 'haber')" class="input-haber w-full text-right mono-num border border-slate-300 rounded-md px-2.5 py-1.5 text-sm">
         </td>
         <td class="py-2 px-3 text-center">
-          <button type="button" onclick="eliminarLineaApunte(this)" class="text-slate-400 hover:text-red-600 font-bold text-base px-2" title="Eliminar línea">×</button>
+          <button type="button" onclick="eliminarLineaApunte(this)" class="text-slate-400 hover:text-red-600 font-bold text-base px-2">×</button>
         </td>
       `;
       tbody.appendChild(tr);
@@ -1130,34 +1671,24 @@
       const fila = input.closest('tr');
       const valor = parseFloat(input.value) || 0;
       if (valor > 0) {
-        if (columna === 'debe') {
-          fila.querySelector('.input-haber').value = '';
-        } else {
-          fila.querySelector('.input-debe').value = '';
-        }
+        if (columna === 'debe') fila.querySelector('.input-haber').value = '';
+        else fila.querySelector('.input-debe').value = '';
       }
       recalcularTotalesAsiento();
     }
 
     function eliminarLineaApunte(boton) {
       const filas = document.querySelectorAll('#lineas-apuntes .linea-apunte');
-      if (filas.length <= 2) {
-        mostrarError('Un asiento contable requiere como mínimo 2 líneas (Partida Doble).');
-        return;
-      }
+      if (filas.length <= 2) return mostrarError('Un asiento requiere como mínimo 2 líneas.');
       boton.closest('tr').remove();
       recalcularTotalesAsiento();
     }
 
     function recalcularTotalesAsiento() {
-      let sumaDebe = 0;
-      let sumaHaber = 0;
-
+      let sumaDebe = 0, sumaHaber = 0;
       document.querySelectorAll('#lineas-apuntes .linea-apunte').forEach(fila => {
-        const d = parseFloat(fila.querySelector('.input-debe').value) || 0;
-        const h = parseFloat(fila.querySelector('.input-haber').value) || 0;
-        sumaDebe += d;
-        sumaHaber += h;
+        sumaDebe += parseFloat(fila.querySelector('.input-debe').value) || 0;
+        sumaHaber += parseFloat(fila.querySelector('.input-haber').value) || 0;
       });
 
       document.getElementById('total-debe').textContent = formatearMoneda(sumaDebe);
@@ -1183,7 +1714,6 @@
       document.getElementById('asiento-ref').value = '';
       document.getElementById('lineas-apuntes').innerHTML = '';
       document.getElementById('mensaje-error').classList.add('hidden');
-      
       agregarLineaApunte();
       agregarLineaApunte();
 
@@ -1203,77 +1733,44 @@
       const concepto = document.getElementById('asiento-concepto').value.trim();
       const referencia = document.getElementById('asiento-ref').value.trim();
 
-      if (!fecha) return mostrarError('Debes indicar la fecha del asiento.');
-      if (!concepto) return mostrarError('Debes escribir un concepto descriptivo para el asiento.');
+      if (!fecha) return mostrarError('Indica la fecha del asiento.');
+      if (!concepto) return mostrarError('Escribe un concepto descriptivo.');
 
       const apuntes = [];
-      let sumaDebe = 0;
-      let sumaHaber = 0;
-      let errorValidacion = '';
+      let sumaDebe = 0, sumaHaber = 0, errorValidacion = '';
 
       document.querySelectorAll('#lineas-apuntes .linea-apunte').forEach((fila, index) => {
         const codigoCuenta = fila.querySelector('.select-cuenta').value;
         const debe = Math.round((parseFloat(fila.querySelector('.input-debe').value) || 0) * 100) / 100;
         const haber = Math.round((parseFloat(fila.querySelector('.input-haber').value) || 0) * 100) / 100;
 
-        if (!codigoCuenta && (debe > 0 || haber > 0)) {
-          errorValidacion = `Selecciona una subcuenta contable en la línea ${index + 1}.`;
-        }
-        if (codigoCuenta && debe === 0 && haber === 0) {
-          errorValidacion = `La línea ${index + 1} tiene una cuenta seleccionada pero su importe es 0.`;
-        }
-
+        if (!codigoCuenta && (debe > 0 || haber > 0)) errorValidacion = `Selecciona subcuenta en línea ${index + 1}.`;
         if (codigoCuenta && (debe > 0 || haber > 0)) {
           const objCuenta = cuentas.find(c => c.codigo === codigoCuenta);
-          apuntes.push({
-            cuenta: codigoCuenta,
-            nombreCuenta: objCuenta ? objCuenta.nombre : 'Subcuenta',
-            debe,
-            haber
-          });
+          apuntes.push({ cuenta: codigoCuenta, nombreCuenta: objCuenta ? objCuenta.nombre : 'Subcuenta', debe, haber });
           sumaDebe += debe;
           sumaHaber += haber;
         }
       });
 
       if (errorValidacion) return mostrarError(errorValidacion);
-      if (apuntes.length < 2) return mostrarError('El asiento debe tener al menos dos líneas con importe.');
-      if (Math.abs(sumaDebe - sumaHaber) >= 0.01) {
-        return mostrarError(`El asiento está descuadrado. El Debe (${formatearMoneda(sumaDebe)}) no coincide con el Haber (${formatearMoneda(sumaHaber)}).`);
-      }
+      if (apuntes.length < 2) return mostrarError('El asiento requiere al menos dos líneas.');
+      if (Math.abs(sumaDebe - sumaHaber) >= 0.01) return mostrarError('El asiento está descuadrado.');
 
       const proximoNumero = asientos.length > 0 ? Math.max(...asientos.map(a => a.numero)) + 1 : 1;
-
-      const nuevoAsiento = {
-        id: Date.now(),
-        numero: proximoNumero,
-        fecha,
-        concepto,
-        referencia,
-        apuntes
-      };
-
-      asientos.push(nuevoAsiento);
+      asientos.push({ id: Date.now(), numero: proximoNumero, fecha, concepto, referencia, apuntes });
       localStorage.setItem(STORAGE_ASIENTOS, JSON.stringify(asientos));
 
       refrescarTodasLasVistas();
-
-      if (ghConfig && ghConfig.token && ghConfig.autoSync) {
-        subirDatosAGitHub(`Asiento #${proximoNumero}: ${concepto}`);
-      }
+      if (ghConfig && ghConfig.token && ghConfig.autoSync) subirDatosAGitHub(`Asiento #${proximoNumero}: ${concepto}`);
     }
 
     function renderizarLibroDiario() {
       const contenedor = document.getElementById('contenedor-libro-diario');
-      let acumuladoDebe = 0;
-      let acumuladoHaber = 0;
+      let acumuladoDebe = 0, acumuladoHaber = 0;
 
       if (asientos.length === 0) {
-        contenedor.innerHTML = `
-          <div class="text-center py-10 bg-slate-50 rounded-lg border border-dashed border-slate-300 text-slate-500 text-sm">
-            Todavía no hay asientos contabilizados en el Libro Diario. Usa el Asistente superior o el Editor manual para registrar el primero.
-          </div>
-        `;
+        contenedor.innerHTML = `<div class="text-center py-10 bg-slate-50 rounded-lg border border-dashed border-slate-300 text-slate-500 text-sm">Todavía no hay asientos contabilizados en el Libro Diario.</div>`;
         document.getElementById('diario-acumulado-debe').textContent = '0,00 €';
         document.getElementById('diario-acumulado-haber').textContent = '0,00 €';
         return;
@@ -1281,15 +1778,11 @@
 
       const asientosOrdenados = [...asientos].sort((a, b) => a.fecha.localeCompare(b.fecha) || a.numero - b.numero);
 
-      let html = '';
-      asientosOrdenados.forEach(asiento => {
-        let filasHTML = '';
-
-        asiento.apuntes.forEach(ap => {
+      contenedor.innerHTML = asientosOrdenados.map(asiento => {
+        const filasHTML = asiento.apuntes.map(ap => {
           acumuladoDebe += ap.debe;
           acumuladoHaber += ap.haber;
-
-          filasHTML += `
+          return `
             <tr class="text-xs border-b border-slate-100 last:border-0">
               <td class="py-2 px-3 font-semibold text-slate-800 mono-num w-24">${ap.cuenta}</td>
               <td class="py-2 px-3 text-slate-700">${ap.nombreCuenta}</td>
@@ -1297,9 +1790,9 @@
               <td class="py-2 px-3 text-right mono-num ${ap.haber > 0 ? 'font-semibold text-slate-900' : 'text-slate-300'} w-32">${ap.haber > 0 ? formatearMoneda(ap.haber) : '-'}</td>
             </tr>
           `;
-        });
+        }).join('');
 
-        html += `
+        return `
           <div class="border border-slate-200 rounded-lg overflow-hidden shadow-xs">
             <div class="bg-slate-100 px-4 py-2.5 flex flex-wrap justify-between items-center text-xs border-b border-slate-200 gap-2">
               <div class="flex items-center gap-3">
@@ -1308,110 +1801,41 @@
                 <span class="text-slate-900 font-bold">${asiento.concepto}</span>
                 ${asiento.referencia ? `<span class="bg-amber-100 text-amber-900 px-2 py-0.5 rounded font-medium">${asiento.referencia}</span>` : ''}
               </div>
-              <button onclick="eliminarAsiento(${asiento.id})" class="text-slate-400 hover:text-red-600 font-medium transition">
-                Anular asiento
-              </button>
+              <button onclick="eliminarAsiento(${asiento.id})" class="no-print text-slate-400 hover:text-red-600 font-medium">Anular asiento</button>
             </div>
             <table class="w-full text-left border-collapse bg-white">
-              <thead>
-                <tr class="bg-slate-50 text-[11px] uppercase text-slate-400 border-b border-slate-100">
-                  <th class="py-1.5 px-3">Cuenta</th>
-                  <th class="py-1.5 px-3">Nombre Subcuenta</th>
-                  <th class="py-1.5 px-3 text-right">Debe</th>
-                  <th class="py-1.5 px-3 text-right">Haber</th>
-                </tr>
-              </thead>
               <tbody>${filasHTML}</tbody>
             </table>
           </div>
         `;
-      });
+      }).join('');
 
-      contenedor.innerHTML = html;
       document.getElementById('diario-acumulado-debe').textContent = formatearMoneda(acumuladoDebe);
       document.getElementById('diario-acumulado-haber').textContent = formatearMoneda(acumuladoHaber);
     }
 
     function eliminarAsiento(id) {
-      if (!confirm('¿Seguro que deseas eliminar este asiento del Libro Diario? Se actualizarán automáticamente todos los libros y la nube en GitHub.')) return;
+      if (!confirm('¿Seguro que deseas eliminar este asiento del Libro Diario?')) return;
       asientos = asientos.filter(a => a.id !== id);
       localStorage.setItem(STORAGE_ASIENTOS, JSON.stringify(asientos));
       refrescarTodasLasVistas();
-
-      if (ghConfig && ghConfig.token && ghConfig.autoSync) {
-        subirDatosAGitHub(`Anulación de asiento ID ${id}`);
-      }
-    }
-
-    function renderizarPlanCuentas() {
-      const tbody = document.getElementById('tabla-plan-cuentas');
-      const ordenadas = [...cuentas].sort((a, b) => a.codigo.localeCompare(b.codigo));
-      
-      const coloresBadge = {
-        'Activo': 'bg-blue-100 text-blue-800',
-        'Pasivo': 'bg-purple-100 text-purple-800',
-        'Patrimonio Neto': 'bg-amber-100 text-amber-800',
-        'Ingreso': 'bg-emerald-100 text-emerald-800',
-        'Gasto': 'bg-rose-100 text-rose-800'
-      };
-
-      tbody.innerHTML = ordenadas.map(c => `
-        <tr class="hover:bg-slate-50">
-          <td class="py-2.5 px-4 font-bold mono-num text-slate-900">${c.codigo}</td>
-          <td class="py-2.5 px-4 text-slate-700">${c.nombre}</td>
-          <td class="py-2.5 px-4">
-            <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full ${coloresBadge[c.tipo] || 'bg-slate-100'}">${c.tipo}</span>
-          </td>
-        </tr>
-      `).join('');
-    }
-
-    function crearNuevaCuenta() {
-      const codigo = document.getElementById('nueva-cuenta-codigo').value.trim();
-      const nombre = document.getElementById('nueva-cuenta-nombre').value.trim();
-      const tipo = document.getElementById('nueva-cuenta-tipo').value;
-
-      if (!codigo || !nombre) {
-        alert('Introduce tanto el código numérico PGC como el nombre de la subcuenta.');
-        return;
-      }
-      if (cuentas.some(c => c.codigo === codigo)) {
-        alert('Ya existe una subcuenta con ese código en el Plan de Cuentas.');
-        return;
-      }
-
-      cuentas.push({ codigo, nombre, tipo });
-      localStorage.setItem(STORAGE_CUENTAS, JSON.stringify(cuentas));
-
-      document.getElementById('nueva-cuenta-codigo').value = '';
-      document.getElementById('nueva-cuenta-nombre').value = '';
-      refrescarTodasLasVistas();
-
-      if (ghConfig && ghConfig.token && ghConfig.autoSync) {
-        subirDatosAGitHub(`Nueva subcuenta PGC ${codigo} - ${nombre}`);
-      }
+      if (ghConfig && ghConfig.token && ghConfig.autoSync) subirDatosAGitHub(`Anulación asiento ${id}`);
     }
 
     function cambiarModoAsistente(modo) {
-      const modos = ['venta_rebu', 'compra_rebu', 'gasto_iva'];
-      modos.forEach(m => {
+      ['venta_rebu', 'compra_rebu', 'gasto_iva'].forEach(m => {
         document.getElementById(`panel-asistente-${m}`).classList.toggle('hidden', m !== modo);
-        const btn = document.getElementById(`btn-modo-${m}`);
-        if (m === modo) {
-          btn.className = 'px-3 py-1.5 rounded-md bg-amber-500 text-slate-950 transition';
-        } else {
-          btn.className = 'px-3 py-1.5 rounded-md text-slate-300 hover:text-white transition';
-        }
+        document.getElementById(`btn-modo-${m}`).className = m === modo
+          ? 'px-3 py-1.5 rounded-md bg-amber-500 text-slate-950 transition'
+          : 'px-3 py-1.5 rounded-md text-slate-300 hover:text-white transition';
       });
     }
 
     function calcularPreviewVentaREBU() {
       const coste = parseFloat(document.getElementById('rebu-venta-coste').value) || 0;
       const precioVenta = parseFloat(document.getElementById('rebu-venta-precio').value) || 0;
-
       const margenBruto = precioVenta - coste;
-      let cuotaIVA = 0;
-      let ingresoNeto700 = precioVenta;
+      let cuotaIVA = 0, ingresoNeto700 = precioVenta;
 
       if (margenBruto > 0 && precioVenta > 0) {
         const baseMargen = margenBruto / 1.21;
@@ -1422,33 +1846,37 @@
       document.getElementById('preview-rebu-margen').textContent = formatearMoneda(margenBruto);
       document.getElementById('preview-rebu-ingreso').textContent = formatearMoneda(ingresoNeto700);
       document.getElementById('preview-rebu-iva').textContent = formatearMoneda(cuotaIVA);
-
       return { coste, precioVenta, margenBruto, cuotaIVA, ingresoNeto700 };
     }
 
     function ejecutarAsistenteVentaREBU(guardarDirecto) {
+      const idPieza = parseInt(document.getElementById('rebu-venta-pieza-id').value);
       const conceptoInput = document.getElementById('rebu-venta-concepto').value.trim();
-      const plataforma = document.getElementById('rebu-venta-plataforma').value;
+      const plataforma = document.getElementById('rebu-venta-plataforma').value.trim();
       const cuentaCobro = document.getElementById('rebu-venta-cuenta-cobro').value;
       const { coste, precioVenta, cuotaIVA, ingresoNeto700 } = calcularPreviewVentaREBU();
 
-      if (!conceptoInput || precioVenta <= 0) {
-        alert('Indica el concepto de la pieza vendida y un precio de venta mayor que cero.');
-        return;
+      if (!conceptoInput || precioVenta <= 0) return alert('Indica concepto y precio de venta.');
+
+      // Si había una pieza del inventario seleccionada, marcarla como Vendida
+      if (idPieza) {
+        const pieza = inventario.find(i => i.id === idPieza);
+        if (pieza) {
+          pieza.estado = 'Vendido';
+          pieza.precioVentaReal = precioVenta;
+          pieza.fechaVenta = document.getElementById('asiento-fecha').value || new Date().toISOString().slice(0, 10);
+          localStorage.setItem(STORAGE_INVENTARIO, JSON.stringify(inventario));
+        }
       }
 
-      const conceptoFinal = `${conceptoInput} (Coste REBU: ${formatearMoneda(coste)})`;
-      const lineasGeneradas = [
+      const lineas = [
         { cuenta: cuentaCobro, debe: precioVenta, haber: 0 },
         { cuenta: '700.1', debe: 0, haber: ingresoNeto700 }
       ];
+      if (cuotaIVA > 0) lineas.push({ cuenta: '477.1', debe: 0, haber: cuotaIVA });
 
-      if (cuotaIVA > 0) {
-        lineasGeneradas.push({ cuenta: '477.1', debe: 0, haber: cuotaIVA });
-      }
-
-      aplicarAsientoDesdeAsistente(conceptoFinal, plataforma, lineasGeneradas, guardarDirecto);
-
+      aplicarAsientoDesdeAsistente(`${conceptoInput} (Coste REBU: ${formatearMoneda(coste)})`, plataforma, lineas, guardarDirecto);
+      document.getElementById('rebu-venta-pieza-id').value = '';
       document.getElementById('rebu-venta-concepto').value = '';
       document.getElementById('rebu-venta-coste').value = '';
       document.getElementById('rebu-venta-precio').value = '';
@@ -1459,10 +1887,25 @@
       const concepto = document.getElementById('rebu-compra-concepto').value.trim();
       const importe = Math.round((parseFloat(document.getElementById('rebu-compra-importe').value) || 0) * 100) / 100;
       const cuentaPago = document.getElementById('rebu-compra-pago').value;
+      const crearStock = document.getElementById('rebu-compra-crear-stock').checked;
 
-      if (!concepto || importe <= 0) {
-        alert('Indica la descripción de la pieza comprada y el importe pagado.');
-        return;
+      if (!concepto || importe <= 0) return alert('Indica descripción e importe de la compra.');
+
+      if (crearStock) {
+        const num = inventario.length + 1;
+        inventario.push({
+          id: Date.now() + 1,
+          sku: `CIRCA-${String(num).padStart(3, '0')}`,
+          nombre: concepto,
+          epoca: 'Mid-Century',
+          fechaCompra: document.getElementById('asiento-fecha').value || new Date().toISOString().slice(0, 10),
+          coste: importe,
+          pvpEstimado: Math.round(importe * 2.2 * 100) / 100,
+          estado: 'En Stock',
+          precioVentaReal: 0,
+          fechaVenta: ''
+        });
+        localStorage.setItem(STORAGE_INVENTARIO, JSON.stringify(inventario));
       }
 
       const lineas = [
@@ -1475,29 +1918,60 @@
       document.getElementById('rebu-compra-importe').value = '';
     }
 
-    function ejecutarAsistenteGastoIVA() {
+    // Cálculo en vivo de Factura de Gasto con IVA Normal, Inversión Sujeto Pasivo (ISP), Exento e IRPF
+    function calcularPreviewGasto() {
+      const base = Math.round((parseFloat(document.getElementById('gasto-base').value) || 0) * 100) / 100;
+      const tipoIVA = document.getElementById('gasto-tipo-iva').value;
+      const pctIRPF = parseFloat(document.getElementById('gasto-irpf').value) || 0;
+
+      let cuotaIVA = 0;
+      let esISP = false;
+
+      if (tipoIVA === 'IVA_21') cuotaIVA = Math.round(base * 0.21 * 100) / 100;
+      else if (tipoIVA === 'IVA_10') cuotaIVA = Math.round(base * 0.10 * 100) / 100;
+      else if (tipoIVA === 'IVA_4') cuotaIVA = Math.round(base * 0.04 * 100) / 100;
+      else if (tipoIVA === 'ISP_21') { cuotaIVA = Math.round(base * 0.21 * 100) / 100; esISP = true; }
+
+      const cuotaIRPF = Math.round(base * (pctIRPF / 100) * 100) / 100;
+      // En ISP el IVA se autorrepercute (472.ISP Debe y 477.ISP Haber), por lo que no se paga al proveedor extranjero
+      const liquidoPagar = esISP
+        ? Math.round((base - cuotaIRPF) * 100) / 100
+        : Math.round((base + cuotaIVA - cuotaIRPF) * 100) / 100;
+
+      document.getElementById('preview-gasto-liquido').textContent = formatearMoneda(liquidoPagar);
+      document.getElementById('preview-gasto-detalle').textContent = `${esISP ? 'IVA ISP' : 'IVA'}: ${formatearMoneda(cuotaIVA)} | IRPF: -${formatearMoneda(cuotaIRPF)}`;
+
+      return { base, tipoIVA, cuotaIVA, esISP, pctIRPF, cuotaIRPF, liquidoPagar };
+    }
+
+    function ejecutarAsistenteGastoIVA(guardarDirecto) {
       const cuentaGasto = document.getElementById('gasto-cuenta-debe').value;
       const concepto = document.getElementById('gasto-concepto').value.trim();
-      const totalFactura = Math.round((parseFloat(document.getElementById('gasto-total-iva').value) || 0) * 100) / 100;
       const cuentaHaber = document.getElementById('gasto-cuenta-haber').value;
+      const { base, tipoIVA, cuotaIVA, esISP, cuotaIRPF, liquidoPagar } = calcularPreviewGasto();
 
-      if (!concepto || totalFactura <= 0) {
-        alert('Indica el concepto de la factura de gasto y el importe total.');
-        return;
+      if (!concepto || base <= 0) return alert('Indica el concepto de la factura y la Base Imponible.');
+
+      const lineas = [{ cuenta: cuentaGasto, debe: base, haber: 0 }];
+
+      if (esISP && cuotaIVA > 0) {
+        // Autoliquidación Inversión del Sujeto Pasivo (Debe 472.ISP y Haber 477.ISP)
+        lineas.push({ cuenta: '472.ISP', debe: cuotaIVA, haber: 0 });
+        lineas.push({ cuenta: '477.ISP', debe: 0, haber: cuotaIVA });
+      } else if (cuotaIVA > 0) {
+        lineas.push({ cuenta: '472.21', debe: cuotaIVA, haber: 0 });
       }
 
-      const baseGasto = Math.round((totalFactura / 1.21) * 100) / 100;
-      const ivaSoportado = Math.round((totalFactura - baseGasto) * 100) / 100;
+      if (cuotaIRPF > 0) {
+        lineas.push({ cuenta: '4751.0', debe: 0, haber: cuotaIRPF });
+      }
 
-      const lineas = [
-        { cuenta: cuentaGasto, debe: baseGasto, haber: 0 },
-        { cuenta: '472.21', debe: ivaSoportado, haber: 0 },
-        { cuenta: cuentaHaber, debe: 0, haber: totalFactura }
-      ];
+      lineas.push({ cuenta: cuentaHaber, debe: 0, haber: liquidoPagar });
 
-      aplicarAsientoDesdeAsistente(concepto, 'Factura Gasto 21%', lineas, true);
+      aplicarAsientoDesdeAsistente(concepto, tipoIVA, lineas, guardarDirecto);
       document.getElementById('gasto-concepto').value = '';
-      document.getElementById('gasto-total-iva').value = '';
+      document.getElementById('gasto-base').value = '';
+      calcularPreviewGasto();
     }
 
     function aplicarAsientoDesdeAsistente(concepto, referencia, lineas, guardarDirecto) {
@@ -1508,25 +1982,53 @@
       lineas.forEach(l => {
         agregarLineaApunte(l.cuenta, l.debe > 0 ? l.debe.toFixed(2) : '', l.haber > 0 ? l.haber.toFixed(2) : '');
       });
-
       recalcularTotalesAsiento();
+      if (guardarDirecto) guardarAsiento();
+    }
 
-      if (guardarDirecto) {
-        guardarAsiento();
-      }
+    // ================= PLAN DE CUENTAS, LIBRO MAYOR, PYG Y BALANCE =================
+
+    function renderizarPlanCuentas() {
+      const tbody = document.getElementById('tabla-plan-cuentas');
+      const ordenadas = [...cuentas].sort((a, b) => a.codigo.localeCompare(b.codigo));
+      const coloresBadge = {
+        'Activo': 'bg-blue-100 text-blue-800',
+        'Pasivo': 'bg-purple-100 text-purple-800',
+        'Patrimonio Neto': 'bg-amber-100 text-amber-800',
+        'Ingreso': 'bg-emerald-100 text-emerald-800',
+        'Gasto': 'bg-rose-100 text-rose-800'
+      };
+
+      tbody.innerHTML = ordenadas.map(c => `
+        <tr class="hover:bg-slate-50">
+          <td class="py-2.5 px-4 font-bold mono-num text-slate-900">${c.codigo}</td>
+          <td class="py-2.5 px-4 text-slate-700">${c.nombre}</td>
+          <td class="py-2.5 px-4"><span class="text-xs font-semibold px-2.5 py-0.5 rounded-full ${coloresBadge[c.tipo] || 'bg-slate-100'}">${c.tipo}</span></td>
+        </tr>
+      `).join('');
+    }
+
+    function crearNuevaCuenta() {
+      const codigo = document.getElementById('nueva-cuenta-codigo').value.trim();
+      const nombre = document.getElementById('nueva-cuenta-nombre').value.trim();
+      const tipo = document.getElementById('nueva-cuenta-tipo').value;
+      if (!codigo || !nombre) return alert('Introduce código y nombre.');
+      if (cuentas.some(c => c.codigo === codigo)) return alert('Ya existe ese código.');
+
+      cuentas.push({ codigo, nombre, tipo });
+      localStorage.setItem(STORAGE_CUENTAS, JSON.stringify(cuentas));
+      document.getElementById('nueva-cuenta-codigo').value = '';
+      document.getElementById('nueva-cuenta-nombre').value = '';
+      refrescarTodasLasVistas();
+      if (ghConfig && ghConfig.token && ghConfig.autoSync) subirDatosAGitHub(`Nueva cuenta ${codigo}`);
     }
 
     function actualizarSelectorFiltroMayor() {
       const select = document.getElementById('filtro-mayor-cuenta');
       const valorActual = select.value || 'TODAS';
       const ordenadas = [...cuentas].sort((a, b) => a.codigo.localeCompare(b.codigo));
-
-      let html = `<option value="TODAS">-- Ver todas las cuentas con movimientos --</option>`;
-      ordenadas.forEach(c => {
-        const selected = c.codigo === valorActual ? 'selected' : '';
-        html += `<option value="${c.codigo}" ${selected}>${c.codigo} - ${c.nombre}</option>`;
-      });
-      select.innerHTML = html;
+      select.innerHTML = `<option value="TODAS">-- Ver todas las cuentas con movimientos --</option>` +
+        ordenadas.map(c => `<option value="${c.codigo}" ${c.codigo === valorActual ? 'selected' : ''}>${c.codigo} - ${c.nombre}</option>`).join('');
     }
 
     function limpiarFiltrosMayor() {
@@ -1546,101 +2048,59 @@
     function calcularDatosMayorPorFechas(desde = '', hasta = '') {
       const mapaMayor = {};
       cuentas.forEach(c => {
-        mapaMayor[c.codigo] = {
-          codigo: c.codigo,
-          nombre: c.nombre,
-          tipo: c.tipo,
-          sumaDebe: 0,
-          sumaHaber: 0,
-          saldoNeto: 0,
-          saldoDeudor: 0,
-          saldoAcreedor: 0,
-          movimientos: []
-        };
+        mapaMayor[c.codigo] = { codigo: c.codigo, nombre: c.nombre, tipo: c.tipo, sumaDebe: 0, sumaHaber: 0, saldoNeto: 0, saldoDeudor: 0, saldoAcreedor: 0, movimientos: [] };
       });
 
       const asientosOrdenados = [...asientos].sort((a, b) => a.fecha.localeCompare(b.fecha) || a.numero - b.numero);
-
       asientosOrdenados.forEach(asiento => {
         if (desde && asiento.fecha < desde) return;
         if (hasta && asiento.fecha > hasta) return;
 
         asiento.apuntes.forEach(ap => {
           if (!mapaMayor[ap.cuenta]) {
-            mapaMayor[ap.cuenta] = {
-              codigo: ap.cuenta,
-              nombre: ap.nombreCuenta || 'Subcuenta',
-              tipo: 'Activo',
-              sumaDebe: 0,
-              sumaHaber: 0,
-              saldoNeto: 0,
-              saldoDeudor: 0,
-              saldoAcreedor: 0,
-              movimientos: []
-            };
+            mapaMayor[ap.cuenta] = { codigo: ap.cuenta, nombre: ap.nombreCuenta || 'Subcuenta', tipo: 'Activo', sumaDebe: 0, sumaHaber: 0, saldoNeto: 0, saldoDeudor: 0, saldoAcreedor: 0, movimientos: [] };
           }
-
           const ficha = mapaMayor[ap.cuenta];
           ficha.sumaDebe = Math.round((ficha.sumaDebe + ap.debe) * 100) / 100;
           ficha.sumaHaber = Math.round((ficha.sumaHaber + ap.haber) * 100) / 100;
           ficha.saldoNeto = Math.round((ficha.sumaDebe - ficha.sumaHaber) * 100) / 100;
-
-          ficha.movimientos.push({
-            asientoNumero: asiento.numero,
-            fecha: asiento.fecha,
-            concepto: asiento.concepto,
-            referencia: asiento.referencia || '',
-            debe: ap.debe,
-            haber: ap.haber,
-            saldoAcumulado: ficha.saldoNeto
-          });
+          ficha.movimientos.push({ asientoNumero: asiento.numero, fecha: asiento.fecha, concepto: asiento.concepto, referencia: asiento.referencia || '', debe: ap.debe, haber: ap.haber, saldoAcumulado: ficha.saldoNeto });
         });
       });
 
       Object.values(mapaMayor).forEach(ficha => {
-        if (ficha.saldoNeto > 0) {
-          ficha.saldoDeudor = ficha.saldoNeto;
-          ficha.saldoAcreedor = 0;
-        } else if (ficha.saldoNeto < 0) {
-          ficha.saldoDeudor = 0;
-          ficha.saldoAcreedor = Math.abs(ficha.saldoNeto);
-        } else {
-          ficha.saldoDeudor = 0;
-          ficha.saldoAcreedor = 0;
-        }
+        ficha.saldoDeudor = ficha.saldoNeto > 0 ? ficha.saldoNeto : 0;
+        ficha.saldoAcreedor = ficha.saldoNeto < 0 ? Math.abs(ficha.saldoNeto) : 0;
       });
-
       return mapaMayor;
     }
 
     function calcularDatosMayor() {
-      const desde = document.getElementById('filtro-mayor-desde').value;
-      const hasta = document.getElementById('filtro-mayor-hasta').value;
-      return calcularDatosMayorPorFechas(desde, hasta);
+      return calcularDatosMayorPorFechas(document.getElementById('filtro-mayor-desde').value, document.getElementById('filtro-mayor-hasta').value);
     }
 
     function generarAsientoLiquidacionIVA() {
-      const mapaMayor = calcularDatosMayor();
-      const s477_1 = mapaMayor['477.1'] ? mapaMayor['477.1'].saldoAcreedor : 0;
-      const s477_21 = mapaMayor['477.21'] ? mapaMayor['477.21'].saldoAcreedor : 0;
-      const s472_21 = mapaMayor['472.21'] ? mapaMayor['472.21'].saldoDeudor : 0;
+      const m = calcularDatosMayor();
+      const s477_1 = m['477.1'] ? m['477.1'].saldoAcreedor : 0;
+      const s477_21 = m['477.21'] ? m['477.21'].saldoAcreedor : 0;
+      const s477_ISP = m['477.ISP'] ? m['477.ISP'].saldoAcreedor : 0;
+      const s472_21 = m['472.21'] ? m['472.21'].saldoDeudor : 0;
+      const s472_ISP = m['472.ISP'] ? m['472.ISP'].saldoDeudor : 0;
 
-      if (s477_1 === 0 && s477_21 === 0 && s472_21 === 0) {
-        alert('Las cuentas de IVA (477.1, 477.21 y 472.21) ya están a cero en el periodo seleccionado.');
-        return;
+      if (s477_1 === 0 && s477_21 === 0 && s477_ISP === 0 && s472_21 === 0 && s472_ISP === 0) {
+        return alert('Las cuentas de IVA ya están saldadas.');
       }
 
       const lineas = [];
       if (s477_1 > 0) lineas.push({ cuenta: '477.1', debe: s477_1, haber: 0 });
       if (s477_21 > 0) lineas.push({ cuenta: '477.21', debe: s477_21, haber: 0 });
+      if (s477_ISP > 0) lineas.push({ cuenta: '477.ISP', debe: s477_ISP, haber: 0 });
       if (s472_21 > 0) lineas.push({ cuenta: '472.21', debe: 0, haber: s472_21 });
+      if (s472_ISP > 0) lineas.push({ cuenta: '472.ISP', debe: 0, haber: s472_ISP });
 
-      const diferencia = Math.round(((s477_1 + s477_21) - s472_21) * 100) / 100;
-      if (diferencia > 0) {
-        lineas.push({ cuenta: '4750.0', debe: 0, haber: diferencia });
-      } else if (diferencia < 0) {
-        lineas.push({ cuenta: '4700.0', debe: Math.abs(diferencia), haber: 0 });
-      }
+      const diferencia = Math.round(((s477_1 + s477_21 + s477_ISP) - (s472_21 + s472_ISP)) * 100) / 100;
+      if (diferencia > 0) lineas.push({ cuenta: '4750.0', debe: 0, haber: diferencia });
+      else if (diferencia < 0) lineas.push({ cuenta: '4700.0', debe: Math.abs(diferencia), haber: 0 });
 
       cambiarTab('diario');
       aplicarAsientoDesdeAsistente('Liquidación Trimestral IVA (Modelo 303)', 'Mod. 303', lineas, false);
@@ -1648,56 +2108,45 @@
     }
 
     function renderizarModuloMayor() {
-      const mapaMayor = calcularDatosMayor();
+      const m = calcularDatosMayor();
       const cuentaFiltro = document.getElementById('filtro-mayor-cuenta').value || 'TODAS';
 
-      const ivaRepercutidoREBU = mapaMayor['477.1'] ? mapaMayor['477.1'].saldoAcreedor : 0;
-      const ivaRepercutidoGen = mapaMayor['477.21'] ? mapaMayor['477.21'].saldoAcreedor : 0;
-      const totalRepercutido = Math.round((ivaRepercutidoREBU + ivaRepercutidoGen) * 100) / 100;
-      const totalSoportado = mapaMayor['472.21'] ? mapaMayor['472.21'].saldoDeudor : 0;
+      const totalRepercutido = Math.round(((m['477.1']?.saldoAcreedor || 0) + (m['477.21']?.saldoAcreedor || 0) + (m['477.ISP']?.saldoAcreedor || 0)) * 100) / 100;
+      const totalSoportado = Math.round(((m['472.21']?.saldoDeudor || 0) + (m['472.ISP']?.saldoDeudor || 0)) * 100) / 100;
       const diferenciaIVA = Math.round((totalRepercutido - totalSoportado) * 100) / 100;
+      const irpfRetenido = m['4751.0'] ? m['4751.0'].saldoAcreedor : 0;
 
       document.getElementById('mayor-iva-repercutido').textContent = formatearMoneda(totalRepercutido);
       document.getElementById('mayor-iva-soportado').textContent = formatearMoneda(totalSoportado);
       document.getElementById('mayor-iva-diferencia').textContent = formatearMoneda(diferenciaIVA);
+      document.getElementById('mayor-irpf-retenido').textContent = formatearMoneda(irpfRetenido);
 
       const badgeIVA = document.getElementById('badge-resultado-iva');
       if (diferenciaIVA > 0) {
-        badgeIVA.textContent = `A ingresar: ${formatearMoneda(diferenciaIVA)}`;
+        badgeIVA.textContent = `A ingresar 303: ${formatearMoneda(diferenciaIVA)}`;
         badgeIVA.className = 'text-xs px-3 py-1 rounded-full bg-amber-500 text-slate-950 font-bold';
       } else if (diferenciaIVA < 0) {
-        badgeIVA.textContent = `A compensar: ${formatearMoneda(Math.abs(diferenciaIVA))}`;
+        badgeIVA.textContent = `A compensar 303: ${formatearMoneda(Math.abs(diferenciaIVA))}`;
         badgeIVA.className = 'text-xs px-3 py-1 rounded-full bg-emerald-500 text-slate-950 font-bold';
       } else {
-        badgeIVA.textContent = 'Saldo IVA neutro (0,00 €)';
+        badgeIVA.textContent = 'IVA Neutro (0,00 €)';
         badgeIVA.className = 'text-xs px-3 py-1 rounded-full bg-slate-800 text-slate-300 font-semibold';
       }
 
-      const cuentasConMovimientos = Object.values(mapaMayor)
-        .filter(c => c.movimientos.length > 0)
-        .sort((a, b) => a.codigo.localeCompare(b.codigo));
-
+      const cuentasConMovimientos = Object.values(m).filter(c => c.movimientos.length > 0).sort((a, b) => a.codigo.localeCompare(b.codigo));
       const tbodySumas = document.getElementById('tabla-sumas-saldos');
       const tfootSumas = document.getElementById('pie-sumas-saldos');
 
       if (cuentasConMovimientos.length === 0) {
-        tbodySumas.innerHTML = `<tr><td colspan="7" class="py-8 text-center text-slate-400">No hay movimientos contabilizados para el periodo seleccionado.</td></tr>`;
+        tbodySumas.innerHTML = `<tr><td colspan="7" class="py-8 text-center text-slate-400">No hay movimientos contabilizados.</td></tr>`;
         tfootSumas.innerHTML = '';
       } else {
-        let totalGeneralDebe = 0;
-        let totalGeneralHaber = 0;
-        let totalGeneralDeudor = 0;
-        let totalGeneralAcreedor = 0;
-
+        let tDebe = 0, tHaber = 0, tDeudor = 0, tAcreedor = 0;
         tbodySumas.innerHTML = cuentasConMovimientos.map(c => {
-          totalGeneralDebe += c.sumaDebe;
-          totalGeneralHaber += c.sumaHaber;
-          totalGeneralDeudor += c.saldoDeudor;
-          totalGeneralAcreedor += c.saldoAcreedor;
-
+          tDebe += c.sumaDebe; tHaber += c.sumaHaber; tDeudor += c.saldoDeudor; tAcreedor += c.saldoAcreedor;
           return `
-            <tr onclick="seleccionarCuentaEnMayor('${c.codigo}')" class="hover:bg-slate-50 cursor-pointer transition">
-              <td class="py-2.5 px-3 font-bold mono-num text-slate-900 underline decoration-slate-300">${c.codigo}</td>
+            <tr onclick="seleccionarCuentaEnMayor('${c.codigo}')" class="hover:bg-slate-50 cursor-pointer">
+              <td class="py-2.5 px-3 font-bold mono-num text-slate-900 underline">${c.codigo}</td>
               <td class="py-2.5 px-3 font-medium text-slate-700">${c.nombre}</td>
               <td class="py-2.5 px-3 text-slate-500">${c.tipo}</td>
               <td class="py-2.5 px-3 text-right mono-num">${formatearMoneda(c.sumaDebe)}</td>
@@ -1711,196 +2160,90 @@
         tfootSumas.innerHTML = `
           <tr>
             <td colspan="3" class="py-3 px-3 text-right uppercase text-slate-600">Totales de Comprobación:</td>
-            <td class="py-3 px-3 text-right mono-num text-slate-900">${formatearMoneda(totalGeneralDebe)}</td>
-            <td class="py-3 px-3 text-right mono-num text-slate-900 border-r border-slate-300">${formatearMoneda(totalGeneralHaber)}</td>
-            <td class="py-3 px-3 text-right mono-num text-blue-900 bg-blue-100/50">${formatearMoneda(totalGeneralDeudor)}</td>
-            <td class="py-3 px-3 text-right mono-num text-purple-900 bg-purple-100/50">${formatearMoneda(totalGeneralAcreedor)}</td>
+            <td class="py-3 px-3 text-right mono-num">${formatearMoneda(tDebe)}</td>
+            <td class="py-3 px-3 text-right mono-num border-r border-slate-300">${formatearMoneda(tHaber)}</td>
+            <td class="py-3 px-3 text-right mono-num text-blue-900 bg-blue-100/50">${formatearMoneda(tDeudor)}</td>
+            <td class="py-3 px-3 text-right mono-num text-purple-900 bg-purple-100/50">${formatearMoneda(tAcreedor)}</td>
           </tr>
         `;
       }
 
       const contenedorFichas = document.getElementById('contenedor-fichas-mayor');
-      const fichasAMostrar = cuentaFiltro === 'TODAS'
-        ? cuentasConMovimientos
-        : cuentasConMovimientos.filter(c => c.codigo === cuentaFiltro);
-
-      if (fichasAMostrar.length === 0) {
-        contenedorFichas.innerHTML = `<div class="bg-white p-8 rounded-xl border border-dashed border-slate-300 text-center text-sm text-slate-500">La subcuenta seleccionada no tiene apuntes registrados en este rango de fechas.</div>`;
-        return;
-      }
+      const fichasAMostrar = cuentaFiltro === 'TODAS' ? cuentasConMovimientos : cuentasConMovimientos.filter(c => c.codigo === cuentaFiltro);
 
       contenedorFichas.innerHTML = fichasAMostrar.map(ficha => {
-        const etiquetaSaldo = ficha.saldoNeto > 0
-          ? `<span class="bg-blue-100 text-blue-900 font-bold px-3 py-1 rounded-full text-xs">Saldo Deudor: ${formatearMoneda(ficha.saldoDeudor)}</span>`
-          : ficha.saldoNeto < 0
-            ? `<span class="bg-purple-100 text-purple-900 font-bold px-3 py-1 rounded-full text-xs">Saldo Acreedor: ${formatearMoneda(ficha.saldoAcreedor)}</span>`
-            : `<span class="bg-slate-200 text-slate-700 font-bold px-3 py-1 rounded-full text-xs">Cuenta Saldada (0,00 €)</span>`;
-
-        const filasMovimientos = ficha.movimientos.map(m => {
-          const signoSaldo = m.saldoAcumulado > 0 ? 'Deudor' : m.saldoAcumulado < 0 ? 'Acreedor' : '0';
-          return `
-            <tr class="border-b border-slate-100 last:border-0 hover:bg-slate-50 text-xs">
-              <td class="py-2 px-3 mono-num font-semibold text-slate-600">#${m.asientoNumero}</td>
-              <td class="py-2 px-3 mono-num text-slate-600">${m.fecha}</td>
-              <td class="py-2 px-3 font-medium text-slate-800">${m.concepto}</td>
-              <td class="py-2 px-3 text-slate-500">${m.referencia}</td>
-              <td class="py-2 px-3 text-right mono-num ${m.debe > 0 ? 'font-semibold text-slate-900' : 'text-slate-300'}">${m.debe > 0 ? formatearMoneda(m.debe) : '-'}</td>
-              <td class="py-2 px-3 text-right mono-num ${m.haber > 0 ? 'font-semibold text-slate-900' : 'text-slate-300'}">${m.haber > 0 ? formatearMoneda(m.haber) : '-'}</td>
-              <td class="py-2 px-3 text-right mono-num font-bold bg-slate-50/70 text-slate-900">
-                ${formatearMoneda(Math.abs(m.saldoAcumulado))} <span class="text-[10px] font-normal text-slate-500">(${signoSaldo})</span>
-              </td>
-            </tr>
-          `;
-        }).join('');
+        const filasMov = ficha.movimientos.map(mov => `
+          <tr class="border-b border-slate-100 last:border-0 text-xs">
+            <td class="py-2 px-3 mono-num font-semibold">#${mov.asientoNumero}</td>
+            <td class="py-2 px-3 mono-num">${mov.fecha}</td>
+            <td class="py-2 px-3 font-medium">${mov.concepto}</td>
+            <td class="py-2 px-3 text-slate-500">${mov.referencia}</td>
+            <td class="py-2 px-3 text-right mono-num">${mov.debe > 0 ? formatearMoneda(mov.debe) : '-'}</td>
+            <td class="py-2 px-3 text-right mono-num">${mov.haber > 0 ? formatearMoneda(mov.haber) : '-'}</td>
+            <td class="py-2 px-3 text-right mono-num font-bold bg-slate-50">${formatearMoneda(Math.abs(mov.saldoAcumulado))}</td>
+          </tr>
+        `).join('');
 
         return `
           <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-            <div class="bg-slate-900 text-white px-5 py-3.5 flex flex-wrap justify-between items-center gap-3">
-              <div class="flex items-center gap-3">
-                <span class="bg-amber-500 text-slate-950 font-bold mono-num px-2.5 py-1 rounded text-xs">${ficha.codigo}</span>
-                <div>
-                  <h3 class="font-bold text-sm">${ficha.nombre}</h3>
-                  <span class="text-[11px] text-slate-400">Masa Patrimonial: ${ficha.tipo}</span>
-                </div>
-              </div>
-              <div>${etiquetaSaldo}</div>
+            <div class="bg-slate-900 text-white px-5 py-3 flex justify-between items-center">
+              <div><span class="bg-amber-500 text-slate-950 font-bold mono-num px-2 py-0.5 rounded text-xs mr-2">${ficha.codigo}</span><strong class="text-sm">${ficha.nombre}</strong></div>
+              <span class="text-xs font-bold text-amber-400">Saldo: ${formatearMoneda(Math.abs(ficha.saldoNeto))}</span>
             </div>
-            <div class="overflow-x-auto">
-              <table class="w-full text-left border-collapse">
-                <thead>
-                  <tr class="bg-slate-50 border-b border-slate-200 text-[11px] uppercase text-slate-500">
-                    <th class="py-2 px-3 w-20">Asiento</th>
-                    <th class="py-2 px-3 w-28">Fecha</th>
-                    <th class="py-2 px-3">Concepto / Operación</th>
-                    <th class="py-2 px-3 w-32">Ref.</th>
-                    <th class="py-2 px-3 w-28 text-right">Debe</th>
-                    <th class="py-2 px-3 w-28 text-right">Haber</th>
-                    <th class="py-2 px-3 w-40 text-right bg-slate-100/70">Saldo Vivo</th>
-                  </tr>
-                </thead>
-                <tbody>${filasMovimientos}</tbody>
-                <tfoot>
-                  <tr class="bg-slate-50 font-bold text-xs border-t border-slate-200">
-                    <td colspan="4" class="py-2.5 px-3 text-right text-slate-600">Sumas Acumuladas en la Cuenta ${ficha.codigo}:</td>
-                    <td class="py-2.5 px-3 text-right mono-num text-slate-900">${formatearMoneda(ficha.sumaDebe)}</td>
-                    <td class="py-2.5 px-3 text-right mono-num text-slate-900">${formatearMoneda(ficha.sumaHaber)}</td>
-                    <td class="py-2.5 px-3 text-right mono-num bg-slate-100 text-slate-900">${formatearMoneda(Math.abs(ficha.saldoNeto))}</td>
-                  </tr>
-                </tfoot>
-              </table>
-            </div>
+            <table class="w-full text-left border-collapse"><tbody>${filasMov}</tbody></table>
           </div>
         `;
       }).join('');
     }
 
     function exportarSumasYSaldosCSV() {
-      const mapaMayor = calcularDatosMayor();
-      const activas = Object.values(mapaMayor).filter(c => c.movimientos.length > 0).sort((a, b) => a.codigo.localeCompare(b.codigo));
-      if (activas.length === 0) return alert('No hay movimientos para exportar.');
-
-      let csv = 'Codigo;Subcuenta;Masa Patrimonial;Suma Debe;Suma Haber;Saldo Deudor;Saldo Acreedor\n';
-      activas.forEach(c => {
-        csv += `${c.codigo};"${c.nombre}";${c.tipo};${c.sumaDebe.toFixed(2).replace('.', ',')};${c.sumaHaber.toFixed(2).replace('.', ',')};${c.saldoDeudor.toFixed(2).replace('.', ',')};${c.saldoAcreedor.toFixed(2).replace('.', ',')}\n`;
-      });
-
-      const blob = new Blob(["\uFEFF" + csv], { type: 'text/csv;charset=utf-8;' });
+      const activas = Object.values(calcularDatosMayor()).filter(c => c.movimientos.length > 0);
+      if (activas.length === 0) return alert('Sin datos.');
+      let csv = 'Codigo;Subcuenta;Suma Debe;Suma Haber;Saldo Deudor;Saldo Acreedor\n';
+      activas.forEach(c => { csv += `${c.codigo};"${c.nombre}";${c.sumaDebe};${c.sumaHaber};${c.saldoDeudor};${c.saldoAcreedor}\n`; });
       const a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = `Sumas_y_Saldos_CiRcA_${new Date().toISOString().slice(0,10)}.csv`;
+      a.href = URL.createObjectURL(new Blob(["\uFEFF" + csv], { type: 'text/csv;charset=utf-8;' }));
+      a.download = `Sumas_y_Saldos_CiRcA.csv`;
       a.click();
-    }
-
-    function limpiarFiltrosPyG() {
-      document.getElementById('pyg-desde').value = '';
-      document.getElementById('pyg-hasta').value = '';
-      renderizarModuloPyG();
     }
 
     function calcularDatosPyGPorFechas(desde = '', hasta = '', tasaImpuesto = 0) {
       const mapaMayor = calcularDatosMayorPorFechas(desde, hasta);
-
-      const cuentasCifraNegocios = [];
-      const cuentasOtrosIngresos = [];
-      const cuentasAprovisionamientos = [];
-      const cuentasGastosOperativos = [];
-
-      let totalCifraNegocios = 0;
-      let totalOtrosIngresos = 0;
-      let totalAprovisionamientos = 0;
-      let totalGastosOperativos = 0;
+      const cuentasCifraNegocios = [], cuentasOtrosIngresos = [], cuentasAprovisionamientos = [], cuentasGastosOperativos = [];
+      let totalCifraNegocios = 0, totalOtrosIngresos = 0, totalAprovisionamientos = 0, totalGastosOperativos = 0;
 
       Object.values(mapaMayor).forEach(ficha => {
         if (ficha.tipo === 'Ingreso' || ficha.codigo.startsWith('7')) {
-          const importeIngreso = Math.round((ficha.sumaHaber - ficha.sumaDebe) * 100) / 100;
-          if (Math.abs(importeIngreso) > 0.001) {
-            if (ficha.codigo.startsWith('70')) {
-              cuentasCifraNegocios.push({ ...ficha, importePyG: importeIngreso });
-              totalCifraNegocios += importeIngreso;
-            } else {
-              cuentasOtrosIngresos.push({ ...ficha, importePyG: importeIngreso });
-              totalOtrosIngresos += importeIngreso;
-            }
+          const imp = Math.round((ficha.sumaHaber - ficha.sumaDebe) * 100) / 100;
+          if (Math.abs(imp) > 0.001) {
+            if (ficha.codigo.startsWith('70')) { cuentasCifraNegocios.push({ ...ficha, importePyG: imp }); totalCifraNegocios += imp; }
+            else { cuentasOtrosIngresos.push({ ...ficha, importePyG: imp }); totalOtrosIngresos += imp; }
           }
         } else if (ficha.tipo === 'Gasto' || ficha.codigo.startsWith('6')) {
-          const importeGasto = Math.round((ficha.sumaDebe - ficha.sumaHaber) * 100) / 100;
-          if (Math.abs(importeGasto) > 0.001) {
-            if (ficha.codigo.startsWith('60') || ficha.codigo.startsWith('61')) {
-              cuentasAprovisionamientos.push({ ...ficha, importePyG: importeGasto });
-              totalAprovisionamientos += importeGasto;
-            } else {
-              cuentasGastosOperativos.push({ ...ficha, importePyG: importeGasto });
-              totalGastosOperativos += importeGasto;
-            }
+          const imp = Math.round((ficha.sumaDebe - ficha.sumaHaber) * 100) / 100;
+          if (Math.abs(imp) > 0.001) {
+            if (ficha.codigo.startsWith('60') || ficha.codigo.startsWith('61')) { cuentasAprovisionamientos.push({ ...ficha, importePyG: imp }); totalAprovisionamientos += imp; }
+            else { cuentasGastosOperativos.push({ ...ficha, importePyG: imp }); totalGastosOperativos += imp; }
           }
         }
       });
 
-      totalCifraNegocios = Math.round(totalCifraNegocios * 100) / 100;
-      totalOtrosIngresos = Math.round(totalOtrosIngresos * 100) / 100;
       const totalIngresosExplotacion = Math.round((totalCifraNegocios + totalOtrosIngresos) * 100) / 100;
-      totalAprovisionamientos = Math.round(totalAprovisionamientos * 100) / 100;
-      totalGastosOperativos = Math.round(totalGastosOperativos * 100) / 100;
-
       const margenBrutoComercial = Math.round((totalCifraNegocios - totalAprovisionamientos) * 100) / 100;
       const resultadoExplotacion = Math.round((totalIngresosExplotacion - totalAprovisionamientos - totalGastosOperativos) * 100) / 100;
-
-      let impuestoSociedades = 0;
-      if (resultadoExplotacion > 0 && tasaImpuesto > 0) {
-        impuestoSociedades = Math.round((resultadoExplotacion * (tasaImpuesto / 100)) * 100) / 100;
-      }
-
+      const impuestoSociedades = (resultadoExplotacion > 0 && tasaImpuesto > 0) ? Math.round(resultadoExplotacion * (tasaImpuesto / 100) * 100) / 100 : 0;
       const resultadoEjercicio129 = Math.round((resultadoExplotacion - impuestoSociedades) * 100) / 100;
 
-      return {
-        cuentasCifraNegocios,
-        cuentasOtrosIngresos,
-        cuentasAprovisionamientos,
-        cuentasGastosOperativos,
-        totalCifraNegocios,
-        totalOtrosIngresos,
-        totalIngresosExplotacion,
-        totalAprovisionamientos,
-        totalGastosOperativos,
-        margenBrutoComercial,
-        resultadoExplotacion,
-        tasaImpuesto,
-        impuestoSociedades,
-        resultadoEjercicio129
-      };
+      return { cuentasCifraNegocios, cuentasOtrosIngresos, cuentasAprovisionamientos, cuentasGastosOperativos, totalCifraNegocios, totalOtrosIngresos, totalIngresosExplotacion, totalAprovisionamientos, totalGastosOperativos, margenBrutoComercial, resultadoExplotacion, tasaImpuesto, impuestoSociedades, resultadoEjercicio129 };
     }
 
     function calcularDatosPyG() {
-      const desde = document.getElementById('pyg-desde').value;
-      const hasta = document.getElementById('pyg-hasta').value;
-      const tasaImpuesto = parseFloat(document.getElementById('pyg-tasa-impuesto').value) || 0;
-      return calcularDatosPyGPorFechas(desde, hasta, tasaImpuesto);
+      return calcularDatosPyGPorFechas(document.getElementById('pyg-desde').value, document.getElementById('pyg-hasta').value, parseFloat(document.getElementById('pyg-tasa-impuesto').value) || 0);
     }
 
     function formatearPorcentajePyG(valor, baseVentas) {
       if (!baseVentas || baseVentas <= 0) return '-';
-      const pct = (valor / baseVentas) * 100;
-      return pct.toLocaleString('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + ' %';
+      return ((valor / baseVentas) * 100).toLocaleString('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + ' %';
     }
 
     function renderizarModuloPyG() {
@@ -1909,110 +2252,35 @@
 
       document.getElementById('kpi-pyg-ingresos').textContent = formatearMoneda(datos.totalIngresosExplotacion);
       document.getElementById('kpi-pyg-aprovisionamientos').textContent = formatearMoneda(datos.totalAprovisionamientos);
-      document.getElementById('kpi-pyg-margen-bruto').textContent = `Margen Comercial: ${formatearMoneda(datos.margenBrutoComercial)} (${formatearPorcentajePyG(datos.margenBrutoComercial, baseRef)})`;
+      document.getElementById('kpi-pyg-margen-bruto').textContent = `Margen Comercial: ${formatearMoneda(datos.margenBrutoComercial)}`;
       document.getElementById('kpi-pyg-gastos-op').textContent = formatearMoneda(datos.totalGastosOperativos);
       document.getElementById('kpi-pyg-resultado-neto').textContent = formatearMoneda(datos.resultadoEjercicio129);
-      document.getElementById('kpi-pyg-rentabilidad').textContent = `Rentabilidad neta s/ ingresos: ${formatearPorcentajePyG(datos.resultadoEjercicio129, baseRef)}`;
+      document.getElementById('kpi-pyg-rentabilidad').textContent = `Rentabilidad neta: ${formatearPorcentajePyG(datos.resultadoEjercicio129, baseRef)}`;
 
-      const badgeEstado = document.getElementById('badge-pyg-estado');
-      if (datos.resultadoEjercicio129 > 0) {
-        badgeEstado.textContent = `BENEFICIO NETO: +${formatearMoneda(datos.resultadoEjercicio129)}`;
-        badgeEstado.className = 'text-xs px-3 py-1 rounded-full bg-emerald-500 text-slate-950 font-bold';
-      } else if (datos.resultadoEjercicio129 < 0) {
-        badgeEstado.textContent = `PÉRDIDA: ${formatearMoneda(datos.resultadoEjercicio129)}`;
-        badgeEstado.className = 'text-xs px-3 py-1 rounded-full bg-rose-500 text-white font-bold';
-      } else {
-        badgeEstado.textContent = 'Resultado Neutro (0,00 €)';
-        badgeEstado.className = 'text-xs px-3 py-1 rounded-full bg-slate-800 text-slate-300 font-bold';
-      }
-
-      const renderSubcuentas = (lista, esGasto = false) => {
-        if (lista.length === 0) {
-          return `<tr class="text-xs text-slate-400 italic"><td class="py-2 pl-10 pr-6">Sin apuntes contabilizados en este epígrafe</td><td class="py-2 px-6 text-right">-</td><td class="py-2 px-6 text-right mono-num">0,00 €</td></tr>`;
-        }
-        return lista.map(c => {
-          const valorMostrar = esGasto ? -c.importePyG : c.importePyG;
-          return `
-            <tr onclick="seleccionarCuentaEnMayor('${c.codigo}')" class="text-xs hover:bg-slate-50 cursor-pointer transition">
-              <td class="py-2 pl-10 pr-6 text-slate-700"><span class="font-bold mono-num text-slate-900 underline decoration-slate-300 mr-2">${c.codigo}</span> ${c.nombre}</td>
-              <td class="py-2 px-6 text-right mono-num text-slate-500">${formatearPorcentajePyG(valorMostrar, baseRef)}</td>
-              <td class="py-2 px-6 text-right mono-num font-medium ${esGasto ? 'text-rose-700' : 'text-slate-900'}">${formatearMoneda(valorMostrar)}</td>
-            </tr>
-          `;
-        }).join('');
-      };
+      const renderSub = (lista, esGasto = false) => lista.map(c => {
+        const val = esGasto ? -c.importePyG : c.importePyG;
+        return `<tr class="text-xs"><td class="py-2 pl-10 pr-6"><span class="font-bold mono-num mr-2">${c.codigo}</span>${c.nombre}</td><td class="py-2 px-6 text-right mono-num">${formatearPorcentajePyG(val, baseRef)}</td><td class="py-2 px-6 text-right mono-num font-medium">${formatearMoneda(val)}</td></tr>`;
+      }).join('');
 
       document.getElementById('tabla-estructura-pyg').innerHTML = `
-        <tr class="bg-slate-50/80 font-bold text-slate-900">
-          <td class="py-3 px-6">1. Importe neto de la cifra de negocios (Ventas REBU y General)</td>
-          <td class="py-3 px-6 text-right mono-num text-slate-600">${formatearPorcentajePyG(datos.totalCifraNegocios, baseRef)}</td>
-          <td class="py-3 px-6 text-right mono-num text-emerald-700">${formatearMoneda(datos.totalCifraNegocios)}</td>
-        </tr>
-        ${renderSubcuentas(datos.cuentasCifraNegocios, false)}
-
-        <tr class="bg-slate-50/80 font-bold text-slate-900 border-t border-slate-200">
-          <td class="py-3 px-6">4. Aprovisionamientos (Coste adquisiciones REBU, embalajes y variación existencias)</td>
-          <td class="py-3 px-6 text-right mono-num text-slate-600">${formatearPorcentajePyG(-datos.totalAprovisionamientos, baseRef)}</td>
-          <td class="py-3 px-6 text-right mono-num text-rose-700">${formatearMoneda(-datos.totalAprovisionamientos)}</td>
-        </tr>
-        ${renderSubcuentas(datos.cuentasAprovisionamientos, true)}
-
-        <tr class="bg-amber-50/70 font-bold text-slate-900 border-y-2 border-amber-200">
-          <td class="py-3 px-6 uppercase text-xs tracking-wider text-amber-950">★ Margen Bruto Comercial (Ventas Netas - Coste Aprovisionamientos)</td>
-          <td class="py-3 px-6 text-right mono-num text-amber-900">${formatearPorcentajePyG(datos.margenBrutoComercial, baseRef)}</td>
-          <td class="py-3 px-6 text-right mono-num text-amber-950">${formatearMoneda(datos.margenBrutoComercial)}</td>
-        </tr>
-
-        <tr class="bg-slate-50/80 font-bold text-slate-900">
-          <td class="py-3 px-6">5. Otros ingresos de explotación (Portes y envíos facturados)</td>
-          <td class="py-3 px-6 text-right mono-num text-slate-600">${formatearPorcentajePyG(datos.totalOtrosIngresos, baseRef)}</td>
-          <td class="py-3 px-6 text-right mono-num text-emerald-700">${formatearMoneda(datos.totalOtrosIngresos)}</td>
-        </tr>
-        ${renderSubcuentas(datos.cuentasOtrosIngresos, false)}
-
-        <tr class="bg-slate-50/80 font-bold text-slate-900 border-t border-slate-200">
-          <td class="py-3 px-6">7. Otros gastos de explotación (Comisiones plataformas, transportes y servicios exteriores)</td>
-          <td class="py-3 px-6 text-right mono-num text-slate-600">${formatearPorcentajePyG(-datos.totalGastosOperativos, baseRef)}</td>
-          <td class="py-3 px-6 text-right mono-num text-rose-700">${formatearMoneda(-datos.totalGastosOperativos)}</td>
-        </tr>
-        ${renderSubcuentas(datos.cuentasGastosOperativos, true)}
-
-        <tr class="bg-slate-100 font-bold text-slate-900 border-t-2 border-slate-300">
-          <td class="py-3.5 px-6 uppercase text-xs tracking-wider">A) RESULTADO DE EXPLOTACIÓN (BAII / EBITDA)</td>
-          <td class="py-3.5 px-6 text-right mono-num">${formatearPorcentajePyG(datos.resultadoExplotacion, baseRef)}</td>
-          <td class="py-3.5 px-6 text-right mono-num text-base ${datos.resultadoExplotacion >= 0 ? 'text-emerald-800' : 'text-rose-700'}">${formatearMoneda(datos.resultadoExplotacion)}</td>
-        </tr>
-
-        <tr class="bg-white text-xs font-semibold text-slate-600 border-t border-slate-200">
-          <td class="py-2.5 px-6">Impuesto sobre Sociedades estimado (${datos.tasaImpuesto}%)</td>
-          <td class="py-2.5 px-6 text-right mono-num">${formatearPorcentajePyG(-datos.impuestoSociedades, baseRef)}</td>
-          <td class="py-2.5 px-6 text-right mono-num text-rose-700">${formatearMoneda(-datos.impuestoSociedades)}</td>
-        </tr>
-
-        <tr class="bg-slate-900 text-white font-bold text-base">
-          <td class="py-4 px-6">D) RESULTADO DEL EJERCICIO (Saldo automático a Cuenta 129.0)</td>
-          <td class="py-4 px-6 text-right mono-num text-amber-400 text-sm">${formatearPorcentajePyG(datos.resultadoEjercicio129, baseRef)}</td>
-          <td class="py-4 px-6 text-right mono-num ${datos.resultadoEjercicio129 >= 0 ? 'text-emerald-400' : 'text-rose-400'}">${formatearMoneda(datos.resultadoEjercicio129)}</td>
-        </tr>
+        <tr class="bg-slate-50 font-bold"><td class="py-3 px-6">1. Importe neto de la cifra de negocios</td><td class="py-3 px-6 text-right mono-num">${formatearPorcentajePyG(datos.totalCifraNegocios, baseRef)}</td><td class="py-3 px-6 text-right mono-num text-emerald-700">${formatearMoneda(datos.totalCifraNegocios)}</td></tr>
+        ${renderSub(datos.cuentasCifraNegocios, false)}
+        <tr class="bg-slate-50 font-bold"><td class="py-3 px-6">4. Aprovisionamientos</td><td class="py-3 px-6 text-right mono-num">${formatearPorcentajePyG(-datos.totalAprovisionamientos, baseRef)}</td><td class="py-3 px-6 text-right mono-num text-rose-700">${formatearMoneda(-datos.totalAprovisionamientos)}</td></tr>
+        ${renderSub(datos.cuentasAprovisionamientos, true)}
+        <tr class="bg-amber-50 font-bold"><td class="py-3 px-6">★ Margen Bruto Comercial</td><td class="py-3 px-6 text-right mono-num">${formatearPorcentajePyG(datos.margenBrutoComercial, baseRef)}</td><td class="py-3 px-6 text-right mono-num">${formatearMoneda(datos.margenBrutoComercial)}</td></tr>
+        <tr class="bg-slate-50 font-bold"><td class="py-3 px-6">7. Otros gastos de explotación</td><td class="py-3 px-6 text-right mono-num">${formatearPorcentajePyG(-datos.totalGastosOperativos, baseRef)}</td><td class="py-3 px-6 text-right mono-num text-rose-700">${formatearMoneda(-datos.totalGastosOperativos)}</td></tr>
+        ${renderSub(datos.cuentasGastosOperativos, true)}
+        <tr class="bg-slate-100 font-bold"><td class="py-3.5 px-6">A) RESULTADO DE EXPLOTACIÓN (EBITDA)</td><td class="py-3.5 px-6 text-right mono-num">${formatearPorcentajePyG(datos.resultadoExplotacion, baseRef)}</td><td class="py-3.5 px-6 text-right mono-num">${formatearMoneda(datos.resultadoExplotacion)}</td></tr>
+        <tr class="bg-slate-900 text-white font-bold"><td class="py-4 px-6">D) RESULTADO DEL EJERCICIO (129.0)</td><td class="py-4 px-6 text-right mono-num text-amber-400">${formatearPorcentajePyG(datos.resultadoEjercicio129, baseRef)}</td><td class="py-4 px-6 text-right mono-num">${formatearMoneda(datos.resultadoEjercicio129)}</td></tr>
       `;
     }
 
     function exportarPyGCSV() {
       const d = calcularDatosPyG();
-      let csv = 'Epigrafe / Subcuenta;Importe Euros\n';
-      csv += `"1. Importe neto de la cifra de negocios";${d.totalCifraNegocios.toFixed(2).replace('.', ',')}\n`;
-      csv += `"4. Aprovisionamientos";${(-d.totalAprovisionamientos).toFixed(2).replace('.', ',')}\n`;
-      csv += `"MARGEN BRUTO COMERCIAL";${d.margenBrutoComercial.toFixed(2).replace('.', ',')}\n`;
-      csv += `"5. Otros ingresos de explotacion";${d.totalOtrosIngresos.toFixed(2).replace('.', ',')}\n`;
-      csv += `"7. Otros gastos de explotacion";${(-d.totalGastosOperativos).toFixed(2).replace('.', ',')}\n`;
-      csv += `"A) RESULTADO DE EXPLOTACION";${d.resultadoExplotacion.toFixed(2).replace('.', ',')}\n`;
-      csv += `"Impuesto sobre Sociedades (${d.tasaImpuesto}%)";${(-d.impuestoSociedades).toFixed(2).replace('.', ',')}\n`;
-      csv += `"D) RESULTADO DEL EJERCICIO (129.0)";${d.resultadoEjercicio129.toFixed(2).replace('.', ',')}\n`;
-
-      const blob = new Blob(["\uFEFF" + csv], { type: 'text/csv;charset=utf-8;' });
+      let csv = `Concepto;Importe\nCifra Negocios;${d.totalCifraNegocios}\nAprovisionamientos;${-d.totalAprovisionamientos}\nGastos Explotacion;${-d.totalGastosOperativos}\nResultado Ejercicio;${d.resultadoEjercicio129}\n`;
       const a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = `Perdidas_y_Ganancias_CiRcA_${new Date().toISOString().slice(0,10)}.csv`;
+      a.href = URL.createObjectURL(new Blob(["\uFEFF" + csv], { type: 'text/csv;charset=utf-8;' }));
+      a.download = `PyG_CiRcA.csv`;
       a.click();
     }
 
@@ -2021,157 +2289,108 @@
       const mapaMayor = calcularDatosMayorPorFechas('', fechaCorte);
       const datosPyG = calcularDatosPyGPorFechas('', fechaCorte, 0);
 
-      const inmovilizado = [];
-      const existencias = [];
-      const deudores = [];
-      const tesoreria = [];
-      const fondosPropios = [];
-      const pasivoExigible = [];
-
-      let sumInmovilizado = 0;
-      let sumExistencias = 0;
-      let sumDeudores = 0;
-      let sumTesoreria = 0;
-      let sumFondosPropios = 0;
-      let sumPasivoExigible = 0;
+      const inmovilizado = [], existencias = [], deudores = [], tesoreria = [], fondosPropios = [], pasivoExigible = [];
+      let sumInmovilizado = 0, sumExistencias = 0, sumDeudores = 0, sumTesoreria = 0, sumFondosPropios = 0, sumPasivoExigible = 0;
 
       Object.values(mapaMayor).forEach(ficha => {
         if (ficha.tipo === 'Ingreso' || ficha.tipo === 'Gasto' || ficha.codigo.startsWith('6') || ficha.codigo.startsWith('7')) return;
         if (Math.abs(ficha.saldoNeto) < 0.005) return;
 
         if (ficha.tipo === 'Activo') {
-          const importeActivo = ficha.saldoNeto;
-          const item = { codigo: ficha.codigo, nombre: ficha.nombre, importe: importeActivo };
-          if (ficha.codigo.startsWith('2')) { inmovilizado.push(item); sumInmovilizado += importeActivo; }
-          else if (ficha.codigo.startsWith('3')) { existencias.push(item); sumExistencias += importeActivo; }
-          else if (ficha.codigo.startsWith('4')) { deudores.push(item); sumDeudores += importeActivo; }
-          else { tesoreria.push(item); sumTesoreria += importeActivo; }
+          const item = { codigo: ficha.codigo, nombre: ficha.nombre, importe: ficha.saldoNeto };
+          if (ficha.codigo.startsWith('2')) { inmovilizado.push(item); sumInmovilizado += item.importe; }
+          else if (ficha.codigo.startsWith('3')) { existencias.push(item); sumExistencias += item.importe; }
+          else if (ficha.codigo.startsWith('4')) { deudores.push(item); sumDeudores += item.importe; }
+          else { tesoreria.push(item); sumTesoreria += item.importe; }
         } else if (ficha.tipo === 'Patrimonio Neto') {
-          const importePN = -ficha.saldoNeto;
-          fondosPropios.push({ codigo: ficha.codigo, nombre: ficha.nombre, importe: importePN });
-          sumFondosPropios += importePN;
+          fondosPropios.push({ codigo: ficha.codigo, nombre: ficha.nombre, importe: -ficha.saldoNeto });
+          sumFondosPropios += (-ficha.saldoNeto);
         } else if (ficha.tipo === 'Pasivo') {
-          const importePasivo = -ficha.saldoNeto;
-          pasivoExigible.push({ codigo: ficha.codigo, nombre: ficha.nombre, importe: importePasivo });
-          sumPasivoExigible += importePasivo;
+          pasivoExigible.push({ codigo: ficha.codigo, nombre: ficha.nombre, importe: -ficha.saldoNeto });
+          sumPasivoExigible += (-ficha.saldoNeto);
         }
       });
 
       const resultadoVivo129 = datosPyG.resultadoExplotacion;
       sumFondosPropios = Math.round((sumFondosPropios + resultadoVivo129) * 100) / 100;
-      sumInmovilizado = Math.round(sumInmovilizado * 100) / 100;
-      sumExistencias = Math.round(sumExistencias * 100) / 100;
-      sumDeudores = Math.round(sumDeudores * 100) / 100;
-      sumTesoreria = Math.round(sumTesoreria * 100) / 100;
-      sumPasivoExigible = Math.round(sumPasivoExigible * 100) / 100;
-
       const totalActivoCorriente = Math.round((sumExistencias + sumDeudores + sumTesoreria) * 100) / 100;
       const totalActivo = Math.round((sumInmovilizado + totalActivoCorriente) * 100) / 100;
       const totalPatrimonioYPasivo = Math.round((sumFondosPropios + sumPasivoExigible) * 100) / 100;
 
-      return {
-        inmovilizado, existencias, deudores, tesoreria, fondosPropios, pasivoExigible,
-        sumInmovilizado, sumExistencias, sumDeudores, sumTesoreria, totalActivoCorriente,
-        totalActivo, resultadoVivo129, sumFondosPropios, sumPasivoExigible, totalPatrimonioYPasivo,
-        cuadrado: Math.abs(totalActivo - totalPatrimonioYPasivo) < 0.01
-      };
+      return { inmovilizado, existencias, deudores, tesoreria, fondosPropios, pasivoExigible, sumInmovilizado, sumExistencias, sumDeudores, sumTesoreria, totalActivoCorriente, totalActivo, resultadoVivo129, sumFondosPropios, sumPasivoExigible, totalPatrimonioYPasivo };
     }
 
     function renderizarModuloBalance() {
       const b = calcularDatosBalance();
-
       document.getElementById('kpi-balance-activo').textContent = formatearMoneda(b.totalActivo);
       document.getElementById('kpi-balance-pasivo-pn').textContent = formatearMoneda(b.totalPatrimonioYPasivo);
       document.getElementById('header-total-activo').textContent = formatearMoneda(b.totalActivo);
       document.getElementById('header-total-pn-pasivo').textContent = formatearMoneda(b.totalPatrimonioYPasivo);
 
-      const renderFilasBalance = (lista) => {
-        if (lista.length === 0) return `<tr class="text-slate-400 italic"><td class="py-2 pl-8 pr-4">Sin saldo en este epígrafe</td><td class="py-2 px-4 text-right mono-num">0,00 €</td></tr>`;
-        return lista.map(item => `
-          <tr onclick="seleccionarCuentaEnMayor('${item.codigo}')" class="hover:bg-slate-50 cursor-pointer transition">
-            <td class="py-2 pl-8 pr-4 text-slate-700"><span class="font-bold mono-num text-slate-900 underline decoration-slate-300 mr-1.5">${item.codigo}</span> ${item.nombre}</td>
-            <td class="py-2 px-4 text-right mono-num font-medium ${item.importe < 0 ? 'text-rose-700' : 'text-slate-900'}">${formatearMoneda(item.importe)}</td>
-          </tr>
-        `).join('');
-      };
+      const renderFilas = (lista) => lista.length === 0
+        ? `<tr class="text-slate-400 italic"><td class="py-2 pl-8 pr-4">Sin saldo</td><td class="py-2 px-4 text-right mono-num">0,00 €</td></tr>`
+        : lista.map(i => `<tr class="hover:bg-slate-50"><td class="py-2 pl-8 pr-4"><span class="font-bold mono-num mr-1.5">${i.codigo}</span>${i.nombre}</td><td class="py-2 px-4 text-right mono-num font-medium">${formatearMoneda(i.importe)}</td></tr>`).join('');
 
       document.getElementById('tabla-balance-activo').innerHTML = `
-        <tr class="bg-slate-100 font-bold text-slate-900"><td class="py-3 px-4 uppercase">A) ACTIVO NO CORRIENTE (Inmovilizado)</td><td class="py-3 px-4 text-right mono-num text-blue-900">${formatearMoneda(b.sumInmovilizado)}</td></tr>
-        ${renderFilasBalance(b.inmovilizado)}
-        <tr class="bg-slate-100 font-bold text-slate-900 border-t-2 border-slate-200"><td class="py-3 px-4 uppercase">B) ACTIVO CORRIENTE</td><td class="py-3 px-4 text-right mono-num text-blue-900">${formatearMoneda(b.totalActivoCorriente)}</td></tr>
-        <tr class="bg-slate-50 font-semibold text-slate-700"><td class="py-2 px-5">I. Existencias (Stock Piezas Vintage REBU)</td><td class="py-2 px-4 text-right mono-num">${formatearMoneda(b.sumExistencias)}</td></tr>
-        ${renderFilasBalance(b.existencias)}
-        <tr class="bg-slate-50 font-semibold text-slate-700"><td class="py-2 px-5">II. Deudores comerciales y H.P. Deudora por IVA</td><td class="py-2 px-4 text-right mono-num">${formatearMoneda(b.sumDeudores)}</td></tr>
-        ${renderFilasBalance(b.deudores)}
-        <tr class="bg-slate-50 font-semibold text-slate-700"><td class="py-2 px-5">III. Efectivo y otros activos líquidos (Tesorería)</td><td class="py-2 px-4 text-right mono-num">${formatearMoneda(b.sumTesoreria)}</td></tr>
-        ${renderFilasBalance(b.tesoreria)}
-        <tr class="bg-blue-950 text-white font-bold text-sm"><td class="py-3.5 px-4 uppercase">TOTAL ACTIVO (A + B)</td><td class="py-3.5 px-4 text-right mono-num text-blue-300">${formatearMoneda(b.totalActivo)}</td></tr>
+        <tr class="bg-slate-100 font-bold"><td class="py-3 px-4">A) ACTIVO NO CORRIENTE</td><td class="py-3 px-4 text-right mono-num">${formatearMoneda(b.sumInmovilizado)}</td></tr>
+        ${renderFilas(b.inmovilizado)}
+        <tr class="bg-slate-100 font-bold"><td class="py-3 px-4">B) ACTIVO CORRIENTE</td><td class="py-3 px-4 text-right mono-num">${formatearMoneda(b.totalActivoCorriente)}</td></tr>
+        ${renderFilas(b.existencias)}
+        ${renderFilas(b.deudores)}
+        ${renderFilas(b.tesoreria)}
+        <tr class="bg-blue-950 text-white font-bold"><td class="py-3.5 px-4">TOTAL ACTIVO</td><td class="py-3.5 px-4 text-right mono-num text-blue-300">${formatearMoneda(b.totalActivo)}</td></tr>
       `;
 
       document.getElementById('tabla-balance-pn-pasivo').innerHTML = `
-        <tr class="bg-slate-100 font-bold text-slate-900"><td class="py-3 px-4 uppercase">A) PATRIMONIO NETO (Fondos Propios)</td><td class="py-3 px-4 text-right mono-num text-amber-900">${formatearMoneda(b.sumFondosPropios)}</td></tr>
-        ${renderFilasBalance(b.fondosPropios)}
-        <tr onclick="cambiarTab('pyg')" class="bg-amber-50/60 hover:bg-amber-100/60 cursor-pointer transition">
-          <td class="py-2.5 pl-8 pr-4 text-slate-800 font-semibold"><span class="font-bold mono-num text-amber-900 underline mr-1.5">129.0 (Vivo)</span> Resultado del ejercicio en curso (PyG)</td>
-          <td class="py-2.5 px-4 text-right mono-num font-bold ${b.resultadoVivo129 >= 0 ? 'text-emerald-700' : 'text-rose-700'}">${formatearMoneda(b.resultadoVivo129)}</td>
-        </tr>
-        <tr class="bg-slate-100 font-bold text-slate-900 border-t-2 border-slate-200"><td class="py-3 px-4 uppercase">B) PASIVO EXIGIBLE (Acreedores, H.P. y Socios)</td><td class="py-3 px-4 text-right mono-num text-purple-900">${formatearMoneda(b.sumPasivoExigible)}</td></tr>
-        ${renderFilasBalance(b.pasivoExigible)}
-        <tr class="bg-slate-900 text-white font-bold text-sm"><td class="py-3.5 px-4 uppercase">TOTAL PATRIMONIO NETO Y PASIVO (A + B)</td><td class="py-3.5 px-4 text-right mono-num text-amber-400">${formatearMoneda(b.totalPatrimonioYPasivo)}</td></tr>
+        <tr class="bg-slate-100 font-bold"><td class="py-3 px-4">A) PATRIMONIO NETO</td><td class="py-3 px-4 text-right mono-num">${formatearMoneda(b.sumFondosPropios)}</td></tr>
+        ${renderFilas(b.fondosPropios)}
+        <tr class="bg-amber-50 font-semibold"><td class="py-2.5 pl-8 pr-4"><span class="font-bold mono-num mr-1.5">129.0</span>Resultado del ejercicio en curso</td><td class="py-2.5 px-4 text-right mono-num font-bold">${formatearMoneda(b.resultadoVivo129)}</td></tr>
+        <tr class="bg-slate-100 font-bold"><td class="py-3 px-4">B) PASIVO EXIGIBLE</td><td class="py-3 px-4 text-right mono-num">${formatearMoneda(b.sumPasivoExigible)}</td></tr>
+        ${renderFilas(b.pasivoExigible)}
+        <tr class="bg-slate-900 text-white font-bold"><td class="py-3.5 px-4">TOTAL PATRIMONIO NETO Y PASIVO</td><td class="py-3.5 px-4 text-right mono-num text-amber-400">${formatearMoneda(b.totalPatrimonioYPasivo)}</td></tr>
       `;
     }
 
     function exportarBalanceCSV() {
       const b = calcularDatosBalance();
-      let csv = 'Masa Patrimonial;Codigo;Subcuenta;Importe Euros\n';
-      csv += `"TOTAL ACTIVO";;;${b.totalActivo.toFixed(2).replace('.', ',')}\n`;
-      csv += `"TOTAL PATRIMONIO NETO Y PASIVO";;;${b.totalPatrimonioYPasivo.toFixed(2).replace('.', ',')}\n`;
-      const blob = new Blob(["\uFEFF" + csv], { type: 'text/csv;charset=utf-8;' });
+      let csv = `Masa;Importe\nTotal Activo;${b.totalActivo}\nTotal Patrimonio Neto y Pasivo;${b.totalPatrimonioYPasivo}\n`;
       const a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = `Balance_Situacion_CiRcA_${new Date().toISOString().slice(0,10)}.csv`;
+      a.href = URL.createObjectURL(new Blob(["\uFEFF" + csv], { type: 'text/csv;charset=utf-8;' }));
+      a.download = `Balance_CiRcA.csv`;
       a.click();
     }
 
     function formatearMoneda(valor) {
-      return valor.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
+      return (valor || 0).toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
     }
 
     function exportarBackupJSON() {
-      const data = { empresa: 'Ágata Michi, S.L.U. - CiRcA by R.B.', fechaExportacion: new Date().toISOString(), cuentas, asientos };
-      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const data = { empresa: 'Ágata Michi, S.L.U. - CiRcA by R.B.', fechaExportacion: new Date().toISOString(), cuentas, asientos, terceros, inventario };
       const a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = `backup_contabilidad_circa_${new Date().toISOString().slice(0,10)}.json`;
+      a.href = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }));
+      a.download = `backup_erp_circa_${new Date().toISOString().slice(0,10)}.json`;
       a.click();
     }
 
     function importarBackupJSON(event) {
       const file = event.target.files[0];
       if (!file) return;
-
       const reader = new FileReader();
       reader.onload = async (e) => {
         try {
-          const contenido = JSON.parse(e.target.result);
-          if (!Array.isArray(contenido.cuentas) || !Array.isArray(contenido.asientos)) {
-            return alert('El archivo JSON no tiene el formato válido del ERP de CiRcA by R.B.');
-          }
-          if (!confirm(`Se van a restaurar ${contenido.asientos.length} asientos y ${contenido.cuentas.length} subcuentas. ¿Deseas continuar?`)) return;
-
-          cuentas = contenido.cuentas;
-          asientos = contenido.asientos;
+          const c = JSON.parse(e.target.result);
+          if (Array.isArray(c.cuentas)) cuentas = c.cuentas;
+          if (Array.isArray(c.asientos)) asientos = c.asientos;
+          if (Array.isArray(c.terceros)) terceros = c.terceros;
+          if (Array.isArray(c.inventario)) inventario = c.inventario;
           localStorage.setItem(STORAGE_CUENTAS, JSON.stringify(cuentas));
           localStorage.setItem(STORAGE_ASIENTOS, JSON.stringify(asientos));
+          localStorage.setItem(STORAGE_TERCEROS, JSON.stringify(terceros));
+          localStorage.setItem(STORAGE_INVENTARIO, JSON.stringify(inventario));
           refrescarTodasLasVistas();
-
-          if (ghConfig && ghConfig.token && ghConfig.autoSync) {
-            await subirDatosAGitHub('Restauración de copia de seguridad JSON');
-          }
-          alert('✓ Copia de seguridad restaurada correctamente.');
-        } catch (err) {
-          alert('Error al leer el archivo JSON.');
-        }
+          if (ghConfig && ghConfig.token && ghConfig.autoSync) await subirDatosAGitHub('Restauración Backup JSON');
+          alert('✓ Copia de seguridad restaurada.');
+        } catch (err) { alert('Archivo JSON inválido.'); }
       };
       reader.readAsText(file);
       event.target.value = '';
