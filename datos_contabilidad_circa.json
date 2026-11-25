@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:31:06.667Z",
+  "ultimaModificacion": "2026-11-25T08:33:06.941Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -748,6 +748,27 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
           "haber": 89.05
+        }
+      ]
+    },
+    {
+      "id": 1795595586306,
+      "numero": 18,
+      "fecha": "2026-01-21",
+      "concepto": "FC/2026/00004 — Rocío Borrell Sanjuán (STOCK INICIAL)",
+      "referencia": "FC/2026/00004",
+      "apuntes": [
+        {
+          "cuenta": "60000001",
+          "nombreCuenta": "Subcuenta",
+          "debe": 15310.36,
+          "haber": 0
+        },
+        {
+          "cuenta": "40000001",
+          "nombreCuenta": "Proveedores -Rocío Borrell Sanjuán",
+          "debe": 0,
+          "haber": 15310.36
         }
       ]
     }
@@ -5709,6 +5730,21 @@
       "fechaCompra": "2026-11-25",
       "precioVentaReal": 0,
       "fechaVenta": ""
+    },
+    {
+      "id": 1795595586308,
+      "referencia": "ART00245",
+      "sku": "ART00245",
+      "nombre": "STOCK INICIAL",
+      "precioCoste": 15310.36,
+      "itp": 0,
+      "totalCoste": 15310.36,
+      "coste": 15310.36,
+      "pvpEstimado": 33682.79,
+      "proveedor": "Rocío Borrell Sanjuán",
+      "refFacturaCompra": "FC/2026/00004",
+      "estado": "En Stock",
+      "fechaCompra": "2026-01-21"
     }
   ],
   "documentos": [
@@ -5821,6 +5857,28 @@
       "cuentaTesoreria": "57200001",
       "piezaId": 1795595392890,
       "asientoIdVinculado": 1795595466099
+    },
+    {
+      "id": 1795595586307,
+      "serie": "FC",
+      "ejercicio": 2026,
+      "secuencia": 4,
+      "numeroDocumento": "FC/2026/00004",
+      "fecha": "2026-01-21",
+      "docRectificado": "",
+      "terceroNombre": "Rocío Borrell Sanjuán",
+      "terceroNif": "47773288B",
+      "terceroDireccion": "ESPAÑA",
+      "regimen": "REBU",
+      "conceptoArticulo": "STOCK INICIAL",
+      "costeREBU": 0,
+      "importeTotal": 15310.36,
+      "baseImponiblePDF": 15310.36,
+      "cuotaIVAPDF": 0,
+      "ivaInternoContable": 0,
+      "cuentaTesoreria": "40000001",
+      "piezaId": null,
+      "asientoIdVinculado": 1795595586306
     }
   ]
 }
