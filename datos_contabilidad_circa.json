@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:32:00.252Z",
+  "ultimaModificacion": "2026-11-25T07:35:21.358Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -308,7 +308,35 @@
       "tipo": "Ingreso"
     }
   ],
-  "asientos": [],
+  "asientos": [
+    {
+      "id": 1795592120409,
+      "numero": 1,
+      "fecha": "2026-01-25",
+      "concepto": "FV/2026/00001 — Hannu Vormisto ([ART00167] Auxiliar de Asiento Space Age)",
+      "referencia": "FV/2026/00001",
+      "apuntes": [
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 75,
+          "haber": 0
+        },
+        {
+          "cuenta": "70000001",
+          "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
+          "debe": 0,
+          "haber": 62.85
+        },
+        {
+          "cuenta": "47702121",
+          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
+          "debe": 0,
+          "haber": 12.15
+        }
+      ]
+    }
+  ],
   "terceros": [
     {
       "id": 1,
@@ -2007,10 +2035,10 @@
       "proveedor": "Rocío Borrell Sanjuán",
       "refFacturaCompra": "FC2026/00002",
       "descripcion": "",
-      "estado": "En Stock",
+      "estado": "Vendido",
       "fechaCompra": "2026-11-25",
-      "precioVentaReal": 0,
-      "fechaVenta": ""
+      "precioVentaReal": 75,
+      "fechaVenta": "2026-01-25"
     },
     {
       "id": 1795591919730,
@@ -5193,5 +5221,28 @@
       "fechaVenta": ""
     }
   ],
-  "documentos": []
+  "documentos": [
+    {
+      "id": 1795592120410,
+      "serie": "FV",
+      "ejercicio": 2026,
+      "secuencia": 1,
+      "numeroDocumento": "FV/2026/00001",
+      "fecha": "2026-01-25",
+      "docRectificado": "",
+      "terceroNombre": "Hannu Vormisto",
+      "terceroNif": "IE9777587C",
+      "terceroDireccion": "Finlandia",
+      "regimen": "REBU",
+      "conceptoArticulo": "[ART00167] Auxiliar de Asiento Space Age",
+      "costeREBU": 5,
+      "importeTotal": 75,
+      "baseImponiblePDF": 75,
+      "cuotaIVAPDF": 0,
+      "ivaInternoContable": 12.15,
+      "cuentaTesoreria": "57200001",
+      "piezaId": 1795591919729,
+      "asientoIdVinculado": 1795592120409
+    }
+  ]
 }
