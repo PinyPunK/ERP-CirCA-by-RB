@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:47:14.948Z",
+  "ultimaModificacion": "2026-11-25T08:49:09.434Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -5900,6 +5900,26 @@
       "pvpEstimado": 0,
       "proveedor": "Vinted",
       "refFacturaCompra": "FC2026/00005",
+      "descripcion": "",
+      "estado": "En Stock",
+      "fechaCompra": "2026-11-25",
+      "precioVentaReal": 0,
+      "fechaVenta": ""
+    },
+    {
+      "id": 1795596548425,
+      "referencia": "ART00486",
+      "sku": "486 26 200 01 133",
+      "nombre": "Percha de Armario Mid Century",
+      "codigoBarras": "4862620001133",
+      "medidas": "",
+      "precioCoste": 11.38,
+      "itp": 0,
+      "totalCoste": 11.38,
+      "coste": 11.38,
+      "pvpEstimado": 0,
+      "proveedor": "Vinted",
+      "refFacturaCompra": "FC2026/00006",
       "descripcion": "",
       "estado": "En Stock",
       "fechaCompra": "2026-11-25",
