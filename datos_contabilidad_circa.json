@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:27:15.637Z",
+  "ultimaModificacion": "2026-11-25T08:28:01.839Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -713,8 +713,8 @@
       "id": 1795595235120,
       "numero": 16,
       "fecha": "2026-01-20",
-      "concepto": "Liquidación trimestral IRPF (Recaudación 111-369)",
-      "referencia": "(IRPF) PRIMER TRIMESTRE",
+      "concepto": "Liquidación trimestral IRPF (Recaudación 111-369) EJERCICIO 2025",
+      "referencia": "(IRPF) CUARTO TRIMESTRE 2025",
       "apuntes": [
         {
           "cuenta": "47510000",
