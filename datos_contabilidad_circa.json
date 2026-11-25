@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:28:27.104Z",
+  "ultimaModificacion": "2026-11-25T07:28:38.426Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -453,27 +453,6 @@
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "debe": 0,
           "haber": 0.21
-        }
-      ]
-    },
-    {
-      "id": 1795582436833,
-      "numero": 32,
-      "fecha": "2026-02-19",
-      "concepto": "COBRO FRA. COBRO FACTURA FV2026/00002",
-      "referencia": "PAMONO FV2026/00002",
-      "apuntes": [
-        {
-          "cuenta": "43000002",
-          "nombreCuenta": "Clientes Catawiki B.V.",
-          "debe": 0,
-          "haber": 148
-        },
-        {
-          "cuenta": "57200001",
-          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "debe": 148,
-          "haber": 0
         }
       ]
     },
