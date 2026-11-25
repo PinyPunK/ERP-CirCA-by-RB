@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:21:06.895Z",
+  "ultimaModificacion": "2026-11-25T07:21:12.628Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -363,27 +363,6 @@
     {
       "id": 1795581464722,
       "numero": 2,
-      "fecha": "2026-01-01",
-      "concepto": "RECLASIFICACIÓN CONTABLE EJERCICIO 2025",
-      "referencia": "",
-      "apuntes": [
-        {
-          "cuenta": "12100000",
-          "nombreCuenta": "RESULTADOS NEGATIVOS DE EJERCICIOS ANTERIORES",
-          "debe": 51.27,
-          "haber": 0
-        },
-        {
-          "cuenta": "12900000",
-          "nombreCuenta": "Resultado del Ejercicio",
-          "debe": 0,
-          "haber": 51.27
-        }
-      ]
-    },
-    {
-      "id": 1795582436748,
-      "numero": 4,
       "fecha": "2026-01-01",
       "concepto": "RECLASIFICACIÓN CONTABLE EJERCICIO 2025",
       "referencia": "",
