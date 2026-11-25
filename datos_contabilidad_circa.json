@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:23:43.468Z",
+  "ultimaModificacion": "2026-11-25T08:24:23.989Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -701,8 +701,8 @@
       "referencia": "FC/2026/00002",
       "apuntes": [
         {
-          "cuenta": "60000001",
-          "nombreCuenta": "Compras de piezas y mercaderías REBU (Coste + ITP)",
+          "cuenta": "60000000",
+          "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
           "debe": 12.33,
           "haber": 0
         },
