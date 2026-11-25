@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T09:02:05.740Z",
+  "ultimaModificacion": "2026-11-25T09:02:15.989Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -645,62 +645,8 @@
       ]
     },
     {
-      "id": 1795592120409,
-      "numero": 13,
-      "fecha": "2026-01-25",
-      "concepto": "FV/2026/00001 — Hannu Vormisto ([ART00167] Auxiliar de Asiento Space Age)",
-      "referencia": "FV/2026/00001",
-      "apuntes": [
-        {
-          "cuenta": "43000001",
-          "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
-          "debe": 75,
-          "haber": 0
-        },
-        {
-          "cuenta": "70000001",
-          "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
-          "debe": 0,
-          "haber": 62.85
-        },
-        {
-          "cuenta": "47702121",
-          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
-          "debe": 0,
-          "haber": 12.15
-        }
-      ]
-    },
-    {
-      "id": 1795592323051,
-      "numero": 14,
-      "fecha": "2026-01-26",
-      "concepto": "FV/2026/00002 — Pamono GmbH ([ART00206] Deco Animal Mid Century)",
-      "referencia": "FV/2026/00002",
-      "apuntes": [
-        {
-          "cuenta": "43000003",
-          "nombreCuenta": "Clientes Pamono GmbH",
-          "debe": 180,
-          "haber": 0
-        },
-        {
-          "cuenta": "70000001",
-          "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
-          "debe": 0,
-          "haber": 155.7
-        },
-        {
-          "cuenta": "47702121",
-          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
-          "debe": 0,
-          "haber": 24.3
-        }
-      ]
-    },
-    {
       "id": 1795595022949,
-      "numero": 15,
+      "numero": 13,
       "fecha": "2026-01-19",
       "concepto": "FC/2026/00002 — Vinted ([ART00482] Revistero de Metal Mid Century)",
       "referencia": "FC/2026/00002",
@@ -721,7 +667,7 @@
     },
     {
       "id": 1795595235120,
-      "numero": 16,
+      "numero": 14,
       "fecha": "2026-01-20",
       "concepto": "Liquidación trimestral IRPF (Recaudación 111-369) EJERCICIO 2025",
       "referencia": "(IRPF) CUARTO TRIMESTRE 2025",
@@ -742,7 +688,7 @@
     },
     {
       "id": 1795595466099,
-      "numero": 17,
+      "numero": 15,
       "fecha": "2026-01-20",
       "concepto": "FC/2026/00003 — Usuario Vinted ([ART00484] Perchero de Pared Space Age)",
       "referencia": "FC/2026/00003",
@@ -763,7 +709,7 @@
     },
     {
       "id": 1795595586306,
-      "numero": 18,
+      "numero": 16,
       "fecha": "2026-01-21",
       "concepto": "FC/2026/00004 — Rocío Borrell Sanjuán (STOCK INICIAL)",
       "referencia": "FC/2026/00004",
@@ -784,7 +730,7 @@
     },
     {
       "id": 1795595836469,
-      "numero": 19,
+      "numero": 17,
       "fecha": "2026-01-21",
       "concepto": "Contrato de compraventa stock inicial con pago a crédito",
       "referencia": "FC2026/00004",
@@ -811,7 +757,7 @@
     },
     {
       "id": 1795596029394,
-      "numero": 20,
+      "numero": 18,
       "fecha": "2026-01-22",
       "concepto": "FC/2026/00005 — Usuario Vinted ([ART00485] Perchero de Pared Art Deco)",
       "referencia": "FC/2026/00005",
@@ -832,7 +778,7 @@
     },
     {
       "id": 1795596179348,
-      "numero": 21,
+      "numero": 19,
       "fecha": "2026-01-23",
       "concepto": "Hosting Web HOSTINGER",
       "referencia": "HCY-21205303",
@@ -865,7 +811,7 @@
     },
     {
       "id": 1795596223643,
-      "numero": 22,
+      "numero": 20,
       "fecha": "2026-01-23",
       "concepto": "Pago factura Hostinger",
       "referencia": "HCY-21205303",
@@ -885,8 +831,35 @@
       ]
     },
     {
+      "id": 1795592120409,
+      "numero": 21,
+      "fecha": "2026-01-25",
+      "concepto": "FV/2026/00001 — Hannu Vormisto ([ART00167] Auxiliar de Asiento Space Age)",
+      "referencia": "FV/2026/00001",
+      "apuntes": [
+        {
+          "cuenta": "43000001",
+          "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
+          "debe": 75,
+          "haber": 0
+        },
+        {
+          "cuenta": "70000001",
+          "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
+          "debe": 0,
+          "haber": 62.85
+        },
+        {
+          "cuenta": "47702121",
+          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
+          "debe": 0,
+          "haber": 12.15
+        }
+      ]
+    },
+    {
       "id": 1795596332262,
-      "numero": 23,
+      "numero": 22,
       "fecha": "2026-01-25",
       "concepto": "Gastos de envío",
       "referencia": "ES26FS00057654",
@@ -902,6 +875,33 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
           "haber": 48.41
+        }
+      ]
+    },
+    {
+      "id": 1795592323051,
+      "numero": 23,
+      "fecha": "2026-01-26",
+      "concepto": "FV/2026/00002 — Pamono GmbH ([ART00206] Deco Animal Mid Century)",
+      "referencia": "FV/2026/00002",
+      "apuntes": [
+        {
+          "cuenta": "43000003",
+          "nombreCuenta": "Clientes Pamono GmbH",
+          "debe": 180,
+          "haber": 0
+        },
+        {
+          "cuenta": "70000001",
+          "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
+          "debe": 0,
+          "haber": 155.7
+        },
+        {
+          "cuenta": "47702121",
+          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
+          "debe": 0,
+          "haber": 24.3
         }
       ]
     },
