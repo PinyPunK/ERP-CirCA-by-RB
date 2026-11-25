@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:27:49.747Z",
+  "ultimaModificacion": "2026-11-25T07:28:05.705Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -432,27 +432,6 @@
           "nombreCuenta": "Acreedores-Hostinger International LTD",
           "debe": 0,
           "haber": 86.18
-        }
-      ]
-    },
-    {
-      "id": 1795582436797,
-      "numero": 24,
-      "fecha": "2026-01-31",
-      "concepto": "ETSY IRELAND UC FRA. 889094669",
-      "referencia": "889094669",
-      "apuntes": [
-        {
-          "cuenta": "47200321",
-          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
-          "debe": 10.09,
-          "haber": 0
-        },
-        {
-          "cuenta": "47700321",
-          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
-          "debe": 0,
-          "haber": 10.09
         }
       ]
     },
