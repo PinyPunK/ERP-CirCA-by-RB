@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:57:25.546Z",
+  "ultimaModificacion": "2026-11-25T08:57:59.126Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -998,6 +998,27 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
           "haber": 324
+        }
+      ]
+    },
+    {
+      "id": 1795597078549,
+      "numero": 28,
+      "fecha": "2026-01-31",
+      "concepto": "FC/2026/00007 — Usuario Vinted ([ART00487] Espejo de Pared Mid Century)",
+      "referencia": "FC/2026/00007",
+      "apuntes": [
+        {
+          "cuenta": "60000001",
+          "nombreCuenta": "Subcuenta",
+          "debe": 93.29,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 93.29
         }
       ]
     }
@@ -6197,6 +6218,28 @@
       "cuentaTesoreria": "57200001",
       "piezaId": 1795596548425,
       "asientoIdVinculado": 1795596602066
+    },
+    {
+      "id": 1795597078550,
+      "serie": "FC",
+      "ejercicio": 2026,
+      "secuencia": 7,
+      "numeroDocumento": "FC/2026/00007",
+      "fecha": "2026-01-31",
+      "docRectificado": "",
+      "terceroNombre": "Usuario Vinted",
+      "terceroNif": "S/N",
+      "terceroDireccion": "ESPAÑA",
+      "regimen": "REBU",
+      "conceptoArticulo": "[ART00487] Espejo de Pared Mid Century",
+      "costeREBU": 93.29,
+      "importeTotal": 93.29,
+      "baseImponiblePDF": 93.29,
+      "cuotaIVAPDF": 0,
+      "ivaInternoContable": 0,
+      "cuentaTesoreria": "57200001",
+      "piezaId": 1795597044970,
+      "asientoIdVinculado": 1795597078549
     }
   ]
 }
