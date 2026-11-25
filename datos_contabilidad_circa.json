@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:28:41.342Z",
+  "ultimaModificacion": "2026-11-25T07:28:48.011Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -453,27 +453,6 @@
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "debe": 0,
           "haber": 0.21
-        }
-      ]
-    },
-    {
-      "id": 1795581464812,
-      "numero": 34,
-      "fecha": "2026-02-20",
-      "concepto": "APLAZAMIENTO ITP FC2026/00004",
-      "referencia": "APLAZAMIENTO ITP",
-      "apuntes": [
-        {
-          "cuenta": "47580000",
-          "nombreCuenta": "Hacienda Pública, acreedora por otros tributos",
-          "debe": 612.41,
-          "haber": 0
-        },
-        {
-          "cuenta": "47581000",
-          "nombreCuenta": "HP ACREEDORA POR ITP APLAZADO",
-          "debe": 0,
-          "haber": 612.41
         }
       ]
     },
