@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:24:21.287Z",
+  "ultimaModificacion": "2026-11-25T07:24:23.185Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -1329,45 +1329,6 @@
           "nombreCuenta": "Hacienda Pública, por Retenciones practicadas, IRPF",
           "debe": 0,
           "haber": 228
-        }
-      ]
-    },
-    {
-      "id": 1795581464896,
-      "numero": 57,
-      "fecha": "2026-03-31",
-      "concepto": "LIQUIDACION IVA : Enero - Marzo",
-      "referencia": "",
-      "apuntes": [
-        {
-          "cuenta": "47700321",
-          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
-          "debe": 69.66,
-          "haber": 0
-        },
-        {
-          "cuenta": "47702121",
-          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
-          "debe": 203,
-          "haber": 0
-        },
-        {
-          "cuenta": "47200321",
-          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
-          "debe": 0,
-          "haber": 69.66
-        },
-        {
-          "cuenta": "47000000",
-          "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
-          "debe": 0,
-          "haber": 104.44
-        },
-        {
-          "cuenta": "47500000",
-          "nombreCuenta": "Hacienda Pública, acreedora por IVA",
-          "debe": 0,
-          "haber": 98.56
         }
       ]
     },
