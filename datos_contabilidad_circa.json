@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:51:36.710Z",
+  "ultimaModificacion": "2026-11-25T07:52:51.321Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -442,6 +442,27 @@
           "nombreCuenta": "Resultado del Ejercicio",
           "debe": 0,
           "haber": 51.27
+        }
+      ]
+    },
+    {
+      "id": 1795593170508,
+      "numero": 5,
+      "fecha": "2026-01-05",
+      "concepto": "Suscripción anual Power Director",
+      "referencia": "1581753800175247-4",
+      "apuntes": [
+        {
+          "cuenta": "62900000",
+          "nombreCuenta": "Otros servicios",
+          "debe": 35.99,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 35.99
         }
       ]
     }
