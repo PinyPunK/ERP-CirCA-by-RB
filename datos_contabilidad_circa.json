@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T15:57:46.263Z",
+  "ultimaModificacion": "2026-11-25T16:00:23.198Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -1121,20 +1121,18 @@
       "id": 1795622265524,
       "numero": 31,
       "fecha": "2026-02-03",
-      "concepto": "GASTOS DE ENVÍO ART00403 ES2025PRO0002981747",
+      "concepto": "GASTOS DE ENVÍO ART00403",
       "referencia": "ES26FS00078875",
       "apuntes": [
         {
           "cuenta": "62400000",
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
-          "detalleApunte": "GASTOS DE ENVÍO ART00403 ES2025PRO0002981747",
           "debe": 41.33,
           "haber": 0
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "detalleApunte": "PAGO GASTOS DE ENVÍO ES26FS00078875",
           "debe": 0,
           "haber": 41.33
         }
@@ -1454,19 +1452,17 @@
       "numero": 43,
       "fecha": "2026-02-16",
       "concepto": "PAGO FACTURA 488604653",
-      "referencia": "SHOPIFY 488604653",
+      "referencia": "488604653",
       "apuntes": [
         {
           "cuenta": "41000003",
           "nombreCuenta": "Shopify Internacional Limited",
-          "detalleApunte": "PAGO FACTURA 488604653",
           "debe": 1,
           "haber": 0
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "detalleApunte": "PAGO S/FRA. PAGO FACTURA 488604653 - CAJA LABORAL",
           "debe": 0,
           "haber": 1
         }
