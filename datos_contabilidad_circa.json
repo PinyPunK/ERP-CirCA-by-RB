@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:43:00.926Z",
+  "ultimaModificacion": "2026-11-25T08:43:44.365Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -855,6 +855,27 @@
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "debe": 0,
           "haber": 18.1
+        }
+      ]
+    },
+    {
+      "id": 1795596223643,
+      "numero": 22,
+      "fecha": "2026-01-23",
+      "concepto": "Pago factura Hostinger",
+      "referencia": "HCY-21205303",
+      "apuntes": [
+        {
+          "cuenta": "41000007",
+          "nombreCuenta": "Acreedores-Hostinger International LTD",
+          "debe": 86.18,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 86.18
         }
       ]
     }
