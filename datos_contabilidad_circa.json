@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:49:09.434Z",
+  "ultimaModificacion": "2026-11-25T08:50:02.710Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -924,6 +924,27 @@
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "debe": 0,
           "haber": 75
+        }
+      ]
+    },
+    {
+      "id": 1795596602066,
+      "numero": 25,
+      "fecha": "2026-01-26",
+      "concepto": "FC/2026/00006 — Usuario Vinted ([ART00486] Percha de Armario Mid Century)",
+      "referencia": "FC/2026/00006",
+      "apuntes": [
+        {
+          "cuenta": "60000001",
+          "nombreCuenta": "Subcuenta",
+          "debe": 11.38,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 11.38
         }
       ]
     }
@@ -6081,6 +6102,28 @@
       "cuentaTesoreria": "57200001",
       "piezaId": 1795595938180,
       "asientoIdVinculado": 1795596029394
+    },
+    {
+      "id": 1795596602067,
+      "serie": "FC",
+      "ejercicio": 2026,
+      "secuencia": 6,
+      "numeroDocumento": "FC/2026/00006",
+      "fecha": "2026-01-26",
+      "docRectificado": "",
+      "terceroNombre": "Usuario Vinted",
+      "terceroNif": "S/N",
+      "terceroDireccion": "ESPAÑA",
+      "regimen": "REBU",
+      "conceptoArticulo": "[ART00486] Percha de Armario Mid Century",
+      "costeREBU": 11.38,
+      "importeTotal": 11.38,
+      "baseImponiblePDF": 11.38,
+      "cuotaIVAPDF": 0,
+      "ivaInternoContable": 0,
+      "cuentaTesoreria": "57200001",
+      "piezaId": 1795596548425,
+      "asientoIdVinculado": 1795596602066
     }
   ]
 }
