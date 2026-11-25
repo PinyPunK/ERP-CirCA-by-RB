@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:29:53.731Z",
+  "ultimaModificacion": "2026-11-25T08:31:06.667Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -727,6 +727,27 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
           "haber": 71
+        }
+      ]
+    },
+    {
+      "id": 1795595466099,
+      "numero": 17,
+      "fecha": "2026-01-20",
+      "concepto": "FC/2026/00003 — Usuario Vinted ([ART00484] Perchero de Pared Space Age)",
+      "referencia": "FC/2026/00003",
+      "apuntes": [
+        {
+          "cuenta": "60000001",
+          "nombreCuenta": "Subcuenta",
+          "debe": 89.05,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 89.05
         }
       ]
     }
@@ -5778,6 +5799,28 @@
       "cuentaTesoreria": "57200001",
       "piezaId": 1795594866391,
       "asientoIdVinculado": 1795595022949
+    },
+    {
+      "id": 1795595466100,
+      "serie": "FC",
+      "ejercicio": 2026,
+      "secuencia": 3,
+      "numeroDocumento": "FC/2026/00003",
+      "fecha": "2026-01-20",
+      "docRectificado": "",
+      "terceroNombre": "Usuario Vinted",
+      "terceroNif": "S/N",
+      "terceroDireccion": "ESPAÑA",
+      "regimen": "REBU",
+      "conceptoArticulo": "[ART00484] Perchero de Pared Space Age",
+      "costeREBU": 89.05,
+      "importeTotal": 89.05,
+      "baseImponiblePDF": 89.05,
+      "cuotaIVAPDF": 0,
+      "ivaInternoContable": 0,
+      "cuentaTesoreria": "57200001",
+      "piezaId": 1795595392890,
+      "asientoIdVinculado": 1795595466099
     }
   ]
 }
