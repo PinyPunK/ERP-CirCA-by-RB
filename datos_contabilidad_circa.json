@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:29:01.204Z",
+  "ultimaModificacion": "2026-11-25T07:29:04.587Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -357,27 +357,6 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 3100,
           "haber": 0
-        }
-      ]
-    },
-    {
-      "id": 1795581464861,
-      "numero": 45,
-      "fecha": "2026-03-16",
-      "concepto": "PEDIDO 18573620283 FC2026/00010",
-      "referencia": "PEDIDO FC2026/00010",
-      "apuntes": [
-        {
-          "cuenta": "60000000",
-          "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
-          "debe": 20.34,
-          "haber": 0
-        },
-        {
-          "cuenta": "57200001",
-          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "debe": 0,
-          "haber": 20.34
         }
       ]
     },
