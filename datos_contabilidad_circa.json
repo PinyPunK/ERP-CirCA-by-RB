@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T16:00:23.198Z",
+  "ultimaModificacion": "2026-11-25T16:01:09.838Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -1660,21 +1660,18 @@
         {
           "cuenta": "64000000",
           "nombreCuenta": "Sueldos y salarios Administradora Única",
-          "detalleApunte": "SUELDOS Y SALARIOS ADM.ÚNICA FEBRERO",
           "debe": 400,
           "haber": 0
         },
         {
-          "cuenta": "47510003",
-          "nombreCuenta": "RETENCIONES TRABAJADORES",
-          "detalleApunte": "RETENCIÓN 19% IRPF",
+          "cuenta": "47510002",
+          "nombreCuenta": "Retenciones trabajadores",
           "debe": 0,
           "haber": 76
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "detalleApunte": "PAGO S/FRA. RETRIB ADM. ÚNICA FEBRERO 2026 - CAJA",
           "debe": 0,
           "haber": 324
         }
