@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:25:14.500Z",
+  "ultimaModificacion": "2026-11-25T08:27:15.637Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -706,6 +706,27 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
           "haber": 12.33
+        }
+      ]
+    },
+    {
+      "id": 1795595235120,
+      "numero": 16,
+      "fecha": "2026-01-20",
+      "concepto": "Liquidación trimestral IRPF (Recaudación 111-369)",
+      "referencia": "(IRPF) PRIMER TRIMESTRE",
+      "apuntes": [
+        {
+          "cuenta": "47510000",
+          "nombreCuenta": "Hacienda Pública, por Retenciones practicadas, IRPF",
+          "debe": 71,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 71
         }
       ]
     }
