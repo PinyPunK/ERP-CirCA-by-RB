@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:22:58.705Z",
+  "ultimaModificacion": "2026-11-25T07:23:02.348Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -2193,27 +2193,6 @@
     {
       "id": 1795581465130,
       "numero": 91,
-      "fecha": "2026-09-06",
-      "concepto": "SUSCRIPCIÓN STOCK INVENTORY SEPTIEMBRE",
-      "referencia": "4203188658524938-38",
-      "apuntes": [
-        {
-          "cuenta": "62900000",
-          "nombreCuenta": "Otros servicios",
-          "debe": 2.99,
-          "haber": 0
-        },
-        {
-          "cuenta": "57200001",
-          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "debe": 0,
-          "haber": 2.99
-        }
-      ]
-    },
-    {
-      "id": 1795582437155,
-      "numero": 92,
       "fecha": "2026-09-06",
       "concepto": "SUSCRIPCIÓN STOCK INVENTORY SEPTIEMBRE",
       "referencia": "4203188658524938-38",
