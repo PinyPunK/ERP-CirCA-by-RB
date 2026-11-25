@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:39:47.182Z",
+  "ultimaModificacion": "2026-11-25T08:40:30.266Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -801,6 +801,27 @@
           "nombreCuenta": "Deudas a l/p con partes vinculantes",
           "debe": 0,
           "haber": 14104.53
+        }
+      ]
+    },
+    {
+      "id": 1795596029394,
+      "numero": 20,
+      "fecha": "2026-01-22",
+      "concepto": "FC/2026/00005 — Usuario Vinted ([ART00485] Perchero de Pared Art Deco)",
+      "referencia": "FC/2026/00005",
+      "apuntes": [
+        {
+          "cuenta": "60000001",
+          "nombreCuenta": "Subcuenta",
+          "debe": 10.3,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 10.3
         }
       ]
     }
@@ -5916,6 +5937,28 @@
       "cuentaTesoreria": "40000001",
       "piezaId": null,
       "asientoIdVinculado": 1795595586306
+    },
+    {
+      "id": 1795596029395,
+      "serie": "FC",
+      "ejercicio": 2026,
+      "secuencia": 5,
+      "numeroDocumento": "FC/2026/00005",
+      "fecha": "2026-01-22",
+      "docRectificado": "",
+      "terceroNombre": "Usuario Vinted",
+      "terceroNif": "S/N",
+      "terceroDireccion": "ESPAÑA",
+      "regimen": "REBU",
+      "conceptoArticulo": "[ART00485] Perchero de Pared Art Deco",
+      "costeREBU": 10.3,
+      "importeTotal": 10.3,
+      "baseImponiblePDF": 10.3,
+      "cuotaIVAPDF": 0,
+      "ivaInternoContable": 0,
+      "cuentaTesoreria": "57200001",
+      "piezaId": 1795595938180,
+      "asientoIdVinculado": 1795596029394
     }
   ]
 }
