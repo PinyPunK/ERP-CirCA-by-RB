@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:22:04.435Z",
+  "ultimaModificacion": "2026-11-25T08:23:43.468Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -690,6 +690,27 @@
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "debe": 0,
           "haber": 24.3
+        }
+      ]
+    },
+    {
+      "id": 1795595022949,
+      "numero": 15,
+      "fecha": "2026-01-19",
+      "concepto": "FC/2026/00002 — Vinted ([ART00482] Revistero de Metal Mid Century)",
+      "referencia": "FC/2026/00002",
+      "apuntes": [
+        {
+          "cuenta": "60000001",
+          "nombreCuenta": "Compras de piezas y mercaderías REBU (Coste + ITP)",
+          "debe": 12.33,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 12.33
         }
       ]
     }
@@ -5699,6 +5720,28 @@
       "cuentaTesoreria": "57200001",
       "piezaId": null,
       "asientoIdVinculado": 1795594056734
+    },
+    {
+      "id": 1795595022950,
+      "serie": "FC",
+      "ejercicio": 2026,
+      "secuencia": 2,
+      "numeroDocumento": "FC/2026/00002",
+      "fecha": "2026-01-19",
+      "docRectificado": "",
+      "terceroNombre": "Vinted",
+      "terceroNif": "S/N",
+      "terceroDireccion": "ESPAÑA",
+      "regimen": "REBU",
+      "conceptoArticulo": "[ART00482] Revistero de Metal Mid Century",
+      "costeREBU": 12.33,
+      "importeTotal": 12.33,
+      "baseImponiblePDF": 12.33,
+      "cuotaIVAPDF": 0,
+      "ivaInternoContable": 0,
+      "cuentaTesoreria": "57200001",
+      "piezaId": 1795594866391,
+      "asientoIdVinculado": 1795595022949
     }
   ]
 }
