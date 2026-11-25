@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:35:21.358Z",
+  "ultimaModificacion": "2026-11-25T07:37:58.452Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -2144,13 +2144,13 @@
       "id": 1795591919735,
       "referencia": "ART00206",
       "sku": "206 23 600 01 133",
-      "nombre": "Lámpara de Suelo Mid Century",
+      "nombre": "Deco Animal Mid Century",
       "codigoBarras": "2062360001133",
       "medidas": "",
       "precioCoste": 40,
       "itp": 4,
-      "totalCoste": 41.6,
-      "coste": 41.6,
+      "totalCoste": 40,
+      "coste": 40,
       "pvpEstimado": 0,
       "proveedor": "Rocío Borrell Sanjuán",
       "refFacturaCompra": "FC2026/00002",
