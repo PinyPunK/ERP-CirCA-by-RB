@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:24:41.413Z",
+  "ultimaModificacion": "2026-11-25T07:24:43.153Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -1107,27 +1107,6 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
           "haber": 20.34
-        }
-      ]
-    },
-    {
-      "id": 1795582436919,
-      "numero": 59,
-      "fecha": "2026-03-31",
-      "concepto": "LIQUIDACIÓN IRPF 1T 2026",
-      "referencia": "REGULARIZACIÓN IRPF",
-      "apuntes": [
-        {
-          "cuenta": "47510003",
-          "nombreCuenta": "RETENCIONES TRABAJADORES",
-          "debe": 228,
-          "haber": 0
-        },
-        {
-          "cuenta": "47510000",
-          "nombreCuenta": "Hacienda Pública, por Retenciones practicadas, IRPF",
-          "debe": 0,
-          "haber": 228
         }
       ]
     },
