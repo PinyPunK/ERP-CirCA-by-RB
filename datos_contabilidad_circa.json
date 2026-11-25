@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:00:20.624Z",
+  "ultimaModificacion": "2026-11-25T08:01:34.916Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -505,6 +505,27 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
           "haber": 2.99
+        }
+      ]
+    },
+    {
+      "id": 1795593694438,
+      "numero": 8,
+      "fecha": "2026-01-07",
+      "concepto": "Gastos de embalajes",
+      "referencia": "GRAN BAZAR ORIENTAL",
+      "apuntes": [
+        {
+          "cuenta": "60200000",
+          "nombreCuenta": "Compras de embalajes, cajas y material protección",
+          "debe": 10.25,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 10.25
         }
       ]
     }
