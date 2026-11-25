@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:22:47.389Z",
+  "ultimaModificacion": "2026-11-25T07:22:49.835Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -2355,27 +2355,6 @@
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "debe": 0,
           "haber": 26.68
-        }
-      ]
-    },
-    {
-      "id": 1795581465178,
-      "numero": 102,
-      "fecha": "2026-11-16",
-      "concepto": "REGULARIZACIÓN IRPF 3T",
-      "referencia": "REGULARIZACIÓN IRPF 3T",
-      "apuntes": [
-        {
-          "cuenta": "47510004",
-          "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
-          "debe": 0,
-          "haber": 22.63
-        },
-        {
-          "cuenta": "55100000",
-          "nombreCuenta": "Cuenta corriente con socios y administradores",
-          "debe": 22.63,
-          "haber": 0
         }
       ]
     },
