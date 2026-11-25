@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:16:49.301Z",
+  "ultimaModificacion": "2026-11-25T08:18:50.982Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -664,6 +664,27 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
           "haber": 1
+        }
+      ]
+    },
+    {
+      "id": 1795594730331,
+      "numero": 14,
+      "fecha": "2026-01-19",
+      "concepto": "Suscripción mensual Pamono GmbH",
+      "referencia": "983FE488-0056",
+      "apuntes": [
+        {
+          "cuenta": "62900003",
+          "nombreCuenta": "Facturas mensuales Pamono GmbH",
+          "debe": 82.11,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 82.11
         }
       ]
     }
