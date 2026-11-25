@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:36:04.726Z",
+  "ultimaModificacion": "2026-11-25T08:37:17.210Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -774,6 +774,33 @@
           "nombreCuenta": "Proveedores -Rocío Borrell Sanjuán",
           "debe": 0,
           "haber": 15310.36
+        }
+      ]
+    },
+    {
+      "id": 1795595836469,
+      "numero": 19,
+      "fecha": "2026-01-21",
+      "concepto": "Contrato de compraventa stock inicial con pago a crédito",
+      "referencia": "FC2026/00004",
+      "apuntes": [
+        {
+          "cuenta": "40000001",
+          "nombreCuenta": "Proveedores -Rocío Borrell Sanjuán",
+          "debe": 15310.36,
+          "haber": 0
+        },
+        {
+          "cuenta": "51300000",
+          "nombreCuenta": "Deudas a c/p con partes vinculantes",
+          "debe": 0,
+          "haber": 1205.83
+        },
+        {
+          "cuenta": "16300000",
+          "nombreCuenta": "Deudas a l/p con partes vinculantes",
+          "debe": 0,
+          "haber": 14104.53
         }
       ]
     }
