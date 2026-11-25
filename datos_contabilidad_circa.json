@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:28:12.342Z",
+  "ultimaModificacion": "2026-11-25T07:28:16.160Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -432,27 +432,6 @@
           "nombreCuenta": "Acreedores-Hostinger International LTD",
           "debe": 0,
           "haber": 86.18
-        }
-      ]
-    },
-    {
-      "id": 1795581464777,
-      "numero": 27,
-      "fecha": "2026-02-05",
-      "concepto": "COMISIÓN VENTA PEDIDO 45405728",
-      "referencia": "202600977622",
-      "apuntes": [
-        {
-          "cuenta": "62900002",
-          "nombreCuenta": "Comisiones plataforma Catawiki B.V.",
-          "debe": 1.88,
-          "haber": 0
-        },
-        {
-          "cuenta": "41000002",
-          "nombreCuenta": "Acreedores-Plataforma Catawiki B.V.",
-          "debe": 0,
-          "haber": 1.88
         }
       ]
     },
