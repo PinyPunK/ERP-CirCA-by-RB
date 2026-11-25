@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:29:07.723Z",
+  "ultimaModificacion": "2026-11-25T07:29:11.559Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -308,29 +308,7 @@
       "tipo": "Ingreso"
     }
   ],
-  "asientos": [
-    {
-      "id": 1795582437049,
-      "numero": 69,
-      "fecha": "2026-06-09",
-      "concepto": "PAGO S/FRA. PAGO 983FE488-006 - PAMONO GmbH",
-      "referencia": "PAGO 983FE488-006",
-      "apuntes": [
-        {
-          "cuenta": "41000006",
-          "nombreCuenta": "Pamono GmbH",
-          "debe": 69,
-          "haber": 0
-        },
-        {
-          "cuenta": "57200001",
-          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "debe": 0,
-          "haber": 69
-        }
-      ]
-    }
-  ],
+  "asientos": [],
   "terceros": [
     {
       "id": 1,
