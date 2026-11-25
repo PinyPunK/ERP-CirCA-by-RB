@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:38:43.645Z",
+  "ultimaModificacion": "2026-11-25T07:39:43.061Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -344,8 +344,8 @@
       "referencia": "FV/2026/00002",
       "apuntes": [
         {
-          "cuenta": "57200002",
-          "nombreCuenta": "Pasarelas de cobro (Stripe / PayPal)",
+          "cuenta": "43000003",
+          "nombreCuenta": "Clientes Pamono GmbH",
           "debe": 180,
           "haber": 0
         },
