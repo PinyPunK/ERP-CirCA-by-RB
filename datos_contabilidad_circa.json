@@ -1,0 +1,396 @@
+{
+  "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
+  "ultimaModificacion": "2026-11-25T04:25:16.912Z",
+  "cuentas": [
+    {
+      "codigo": "10000000",
+      "nombre": "Capital Social (Ágata Michi, S.L.U.)",
+      "tipo": "Patrimonio Neto"
+    },
+    {
+      "codigo": "11200000",
+      "nombre": "Reserva Legal y Voluntarias",
+      "tipo": "Patrimonio Neto"
+    },
+    {
+      "codigo": "12900000",
+      "nombre": "Resultado del Ejercicio",
+      "tipo": "Patrimonio Neto"
+    },
+    {
+      "codigo": "21600001",
+      "nombre": "Mobiliario y equipamiento almacén/estudio",
+      "tipo": "Activo"
+    },
+    {
+      "codigo": "21700001",
+      "nombre": "Equipos para procesos de información (Informática)",
+      "tipo": "Activo"
+    },
+    {
+      "codigo": "30000001",
+      "nombre": "Existencias de piezas Vintage (REBU)",
+      "tipo": "Activo"
+    },
+    {
+      "codigo": "40000001",
+      "nombre": "Proveedores -Rocío Borrell Sanjuán",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "40090001",
+      "nombre": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "41000001",
+      "nombre": "Acreedores-Plataforma Etsy Ireland UC",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "41000002",
+      "nombre": "Acreedores-Plataforma Catawiki B.V.",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "43000001",
+      "nombre": "Clientes Plataforma Etsy Ireland UC",
+      "tipo": "Activo"
+    },
+    {
+      "codigo": "43000002",
+      "nombre": "Clientes Catawiki B.V.",
+      "tipo": "Activo"
+    },
+    {
+      "codigo": "47000001",
+      "nombre": "H.P. Deudora por IVA (A compensar)",
+      "tipo": "Activo"
+    },
+    {
+      "codigo": "47200021",
+      "nombre": "H.P. IVA Soportado Deducible Régimen General (21%)",
+      "tipo": "Activo"
+    },
+    {
+      "codigo": "47200321",
+      "nombre": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+      "tipo": "Activo"
+    },
+    {
+      "codigo": "47702121",
+      "nombre": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "47700321",
+      "nombre": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "47500001",
+      "nombre": "H.P. Acreedora por IVA (Liquidación Trimestral 303)",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "47510001",
+      "nombre": "Retenciones Profesionales",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "55100001",
+      "nombre": "Cuenta corriente con socios y administradores",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "57000001",
+      "nombre": "Caja, euros (Efectivo mercadillos / compras particulares)",
+      "tipo": "Activo"
+    },
+    {
+      "codigo": "57200001",
+      "nombre": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+      "tipo": "Activo"
+    },
+    {
+      "codigo": "57200002",
+      "nombre": "Pasarelas de cobro (Stripe / PayPal)",
+      "tipo": "Activo"
+    },
+    {
+      "codigo": "60000001",
+      "nombre": "Compras de piezas y mercaderías REBU (Coste + ITP)",
+      "tipo": "Gasto"
+    },
+    {
+      "codigo": "60200001",
+      "nombre": "Compras de embalajes, cajas y material protección",
+      "tipo": "Gasto"
+    },
+    {
+      "codigo": "61000001",
+      "nombre": "Variación de existencias de mercaderías",
+      "tipo": "Gasto"
+    },
+    {
+      "codigo": "62300001",
+      "nombre": "Servicios de profesionales independientes (Gestoría/Legal)",
+      "tipo": "Gasto"
+    },
+    {
+      "codigo": "62400001",
+      "nombre": "Transportes y envíos de ventas a clientes",
+      "tipo": "Gasto"
+    },
+    {
+      "codigo": "62900001",
+      "nombre": "Comisiones plataformas Etsy Ireland UC",
+      "tipo": "Gasto"
+    },
+    {
+      "codigo": "70000001",
+      "nombre": "Ventas mercaderías Régimen Especial de los Bienes Usados",
+      "tipo": "Ingreso"
+    },
+    {
+      "codigo": "70000002",
+      "nombre": "Ventas de mercaderías en Régimen General",
+      "tipo": "Ingreso"
+    },
+    {
+      "codigo": "70800000",
+      "nombre": "Devoluciones de ventas y operaciones similares",
+      "tipo": "Ingreso"
+    },
+    {
+      "codigo": "75900001",
+      "nombre": "Ingresos por portes y envíos facturados al cliente",
+      "tipo": "Ingreso"
+    },
+    {
+      "codigo": "41000003",
+      "nombre": "Shopify Internacional Limited",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "41000004",
+      "nombre": "Sociedad Estatal Correos y Telégrafos",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "41000006",
+      "nombre": "Pamono GmbH",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "41000007",
+      "nombre": "Acreedores-Hostinger International LTD",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "41000008",
+      "nombre": "Acreedores-Auctane",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "43000003",
+      "nombre": "Clientes Pamono GmbH",
+      "tipo": "Activo"
+    },
+    {
+      "codigo": "43000004",
+      "nombre": "Clientes Shopify International Limited",
+      "tipo": "Activo"
+    },
+    {
+      "codigo": "47000000",
+      "nombre": "H.P. Deudora por IVA (A compensar)",
+      "tipo": "Activo"
+    },
+    {
+      "codigo": "47100000",
+      "nombre": "Organismos de la Seguridad Social deudores",
+      "tipo": "Activo"
+    },
+    {
+      "codigo": "47200000",
+      "nombre": "HP. IVA Exento por exportaciones",
+      "tipo": "Activo"
+    },
+    {
+      "codigo": "47202121",
+      "nombre": "HP. REBU 21%",
+      "tipo": "Activo"
+    },
+    {
+      "codigo": "47500000",
+      "nombre": "Hacienda Pública, acreedora por IVA",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "47510000",
+      "nombre": "Hacienda Pública, por Retenciones practicadas, IRPF",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "47510002",
+      "nombre": "Retenciones trabajadores",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "47520000",
+      "nombre": "Hacienda Pública, acreedora por Impuesto de Sociedades",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "47580000",
+      "nombre": "Hacienda Pública, acreedora por otros tributos",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "47700000",
+      "nombre": "HP, IVA Repercutido Exento por importaciones",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "47700021",
+      "nombre": "HP. IVA Repercutido General 21%",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "51300000",
+      "nombre": "Deudas a c/p con partes vinculantes",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "55100000",
+      "nombre": "Cuenta corriente con socios y administradores",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "60000000",
+      "nombre": "Compras de piezas y mercaderías (REBU)",
+      "tipo": "Gasto"
+    },
+    {
+      "codigo": "60200000",
+      "nombre": "Compras de embalajes, cajas y material protección",
+      "tipo": "Gasto"
+    },
+    {
+      "codigo": "62400000",
+      "nombre": "Transportes y envíos de ventas a clientes",
+      "tipo": "Gasto"
+    },
+    {
+      "codigo": "62900000",
+      "nombre": "Otros servicios",
+      "tipo": "Gasto"
+    },
+    {
+      "codigo": "62900002",
+      "nombre": "Comisiones plataforma Catawiki B.V.",
+      "tipo": "Gasto"
+    },
+    {
+      "codigo": "62900003",
+      "nombre": "Facturas mensuales Pamono GmbH",
+      "tipo": "Gasto"
+    },
+    {
+      "codigo": "70000003",
+      "nombre": "Ventas de mercaderías IVA Exento exportaciones",
+      "tipo": "Ingreso"
+    },
+    {
+      "codigo": "76800000",
+      "nombre": "Diferencias positivas de cambio",
+      "tipo": "Ingreso"
+    }
+  ],
+  "asientos": [],
+  "terceros": [
+    {
+      "id": 1,
+      "tipo": "Acreedor",
+      "nombre": "Catawiki B.V.",
+      "nif": "NL850192837B01",
+      "cuentaPGC": "41010000",
+      "formaPago": "Compensación Plataforma",
+      "regimenIVA": "ISP_21",
+      "irpf": 0
+    },
+    {
+      "id": 2,
+      "tipo": "Acreedor",
+      "nombre": "Etsy Ireland UC",
+      "nif": "IE9777587C",
+      "cuentaPGC": "41010000",
+      "formaPago": "Compensación Plataforma",
+      "regimenIVA": "ISP_21",
+      "irpf": 0
+    },
+    {
+      "id": 3,
+      "tipo": "Acreedor",
+      "nombre": "Pamono GmbH",
+      "nif": "DE289341234",
+      "cuentaPGC": "41010000",
+      "formaPago": "Compensación Plataforma",
+      "regimenIVA": "ISP_21",
+      "irpf": 0
+    },
+    {
+      "id": 1794610177885,
+      "tipo": "Acreedor",
+      "nombre": "Auctane, S.L.",
+      "nif": "B83357863",
+      "cuentaPGC": "41020000",
+      "formaPago": "Tarjeta / TPV",
+      "regimenIVA": "IVA_21",
+      "irpf": 0
+    },
+    {
+      "id": 1794610351713,
+      "tipo": "Acreedor",
+      "nombre": "Isabel Rufas de Benito",
+      "nif": "18019420B",
+      "cuentaPGC": "41010000",
+      "formaPago": "Transferencia Bancaria",
+      "regimenIVA": "IVA_21",
+      "irpf": 15
+    },
+    {
+      "id": 1794610412339,
+      "tipo": "Acreedor",
+      "nombre": "Registro Mercantil de Huesca",
+      "nif": "17714663V",
+      "cuentaPGC": "41010000",
+      "formaPago": "Transferencia Bancaria",
+      "regimenIVA": "IVA_21",
+      "irpf": 15
+    },
+    {
+      "id": 1794610475547,
+      "tipo": "Acreedor",
+      "nombre": "Real Casa de la Moneda",
+      "nif": "ESQ2826004J",
+      "cuentaPGC": "41010000",
+      "formaPago": "Tarjeta / TPV",
+      "regimenIVA": "IVA_21",
+      "irpf": 0
+    },
+    {
+      "id": 1794660847154,
+      "tipo": "Proveedor",
+      "nombre": "Zoconet, S.L.",
+      "nif": "B29853264",
+      "cuentaPGC": "40000000",
+      "formaPago": "Transferencia Bancaria",
+      "regimenIVA": "EXENTO",
+      "irpf": 0
+    }
+  ],
+  "inventario": [],
+  "documentos": []
+}
