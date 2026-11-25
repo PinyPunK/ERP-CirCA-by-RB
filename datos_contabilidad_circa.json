@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:37:17.210Z",
+  "ultimaModificacion": "2026-11-25T08:38:58.662Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -5777,6 +5777,26 @@
       "refFacturaCompra": "FC/2026/00004",
       "estado": "En Stock",
       "fechaCompra": "2026-01-21"
+    },
+    {
+      "id": 1795595938180,
+      "referencia": "ART00485",
+      "sku": "485 26 200 17 014",
+      "nombre": "Perchero de Pared Art Deco",
+      "codigoBarras": "4852620017014",
+      "medidas": "",
+      "precioCoste": 10.3,
+      "itp": 0,
+      "totalCoste": 10.3,
+      "coste": 10.3,
+      "pvpEstimado": 0,
+      "proveedor": "Vinted",
+      "refFacturaCompra": "FC2026/00005",
+      "descripcion": "",
+      "estado": "En Stock",
+      "fechaCompra": "2026-11-25",
+      "precioVentaReal": 0,
+      "fechaVenta": ""
     }
   ],
   "documentos": [
