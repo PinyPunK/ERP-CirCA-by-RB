@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:27:34.370Z",
+  "ultimaModificacion": "2026-11-25T07:27:36.709Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -438,27 +438,6 @@
     {
       "id": 1795581464764,
       "numero": 19,
-      "fecha": "2026-01-27",
-      "concepto": "SUSCRIPCIÓN MICROSOFT ONE DRIVE",
-      "referencia": "2243542775424764-37",
-      "apuntes": [
-        {
-          "cuenta": "62900000",
-          "nombreCuenta": "Otros servicios",
-          "debe": 1.99,
-          "haber": 0
-        },
-        {
-          "cuenta": "57200001",
-          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "debe": 0,
-          "haber": 1.99
-        }
-      ]
-    },
-    {
-      "id": 1795582436790,
-      "numero": 20,
       "fecha": "2026-01-27",
       "concepto": "SUSCRIPCIÓN MICROSOFT ONE DRIVE",
       "referencia": "2243542775424764-37",
