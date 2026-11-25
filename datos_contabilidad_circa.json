@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T04:37:45.419Z",
+  "ultimaModificacion": "2026-11-25T04:53:57.183Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -1584,6 +1584,1299 @@
     {
       "id": 1795581465181,
       "numero": 55,
+      "fecha": "2026-11-16",
+      "concepto": "LIQUIDACIÓN IRPF ATRASADO 3T",
+      "referencia": "LIQUIDACIÓN IRPF",
+      "apuntes": [
+        {
+          "cuenta": "47510004",
+          "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
+          "debe": 22.63,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 22.63
+        }
+      ]
+    },
+    {
+      "id": 1795582436747,
+      "numero": 56,
+      "fecha": "2026-01-01",
+      "concepto": "Asiento de Apertura",
+      "referencia": "",
+      "apuntes": [
+        {
+          "cuenta": "10000000",
+          "nombreCuenta": "Capital Social (Ágata Michi, S.L.U.)",
+          "debe": 0,
+          "haber": 3100
+        },
+        {
+          "cuenta": "47510001",
+          "nombreCuenta": "Retenciones Profesionales",
+          "debe": 0,
+          "haber": 71
+        },
+        {
+          "cuenta": "55100000",
+          "nombreCuenta": "Cuenta corriente con socios y administradores",
+          "debe": 0,
+          "haber": 649.85
+        },
+        {
+          "cuenta": "11300000",
+          "nombreCuenta": "RESERVAS VOLUNTARIAS",
+          "debe": 565.14,
+          "haber": 0
+        },
+        {
+          "cuenta": "12900000",
+          "nombreCuenta": "Resultado del Ejercicio",
+          "debe": 51.27,
+          "haber": 0
+        },
+        {
+          "cuenta": "47000000",
+          "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
+          "debe": 104.44,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 3100,
+          "haber": 0
+        }
+      ]
+    },
+    {
+      "id": 1795582436748,
+      "numero": 57,
+      "fecha": "2026-01-01",
+      "concepto": "RECLASIFICACIÓN CONTABLE EJERCICIO 2025",
+      "referencia": "",
+      "apuntes": [
+        {
+          "cuenta": "12100000",
+          "nombreCuenta": "RESULTADOS NEGATIVOS DE EJERCICIOS ANTERIORES",
+          "debe": 51.27,
+          "haber": 0
+        },
+        {
+          "cuenta": "12900000",
+          "nombreCuenta": "Resultado del Ejercicio",
+          "debe": 0,
+          "haber": 51.27
+        }
+      ]
+    },
+    {
+      "id": 1795582436751,
+      "numero": 58,
+      "fecha": "2026-01-07",
+      "concepto": "REGULARIZACIÓN PLATAFORMA ETSY IRELAND UC",
+      "referencia": "",
+      "apuntes": [
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0.17,
+          "haber": 0
+        },
+        {
+          "cuenta": "55100000",
+          "nombreCuenta": "Cuenta corriente con socios y administradores",
+          "debe": 0,
+          "haber": 0.17
+        }
+      ]
+    },
+    {
+      "id": 1795582436761,
+      "numero": 59,
+      "fecha": "2026-01-12",
+      "concepto": "REGULARIZACIÓN SALDO PLATAFORMA ETSY",
+      "referencia": "",
+      "apuntes": [
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 6.53,
+          "haber": 0
+        },
+        {
+          "cuenta": "55100000",
+          "nombreCuenta": "Cuenta corriente con socios y administradores",
+          "debe": 0,
+          "haber": 6.53
+        }
+      ]
+    },
+    {
+      "id": 1795582436762,
+      "numero": 60,
+      "fecha": "2026-01-15",
+      "concepto": "SUSCRIPCIÓN ENERO 2026",
+      "referencia": "FRA.474183816",
+      "apuntes": [
+        {
+          "cuenta": "62900000",
+          "nombreCuenta": "Otros servicios",
+          "debe": 1,
+          "haber": 0
+        },
+        {
+          "cuenta": "47200321",
+          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0.21,
+          "haber": 0
+        },
+        {
+          "cuenta": "47700321",
+          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0,
+          "haber": 0.21
+        },
+        {
+          "cuenta": "41000003",
+          "nombreCuenta": "Shopify Internacional Limited",
+          "debe": 0,
+          "haber": 1
+        }
+      ]
+    },
+    {
+      "id": 1795582436769,
+      "numero": 61,
+      "fecha": "2026-01-20",
+      "concepto": "LIQUIDACIÓN 4T EJERCICIO 2025",
+      "referencia": "LIQUIDACIÓN TRIMESTRAL IRPF",
+      "apuntes": [
+        {
+          "cuenta": "47510001",
+          "nombreCuenta": "Retenciones Profesionales",
+          "debe": 71,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 71
+        }
+      ]
+    },
+    {
+      "id": 1795582436772,
+      "numero": 62,
+      "fecha": "2026-01-21",
+      "concepto": "COMPRA STOCK INICIAL FC2026/00004",
+      "referencia": "FC2026/00004",
+      "apuntes": [
+        {
+          "cuenta": "60000000",
+          "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
+          "debe": 15310.36,
+          "haber": 0
+        },
+        {
+          "cuenta": "40000001",
+          "nombreCuenta": "Proveedores -Rocío Borrell Sanjuán",
+          "debe": 0,
+          "haber": 15310.36
+        }
+      ]
+    },
+    {
+      "id": 1795582436775,
+      "numero": 63,
+      "fecha": "2026-01-23",
+      "concepto": "FACTURA HCY-21205303",
+      "referencia": "HCY-21205303",
+      "apuntes": [
+        {
+          "cuenta": "62900000",
+          "nombreCuenta": "Otros servicios",
+          "debe": 86.18,
+          "haber": 0
+        },
+        {
+          "cuenta": "47200321",
+          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 18.1,
+          "haber": 0
+        },
+        {
+          "cuenta": "47700321",
+          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0,
+          "haber": 18.1
+        },
+        {
+          "cuenta": "41000007",
+          "nombreCuenta": "Acreedores-Hostinger International LTD",
+          "debe": 0,
+          "haber": 86.18
+        }
+      ]
+    },
+    {
+      "id": 1795582436781,
+      "numero": 64,
+      "fecha": "2026-01-25",
+      "concepto": "SEUR CLASSIC - S2D ES2026PRO0000235411",
+      "referencia": "ES26FS00057654",
+      "apuntes": [
+        {
+          "cuenta": "62400000",
+          "nombreCuenta": "Transportes y envíos de ventas a clientes",
+          "debe": 48.41,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 48.41
+        }
+      ]
+    },
+    {
+      "id": 1795582436790,
+      "numero": 65,
+      "fecha": "2026-01-27",
+      "concepto": "SUSCRIPCIÓN MICROSOFT ONE DRIVE",
+      "referencia": "2243542775424764-37",
+      "apuntes": [
+        {
+          "cuenta": "62900000",
+          "nombreCuenta": "Otros servicios",
+          "debe": 1.99,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 1.99
+        }
+      ]
+    },
+    {
+      "id": 1795582436797,
+      "numero": 66,
+      "fecha": "2026-01-31",
+      "concepto": "ETSY IRELAND UC FRA. 889094669",
+      "referencia": "889094669",
+      "apuntes": [
+        {
+          "cuenta": "47200321",
+          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 10.09,
+          "haber": 0
+        },
+        {
+          "cuenta": "47700321",
+          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0,
+          "haber": 10.09
+        }
+      ]
+    },
+    {
+      "id": 1795582436799,
+      "numero": 67,
+      "fecha": "2026-01-31",
+      "concepto": "PAGO ETSY 889094669",
+      "referencia": "ETSY 889094669",
+      "apuntes": [
+        {
+          "cuenta": "41000001",
+          "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
+          "debe": 13.99,
+          "haber": 0
+        },
+        {
+          "cuenta": "40090001",
+          "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
+          "debe": 0,
+          "haber": 13.99
+        }
+      ]
+    },
+    {
+      "id": 1795582436800,
+      "numero": 68,
+      "fecha": "2026-01-31",
+      "concepto": "PAGO ETSY 889094669",
+      "referencia": "ETSY 889094669",
+      "apuntes": [
+        {
+          "cuenta": "41000001",
+          "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
+          "debe": 34.07,
+          "haber": 0
+        },
+        {
+          "cuenta": "55100000",
+          "nombreCuenta": "Cuenta corriente con socios y administradores",
+          "debe": 0,
+          "haber": 34.07
+        }
+      ]
+    },
+    {
+      "id": 1795582436803,
+      "numero": 69,
+      "fecha": "2026-02-05",
+      "concepto": "COMISIÓN VENTA PEDIDO 45405728",
+      "referencia": "202600977622",
+      "apuntes": [
+        {
+          "cuenta": "62900002",
+          "nombreCuenta": "Comisiones plataforma Catawiki B.V.",
+          "debe": 1.88,
+          "haber": 0
+        },
+        {
+          "cuenta": "41000002",
+          "nombreCuenta": "Acreedores-Plataforma Catawiki B.V.",
+          "debe": 0,
+          "haber": 1.88
+        }
+      ]
+    },
+    {
+      "id": 1795582436829,
+      "numero": 70,
+      "fecha": "2026-02-16",
+      "concepto": "FRA. 488604653",
+      "referencia": "488604653",
+      "apuntes": [
+        {
+          "cuenta": "47200321",
+          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0.21,
+          "haber": 0
+        },
+        {
+          "cuenta": "47700321",
+          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0,
+          "haber": 0.21
+        }
+      ]
+    },
+    {
+      "id": 1795582436833,
+      "numero": 71,
+      "fecha": "2026-02-19",
+      "concepto": "COBRO FRA. COBRO FACTURA FV2026/00002",
+      "referencia": "PAMONO FV2026/00002",
+      "apuntes": [
+        {
+          "cuenta": "43000002",
+          "nombreCuenta": "Clientes Catawiki B.V.",
+          "debe": 0,
+          "haber": 148
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 148,
+          "haber": 0
+        }
+      ]
+    },
+    {
+      "id": 1795582436837,
+      "numero": 72,
+      "fecha": "2026-02-20",
+      "concepto": "ITP POR FACTURA FC2026/00004",
+      "referencia": "IMP. TRANSM. PAT.",
+      "apuntes": [
+        {
+          "cuenta": "63100000",
+          "nombreCuenta": "OTROS TRIBUTOS",
+          "debe": 612.41,
+          "haber": 0
+        },
+        {
+          "cuenta": "47580000",
+          "nombreCuenta": "Hacienda Pública, acreedora por otros tributos",
+          "debe": 0,
+          "haber": 612.41
+        }
+      ]
+    },
+    {
+      "id": 1795582436838,
+      "numero": 73,
+      "fecha": "2026-02-20",
+      "concepto": "APLAZAMIENTO ITP FC2026/00004",
+      "referencia": "APLAZAMIENTO ITP",
+      "apuntes": [
+        {
+          "cuenta": "47580000",
+          "nombreCuenta": "Hacienda Pública, acreedora por otros tributos",
+          "debe": 612.41,
+          "haber": 0
+        },
+        {
+          "cuenta": "47581000",
+          "nombreCuenta": "HP ACREEDORA POR ITP APLAZADO",
+          "debe": 0,
+          "haber": 612.41
+        }
+      ]
+    },
+    {
+      "id": 1795582436839,
+      "numero": 74,
+      "fecha": "2026-02-21",
+      "concepto": "FC2026/00004",
+      "referencia": "FC2026/00004",
+      "apuntes": [
+        {
+          "cuenta": "40000001",
+          "nombreCuenta": "Proveedores -Rocío Borrell Sanjuán",
+          "debe": 15310.36,
+          "haber": 0
+        },
+        {
+          "cuenta": "51300000",
+          "nombreCuenta": "Deudas a c/p con partes vinculantes",
+          "debe": 0,
+          "haber": 1205.83
+        },
+        {
+          "cuenta": "16300000",
+          "nombreCuenta": "DEUDAS A L/P CON PARTES VINCULANTES",
+          "debe": 0,
+          "haber": 14104.53
+        }
+      ]
+    },
+    {
+      "id": 1795582436859,
+      "numero": 75,
+      "fecha": "2026-02-28",
+      "concepto": "FRA. 909948138",
+      "referencia": "909948138",
+      "apuntes": [
+        {
+          "cuenta": "47200321",
+          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 3,
+          "haber": 0
+        },
+        {
+          "cuenta": "47700321",
+          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0,
+          "haber": 3
+        }
+      ]
+    },
+    {
+      "id": 1795582436872,
+      "numero": 76,
+      "fecha": "2026-03-06",
+      "concepto": "PEDIDO 18434953529   FC2026/00009",
+      "referencia": "PEDIDO FC2026/00009",
+      "apuntes": [
+        {
+          "cuenta": "60000000",
+          "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
+          "debe": 11.75,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 11.75
+        }
+      ]
+    },
+    {
+      "id": 1795582436875,
+      "numero": 77,
+      "fecha": "2026-03-09",
+      "concepto": "FACTURA MARZO 2026",
+      "referencia": "983",
+      "apuntes": [
+        {
+          "cuenta": "62900004",
+          "nombreCuenta": "PAMONO GMBH (ISP)",
+          "debe": 69,
+          "haber": 0
+        },
+        {
+          "cuenta": "41000006",
+          "nombreCuenta": "Pamono GmbH",
+          "debe": 0,
+          "haber": 69
+        }
+      ]
+    },
+    {
+      "id": 1795582436887,
+      "numero": 78,
+      "fecha": "2026-03-16",
+      "concepto": "PEDIDO 18573620283 FC2026/00010",
+      "referencia": "PEDIDO FC2026/00010",
+      "apuntes": [
+        {
+          "cuenta": "60000000",
+          "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
+          "debe": 20.34,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 20.34
+        }
+      ]
+    },
+    {
+      "id": 1795582436893,
+      "numero": 79,
+      "fecha": "2026-03-17",
+      "concepto": "COBRO FRA. FV2026/00005",
+      "referencia": "COBRO FV2026/00005",
+      "apuntes": [
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 356,
+          "haber": 0
+        },
+        {
+          "cuenta": "43000002",
+          "nombreCuenta": "Clientes Catawiki B.V.",
+          "debe": 0,
+          "haber": 356
+        }
+      ]
+    },
+    {
+      "id": 1795582436908,
+      "numero": 80,
+      "fecha": "2026-03-21",
+      "concepto": "PEDIDO 18724716643",
+      "referencia": "PEDIDO FC2026/00011",
+      "apuntes": [
+        {
+          "cuenta": "60000000",
+          "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
+          "debe": 36.55,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 36.55
+        }
+      ]
+    },
+    {
+      "id": 1795582436909,
+      "numero": 81,
+      "fecha": "2026-03-23",
+      "concepto": "PEDIDO 18751159979",
+      "referencia": "PEDIDO FC2026/00013",
+      "apuntes": [
+        {
+          "cuenta": "60000000",
+          "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
+          "debe": 51.85,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 51.85
+        }
+      ]
+    },
+    {
+      "id": 1795582436910,
+      "numero": 82,
+      "fecha": "2026-03-23",
+      "concepto": "PEDIDO 18765223805",
+      "referencia": "PEDIDO FC2026/00012",
+      "apuntes": [
+        {
+          "cuenta": "60000000",
+          "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
+          "debe": 193.54,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 193.54
+        }
+      ]
+    },
+    {
+      "id": 1795582436918,
+      "numero": 83,
+      "fecha": "2026-03-31",
+      "concepto": "FACTURA 932118514",
+      "referencia": "FACTURA 932118514",
+      "apuntes": [
+        {
+          "cuenta": "62900001",
+          "nombreCuenta": "Comisiones plataformas Etsy Ireland UC",
+          "debe": 109.48,
+          "haber": 0
+        },
+        {
+          "cuenta": "47200321",
+          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 22.99,
+          "haber": 0
+        },
+        {
+          "cuenta": "41000001",
+          "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
+          "debe": 0,
+          "haber": 109.48
+        },
+        {
+          "cuenta": "47700321",
+          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0,
+          "haber": 22.99
+        }
+      ]
+    },
+    {
+      "id": 1795582436919,
+      "numero": 84,
+      "fecha": "2026-03-31",
+      "concepto": "LIQUIDACIÓN IRPF 1T 2026",
+      "referencia": "REGULARIZACIÓN IRPF",
+      "apuntes": [
+        {
+          "cuenta": "47510003",
+          "nombreCuenta": "RETENCIONES TRABAJADORES",
+          "debe": 228,
+          "haber": 0
+        },
+        {
+          "cuenta": "47510000",
+          "nombreCuenta": "Hacienda Pública, por Retenciones practicadas, IRPF",
+          "debe": 0,
+          "haber": 228
+        }
+      ]
+    },
+    {
+      "id": 1795582436922,
+      "numero": 85,
+      "fecha": "2026-03-31",
+      "concepto": "LIQUIDACION IVA : Enero - Marzo",
+      "referencia": "",
+      "apuntes": [
+        {
+          "cuenta": "47700321",
+          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 69.66,
+          "haber": 0
+        },
+        {
+          "cuenta": "47702121",
+          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
+          "debe": 203,
+          "haber": 0
+        },
+        {
+          "cuenta": "47200321",
+          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0,
+          "haber": 69.66
+        },
+        {
+          "cuenta": "47000000",
+          "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
+          "debe": 0,
+          "haber": 104.44
+        },
+        {
+          "cuenta": "47500000",
+          "nombreCuenta": "Hacienda Pública, acreedora por IVA",
+          "debe": 0,
+          "haber": 98.56
+        }
+      ]
+    },
+    {
+      "id": 1795582436942,
+      "numero": 86,
+      "fecha": "2026-04-20",
+      "concepto": "PAGO S/FRA. PAGO LIQUIDACIÓN IRPF - LIQUIDACIÓN TR",
+      "referencia": "PAGO LIQUIDACIÓN IRPF",
+      "apuntes": [
+        {
+          "cuenta": "47510000",
+          "nombreCuenta": "Hacienda Pública, por Retenciones practicadas, IRPF",
+          "debe": 228,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 228
+        }
+      ]
+    },
+    {
+      "id": 1795582437000,
+      "numero": 87,
+      "fecha": "2026-05-31",
+      "concepto": "FRA. 977731456",
+      "referencia": "977731456",
+      "apuntes": [
+        {
+          "cuenta": "47200321",
+          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 70.01,
+          "haber": 0
+        },
+        {
+          "cuenta": "47700321",
+          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0,
+          "haber": 70.01
+        }
+      ]
+    },
+    {
+      "id": 1795582437026,
+      "numero": 88,
+      "fecha": "2026-06-05",
+      "concepto": "TRANSPORTE FRA. ES26FC03453634",
+      "referencia": "AUCTANE ES26FC03453634",
+      "apuntes": [
+        {
+          "cuenta": "62400000",
+          "nombreCuenta": "Transportes y envíos de ventas a clientes",
+          "debe": 15.58,
+          "haber": 0
+        },
+        {
+          "cuenta": "41000008",
+          "nombreCuenta": "Acreedores-Auctane",
+          "debe": 0,
+          "haber": 15.58
+        }
+      ]
+    },
+    {
+      "id": 1795582437049,
+      "numero": 89,
+      "fecha": "2026-06-09",
+      "concepto": "PAGO S/FRA. PAGO 983FE488-006 - PAMONO GmbH",
+      "referencia": "PAGO 983FE488-006",
+      "apuntes": [
+        {
+          "cuenta": "41000006",
+          "nombreCuenta": "Pamono GmbH",
+          "debe": 69,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 69
+        }
+      ]
+    },
+    {
+      "id": 1795582437050,
+      "numero": 90,
+      "fecha": "2026-06-09",
+      "concepto": "SUSCRIPCIÓN JUNIO GOOGLE ONE DRIVE",
+      "referencia": "SUSCRIPCIÓN GOOGLE ONE DRIVE",
+      "apuntes": [
+        {
+          "cuenta": "62900000",
+          "nombreCuenta": "Otros servicios",
+          "debe": 1.99,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 1.99
+        }
+      ]
+    },
+    {
+      "id": 1795582437061,
+      "numero": 91,
+      "fecha": "2026-06-15",
+      "concepto": "CUOTA JUNIO SHOPIFY",
+      "referencia": "FRA. 544079456",
+      "apuntes": [
+        {
+          "cuenta": "62900000",
+          "nombreCuenta": "Otros servicios",
+          "debe": 29,
+          "haber": 0
+        },
+        {
+          "cuenta": "47200321",
+          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 6.09,
+          "haber": 0
+        },
+        {
+          "cuenta": "41000003",
+          "nombreCuenta": "Shopify Internacional Limited",
+          "debe": 0,
+          "haber": 29
+        },
+        {
+          "cuenta": "47700321",
+          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0,
+          "haber": 6.09
+        }
+      ]
+    },
+    {
+      "id": 1795582437091,
+      "numero": 92,
+      "fecha": "2026-06-30",
+      "concepto": "FACTURA ETSY IRELAND UC JUNIO",
+      "referencia": "1000790627",
+      "apuntes": [
+        {
+          "cuenta": "62900001",
+          "nombreCuenta": "Comisiones plataformas Etsy Ireland UC",
+          "debe": 122.16,
+          "haber": 0
+        },
+        {
+          "cuenta": "41000001",
+          "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
+          "debe": 0,
+          "haber": 122.16
+        }
+      ]
+    },
+    {
+      "id": 1795582437092,
+      "numero": 93,
+      "fecha": "2026-06-30",
+      "concepto": "FRA. 100079627",
+      "referencia": "1000790627",
+      "apuntes": [
+        {
+          "cuenta": "47200321",
+          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 25.65,
+          "haber": 0
+        },
+        {
+          "cuenta": "47700321",
+          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0,
+          "haber": 25.65
+        }
+      ]
+    },
+    {
+      "id": 1795582437095,
+      "numero": 94,
+      "fecha": "2026-06-30",
+      "concepto": "LIQUIDACION IVA : Abril - Junio",
+      "referencia": "",
+      "apuntes": [
+        {
+          "cuenta": "47700321",
+          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 155.58,
+          "haber": 0
+        },
+        {
+          "cuenta": "47702121",
+          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
+          "debe": 110.94,
+          "haber": 0
+        },
+        {
+          "cuenta": "47200021",
+          "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
+          "debe": 0,
+          "haber": 38.58
+        },
+        {
+          "cuenta": "47200321",
+          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0,
+          "haber": 155.58
+        },
+        {
+          "cuenta": "47202121",
+          "nombreCuenta": "HP. REBU 21%",
+          "debe": 0,
+          "haber": 78.69
+        },
+        {
+          "cuenta": "47000000",
+          "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
+          "debe": 6.33,
+          "haber": 0
+        }
+      ]
+    },
+    {
+      "id": 1795582437096,
+      "numero": 95,
+      "fecha": "2026-07-01",
+      "concepto": "Asiento importado Excel",
+      "referencia": "FACTURA JUNIO",
+      "apuntes": [
+        {
+          "cuenta": "40090001",
+          "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
+          "debe": 3.06,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 3.06
+        }
+      ]
+    },
+    {
+      "id": 1795582437097,
+      "numero": 96,
+      "fecha": "2026-07-01",
+      "concepto": "MANTENIMIENTO C.L. NET EMPRESAS",
+      "referencia": "MANTENIMIENTO C.L.NET EMPRESAS",
+      "apuntes": [
+        {
+          "cuenta": "62600000",
+          "nombreCuenta": "SERVICIOS BANCARIOS Y SIMILARES",
+          "debe": 30,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 30
+        }
+      ]
+    },
+    {
+      "id": 1795582437115,
+      "numero": 97,
+      "fecha": "2026-07-20",
+      "concepto": "LIQUIDACIÓN 2T IRPF",
+      "referencia": "LIQUIDACIÓN TRIMESTRAL IRPF 2T",
+      "apuntes": [
+        {
+          "cuenta": "47510003",
+          "nombreCuenta": "RETENCIONES TRABAJADORES",
+          "debe": 76,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 76
+        }
+      ]
+    },
+    {
+      "id": 1795582437120,
+      "numero": 98,
+      "fecha": "2026-07-31",
+      "concepto": "FACTURA PLATAFORMA ETSY IRELAND UC 102898573",
+      "referencia": "1022898573",
+      "apuntes": [
+        {
+          "cuenta": "62900001",
+          "nombreCuenta": "Comisiones plataformas Etsy Ireland UC",
+          "debe": 14.52,
+          "haber": 0
+        },
+        {
+          "cuenta": "47200321",
+          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 3.05,
+          "haber": 0
+        },
+        {
+          "cuenta": "41000001",
+          "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
+          "debe": 0,
+          "haber": 14.52
+        },
+        {
+          "cuenta": "47700321",
+          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0,
+          "haber": 3.05
+        }
+      ]
+    },
+    {
+      "id": 1795582437145,
+      "numero": 99,
+      "fecha": "2026-08-27",
+      "concepto": "SUSCRIPCIÓN MICROSOFT ONE DRIVE AGOSTO",
+      "referencia": "2243542775424764-44",
+      "apuntes": [
+        {
+          "cuenta": "62900000",
+          "nombreCuenta": "Otros servicios",
+          "debe": 1.99,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 1.99
+        }
+      ]
+    },
+    {
+      "id": 1795582437147,
+      "numero": 100,
+      "fecha": "2026-08-31",
+      "concepto": "ETSY FRA. 1047595284",
+      "referencia": "1047595284",
+      "apuntes": [
+        {
+          "cuenta": "47200321",
+          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 6.7,
+          "haber": 0
+        },
+        {
+          "cuenta": "47700321",
+          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0,
+          "haber": 6.7
+        }
+      ]
+    },
+    {
+      "id": 1795582437155,
+      "numero": 101,
+      "fecha": "2026-09-06",
+      "concepto": "SUSCRIPCIÓN STOCK INVENTORY SEPTIEMBRE",
+      "referencia": "4203188658524938-38",
+      "apuntes": [
+        {
+          "cuenta": "62900000",
+          "nombreCuenta": "Otros servicios",
+          "debe": 2.99,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 2.99
+        }
+      ]
+    },
+    {
+      "id": 1795582437159,
+      "numero": 102,
+      "fecha": "2026-09-10",
+      "concepto": "LIQUIDACIÓN INTERESES Y COMISIONES",
+      "referencia": "LIQUIDACIÓN INTERESES Y COMISS",
+      "apuntes": [
+        {
+          "cuenta": "62600000",
+          "nombreCuenta": "SERVICIOS BANCARIOS Y SIMILARES",
+          "debe": 25,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 25
+        }
+      ]
+    },
+    {
+      "id": 1795582437178,
+      "numero": 103,
+      "fecha": "2026-09-27",
+      "concepto": "SUSCRIPCIÓN MICROSOFT ONE DRIVE SEPTIEMBRE",
+      "referencia": "2243542775424764-45",
+      "apuntes": [
+        {
+          "cuenta": "62900000",
+          "nombreCuenta": "Otros servicios",
+          "debe": 1.99,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 1.99
+        }
+      ]
+    },
+    {
+      "id": 1795582437191,
+      "numero": 104,
+      "fecha": "2026-09-30",
+      "concepto": "FRA. 1069979144",
+      "referencia": "1069979144",
+      "apuntes": [
+        {
+          "cuenta": "47200321",
+          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 26.68,
+          "haber": 0
+        },
+        {
+          "cuenta": "47700321",
+          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0,
+          "haber": 26.68
+        }
+      ]
+    },
+    {
+      "id": 1795582437197,
+      "numero": 105,
+      "fecha": "2026-10-20",
+      "concepto": "INTERESES SIN LIQUIDAR",
+      "referencia": "SEGUNDO PLAZO ITP DGA",
+      "apuntes": [
+        {
+          "cuenta": "66900000",
+          "nombreCuenta": "OTROS GASTOS FINANCIEROS",
+          "debe": 5.5,
+          "haber": 0
+        },
+        {
+          "cuenta": "47581000",
+          "nombreCuenta": "HP ACREEDORA POR ITP APLAZADO",
+          "debe": 0,
+          "haber": 5.5
+        }
+      ]
+    },
+    {
+      "id": 1795582437202,
+      "numero": 106,
+      "fecha": "2026-11-16",
+      "concepto": "REGULARIZACIÓN IRPF 2T",
+      "referencia": "REGULARIZACIÓN IRPF 2T",
+      "apuntes": [
+        {
+          "cuenta": "47510004",
+          "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
+          "debe": 0,
+          "haber": 23.13
+        },
+        {
+          "cuenta": "55100000",
+          "nombreCuenta": "Cuenta corriente con socios y administradores",
+          "debe": 23.13,
+          "haber": 0
+        }
+      ]
+    },
+    {
+      "id": 1795582437203,
+      "numero": 107,
+      "fecha": "2026-11-16",
+      "concepto": "REGULARIZACIÓN IRPF 3T",
+      "referencia": "REGULARIZACIÓN IRPF 3T",
+      "apuntes": [
+        {
+          "cuenta": "47510004",
+          "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
+          "debe": 0,
+          "haber": 22.63
+        },
+        {
+          "cuenta": "55100000",
+          "nombreCuenta": "Cuenta corriente con socios y administradores",
+          "debe": 22.63,
+          "haber": 0
+        }
+      ]
+    },
+    {
+      "id": 1795582437204,
+      "numero": 108,
+      "fecha": "2026-11-16",
+      "concepto": "LIQUIDACIÓN IRPF ATRASADO 1T",
+      "referencia": "LIQUIDACIÓN IRPF",
+      "apuntes": [
+        {
+          "cuenta": "47510004",
+          "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
+          "debe": 15.7,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 15.7
+        }
+      ]
+    },
+    {
+      "id": 1795582437205,
+      "numero": 109,
+      "fecha": "2026-11-16",
+      "concepto": "LIQUIDACIÓN IRPF ATRASADO 2T",
+      "referencia": "LIQUIDACIÓN IRPF",
+      "apuntes": [
+        {
+          "cuenta": "47510004",
+          "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
+          "debe": 23.14,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 23.14
+        }
+      ]
+    },
+    {
+      "id": 1795582437206,
+      "numero": 110,
       "fecha": "2026-11-16",
       "concepto": "LIQUIDACIÓN IRPF ATRASADO 3T",
       "referencia": "LIQUIDACIÓN IRPF",
