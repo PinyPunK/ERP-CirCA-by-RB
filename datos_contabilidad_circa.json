@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:33:42.986Z",
+  "ultimaModificacion": "2026-11-25T08:36:04.726Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -330,6 +330,11 @@
     {
       "codigo": "40000003",
       "nombre": "Vinted",
+      "tipo": "Pasivo"
+    },
+    {
+      "codigo": "16300000",
+      "nombre": "Deudas a l/p con partes vinculantes",
       "tipo": "Pasivo"
     }
   ],
