@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:22:37.969Z",
+  "ultimaModificacion": "2026-11-25T07:22:41.099Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -2439,27 +2439,6 @@
           "nombreCuenta": "Cuenta corriente con socios y administradores",
           "debe": 22.63,
           "haber": 0
-        }
-      ]
-    },
-    {
-      "id": 1795581465181,
-      "numero": 105,
-      "fecha": "2026-11-16",
-      "concepto": "LIQUIDACIÓN IRPF ATRASADO 3T",
-      "referencia": "LIQUIDACIÓN IRPF",
-      "apuntes": [
-        {
-          "cuenta": "47510004",
-          "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
-          "debe": 22.63,
-          "haber": 0
-        },
-        {
-          "cuenta": "57200001",
-          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "debe": 0,
-          "haber": 22.63
         }
       ]
     },
