@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:38:58.662Z",
+  "ultimaModificacion": "2026-11-25T08:39:47.182Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -5762,21 +5762,6 @@
       "fechaCompra": "2026-11-25",
       "precioVentaReal": 0,
       "fechaVenta": ""
-    },
-    {
-      "id": 1795595586308,
-      "referencia": "ART00245",
-      "sku": "ART00245",
-      "nombre": "STOCK INICIAL",
-      "precioCoste": 15310.36,
-      "itp": 0,
-      "totalCoste": 15310.36,
-      "coste": 15310.36,
-      "pvpEstimado": 33682.79,
-      "proveedor": "Rocío Borrell Sanjuán",
-      "refFacturaCompra": "FC/2026/00004",
-      "estado": "En Stock",
-      "fechaCompra": "2026-01-21"
     },
     {
       "id": 1795595938180,
