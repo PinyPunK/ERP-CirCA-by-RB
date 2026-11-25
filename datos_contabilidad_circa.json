@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:50:20.015Z",
+  "ultimaModificacion": "2026-11-25T07:51:36.710Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -421,6 +421,27 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 3100,
           "haber": 0
+        }
+      ]
+    },
+    {
+      "id": 1795593095986,
+      "numero": 4,
+      "fecha": "2026-01-01",
+      "concepto": "Reclasificación contable Resultado ejercicio 2025",
+      "referencia": "EJERCICIO 2025",
+      "apuntes": [
+        {
+          "cuenta": "12100000",
+          "nombreCuenta": "Resultados negativos de ejercicios anteriores",
+          "debe": 51.27,
+          "haber": 0
+        },
+        {
+          "cuenta": "12900000",
+          "nombreCuenta": "Resultado del Ejercicio",
+          "debe": 0,
+          "haber": 51.27
         }
       ]
     }
