@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:23:48.983Z",
+  "ultimaModificacion": "2026-11-25T07:23:51.562Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -1677,39 +1677,6 @@
     {
       "id": 1795581465036,
       "numero": 71,
-      "fecha": "2026-06-15",
-      "concepto": "CUOTA JUNIO SHOPIFY",
-      "referencia": "FRA. 544079456",
-      "apuntes": [
-        {
-          "cuenta": "62900000",
-          "nombreCuenta": "Otros servicios",
-          "debe": 29,
-          "haber": 0
-        },
-        {
-          "cuenta": "47200321",
-          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
-          "debe": 6.09,
-          "haber": 0
-        },
-        {
-          "cuenta": "41000003",
-          "nombreCuenta": "Shopify Internacional Limited",
-          "debe": 0,
-          "haber": 29
-        },
-        {
-          "cuenta": "47700321",
-          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
-          "debe": 0,
-          "haber": 6.09
-        }
-      ]
-    },
-    {
-      "id": 1795582437061,
-      "numero": 72,
       "fecha": "2026-06-15",
       "concepto": "CUOTA JUNIO SHOPIFY",
       "referencia": "FRA. 544079456",
