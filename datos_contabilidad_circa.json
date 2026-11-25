@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:27:41.440Z",
+  "ultimaModificacion": "2026-11-25T07:27:43.835Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -432,27 +432,6 @@
           "nombreCuenta": "Acreedores-Hostinger International LTD",
           "debe": 0,
           "haber": 86.18
-        }
-      ]
-    },
-    {
-      "id": 1795581464773,
-      "numero": 22,
-      "fecha": "2026-01-31",
-      "concepto": "PAGO ETSY 889094669",
-      "referencia": "ETSY 889094669",
-      "apuntes": [
-        {
-          "cuenta": "41000001",
-          "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
-          "debe": 13.99,
-          "haber": 0
-        },
-        {
-          "cuenta": "40090001",
-          "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
-          "debe": 0,
-          "haber": 13.99
         }
       ]
     },
