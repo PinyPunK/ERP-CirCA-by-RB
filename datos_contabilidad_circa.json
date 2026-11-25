@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:25:02.507Z",
+  "ultimaModificacion": "2026-11-25T07:27:28.672Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -465,27 +465,6 @@
           "nombreCuenta": "Acreedores-Hostinger International LTD",
           "debe": 0,
           "haber": 86.18
-        }
-      ]
-    },
-    {
-      "id": 1795581464755,
-      "numero": 17,
-      "fecha": "2026-01-25",
-      "concepto": "SEUR CLASSIC - S2D ES2026PRO0000235411",
-      "referencia": "ES26FS00057654",
-      "apuntes": [
-        {
-          "cuenta": "62400000",
-          "nombreCuenta": "Transportes y envíos de ventas a clientes",
-          "debe": 48.41,
-          "haber": 0
-        },
-        {
-          "cuenta": "57200001",
-          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "debe": 0,
-          "haber": 48.41
         }
       ]
     },
