@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:21:57.879Z",
+  "ultimaModificacion": "2026-11-25T07:22:02.501Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -357,27 +357,6 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 3100,
           "haber": 0
-        }
-      ]
-    },
-    {
-      "id": 1795582436769,
-      "numero": 12,
-      "fecha": "2026-01-20",
-      "concepto": "LIQUIDACIÓN 4T EJERCICIO 2025",
-      "referencia": "LIQUIDACIÓN TRIMESTRAL IRPF",
-      "apuntes": [
-        {
-          "cuenta": "47510001",
-          "nombreCuenta": "Retenciones Profesionales",
-          "debe": 71,
-          "haber": 0
-        },
-        {
-          "cuenta": "57200001",
-          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "debe": 0,
-          "haber": 71
         }
       ]
     },
