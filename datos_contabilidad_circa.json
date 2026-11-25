@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:18:50.982Z",
+  "ultimaModificacion": "2026-11-25T08:19:21.915Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -335,62 +335,8 @@
   ],
   "asientos": [
     {
-      "id": 1795592120409,
-      "numero": 1,
-      "fecha": "2026-01-25",
-      "concepto": "FV/2026/00001 — Hannu Vormisto ([ART00167] Auxiliar de Asiento Space Age)",
-      "referencia": "FV/2026/00001",
-      "apuntes": [
-        {
-          "cuenta": "43000001",
-          "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
-          "debe": 75,
-          "haber": 0
-        },
-        {
-          "cuenta": "70000001",
-          "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
-          "debe": 0,
-          "haber": 62.85
-        },
-        {
-          "cuenta": "47702121",
-          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
-          "debe": 0,
-          "haber": 12.15
-        }
-      ]
-    },
-    {
-      "id": 1795592323051,
-      "numero": 2,
-      "fecha": "2026-01-26",
-      "concepto": "FV/2026/00002 — Pamono GmbH ([ART00206] Deco Animal Mid Century)",
-      "referencia": "FV/2026/00002",
-      "apuntes": [
-        {
-          "cuenta": "43000003",
-          "nombreCuenta": "Clientes Pamono GmbH",
-          "debe": 180,
-          "haber": 0
-        },
-        {
-          "cuenta": "70000001",
-          "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
-          "debe": 0,
-          "haber": 155.7
-        },
-        {
-          "cuenta": "47702121",
-          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
-          "debe": 0,
-          "haber": 24.3
-        }
-      ]
-    },
-    {
       "id": 1795592907742,
-      "numero": 3,
+      "numero": 1,
       "fecha": "2026-01-01",
       "concepto": "Asiento de apertura",
       "referencia": "EJERCICIO 2026",
@@ -441,7 +387,7 @@
     },
     {
       "id": 1795593095986,
-      "numero": 4,
+      "numero": 2,
       "fecha": "2026-01-01",
       "concepto": "Reclasificación contable Resultado ejercicio 2025",
       "referencia": "EJERCICIO 2025",
@@ -462,7 +408,7 @@
     },
     {
       "id": 1795593170508,
-      "numero": 5,
+      "numero": 3,
       "fecha": "2026-01-05",
       "concepto": "Suscripción anual Power Director",
       "referencia": "1581753800175247-4",
@@ -483,7 +429,7 @@
     },
     {
       "id": 1795593553317,
-      "numero": 6,
+      "numero": 4,
       "fecha": "2026-01-07",
       "concepto": "Regularización cuenta Plataforma Etsy Ireland UC antes de la sociedad",
       "referencia": "EJERCICIO 2025",
@@ -504,7 +450,7 @@
     },
     {
       "id": 1795593620064,
-      "numero": 7,
+      "numero": 5,
       "fecha": "2026-01-07",
       "concepto": "Suscripción mensual APP Stock Inventory",
       "referencia": "4203188658524938-30",
@@ -525,7 +471,7 @@
     },
     {
       "id": 1795593694438,
-      "numero": 8,
+      "numero": 6,
       "fecha": "2026-01-07",
       "concepto": "Gastos de embalajes",
       "referencia": "GRAN BAZAR ORIENTAL",
@@ -546,7 +492,7 @@
     },
     {
       "id": 1795593753972,
-      "numero": 9,
+      "numero": 7,
       "fecha": "2026-01-09",
       "concepto": "Pago factura Notaría",
       "referencia": "A2/01954",
@@ -567,7 +513,7 @@
     },
     {
       "id": 1795594056734,
-      "numero": 10,
+      "numero": 8,
       "fecha": "2026-01-09",
       "concepto": "FC/2026/00001 — Zoconet, S.L. (Lámpara de Pared Mid Century)",
       "referencia": "FC/2026/00001",
@@ -594,7 +540,7 @@
     },
     {
       "id": 1795594422205,
-      "numero": 11,
+      "numero": 9,
       "fecha": "2026-01-12",
       "concepto": "Regularización cuenta Etsy Ireland UC antes de sociedad",
       "referencia": "EJERCICIO 2025",
@@ -615,7 +561,7 @@
     },
     {
       "id": 1795594552142,
-      "numero": 12,
+      "numero": 10,
       "fecha": "2026-01-15",
       "concepto": "Suscripción mensual Shopify International Limited Mi Tienda",
       "referencia": "474183816",
@@ -648,7 +594,7 @@
     },
     {
       "id": 1795594608781,
-      "numero": 13,
+      "numero": 11,
       "fecha": "2026-01-15",
       "concepto": "Pago factura Shopify International Limited",
       "referencia": "474183816",
@@ -669,7 +615,7 @@
     },
     {
       "id": 1795594730331,
-      "numero": 14,
+      "numero": 12,
       "fecha": "2026-01-19",
       "concepto": "Suscripción mensual Pamono GmbH",
       "referencia": "983FE488-0056",
@@ -685,6 +631,60 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
           "haber": 82.11
+        }
+      ]
+    },
+    {
+      "id": 1795592120409,
+      "numero": 13,
+      "fecha": "2026-01-25",
+      "concepto": "FV/2026/00001 — Hannu Vormisto ([ART00167] Auxiliar de Asiento Space Age)",
+      "referencia": "FV/2026/00001",
+      "apuntes": [
+        {
+          "cuenta": "43000001",
+          "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
+          "debe": 75,
+          "haber": 0
+        },
+        {
+          "cuenta": "70000001",
+          "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
+          "debe": 0,
+          "haber": 62.85
+        },
+        {
+          "cuenta": "47702121",
+          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
+          "debe": 0,
+          "haber": 12.15
+        }
+      ]
+    },
+    {
+      "id": 1795592323051,
+      "numero": 14,
+      "fecha": "2026-01-26",
+      "concepto": "FV/2026/00002 — Pamono GmbH ([ART00206] Deco Animal Mid Century)",
+      "referencia": "FV/2026/00002",
+      "apuntes": [
+        {
+          "cuenta": "43000003",
+          "nombreCuenta": "Clientes Pamono GmbH",
+          "debe": 180,
+          "haber": 0
+        },
+        {
+          "cuenta": "70000001",
+          "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
+          "debe": 0,
+          "haber": 155.7
+        },
+        {
+          "cuenta": "47702121",
+          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
+          "debe": 0,
+          "haber": 24.3
         }
       ]
     }
