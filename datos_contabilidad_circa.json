@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:22:41.099Z",
+  "ultimaModificacion": "2026-11-25T07:22:43.067Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -2397,27 +2397,6 @@
           "nombreCuenta": "HP ACREEDORA POR ITP APLAZADO",
           "debe": 0,
           "haber": 5.5
-        }
-      ]
-    },
-    {
-      "id": 1795581465177,
-      "numero": 101,
-      "fecha": "2026-11-16",
-      "concepto": "REGULARIZACIÓN IRPF 2T",
-      "referencia": "REGULARIZACIÓN IRPF 2T",
-      "apuntes": [
-        {
-          "cuenta": "47510004",
-          "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
-          "debe": 0,
-          "haber": 23.13
-        },
-        {
-          "cuenta": "55100000",
-          "nombreCuenta": "Cuenta corriente con socios y administradores",
-          "debe": 23.13,
-          "haber": 0
         }
       ]
     },
