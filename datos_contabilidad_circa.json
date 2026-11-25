@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:37:58.452Z",
+  "ultimaModificacion": "2026-11-25T07:38:43.645Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -333,6 +333,33 @@
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "debe": 0,
           "haber": 12.15
+        }
+      ]
+    },
+    {
+      "id": 1795592323051,
+      "numero": 2,
+      "fecha": "2026-01-26",
+      "concepto": "FV/2026/00002 — Pamono GmbH ([ART00206] Deco Animal Mid Century)",
+      "referencia": "FV/2026/00002",
+      "apuntes": [
+        {
+          "cuenta": "57200002",
+          "nombreCuenta": "Pasarelas de cobro (Stripe / PayPal)",
+          "debe": 180,
+          "haber": 0
+        },
+        {
+          "cuenta": "70000001",
+          "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
+          "debe": 0,
+          "haber": 155.7
+        },
+        {
+          "cuenta": "47702121",
+          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
+          "debe": 0,
+          "haber": 24.3
         }
       ]
     }
@@ -2155,10 +2182,10 @@
       "proveedor": "Rocío Borrell Sanjuán",
       "refFacturaCompra": "FC2026/00002",
       "descripcion": "",
-      "estado": "En Stock",
+      "estado": "Vendido",
       "fechaCompra": "2026-11-25",
-      "precioVentaReal": 0,
-      "fechaVenta": ""
+      "precioVentaReal": 180,
+      "fechaVenta": "2026-01-26"
     },
     {
       "id": 1795591919736,
@@ -5243,6 +5270,28 @@
       "cuentaTesoreria": "57200001",
       "piezaId": 1795591919729,
       "asientoIdVinculado": 1795592120409
+    },
+    {
+      "id": 1795592323052,
+      "serie": "FV",
+      "ejercicio": 2026,
+      "secuencia": 2,
+      "numeroDocumento": "FV/2026/00002",
+      "fecha": "2026-01-26",
+      "docRectificado": "",
+      "terceroNombre": "Pamono GmbH",
+      "terceroNif": "DE289341234",
+      "terceroDireccion": "Alemania",
+      "regimen": "REBU",
+      "conceptoArticulo": "[ART00206] Deco Animal Mid Century",
+      "costeREBU": 40,
+      "importeTotal": 180,
+      "baseImponiblePDF": 180,
+      "cuotaIVAPDF": 0,
+      "ivaInternoContable": 24.3,
+      "cuentaTesoreria": "57200002",
+      "piezaId": 1795591919735,
+      "asientoIdVinculado": 1795592323051
     }
   ]
 }
