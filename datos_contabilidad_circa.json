@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:53:25.856Z",
+  "ultimaModificacion": "2026-11-25T08:53:41.243Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -340,7 +340,7 @@
     {
       "codigo": "64000000",
       "nombre": "Sueldos y salarios Administradora Única",
-      "tipo": "Pasivo"
+      "tipo": "Gasto"
     }
   ],
   "asientos": [
