@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:22:43.067Z",
+  "ultimaModificacion": "2026-11-25T07:22:45.358Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -2361,27 +2361,6 @@
     {
       "id": 1795581465172,
       "numero": 99,
-      "fecha": "2026-10-20",
-      "concepto": "INTERESES SIN LIQUIDAR",
-      "referencia": "SEGUNDO PLAZO ITP DGA",
-      "apuntes": [
-        {
-          "cuenta": "66900000",
-          "nombreCuenta": "OTROS GASTOS FINANCIEROS",
-          "debe": 5.5,
-          "haber": 0
-        },
-        {
-          "cuenta": "47581000",
-          "nombreCuenta": "HP ACREEDORA POR ITP APLAZADO",
-          "debe": 0,
-          "haber": 5.5
-        }
-      ]
-    },
-    {
-      "id": 1795582437197,
-      "numero": 100,
       "fecha": "2026-10-20",
       "concepto": "INTERESES SIN LIQUIDAR",
       "referencia": "SEGUNDO PLAZO ITP DGA",
