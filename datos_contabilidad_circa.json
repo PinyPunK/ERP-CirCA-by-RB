@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:21:12.628Z",
+  "ultimaModificacion": "2026-11-25T07:21:23.522Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -378,27 +378,6 @@
           "nombreCuenta": "Resultado del Ejercicio",
           "debe": 0,
           "haber": 51.27
-        }
-      ]
-    },
-    {
-      "id": 1795581464725,
-      "numero": 5,
-      "fecha": "2026-01-07",
-      "concepto": "REGULARIZACIÓN PLATAFORMA ETSY IRELAND UC",
-      "referencia": "",
-      "apuntes": [
-        {
-          "cuenta": "57200001",
-          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "debe": 0.17,
-          "haber": 0
-        },
-        {
-          "cuenta": "55100000",
-          "nombreCuenta": "Cuenta corriente con socios y administradores",
-          "debe": 0,
-          "haber": 0.17
         }
       ]
     },
