@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T09:00:36.993Z",
+  "ultimaModificacion": "2026-11-25T09:01:28.807Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -1052,6 +1052,33 @@
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "debe": 0,
           "haber": 10.09
+        }
+      ]
+    },
+    {
+      "id": 1795597288223,
+      "numero": 30,
+      "fecha": "2026-01-31",
+      "concepto": "Pago Factura Etsy Ireland UC Enero",
+      "referencia": "889094669",
+      "apuntes": [
+        {
+          "cuenta": "41000001",
+          "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
+          "debe": 48.06,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 13.99
+        },
+        {
+          "cuenta": "55100000",
+          "nombreCuenta": "Cuenta corriente con socios y administradores",
+          "debe": 0,
+          "haber": 34.07
         }
       ]
     }
