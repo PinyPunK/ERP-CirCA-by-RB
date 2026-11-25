@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:24:56.434Z",
+  "ultimaModificacion": "2026-11-25T07:24:58.170Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -885,33 +885,6 @@
           "nombreCuenta": "HP ACREEDORA POR ITP APLAZADO",
           "debe": 0,
           "haber": 612.41
-        }
-      ]
-    },
-    {
-      "id": 1795581464813,
-      "numero": 37,
-      "fecha": "2026-02-21",
-      "concepto": "FC2026/00004",
-      "referencia": "FC2026/00004",
-      "apuntes": [
-        {
-          "cuenta": "40000001",
-          "nombreCuenta": "Proveedores -Rocío Borrell Sanjuán",
-          "debe": 15310.36,
-          "haber": 0
-        },
-        {
-          "cuenta": "51300000",
-          "nombreCuenta": "Deudas a c/p con partes vinculantes",
-          "debe": 0,
-          "haber": 1205.83
-        },
-        {
-          "cuenta": "16300000",
-          "nombreCuenta": "DEUDAS A L/P CON PARTES VINCULANTES",
-          "debe": 0,
-          "haber": 14104.53
         }
       ]
     },
