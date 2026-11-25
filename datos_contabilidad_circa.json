@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:24:58.170Z",
+  "ultimaModificacion": "2026-11-25T07:25:00.560Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -841,27 +841,6 @@
         {
           "cuenta": "47581000",
           "nombreCuenta": "HP ACREEDORA POR ITP APLAZADO",
-          "debe": 0,
-          "haber": 612.41
-        }
-      ]
-    },
-    {
-      "id": 1795582436837,
-      "numero": 35,
-      "fecha": "2026-02-20",
-      "concepto": "ITP POR FACTURA FC2026/00004",
-      "referencia": "IMP. TRANSM. PAT.",
-      "apuntes": [
-        {
-          "cuenta": "63100000",
-          "nombreCuenta": "OTROS TRIBUTOS",
-          "debe": 612.41,
-          "haber": 0
-        },
-        {
-          "cuenta": "47580000",
-          "nombreCuenta": "Hacienda Pública, acreedora por otros tributos",
           "debe": 0,
           "haber": 612.41
         }
