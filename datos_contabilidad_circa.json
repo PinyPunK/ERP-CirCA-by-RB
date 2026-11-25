@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:45:20.821Z",
+  "ultimaModificacion": "2026-11-25T07:48:28.305Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -365,6 +365,57 @@
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "debe": 0,
           "haber": 24.3
+        }
+      ]
+    },
+    {
+      "id": 1795592907742,
+      "numero": 3,
+      "fecha": "2026-01-01",
+      "concepto": "Asiento de apertura",
+      "referencia": "EJERCICIO 2026",
+      "apuntes": [
+        {
+          "cuenta": "10000000",
+          "nombreCuenta": "Capital Social (Ágata Michi, S.L.U.)",
+          "debe": 0,
+          "haber": 3100
+        },
+        {
+          "cuenta": "47510000",
+          "nombreCuenta": "Hacienda Pública, por Retenciones practicadas, IRPF",
+          "debe": 0,
+          "haber": 71
+        },
+        {
+          "cuenta": "55100000",
+          "nombreCuenta": "Cuenta corriente con socios y administradores",
+          "debe": 0,
+          "haber": 649.85
+        },
+        {
+          "cuenta": "11300000",
+          "nombreCuenta": "Reservas voluntarias",
+          "debe": 565.14,
+          "haber": 0
+        },
+        {
+          "cuenta": "12900000",
+          "nombreCuenta": "Resultado del Ejercicio",
+          "debe": 51.27,
+          "haber": 0
+        },
+        {
+          "cuenta": "47000000",
+          "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
+          "debe": 104.44,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 3100,
+          "haber": 0
         }
       ]
     }
