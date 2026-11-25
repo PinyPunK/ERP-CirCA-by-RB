@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:43:44.365Z",
+  "ultimaModificacion": "2026-11-25T08:45:32.895Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -876,6 +876,27 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
           "haber": 86.18
+        }
+      ]
+    },
+    {
+      "id": 1795596332262,
+      "numero": 23,
+      "fecha": "2026-01-25",
+      "concepto": "Gastos de envío",
+      "referencia": "ES26FS00057654",
+      "apuntes": [
+        {
+          "cuenta": "62400000",
+          "nombreCuenta": "Transportes y envíos de ventas a clientes",
+          "debe": 48.41,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 48.41
         }
       ]
     }
