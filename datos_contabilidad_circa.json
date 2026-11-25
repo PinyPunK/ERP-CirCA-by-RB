@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:04:57.706Z",
+  "ultimaModificacion": "2026-11-25T08:07:37.358Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -552,6 +552,27 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
           "haber": 364.4
+        }
+      ]
+    },
+    {
+      "id": 1795594056734,
+      "numero": 10,
+      "fecha": "2026-01-09",
+      "concepto": "FC/2026/00001 — Zoconet, S.L. (Lámpara de Pared Mid Century)",
+      "referencia": "FC/2026/00001",
+      "apuntes": [
+        {
+          "cuenta": "60000001",
+          "nombreCuenta": "Compras de piezas y mercaderías REBU (Coste + ITP)",
+          "debe": 94.9,
+          "haber": 0
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 94.9
         }
       ]
     }
@@ -5438,6 +5459,21 @@
       "fechaCompra": "2026-11-25",
       "precioVentaReal": 0,
       "fechaVenta": ""
+    },
+    {
+      "id": 1795594056736,
+      "referencia": "ART00241",
+      "sku": "ART00241",
+      "nombre": "Lámpara de Pared Mid Century",
+      "precioCoste": 94.9,
+      "itp": 0,
+      "totalCoste": 94.9,
+      "coste": 94.9,
+      "pvpEstimado": 208.78,
+      "proveedor": "Zoconet, S.L.",
+      "refFacturaCompra": "FC/2026/00001",
+      "estado": "En Stock",
+      "fechaCompra": "2026-01-09"
     }
   ],
   "documentos": [
@@ -5484,6 +5520,28 @@
       "cuentaTesoreria": "57200002",
       "piezaId": 1795591919735,
       "asientoIdVinculado": 1795592323051
+    },
+    {
+      "id": 1795594056735,
+      "serie": "FC",
+      "ejercicio": 2026,
+      "secuencia": 1,
+      "numeroDocumento": "FC/2026/00001",
+      "fecha": "2026-01-09",
+      "docRectificado": "",
+      "terceroNombre": "Zoconet, S.L.",
+      "terceroNif": "B29853264",
+      "terceroDireccion": "ESPAÑA",
+      "regimen": "REBU",
+      "conceptoArticulo": "Lámpara de Pared Mid Century",
+      "costeREBU": 0,
+      "importeTotal": 94.9,
+      "baseImponiblePDF": 94.9,
+      "cuotaIVAPDF": 0,
+      "ivaInternoContable": 0,
+      "cuentaTesoreria": "57200001",
+      "piezaId": null,
+      "asientoIdVinculado": 1795594056734
     }
   ]
 }
