@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:41:01.826Z",
+  "ultimaModificacion": "2026-11-25T08:43:00.926Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -822,6 +822,39 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
           "haber": 10.3
+        }
+      ]
+    },
+    {
+      "id": 1795596179348,
+      "numero": 21,
+      "fecha": "2026-01-23",
+      "concepto": "Hosting Web HOSTINGER",
+      "referencia": "HCY-21205303",
+      "apuntes": [
+        {
+          "cuenta": "62900000",
+          "nombreCuenta": "Otros servicios",
+          "debe": 86.18,
+          "haber": 0
+        },
+        {
+          "cuenta": "47200321",
+          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 18.1,
+          "haber": 0
+        },
+        {
+          "cuenta": "41000007",
+          "nombreCuenta": "Acreedores-Hostinger International LTD",
+          "debe": 0,
+          "haber": 86.18
+        },
+        {
+          "cuenta": "47700321",
+          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0,
+          "haber": 18.1
         }
       ]
     }
