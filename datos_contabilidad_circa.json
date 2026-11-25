@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:23:53.423Z",
+  "ultimaModificacion": "2026-11-25T07:23:55.089Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -1650,27 +1650,6 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
           "haber": 69
-        }
-      ]
-    },
-    {
-      "id": 1795582437050,
-      "numero": 70,
-      "fecha": "2026-06-09",
-      "concepto": "SUSCRIPCIÓN JUNIO GOOGLE ONE DRIVE",
-      "referencia": "SUSCRIPCIÓN GOOGLE ONE DRIVE",
-      "apuntes": [
-        {
-          "cuenta": "62900000",
-          "nombreCuenta": "Otros servicios",
-          "debe": 1.99,
-          "haber": 0
-        },
-        {
-          "cuenta": "57200001",
-          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "debe": 0,
-          "haber": 1.99
         }
       ]
     },
