@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:19:21.915Z",
+  "ultimaModificacion": "2026-11-25T08:21:06.951Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -5601,6 +5601,26 @@
       "pvpEstimado": 655,
       "proveedor": "Zoconet, S.L.",
       "refFacturaCompra": "FC2026/00001",
+      "descripcion": "",
+      "estado": "En Stock",
+      "fechaCompra": "2026-11-25",
+      "precioVentaReal": 0,
+      "fechaVenta": ""
+    },
+    {
+      "id": 1795594866391,
+      "referencia": "ART00482",
+      "sku": "482 26 700 13 133",
+      "nombre": "Revistero de Metal Mid Century",
+      "codigoBarras": "4822670013133",
+      "medidas": "",
+      "precioCoste": 12.33,
+      "itp": 0,
+      "totalCoste": 12.33,
+      "coste": 12.33,
+      "pvpEstimado": 0,
+      "proveedor": "Vinted",
+      "refFacturaCompra": "FC/2026/00002",
       "descripcion": "",
       "estado": "En Stock",
       "fechaCompra": "2026-11-25",
