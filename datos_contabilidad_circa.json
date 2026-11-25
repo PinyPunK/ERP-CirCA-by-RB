@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:07:37.358Z",
+  "ultimaModificacion": "2026-11-25T08:09:32.266Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -5474,6 +5474,26 @@
       "refFacturaCompra": "FC/2026/00001",
       "estado": "En Stock",
       "fechaCompra": "2026-01-09"
+    },
+    {
+      "id": 1795594171694,
+      "referencia": "ART00481",
+      "sku": "481 26 100 17 133",
+      "nombre": "Lámpara de Pared Mid Century",
+      "codigoBarras": "4812610017133",
+      "medidas": "",
+      "precioCoste": 94.9,
+      "itp": 0,
+      "totalCoste": 94.9,
+      "coste": 94.9,
+      "pvpEstimado": 655,
+      "proveedor": "Zoconet, S.L.",
+      "refFacturaCompra": "FC2026/00001",
+      "descripcion": "",
+      "estado": "En Stock",
+      "fechaCompra": "2026-11-25",
+      "precioVentaReal": 0,
+      "fechaVenta": ""
     }
   ],
   "documentos": [
