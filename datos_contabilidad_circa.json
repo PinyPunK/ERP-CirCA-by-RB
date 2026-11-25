@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:23:33.316Z",
+  "ultimaModificacion": "2026-11-25T07:23:35.268Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -1911,27 +1911,6 @@
           "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
           "debe": 6.33,
           "haber": 0
-        }
-      ]
-    },
-    {
-      "id": 1795581465071,
-      "numero": 79,
-      "fecha": "2026-07-01",
-      "concepto": "Asiento importado Excel",
-      "referencia": "FACTURA JUNIO",
-      "apuntes": [
-        {
-          "cuenta": "40090001",
-          "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
-          "debe": 3.06,
-          "haber": 0
-        },
-        {
-          "cuenta": "57200001",
-          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "debe": 0,
-          "haber": 3.06
         }
       ]
     },
