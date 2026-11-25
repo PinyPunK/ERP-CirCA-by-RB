@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T08:54:03.929Z",
+  "ultimaModificacion": "2026-11-25T08:55:27.648Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -971,6 +971,33 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
           "haber": 1.99
+        }
+      ]
+    },
+    {
+      "id": 1795596927096,
+      "numero": 27,
+      "fecha": "2026-01-28",
+      "concepto": "Retribución Administradora Única",
+      "referencia": "ENERO",
+      "apuntes": [
+        {
+          "cuenta": "64000000",
+          "nombreCuenta": "Sueldos y salarios Administradora Única",
+          "debe": 400,
+          "haber": 0
+        },
+        {
+          "cuenta": "47510002",
+          "nombreCuenta": "Retenciones trabajadores",
+          "debe": 0,
+          "haber": 76
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 324
         }
       ]
     }
