@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:24:32.649Z",
+  "ultimaModificacion": "2026-11-25T07:24:34.346Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -1149,27 +1149,6 @@
           "nombreCuenta": "Clientes Catawiki B.V.",
           "debe": 0,
           "haber": 356
-        }
-      ]
-    },
-    {
-      "id": 1795581464882,
-      "numero": 49,
-      "fecha": "2026-03-21",
-      "concepto": "PEDIDO 18724716643",
-      "referencia": "PEDIDO FC2026/00011",
-      "apuntes": [
-        {
-          "cuenta": "60000000",
-          "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
-          "debe": 36.55,
-          "haber": 0
-        },
-        {
-          "cuenta": "57200001",
-          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "debe": 0,
-          "haber": 36.55
         }
       ]
     },
