@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-25T07:23:41.455Z",
+  "ultimaModificacion": "2026-11-25T07:23:43.705Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -1824,27 +1824,6 @@
           "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
           "debe": 6.33,
           "haber": 0
-        }
-      ]
-    },
-    {
-      "id": 1795582437091,
-      "numero": 76,
-      "fecha": "2026-06-30",
-      "concepto": "FACTURA ETSY IRELAND UC JUNIO",
-      "referencia": "1000790627",
-      "apuntes": [
-        {
-          "cuenta": "62900001",
-          "nombreCuenta": "Comisiones plataformas Etsy Ireland UC",
-          "debe": 122.16,
-          "haber": 0
-        },
-        {
-          "cuenta": "41000001",
-          "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
-          "debe": 0,
-          "haber": 122.16
         }
       ]
     },
