@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T23:12:00.505Z",
+  "ultimaModificacion": "2026-11-26T23:12:29.396Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -2768,56 +2768,7 @@
           "detalleApunte": "PAGO S/FRA. PAGO FACTURA MARZO - A CUENTA FACTURAS",
           "debe": 0,
           "haber": 104.21,
-          "punteado": false
-        }
-      ]
-    },
-    {
-      "id": 1795622265581,
-      "numero": 88,
-      "fecha": "2026-03-31",
-      "concepto": "LIQUIDACION IVA : Enero - Marzo",
-      "referencia": "",
-      "apuntes": [
-        {
-          "cuenta": "47700321",
-          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
-          "detalleApunte": "LIQUIDACION IVA : Enero - Marzo",
-          "debe": 69.66,
-          "haber": 0,
-          "punteado": false
-        },
-        {
-          "cuenta": "47702121",
-          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
-          "detalleApunte": "LIQUIDACION IVA : Enero - Marzo",
-          "debe": 203,
-          "haber": 0,
-          "punteado": false
-        },
-        {
-          "cuenta": "47200321",
-          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
-          "detalleApunte": "LIQUIDACION IVA : Enero - Marzo",
-          "debe": 0,
-          "haber": 69.66,
-          "punteado": false
-        },
-        {
-          "cuenta": "47000000",
-          "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
-          "detalleApunte": "LIQUIDACION IVA : Enero - Marzo",
-          "debe": 0,
-          "haber": 104.44,
-          "punteado": false
-        },
-        {
-          "cuenta": "47500000",
-          "nombreCuenta": "Hacienda Pública, acreedora por IVA",
-          "detalleApunte": "LIQUIDACION IVA : Enero - Marzo",
-          "debe": 0,
-          "haber": 98.56,
-          "punteado": false
+          "punteado": true
         }
       ]
     },
