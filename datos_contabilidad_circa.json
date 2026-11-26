@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T21:04:34.144Z",
+  "ultimaModificacion": "2026-11-26T21:04:59.711Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -6000,31 +6000,8 @@
       ]
     },
     {
-      "id": 1795622265688,
-      "numero": 194,
-      "fecha": "2026-09-07",
-      "concepto": "VENTA PLATAFORMA ETSY IRELAND UC PEDIDO 4167520465",
-      "referencia": "FV2026/00017",
-      "apuntes": [
-        {
-          "cuenta": "43000001",
-          "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
-          "debe": 415,
-          "haber": 0,
-          "punteado": false
-        },
-        {
-          "cuenta": "70000003",
-          "nombreCuenta": "Ventas de mercaderías IVA Exento exportaciones",
-          "debe": 0,
-          "haber": 415,
-          "punteado": false
-        }
-      ]
-    },
-    {
       "id": 1795622265689,
-      "numero": 195,
+      "numero": 194,
       "fecha": "2026-09-06",
       "concepto": "SUSCRIPCIÓN STOCK INVENTORY SEPTIEMBRE",
       "referencia": "4203188658524938-38",
@@ -6043,6 +6020,29 @@
           "detalleApunte": "SUSCRIPCIÓN STOCK INVENTORY SEPTIEMBRE",
           "debe": 0,
           "haber": 2.99,
+          "punteado": false
+        }
+      ]
+    },
+    {
+      "id": 1795622265688,
+      "numero": 195,
+      "fecha": "2026-09-07",
+      "concepto": "VENTA PLATAFORMA ETSY IRELAND UC PEDIDO 4167520465",
+      "referencia": "FV2026/00017",
+      "apuntes": [
+        {
+          "cuenta": "43000001",
+          "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
+          "debe": 415,
+          "haber": 0,
+          "punteado": false
+        },
+        {
+          "cuenta": "70000003",
+          "nombreCuenta": "Ventas de mercaderías IVA Exento exportaciones",
+          "debe": 0,
+          "haber": 415,
           "punteado": false
         }
       ]
@@ -6568,8 +6568,68 @@
       ]
     },
     {
-      "id": 1795622265708,
+      "id": 1795658231273,
       "numero": 214,
+      "fecha": "2026-09-30",
+      "concepto": "Liquidación IVA 3T 2026",
+      "referencia": "3T 2026",
+      "apuntes": [
+        {
+          "cuenta": "47200021",
+          "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
+          "debe": 2.17,
+          "haber": 0,
+          "punteado": false
+        },
+        {
+          "cuenta": "47200321",
+          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 92.09,
+          "haber": 0,
+          "punteado": false
+        },
+        {
+          "cuenta": "47700321",
+          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0,
+          "haber": 92.09,
+          "punteado": false
+        },
+        {
+          "cuenta": "47000000",
+          "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
+          "debe": 0,
+          "haber": 2.17,
+          "punteado": false
+        }
+      ]
+    },
+    {
+      "id": 1795658337519,
+      "numero": 215,
+      "fecha": "2026-09-30",
+      "concepto": "Regularización IVA 3T 2026",
+      "referencia": "IVA 3T 2026",
+      "apuntes": [
+        {
+          "cuenta": "47000000",
+          "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
+          "debe": 2.17,
+          "haber": 0,
+          "punteado": false
+        },
+        {
+          "cuenta": "47200021",
+          "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
+          "debe": 0,
+          "haber": 2.17,
+          "punteado": false
+        }
+      ]
+    },
+    {
+      "id": 1795622265708,
+      "numero": 216,
       "fecha": "2026-10-20",
       "concepto": "SEGUNDO PLAZO ITP DGA FC2026/00004",
       "referencia": "SEGUNDO PLAZO ITP DGA",
@@ -6610,7 +6670,7 @@
     },
     {
       "id": 1795622265709,
-      "numero": 215,
+      "numero": 217,
       "fecha": "2026-10-21",
       "concepto": "PAGO S/FRA. CUOTA 9/120 - OTRAS DEUDAS A C/P CON P",
       "referencia": "CUOTA 9/120",
@@ -6643,7 +6703,7 @@
     },
     {
       "id": 1795622265710,
-      "numero": 216,
+      "numero": 218,
       "fecha": "2026-11-16",
       "concepto": "REGULARIZACIÓN IRPF 1T",
       "referencia": "REGULARIZACIÓN IRPF 1T",
@@ -6668,7 +6728,7 @@
     },
     {
       "id": 1795622265711,
-      "numero": 217,
+      "numero": 219,
       "fecha": "2026-11-16",
       "concepto": "REGULARIZACIÓN IRPF 2T",
       "referencia": "REGULARIZACIÓN IRPF 2T",
@@ -6693,7 +6753,7 @@
     },
     {
       "id": 1795622265712,
-      "numero": 218,
+      "numero": 220,
       "fecha": "2026-11-16",
       "concepto": "REGULARIZACIÓN IRPF 3T",
       "referencia": "REGULARIZACIÓN IRPF 3T",
@@ -6718,7 +6778,7 @@
     },
     {
       "id": 1795622265713,
-      "numero": 219,
+      "numero": 221,
       "fecha": "2026-11-16",
       "concepto": "LIQUIDACIÓN IRPF ATRASADO 1T",
       "referencia": "LIQUIDACIÓN IRPF",
@@ -6769,66 +6829,6 @@
           "detalleApunte": "LIQUIDACIÓN IRPF ATRASADO 3T",
           "debe": 0,
           "haber": 22.63,
-          "punteado": false
-        }
-      ]
-    },
-    {
-      "id": 1795658231273,
-      "numero": 220,
-      "fecha": "2026-09-30",
-      "concepto": "Liquidación IVA 3T 2026",
-      "referencia": "3T 2026",
-      "apuntes": [
-        {
-          "cuenta": "47200021",
-          "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
-          "debe": 2.17,
-          "haber": 0,
-          "punteado": false
-        },
-        {
-          "cuenta": "47200321",
-          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
-          "debe": 92.09,
-          "haber": 0,
-          "punteado": false
-        },
-        {
-          "cuenta": "47700321",
-          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
-          "debe": 0,
-          "haber": 92.09,
-          "punteado": false
-        },
-        {
-          "cuenta": "47000000",
-          "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
-          "debe": 0,
-          "haber": 2.17,
-          "punteado": false
-        }
-      ]
-    },
-    {
-      "id": 1795658337519,
-      "numero": 221,
-      "fecha": "2026-09-30",
-      "concepto": "Regularización IVA 3T 2026",
-      "referencia": "IVA 3T 2026",
-      "apuntes": [
-        {
-          "cuenta": "47000000",
-          "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
-          "debe": 2.17,
-          "haber": 0,
-          "punteado": false
-        },
-        {
-          "cuenta": "47200021",
-          "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
-          "debe": 0,
-          "haber": 2.17,
           "punteado": false
         }
       ]
