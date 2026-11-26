@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T22:28:44.471Z",
+  "ultimaModificacion": "2026-11-26T22:28:57.306Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -1147,7 +1147,7 @@
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "debe": 10.09,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "41000001",
@@ -1161,7 +1161,7 @@
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "debe": 0,
           "haber": 10.09,
-          "punteado": false
+          "punteado": true
         }
       ]
     },
