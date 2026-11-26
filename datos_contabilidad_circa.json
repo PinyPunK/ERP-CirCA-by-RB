@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T22:45:29.198Z",
+  "ultimaModificacion": "2026-11-26T22:46:11.192Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -1292,9 +1292,8 @@
       "referencia": "FV2026/00003",
       "apuntes": [
         {
-          "cuenta": "43000003",
-          "nombreCuenta": "Clientes Pamono GmbH",
-          "detalleApunte": "VENTA PLATAFORMA CATAWIKI PEDIDO 45405728",
+          "cuenta": "43000002",
+          "nombreCuenta": "Clientes Catawiki B.V.",
           "debe": 42,
           "haber": 0,
           "punteado": false
@@ -1302,7 +1301,6 @@
         {
           "cuenta": "70000001",
           "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
-          "detalleApunte": "VENTA DE MERCADERÍAS ART00480",
           "debe": 0,
           "haber": 37.96,
           "punteado": false
@@ -1310,7 +1308,6 @@
         {
           "cuenta": "47702121",
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
-          "detalleApunte": "FV2026/00003",
           "debe": 0,
           "haber": 4.04,
           "punteado": false
