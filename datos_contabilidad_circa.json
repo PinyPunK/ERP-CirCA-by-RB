@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T22:23:10.578Z",
+  "ultimaModificacion": "2026-11-26T22:23:14.362Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -935,14 +935,14 @@
           "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
           "debe": 0,
           "haber": 62.85,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "47702121",
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "debe": 0,
           "haber": 12.15,
-          "punteado": false
+          "punteado": true
         }
       ]
     },
