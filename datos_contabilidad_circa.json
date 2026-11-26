@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T01:34:01.365Z",
+  "ultimaModificacion": "2026-11-26T01:34:42.920Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -5806,14 +5806,12 @@
         {
           "cuenta": "43000001",
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
-          "detalleApunte": "VENTA PLATAFORMA ETSY IRELAND UC PEDIDO 4184808976",
           "debe": 180,
           "haber": 0
         },
         {
           "cuenta": "70000003",
           "nombreCuenta": "Ventas de mercaderías IVA Exento exportaciones",
-          "detalleApunte": "VENTA MERCADERÍAS ART00388",
           "debe": 0,
           "haber": 180
         }
