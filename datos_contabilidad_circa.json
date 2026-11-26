@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T22:21:19.027Z",
+  "ultimaModificacion": "2026-11-26T22:21:23.613Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -799,7 +799,7 @@
           "nombreCuenta": "Proveedores -Rocío Borrell Sanjuán",
           "debe": 0,
           "haber": 15310.36,
-          "punteado": false
+          "punteado": true
         }
       ]
     },
@@ -815,7 +815,7 @@
           "nombreCuenta": "Proveedores -Rocío Borrell Sanjuán",
           "debe": 15310.36,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "51300000",
