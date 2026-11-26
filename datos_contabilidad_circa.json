@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T22:17:14.413Z",
+  "ultimaModificacion": "2026-11-26T22:17:17.369Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -594,14 +594,14 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
           "haber": 98.4,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "62600000",
           "nombreCuenta": "Comisiones y servicios bancarios",
           "debe": 3.5,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         }
       ]
     },
