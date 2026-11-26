@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T22:53:10.320Z",
+  "ultimaModificacion": "2026-11-26T22:53:22.347Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -1809,7 +1809,7 @@
           "detalleApunte": "UPS STANDARD ACCESS POINT ES2026PRO0000559591",
           "debe": 19.25,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "57200001",
