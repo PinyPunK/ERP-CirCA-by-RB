@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T22:23:38.254Z",
+  "ultimaModificacion": "2026-11-26T22:26:02.344Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -979,7 +979,7 @@
         {
           "cuenta": "43000003",
           "nombreCuenta": "Clientes Pamono GmbH",
-          "debe": 180,
+          "debe": 148,
           "haber": 0,
           "punteado": true
         },
@@ -987,14 +987,14 @@
           "cuenta": "70000001",
           "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
           "debe": 0,
-          "haber": 155.7,
+          "haber": 129.26,
           "punteado": false
         },
         {
           "cuenta": "47702121",
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "debe": 0,
-          "haber": 24.3,
+          "haber": 18.74,
           "punteado": false
         }
       ]
