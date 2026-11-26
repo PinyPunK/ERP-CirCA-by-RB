@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T22:21:43.619Z",
+  "ultimaModificacion": "2026-11-26T22:21:49.427Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -875,14 +875,14 @@
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "debe": 18.1,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "41000007",
           "nombreCuenta": "Acreedores-Hostinger International LTD",
           "debe": 0,
           "haber": 86.18,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "47700321",
