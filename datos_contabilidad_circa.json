@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T22:46:11.192Z",
+  "ultimaModificacion": "2026-11-26T22:46:14.561Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -1296,7 +1296,7 @@
           "nombreCuenta": "Clientes Catawiki B.V.",
           "debe": 42,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "70000001",
