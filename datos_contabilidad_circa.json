@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T22:49:30.559Z",
+  "ultimaModificacion": "2026-11-26T22:49:33.667Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -1568,7 +1568,7 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
           "haber": 1,
-          "punteado": false
+          "punteado": true
         }
       ]
     },
@@ -1585,7 +1585,7 @@
           "detalleApunte": "COBRO FRA. COBRO FACTURA FV2026/00002",
           "debe": 0,
           "haber": 148,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "57200001",
