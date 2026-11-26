@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T01:57:12.664Z",
+  "ultimaModificacion": "2026-11-26T01:58:59.452Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -6237,6 +6237,27 @@
         {
           "cuenta": "47000000",
           "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
+          "debe": 0,
+          "haber": 2.17
+        }
+      ]
+    },
+    {
+      "id": 1795658337519,
+      "numero": 221,
+      "fecha": "2026-09-30",
+      "concepto": "Regularización IVA 3T 2026",
+      "referencia": "IVA 3T 2026",
+      "apuntes": [
+        {
+          "cuenta": "47000000",
+          "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
+          "debe": 2.17,
+          "haber": 0
+        },
+        {
+          "cuenta": "47200021",
+          "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
           "debe": 0,
           "haber": 2.17
         }
