@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T23:11:44.452Z",
+  "ultimaModificacion": "2026-11-26T23:11:50.938Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -2736,7 +2736,7 @@
           "nombreCuenta": "Retenciones trabajadores",
           "debe": 228,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "47510000",
