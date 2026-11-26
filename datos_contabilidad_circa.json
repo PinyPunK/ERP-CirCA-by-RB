@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T22:51:55.541Z",
+  "ultimaModificacion": "2026-11-26T22:51:59.565Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -1713,7 +1713,7 @@
           "detalleApunte": "PAGO S/FRA. CUOTA 1/120 - ROCÍO BORRELL SANJUÁN",
           "debe": 108.14,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "66200000",
