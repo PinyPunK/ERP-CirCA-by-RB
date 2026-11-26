@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T23:05:12.380Z",
+  "ultimaModificacion": "2026-11-26T23:07:20.370Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -6758,6 +6758,29 @@
           "detalleApunte": "LIQUIDACIÓN IRPF ATRASADO 3T",
           "debe": 0,
           "haber": 22.63,
+          "punteado": false
+        }
+      ]
+    },
+    {
+      "id": 1795734439432,
+      "numero": 222,
+      "fecha": "2026-03-16",
+      "concepto": "Suscripción Google Créditos Pixverse",
+      "referencia": "757207225217133-1",
+      "apuntes": [
+        {
+          "cuenta": "62900000",
+          "nombreCuenta": "Otros servicios",
+          "debe": 5.99,
+          "haber": 0,
+          "punteado": false
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 5.99,
           "punteado": false
         }
       ]
