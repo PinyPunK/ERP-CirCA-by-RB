@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T01:58:59.452Z",
+  "ultimaModificacion": "2026-11-26T21:03:55.736Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -390,43 +390,50 @@
           "cuenta": "10000000",
           "nombreCuenta": "Capital Social (Ágata Michi, S.L.U.)",
           "debe": 0,
-          "haber": 3100
+          "haber": 3100,
+          "punteado": true
         },
         {
           "cuenta": "47510000",
           "nombreCuenta": "Hacienda Pública, por Retenciones practicadas, IRPF",
           "debe": 0,
-          "haber": 71
+          "haber": 71,
+          "punteado": false
         },
         {
           "cuenta": "55100000",
           "nombreCuenta": "Cuenta corriente con socios y administradores",
           "debe": 0,
-          "haber": 649.85
+          "haber": 649.85,
+          "punteado": false
         },
         {
           "cuenta": "11300000",
           "nombreCuenta": "Reservas voluntarias",
           "debe": 565.14,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "12900000",
           "nombreCuenta": "Resultado del Ejercicio",
           "debe": 51.27,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47000000",
           "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
           "debe": 104.44,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 3100,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         }
       ]
     },
@@ -441,13 +448,15 @@
           "cuenta": "12100000",
           "nombreCuenta": "Resultados negativos de ejercicios anteriores",
           "debe": 51.27,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "12900000",
           "nombreCuenta": "Resultado del Ejercicio",
           "debe": 0,
-          "haber": 51.27
+          "haber": 51.27,
+          "punteado": false
         }
       ]
     },
@@ -462,13 +471,15 @@
           "cuenta": "62900000",
           "nombreCuenta": "Otros servicios",
           "debe": 35.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 35.99
+          "haber": 35.99,
+          "punteado": false
         }
       ]
     },
@@ -483,13 +494,15 @@
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0.17,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "55100001",
           "nombreCuenta": "Cuenta corriente con socios y administradores",
           "debe": 0,
-          "haber": 0.17
+          "haber": 0.17,
+          "punteado": false
         }
       ]
     },
@@ -504,13 +517,15 @@
           "cuenta": "62900000",
           "nombreCuenta": "Otros servicios",
           "debe": 2.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 2.99
+          "haber": 2.99,
+          "punteado": false
         }
       ]
     },
@@ -525,13 +540,15 @@
           "cuenta": "60200000",
           "nombreCuenta": "Compras de embalajes, cajas y material protección",
           "debe": 10.25,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 10.25
+          "haber": 10.25,
+          "punteado": false
         }
       ]
     },
@@ -546,13 +563,15 @@
           "cuenta": "55100000",
           "nombreCuenta": "Cuenta corriente con socios y administradores",
           "debe": 364.4,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 364.4
+          "haber": 364.4,
+          "punteado": false
         }
       ]
     },
@@ -567,19 +586,22 @@
           "cuenta": "60000000",
           "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
           "debe": 94.9,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 98.4
+          "haber": 98.4,
+          "punteado": false
         },
         {
           "cuenta": "62600000",
           "nombreCuenta": "Comisiones y servicios bancarios",
           "debe": 3.5,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         }
       ]
     },
@@ -594,13 +616,15 @@
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 6.53,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "55100000",
           "nombreCuenta": "Cuenta corriente con socios y administradores",
           "debe": 0,
-          "haber": 6.53
+          "haber": 6.53,
+          "punteado": false
         }
       ]
     },
@@ -615,25 +639,29 @@
           "cuenta": "62900000",
           "nombreCuenta": "Otros servicios",
           "debe": 1,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "debe": 0.21,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000003",
           "nombreCuenta": "Shopify Internacional Limited",
           "debe": 0,
-          "haber": 1
+          "haber": 1,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "debe": 0,
-          "haber": 0.21
+          "haber": 0.21,
+          "punteado": false
         }
       ]
     },
@@ -648,13 +676,15 @@
           "cuenta": "41000003",
           "nombreCuenta": "Shopify Internacional Limited",
           "debe": 1,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 1
+          "haber": 1,
+          "punteado": false
         }
       ]
     },
@@ -669,13 +699,15 @@
           "cuenta": "62900003",
           "nombreCuenta": "Facturas mensuales Pamono GmbH",
           "debe": 82.11,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 82.11
+          "haber": 82.11,
+          "punteado": false
         }
       ]
     },
@@ -690,13 +722,15 @@
           "cuenta": "60000000",
           "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
           "debe": 12.33,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 12.33
+          "haber": 12.33,
+          "punteado": false
         }
       ]
     },
@@ -711,13 +745,15 @@
           "cuenta": "47510000",
           "nombreCuenta": "Hacienda Pública, por Retenciones practicadas, IRPF",
           "debe": 71,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 71
+          "haber": 71,
+          "punteado": false
         }
       ]
     },
@@ -732,13 +768,15 @@
           "cuenta": "60000001",
           "nombreCuenta": "Subcuenta",
           "debe": 89.05,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 89.05
+          "haber": 89.05,
+          "punteado": false
         }
       ]
     },
@@ -753,13 +791,15 @@
           "cuenta": "60000000",
           "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
           "debe": 15310.36,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40000001",
           "nombreCuenta": "Proveedores -Rocío Borrell Sanjuán",
           "debe": 0,
-          "haber": 15310.36
+          "haber": 15310.36,
+          "punteado": false
         }
       ]
     },
@@ -774,19 +814,22 @@
           "cuenta": "40000001",
           "nombreCuenta": "Proveedores -Rocío Borrell Sanjuán",
           "debe": 15310.36,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "51300000",
           "nombreCuenta": "Deudas a c/p con partes vinculantes",
           "debe": 0,
-          "haber": 1205.83
+          "haber": 1205.83,
+          "punteado": false
         },
         {
           "cuenta": "16300000",
           "nombreCuenta": "Deudas a l/p con partes vinculantes",
           "debe": 0,
-          "haber": 14104.53
+          "haber": 14104.53,
+          "punteado": false
         }
       ]
     },
@@ -801,13 +844,15 @@
           "cuenta": "60000000",
           "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
           "debe": 10.3,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 10.3
+          "haber": 10.3,
+          "punteado": false
         }
       ]
     },
@@ -822,25 +867,29 @@
           "cuenta": "62900000",
           "nombreCuenta": "Otros servicios",
           "debe": 86.18,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "debe": 18.1,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000007",
           "nombreCuenta": "Acreedores-Hostinger International LTD",
           "debe": 0,
-          "haber": 86.18
+          "haber": 86.18,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "debe": 0,
-          "haber": 18.1
+          "haber": 18.1,
+          "punteado": false
         }
       ]
     },
@@ -855,13 +904,15 @@
           "cuenta": "41000007",
           "nombreCuenta": "Acreedores-Hostinger International LTD",
           "debe": 86.18,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 86.18
+          "haber": 86.18,
+          "punteado": false
         }
       ]
     },
@@ -876,19 +927,22 @@
           "cuenta": "43000001",
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "debe": 75,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "70000001",
           "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
           "debe": 0,
-          "haber": 62.85
+          "haber": 62.85,
+          "punteado": false
         },
         {
           "cuenta": "47702121",
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "debe": 0,
-          "haber": 12.15
+          "haber": 12.15,
+          "punteado": false
         }
       ]
     },
@@ -903,13 +957,15 @@
           "cuenta": "62400000",
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "debe": 48.41,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 48.41
+          "haber": 48.41,
+          "punteado": false
         }
       ]
     },
@@ -924,19 +980,22 @@
           "cuenta": "43000003",
           "nombreCuenta": "Clientes Pamono GmbH",
           "debe": 180,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "70000001",
           "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
           "debe": 0,
-          "haber": 155.7
+          "haber": 155.7,
+          "punteado": false
         },
         {
           "cuenta": "47702121",
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "debe": 0,
-          "haber": 24.3
+          "haber": 24.3,
+          "punteado": false
         }
       ]
     },
@@ -951,19 +1010,22 @@
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 61.01,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "debe": 13.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "43000001",
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "debe": 0,
-          "haber": 75
+          "haber": 75,
+          "punteado": false
         }
       ]
     },
@@ -978,13 +1040,15 @@
           "cuenta": "60000000",
           "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
           "debe": 11.38,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 11.38
+          "haber": 11.38,
+          "punteado": false
         }
       ]
     },
@@ -999,13 +1063,15 @@
           "cuenta": "62900000",
           "nombreCuenta": "Otros servicios",
           "debe": 1.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 1.99
+          "haber": 1.99,
+          "punteado": false
         }
       ]
     },
@@ -1020,19 +1086,22 @@
           "cuenta": "64000000",
           "nombreCuenta": "Sueldos y salarios Administradora Única",
           "debe": 400,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47510002",
           "nombreCuenta": "Retenciones trabajadores",
           "debe": 0,
-          "haber": 76
+          "haber": 76,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 324
+          "haber": 324,
+          "punteado": false
         }
       ]
     },
@@ -1047,13 +1116,15 @@
           "cuenta": "60000000",
           "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
           "debe": 93.29,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 93.29
+          "haber": 93.29,
+          "punteado": false
         }
       ]
     },
@@ -1068,25 +1139,29 @@
           "cuenta": "62900001",
           "nombreCuenta": "Comisiones plataformas Etsy Ireland UC",
           "debe": 48.06,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "debe": 10.09,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000001",
           "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
           "debe": 0,
-          "haber": 48.06
+          "haber": 48.06,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "debe": 0,
-          "haber": 10.09
+          "haber": 10.09,
+          "punteado": false
         }
       ]
     },
@@ -1101,19 +1176,22 @@
           "cuenta": "41000001",
           "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
           "debe": 48.06,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "debe": 0,
-          "haber": 13.99
+          "haber": 13.99,
+          "punteado": false
         },
         {
           "cuenta": "55100000",
           "nombreCuenta": "Cuenta corriente con socios y administradores",
           "debe": 0,
-          "haber": 34.07
+          "haber": 34.07,
+          "punteado": false
         }
       ]
     },
@@ -1128,13 +1206,15 @@
           "cuenta": "62400000",
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "debe": 41.33,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 41.33
+          "haber": 41.33,
+          "punteado": false
         }
       ]
     },
@@ -1150,28 +1230,32 @@
           "nombreCuenta": "Comisiones plataforma Catawiki B.V.",
           "detalleApunte": "COMISIÓN VENTA PEDIDO 45405728",
           "debe": 1.88,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 202600977622",
           "debe": 0.39,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000002",
           "nombreCuenta": "Acreedores-Plataforma Catawiki B.V.",
           "detalleApunte": "COMISIÓN VENTA PEDIDO 45405728",
           "debe": 0,
-          "haber": 1.88
+          "haber": 1.88,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 202600977622DIDO 45405728",
           "debe": 0,
-          "haber": 0.39
+          "haber": 0.39,
+          "punteado": false
         }
       ]
     },
@@ -1187,14 +1271,16 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "SUSCRIPCIÓN STOCK & INVENTORY",
           "debe": 2.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. 4203188658524938-31 - CAJA LABORAL POP",
           "debe": 0,
-          "haber": 2.99
+          "haber": 2.99,
+          "punteado": false
         }
       ]
     },
@@ -1210,21 +1296,24 @@
           "nombreCuenta": "Clientes Pamono GmbH",
           "detalleApunte": "VENTA PLATAFORMA CATAWIKI PEDIDO 45405728",
           "debe": 42,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "70000001",
           "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
           "detalleApunte": "VENTA DE MERCADERÍAS ART00480",
           "debe": 0,
-          "haber": 37.96
+          "haber": 37.96,
+          "punteado": false
         },
         {
           "cuenta": "47702121",
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "detalleApunte": "FV2026/00003",
           "debe": 0,
-          "haber": 4.04
+          "haber": 4.04,
+          "punteado": false
         }
       ]
     },
@@ -1240,28 +1329,32 @@
           "nombreCuenta": "Comisiones plataforma Catawiki B.V.",
           "detalleApunte": "COMISIÓN VENTA CATAWIKI PEDIDO 45429921",
           "debe": 0.88,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 202601067337",
           "debe": 0.18,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000002",
           "nombreCuenta": "Acreedores-Plataforma Catawiki B.V.",
           "detalleApunte": "COMISIÓN VENTA FRA. 202601067337",
           "debe": 0,
-          "haber": 0.88
+          "haber": 0.88,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 202602067337",
           "debe": 0,
-          "haber": 0.18
+          "haber": 0.18,
+          "punteado": false
         }
       ]
     },
@@ -1277,14 +1370,16 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "GASTOS DE ENVÍO ESPRO0000393818  CORREOS EXPRESS",
           "debe": 6.96,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO FACTURA ES26FS00093202",
           "debe": 0,
-          "haber": 6.96
+          "haber": 6.96,
+          "punteado": false
         }
       ]
     },
@@ -1300,14 +1395,16 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "CRÉDITOS PIXVERSE GOOGLE PLAY",
           "debe": 5.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. 395263810576040-1 - CAJA LABORAL POPUL",
           "debe": 0,
-          "haber": 5.99
+          "haber": 5.99,
+          "punteado": false
         }
       ]
     },
@@ -1323,21 +1420,24 @@
           "nombreCuenta": "Clientes Pamono GmbH",
           "detalleApunte": "VENTA PLATAFORMA CATAWIKI ART00477",
           "debe": 42,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "70000001",
           "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
           "detalleApunte": "VENTA DE MERCADERÍAS ART00477",
           "debe": 0,
-          "haber": 36.17
+          "haber": 36.17,
+          "punteado": false
         },
         {
           "cuenta": "47702121",
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "detalleApunte": "FV2026/00004",
           "debe": 0,
-          "haber": 5.83
+          "haber": 5.83,
+          "punteado": false
         }
       ]
     },
@@ -1353,14 +1453,16 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "GASTOS DE ENVÍO SEUR CLASSIC S2D ES2026PRO00003933",
           "debe": 21.94,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. FACTURA ES26FS00093319 - CAJA LABORAL",
           "debe": 0,
-          "haber": 21.94
+          "haber": 21.94,
+          "punteado": false
         }
       ]
     },
@@ -1376,14 +1478,16 @@
           "nombreCuenta": "OTROS SERVICIOS (SUSCRIPCIÓN PAMONO GMBH)",
           "detalleApunte": "CUOTA MENSUAL PAMONO FEBRERO",
           "debe": 82.11,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. FACTURA 983FE488-0057 - CAJA LABORAL P",
           "debe": 0,
-          "haber": 82.11
+          "haber": 82.11,
+          "punteado": false
         }
       ]
     },
@@ -1399,14 +1503,16 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "GASTOS DE ENVÍO SEUR CLASSIC S2D ES2026PRO00004544",
           "debe": 21.8,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. FACTURA ES26FS00106899 - CAJA LABORAL",
           "debe": 0,
-          "haber": 21.8
+          "haber": 21.8,
+          "punteado": false
         }
       ]
     },
@@ -1422,28 +1528,32 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "OTROS SERVICIOS - SHOPIFY FEBRERO",
           "debe": 1,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 488604653",
           "debe": 0.21,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000003",
           "nombreCuenta": "Shopify Internacional Limited",
           "detalleApunte": "FACTURA FEBRERO 488604653",
           "debe": 0,
-          "haber": 1
+          "haber": 1,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 488604653",
           "debe": 0,
-          "haber": 0.21
+          "haber": 0.21,
+          "punteado": false
         }
       ]
     },
@@ -1458,13 +1568,15 @@
           "cuenta": "41000003",
           "nombreCuenta": "Shopify Internacional Limited",
           "debe": 1,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 1
+          "haber": 1,
+          "punteado": false
         }
       ]
     },
@@ -1480,14 +1592,16 @@
           "nombreCuenta": "Clientes Catawiki B.V.",
           "detalleApunte": "COBRO FRA. COBRO FACTURA FV2026/00002",
           "debe": 0,
-          "haber": 148
+          "haber": 148,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "COBRO FRA. COBRO FACTURA FV2026/00002",
           "debe": 148,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         }
       ]
     },
@@ -1503,21 +1617,24 @@
           "nombreCuenta": "Clientes Catawiki B.V.",
           "detalleApunte": "PEDIDO PAMONO ORD3039214",
           "debe": 356,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "70000001",
           "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
           "detalleApunte": "VENTA DE MERCADERÍAS ART00044",
           "debe": 0,
-          "haber": 310.7
+          "haber": 310.7,
+          "punteado": false
         },
         {
           "cuenta": "47702121",
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "detalleApunte": "FV2026/00005",
           "debe": 0,
-          "haber": 45.3
+          "haber": 45.3,
+          "punteado": false
         }
       ]
     },
@@ -1533,14 +1650,16 @@
           "nombreCuenta": "Otros tributos",
           "detalleApunte": "ITP POR FACTURA FC2026/00004",
           "debe": 612.41,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47580000",
           "nombreCuenta": "Hacienda Pública, acreedora por otros tributos",
           "detalleApunte": "ITP POR FACTURA FC2026/00004",
           "debe": 0,
-          "haber": 612.41
+          "haber": 612.41,
+          "punteado": false
         }
       ]
     },
@@ -1556,14 +1675,16 @@
           "nombreCuenta": "Hacienda Pública, acreedora por otros tributos",
           "detalleApunte": "APLAZAMIENTO ITP FC2026/00004",
           "debe": 612.41,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47581000",
           "nombreCuenta": "HP ACREEDORA POR ITP APLAZADO",
           "detalleApunte": "APLAZAMIENTO ITP FC2026/00004",
           "debe": 0,
-          "haber": 612.41
+          "haber": 612.41,
+          "punteado": false
         }
       ]
     },
@@ -1579,21 +1700,24 @@
           "nombreCuenta": "Proveedores -Rocío Borrell Sanjuán",
           "detalleApunte": "FC2026/00004",
           "debe": 15310.36,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "51300000",
           "nombreCuenta": "Deudas a c/p con partes vinculantes",
           "detalleApunte": "FC2026/00004",
           "debe": 0,
-          "haber": 1205.83
+          "haber": 1205.83,
+          "punteado": false
         },
         {
           "cuenta": "16300000",
           "nombreCuenta": "Deudas a l/p con partes vinculantes",
           "detalleApunte": "FC2026/00004",
           "debe": 0,
-          "haber": 14104.53
+          "haber": 14104.53,
+          "punteado": false
         }
       ]
     },
@@ -1609,14 +1733,16 @@
           "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
           "detalleApunte": "COMPRA DE MERCADERÍAS ART00488",
           "debe": 46.55,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO IVINTED FC2026/00008",
           "debe": 0,
-          "haber": 46.55
+          "haber": 46.55,
+          "punteado": false
         }
       ]
     },
@@ -1632,21 +1758,24 @@
           "nombreCuenta": "Deudas a c/p con partes vinculantes",
           "detalleApunte": "PAGO S/FRA. CUOTA 1/120 - ROCÍO BORRELL SANJUÁN",
           "debe": 108.14,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "66200000",
           "nombreCuenta": "Intereses de deudas",
           "detalleApunte": "INTERESES",
           "debe": 41.47,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. CUOTA 1/120 - CAJA LABORAL POPULAR, CO",
           "debe": 0,
-          "haber": 149.61
+          "haber": 149.61,
+          "punteado": false
         }
       ]
     },
@@ -1661,19 +1790,22 @@
           "cuenta": "64000000",
           "nombreCuenta": "Sueldos y salarios Administradora Única",
           "debe": 400,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47510002",
           "nombreCuenta": "Retenciones trabajadores",
           "debe": 0,
-          "haber": 76
+          "haber": 76,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "debe": 0,
-          "haber": 324
+          "haber": 324,
+          "punteado": false
         }
       ]
     },
@@ -1689,21 +1821,24 @@
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "PEDIDO ETSY 3988459439",
           "debe": 55,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "70000001",
           "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
           "detalleApunte": "VENTA DE MERCADERÍAS ART00059",
           "debe": 0,
-          "haber": 49.45
+          "haber": 49.45,
+          "punteado": false
         },
         {
           "cuenta": "47702121",
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "detalleApunte": "FV2026/00006",
           "debe": 0,
-          "haber": 5.55
+          "haber": 5.55,
+          "punteado": false
         }
       ]
     },
@@ -1719,14 +1854,16 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "UPS STANDARD ACCESS POINT ES2026PRO0000559591",
           "debe": 19.25,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. FACTURA ES26FS00132042 - CAJA LABORAL",
           "debe": 0,
-          "haber": 19.25
+          "haber": 19.25,
+          "punteado": false
         }
       ]
     },
@@ -1742,14 +1879,16 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "SUSCRIPCIÓN ONE DRIVE GOOGLE PLAY",
           "debe": 1.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. 2243542775424764-38 - CAJA LABORAL POP",
           "debe": 0,
-          "haber": 1.99
+          "haber": 1.99,
+          "punteado": false
         }
       ]
     },
@@ -1765,21 +1904,24 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "COBRO PEDIDO ETSY 3988459439",
           "debe": 38.32,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "A CUENTA FEBRERO",
           "debe": 16.68,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "43000001",
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "COBRO FRA. FACTURA FV2026/00006",
           "debe": 0,
-          "haber": 55
+          "haber": 55,
+          "punteado": false
         }
       ]
     },
@@ -1795,28 +1937,32 @@
           "nombreCuenta": "Comisiones plataformas Etsy Ireland UC",
           "detalleApunte": "FACTURA FEBRERO ETSY 909948138",
           "debe": 14.3,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 909948138",
           "debe": 3,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000001",
           "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
           "detalleApunte": "FACTURA 909948138",
           "debe": 0,
-          "haber": 14.3
+          "haber": 14.3,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 909948138",
           "debe": 0,
-          "haber": 3
+          "haber": 3,
+          "punteado": false
         }
       ]
     },
@@ -1832,14 +1978,16 @@
           "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
           "detalleApunte": "PAGO S/FRA. PAGO FACTURA ETSY - ACREEDORES - ETSY",
           "debe": 14.3,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "PAGO S/FRA. PAGO FACTURA ETSY - A CUENTA FACTURAS",
           "debe": 0,
-          "haber": 14.3
+          "haber": 14.3,
+          "punteado": false
         }
       ]
     },
@@ -1855,28 +2003,32 @@
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "VENTA ETSY IRELAND UC PEDIDO 3994616327",
           "debe": 735,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "70000001",
           "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
           "detalleApunte": "VENTA DE MERCADERÍAS ART00297 Y ART00243",
           "debe": 0,
-          "haber": 629.36
+          "haber": 629.36,
+          "punteado": false
         },
         {
           "cuenta": "47702121",
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "detalleApunte": "FV2026/00007",
           "debe": 0,
-          "haber": 21.05
+          "haber": 21.05,
+          "punteado": false
         },
         {
           "cuenta": "47702121",
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "detalleApunte": "FV2026/00007",
           "debe": 0,
-          "haber": 84.59
+          "haber": 84.59,
+          "punteado": false
         }
       ]
     },
@@ -1892,21 +2044,24 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "COBRO FRA. FV2026/00007",
           "debe": 647.13,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "A CUENTA FACTURA MARZO ETSY",
           "debe": 87.87,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "43000001",
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "COBRO FRA. FV2026/00007",
           "debe": 0,
-          "haber": 735
+          "haber": 735,
+          "punteado": false
         }
       ]
     },
@@ -1922,14 +2077,16 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "GASTOS ENVÍO",
           "debe": 22.5,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. FRA. AUCTANE ES26FS00148750 - CAJA LAB",
           "debe": 0,
-          "haber": 22.5
+          "haber": 22.5,
+          "punteado": false
         }
       ]
     },
@@ -1945,14 +2102,16 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "SUSCRIPCIÓN GOOGLE PLAY",
           "debe": 2.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. 4203188658524938-32 - CAJA LABORAL POP",
           "debe": 0,
-          "haber": 2.99
+          "haber": 2.99,
+          "punteado": false
         }
       ]
     },
@@ -1968,14 +2127,16 @@
           "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
           "detalleApunte": "PEDIDO 18434953529   FC2026/00009",
           "debe": 11.75,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PEDIDO 18434953529   FC2026/00009",
           "debe": 0,
-          "haber": 11.75
+          "haber": 11.75,
+          "punteado": false
         }
       ]
     },
@@ -1991,21 +2152,24 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "COBRO FV2026/00003",
           "debe": 40.12,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000002",
           "nombreCuenta": "Acreedores-Plataforma Catawiki B.V.",
           "detalleApunte": "A CUENTA FACTURA COMISIÓN",
           "debe": 1.88,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "43000003",
           "nombreCuenta": "Clientes Pamono GmbH",
           "detalleApunte": "COBRO FV2026/00003",
           "debe": 0,
-          "haber": 42
+          "haber": 42,
+          "punteado": false
         }
       ]
     },
@@ -2021,28 +2185,32 @@
           "nombreCuenta": "PAMONO GMBH (ISP)",
           "detalleApunte": "FACTURA MARZO 2026",
           "debe": 69,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "INVERSIÓN SUJETO PASIVO SOPORTADO 21%",
           "debe": 14.49,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000006",
           "nombreCuenta": "Pamono GmbH",
           "detalleApunte": "FACTURA MARZO 2026",
           "debe": 0,
-          "haber": 69
+          "haber": 69,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "INVERSIÓN SUJETO PASIVO REPERCUTIDO 21%",
           "debe": 0,
-          "haber": 14.49
+          "haber": 14.49,
+          "punteado": false
         }
       ]
     },
@@ -2058,14 +2226,16 @@
           "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
           "detalleApunte": "COMPRA DE MERCADERÍAS FC2026/00014",
           "debe": 48.1,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PEDIDO VINTED FC2026/00014 - CAJA LABO",
           "debe": 0,
-          "haber": 48.1
+          "haber": 48.1,
+          "punteado": false
         }
       ]
     },
@@ -2081,14 +2251,16 @@
           "nombreCuenta": "Pamono GmbH",
           "detalleApunte": "PAGO S/FRA. PAGO FRA. 983FE488-0058 - PAMONO GmbH",
           "debe": 69,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAGO FRA. 983FE488-0058 - CAJA LABORAL",
           "debe": 0,
-          "haber": 69
+          "haber": 69,
+          "punteado": false
         }
       ]
     },
@@ -2104,14 +2276,16 @@
           "nombreCuenta": "Comisiones y servicios bancarios",
           "detalleApunte": "INTERESES Y COMISIONES",
           "debe": 25,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. INTERESES Y COMISIONES - CAJA LABORAL",
           "debe": 0,
-          "haber": 25
+          "haber": 25,
+          "punteado": false
         }
       ]
     },
@@ -2127,21 +2301,24 @@
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "PEDIDO ETSY 4004369403",
           "debe": 50,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "70000001",
           "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
           "detalleApunte": "VENTA DE MERCADERÍAS ART00251",
           "debe": 0,
-          "haber": 44.25
+          "haber": 44.25,
+          "punteado": false
         },
         {
           "cuenta": "47702121",
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "detalleApunte": "FV2026/00008",
           "debe": 0,
-          "haber": 5.75
+          "haber": 5.75,
+          "punteado": false
         }
       ]
     },
@@ -2157,14 +2334,16 @@
           "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
           "detalleApunte": "PEDIDO 18573620283 FC2026/00010",
           "debe": 20.34,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PEDIDO 18573620283 FC2026/00010",
           "debe": 0,
-          "haber": 20.34
+          "haber": 20.34,
+          "punteado": false
         }
       ]
     },
@@ -2180,14 +2359,16 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "CRÉDITOS PIXVERSE",
           "debe": 5.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. FACTURA GOOGLE PLAY - CAJA LABORAL POP",
           "debe": 0,
-          "haber": 5.99
+          "haber": 5.99,
+          "punteado": false
         }
       ]
     },
@@ -2203,21 +2384,24 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "COBRO FRA. FV2026/00008",
           "debe": 33.66,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "A CUENTA FACTURA MARZO",
           "debe": 16.34,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "43000001",
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "COBRO FRA FV2026/00008",
           "debe": 0,
-          "haber": 50
+          "haber": 50,
+          "punteado": false
         }
       ]
     },
@@ -2233,14 +2417,16 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "COBRO FRA. FV2026/00005",
           "debe": 356,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "43000002",
           "nombreCuenta": "Clientes Catawiki B.V.",
           "detalleApunte": "COBRO FRA. FV2026/00005",
           "debe": 0,
-          "haber": 356
+          "haber": 356,
+          "punteado": false
         }
       ]
     },
@@ -2256,21 +2442,24 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "COBRO FRA. COBRO FV2026/00004- CLIENTES VARIOS",
           "debe": 41.12,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000002",
           "nombreCuenta": "Acreedores-Plataforma Catawiki B.V.",
           "detalleApunte": "A CUENTA FACTURA COMISIÓN",
           "debe": 0.88,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "43000003",
           "nombreCuenta": "Clientes Pamono GmbH",
           "detalleApunte": "COBRO FRA. COBRO FV2026/00004-",
           "debe": 0,
-          "haber": 42
+          "haber": 42,
+          "punteado": false
         }
       ]
     },
@@ -2286,14 +2475,16 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "GASTOS DE ENVÍO",
           "debe": 13.66,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. ES26FS00179129 - CAJA LABORAL POPULAR,",
           "debe": 0,
-          "haber": 13.66
+          "haber": 13.66,
+          "punteado": false
         }
       ]
     },
@@ -2309,14 +2500,16 @@
           "nombreCuenta": "Compras de embalajes, cajas y material protección",
           "detalleApunte": "COMPRA MATERIAL EMBALAJE",
           "debe": 7,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. MATERIAL EMBALAJE - CAJA LABORAL POPUL",
           "debe": 0,
-          "haber": 7
+          "haber": 7,
+          "punteado": false
         }
       ]
     },
@@ -2332,14 +2525,16 @@
           "nombreCuenta": "Compras de embalajes, cajas y material protección",
           "detalleApunte": "COMPRA MATERIAL EMBALAJE",
           "debe": 9.9,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. ROUTE 88 - CAJA LABORAL POPULAR, COOP.",
           "debe": 0,
-          "haber": 9.9
+          "haber": 9.9,
+          "punteado": false
         }
       ]
     },
@@ -2355,14 +2550,16 @@
           "nombreCuenta": "Compras de embalajes, cajas y material protección",
           "detalleApunte": "PEDIDO 18724242570",
           "debe": 6.14,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PED 18724242570 - CAJA LABORAL POPULAR",
           "debe": 0,
-          "haber": 6.14
+          "haber": 6.14,
+          "punteado": false
         }
       ]
     },
@@ -2378,21 +2575,24 @@
           "nombreCuenta": "Deudas a c/p con partes vinculantes",
           "detalleApunte": "PAGO CUOTA 2/120 STOCK INICIAL",
           "debe": 108.44,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "66200000",
           "nombreCuenta": "Intereses de deudas",
           "detalleApunte": "INTERESES",
           "debe": 41.17,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. CUOTA 2/120 - CAJA LABORAL POPULAR, CO",
           "debe": 0,
-          "haber": 149.61
+          "haber": 149.61,
+          "punteado": false
         }
       ]
     },
@@ -2408,14 +2608,16 @@
           "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
           "detalleApunte": "PEDIDO 18724716643",
           "debe": 36.55,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PEDIDO 18724716643",
           "debe": 0,
-          "haber": 36.55
+          "haber": 36.55,
+          "punteado": false
         }
       ]
     },
@@ -2431,14 +2633,16 @@
           "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
           "detalleApunte": "PEDIDO 18751159979",
           "debe": 51.85,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PEDIDO 18751159979",
           "debe": 0,
-          "haber": 51.85
+          "haber": 51.85,
+          "punteado": false
         }
       ]
     },
@@ -2454,14 +2658,16 @@
           "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
           "detalleApunte": "PEDIDO 18765223805",
           "debe": 193.54,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PEDIDO 18765223805",
           "debe": 0,
-          "haber": 193.54
+          "haber": 193.54,
+          "punteado": false
         }
       ]
     },
@@ -2477,14 +2683,16 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "ES26FS00192845",
           "debe": 27.58,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. ES26FS00192845 - CAJA LABORAL POPULAR,",
           "debe": 0,
-          "haber": 27.58
+          "haber": 27.58,
+          "punteado": false
         }
       ]
     },
@@ -2500,14 +2708,16 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "SUSCRIPCIÓN ONE DRIVE GOOGLE PLAY",
           "debe": 1.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. SUSCRIPCIÓN ONE DRIVE - CAJA LABORAL P",
           "debe": 0,
-          "haber": 1.99
+          "haber": 1.99,
+          "punteado": false
         }
       ]
     },
@@ -2523,21 +2733,24 @@
           "nombreCuenta": "Sueldos y salarios Administradora Única",
           "detalleApunte": "SUELDOS Y SALARIOS MARZO",
           "debe": 400,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47510003",
           "nombreCuenta": "RETENCIONES TRABAJADORES",
           "detalleApunte": "RETENCIÓN 19% IRPF",
           "debe": 0,
-          "haber": 76
+          "haber": 76,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO NÓMINA MARZO 2026",
           "debe": 0,
-          "haber": 324
+          "haber": 324,
+          "punteado": false
         }
       ]
     },
@@ -2553,28 +2766,32 @@
           "nombreCuenta": "Comisiones plataformas Etsy Ireland UC",
           "detalleApunte": "FACTURA 932118514",
           "debe": 109.48,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FACTURA 932118514",
           "debe": 22.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000001",
           "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
           "detalleApunte": "FACTURA 932118514",
           "debe": 0,
-          "haber": 109.48
+          "haber": 109.48,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FACTURA 932118514",
           "debe": 0,
-          "haber": 22.99
+          "haber": 22.99,
+          "punteado": false
         }
       ]
     },
@@ -2590,14 +2807,16 @@
           "nombreCuenta": "RETENCIONES TRABAJADORES",
           "detalleApunte": "LIQUIDACIÓN IRPF 1T 2026",
           "debe": 228,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47510000",
           "nombreCuenta": "Hacienda Pública, por Retenciones practicadas, IRPF",
           "detalleApunte": "LIQUIDACIÓN IRPF 1T 2026",
           "debe": 0,
-          "haber": 228
+          "haber": 228,
+          "punteado": false
         }
       ]
     },
@@ -2613,14 +2832,16 @@
           "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
           "detalleApunte": "PAGO S/FRA. PAGO FACTURA MARZO - ACREEDORES - ETSY",
           "debe": 104.21,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "PAGO S/FRA. PAGO FACTURA MARZO - A CUENTA FACTURAS",
           "debe": 0,
-          "haber": 104.21
+          "haber": 104.21,
+          "punteado": false
         }
       ]
     },
@@ -2636,35 +2857,40 @@
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "LIQUIDACION IVA : Enero - Marzo",
           "debe": 69.66,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47702121",
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "detalleApunte": "LIQUIDACION IVA : Enero - Marzo",
           "debe": 203,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "LIQUIDACION IVA : Enero - Marzo",
           "debe": 0,
-          "haber": 69.66
+          "haber": 69.66,
+          "punteado": false
         },
         {
           "cuenta": "47000000",
           "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
           "detalleApunte": "LIQUIDACION IVA : Enero - Marzo",
           "debe": 0,
-          "haber": 104.44
+          "haber": 104.44,
+          "punteado": false
         },
         {
           "cuenta": "47500000",
           "nombreCuenta": "Hacienda Pública, acreedora por IVA",
           "detalleApunte": "LIQUIDACION IVA : Enero - Marzo",
           "debe": 0,
-          "haber": 98.56
+          "haber": 98.56,
+          "punteado": false
         }
       ]
     },
@@ -2680,14 +2906,16 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "SUSCRIPCIÓN APP STOCK ABRIL",
           "debe": 2.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. SUSCR. APP STOCK ABRIL - CAJA LABORAL",
           "debe": 0,
-          "haber": 2.99
+          "haber": 2.99,
+          "punteado": false
         }
       ]
     },
@@ -2703,14 +2931,16 @@
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "PAGO A CUENTA ETSY FACTURA ABRIL",
           "debe": 5.95,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAGOS A CUENTA ETSY - CAJA LABORAL POP",
           "debe": 0,
-          "haber": 5.95
+          "haber": 5.95,
+          "punteado": false
         }
       ]
     },
@@ -2726,28 +2956,32 @@
           "nombreCuenta": "PAMONO GMBH (ISP)",
           "detalleApunte": "CUOTA ABRIL",
           "debe": 69,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FACTURA 983FE488-0059",
           "debe": 14.49,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000006",
           "nombreCuenta": "Pamono GmbH",
           "detalleApunte": "983FE488-0059",
           "debe": 0,
-          "haber": 69
+          "haber": 69,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "983FE488-0059",
           "debe": 0,
-          "haber": 14.49
+          "haber": 14.49,
+          "punteado": false
         }
       ]
     },
@@ -2763,14 +2997,16 @@
           "nombreCuenta": "Pamono GmbH",
           "detalleApunte": "PAGO S/FRA. PAGO FRA 983FE488-0059 - PAMONO GmbH",
           "debe": 69,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAGO FRA 983FE488-0059 - CAJA LABORAL",
           "debe": 0,
-          "haber": 69
+          "haber": 69,
+          "punteado": false
         }
       ]
     },
@@ -2786,28 +3022,32 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "CUOTA SUSCRIPCIÓN ABRIL",
           "debe": 13.01,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "INVERSIÓN DEL SUJETO PASIVO",
           "debe": 2.73,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000003",
           "nombreCuenta": "Shopify Internacional Limited",
           "detalleApunte": "FRA. 516230953",
           "debe": 0,
-          "haber": 13.01
+          "haber": 13.01,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 516230953",
           "debe": 0,
-          "haber": 2.73
+          "haber": 2.73,
+          "punteado": false
         }
       ]
     },
@@ -2823,14 +3063,16 @@
           "nombreCuenta": "Shopify Internacional Limited",
           "detalleApunte": "PAGO S/FRA. PAGO FRA. 516230953 - ACREEDORES - SHO",
           "debe": 13.01,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAGO FRA. 516230953 - CAJA LABORAL POP",
           "debe": 0,
-          "haber": 13.01
+          "haber": 13.01,
+          "punteado": false
         }
       ]
     },
@@ -2846,21 +3088,24 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "CORREOS PAQQ LIGHT OFICINA DOMICILIO",
           "debe": 11.25,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200021",
           "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
           "detalleApunte": "HP, IVA SOPORTADO",
           "debe": 2.36,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000008",
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "TRANSPORTE FRA. ES26FC02328085",
           "debe": 0,
-          "haber": 13.61
+          "haber": 13.61,
+          "punteado": false
         }
       ]
     },
@@ -2876,14 +3121,16 @@
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "PAGO S/FRA. PAGO FRA. ES26FC0232 - AUCTANE S.L.",
           "debe": 13.61,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAGO FRA. ES26FC0232 - CAJA LABORAL PO",
           "debe": 0,
-          "haber": 13.61
+          "haber": 13.61,
+          "punteado": false
         }
       ]
     },
@@ -2899,14 +3146,16 @@
           "nombreCuenta": "Hacienda Pública, por Retenciones practicadas, IRPF",
           "detalleApunte": "PAGO S/FRA. PAGO LIQUIDACIÓN IRPF - LIQUIDACIÓN TR",
           "debe": 228,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAGO LIQUIDACIÓN IRPF - LIQUIDACIÓN TR",
           "debe": 0,
-          "haber": 228
+          "haber": 228,
+          "punteado": false
         }
       ]
     },
@@ -2922,14 +3171,16 @@
           "nombreCuenta": "Hacienda Pública, acreedora por IVA",
           "detalleApunte": "RECAUDACIÓN 303-369",
           "debe": 15.92,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAGO LIQUIDACIÓN 1T IVA - CAJA LABORAL",
           "debe": 0,
-          "haber": 15.92
+          "haber": 15.92,
+          "punteado": false
         }
       ]
     },
@@ -2945,21 +3196,24 @@
           "nombreCuenta": "Deudas a c/p con partes vinculantes",
           "detalleApunte": "PAGO S/FRA. CUOTA 3/120 STOCK - OTRAS DEUDAS A C/P",
           "debe": 108.73,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "66200000",
           "nombreCuenta": "Intereses de deudas",
           "detalleApunte": "PAGO S/FRA. CUOTA 3/120 STOCK - INTERESES DE DEUDA",
           "debe": 40.88,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. CUOTA 3/120 STOCK - CAJA LABORAL POPUL",
           "debe": 0,
-          "haber": 149.61
+          "haber": 149.61,
+          "punteado": false
         }
       ]
     },
@@ -2975,14 +3229,16 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "SUSCRIPCIÓN ABRIL ONE DRIVE",
           "debe": 1.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. GOOGLE ONE DRIVE - CAJA LABORAL POPULA",
           "debe": 0,
-          "haber": 1.99
+          "haber": 1.99,
+          "punteado": false
         }
       ]
     },
@@ -2998,21 +3254,24 @@
           "nombreCuenta": "Sueldos y salarios Administradora Única",
           "detalleApunte": "SALARIO ABRIL",
           "debe": 400,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47510003",
           "nombreCuenta": "RETENCIONES TRABAJADORES",
           "detalleApunte": "RETENCIÓN IRPF",
           "debe": 0,
-          "haber": 76
+          "haber": 76,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. NÓMINA ABRIL - CAJA LABORAL POPULAR, C",
           "debe": 0,
-          "haber": 324
+          "haber": 324,
+          "punteado": false
         }
       ]
     },
@@ -3028,28 +3287,32 @@
           "nombreCuenta": "Comisiones plataformas Etsy Ireland UC",
           "detalleApunte": "FACTURA ETSY ABRIL 955725604",
           "debe": 7.31,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FACTURA ETSY ABRIL 955725604",
           "debe": 1.54,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000001",
           "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
           "detalleApunte": "FRA. ETSY ABRIL 955725604",
           "debe": 0,
-          "haber": 7.31
+          "haber": 7.31,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. ETSY ABRIL 955725604",
           "debe": 0,
-          "haber": 1.54
+          "haber": 1.54,
+          "punteado": false
         }
       ]
     },
@@ -3065,14 +3328,16 @@
           "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
           "detalleApunte": "PAGO S/FRA. PAGO FRA. 955725604 - ACREEDORES - ETS",
           "debe": 5.95,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "PAGO S/FRA. PAGO FRA. 955725604 - A CUENTA FACTURA",
           "debe": 0,
-          "haber": 5.95
+          "haber": 5.95,
+          "punteado": false
         }
       ]
     },
@@ -3088,14 +3353,16 @@
           "nombreCuenta": "Comisiones y servicios bancarios",
           "detalleApunte": "MANTENIMIENTO C.L.NET EMPRESAS MAYO",
           "debe": 10,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. MANTENIMIENTO C.L.NET EMPRESA - CAJA L",
           "debe": 0,
-          "haber": 10
+          "haber": 10,
+          "punteado": false
         }
       ]
     },
@@ -3111,14 +3378,16 @@
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "A CUENTA FACTURA ETSY",
           "debe": 7.31,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. A CUENTA FACTURA ETSY - CAJA LABORAL P",
           "debe": 0,
-          "haber": 7.31
+          "haber": 7.31,
+          "punteado": false
         }
       ]
     },
@@ -3134,14 +3403,16 @@
           "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
           "detalleApunte": "COMPRA DE MERCADERÍAS FC2026/00015",
           "debe": 22.45,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PEDIDO VINTED FC2026/00015 - CAJA LABO",
           "debe": 0,
-          "haber": 22.45
+          "haber": 22.45,
+          "punteado": false
         }
       ]
     },
@@ -3157,14 +3428,16 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "SUSCRIPCIÓN MAYO APP INVENTORY",
           "debe": 2.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. SUSCRIPCIÓN APP INVENTORY - CAJA LABOR",
           "debe": 0,
-          "haber": 2.99
+          "haber": 2.99,
+          "punteado": false
         }
       ]
     },
@@ -3180,28 +3453,32 @@
           "nombreCuenta": "PAMONO GMBH (ISP)",
           "detalleApunte": "CUOTA MAYO PAMONO",
           "debe": 69,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "HP INVERSIÓN DEL SUJETO PASIVO",
           "debe": 14.49,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000006",
           "nombreCuenta": "Pamono GmbH",
           "detalleApunte": "FACTURA MAYO PAMONO",
           "debe": 0,
-          "haber": 69
+          "haber": 69,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FACTURA MAYO 2026",
           "debe": 0,
-          "haber": 14.49
+          "haber": 14.49,
+          "punteado": false
         }
       ]
     },
@@ -3217,14 +3494,16 @@
           "nombreCuenta": "Pamono GmbH",
           "detalleApunte": "PAGO S/FRA. PAGO FRA. - PAMONO GmbH",
           "debe": 69,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAGO FRA. - CAJA LABORAL POPULAR, COOP",
           "debe": 0,
-          "haber": 69
+          "haber": 69,
+          "punteado": false
         }
       ]
     },
@@ -3240,28 +3519,32 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "SUSCRIPCIÓN SHOPIFY FRA. 530131992",
           "debe": 29,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "SUSCRIPCIÓN SHOPIFY FRA. 530131992",
           "debe": 6.09,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000003",
           "nombreCuenta": "Shopify Internacional Limited",
           "detalleApunte": "FRA. 530131992",
           "debe": 0,
-          "haber": 29
+          "haber": 29,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 530131992",
           "debe": 0,
-          "haber": 6.09
+          "haber": 6.09,
+          "punteado": false
         }
       ]
     },
@@ -3277,14 +3560,16 @@
           "nombreCuenta": "Shopify Internacional Limited",
           "detalleApunte": "PAGO S/FRA. PAGO FRA. 530131992 - ACREEDORES - SHO",
           "debe": 29,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAGO FRA. 530131992 - CAJA LABORAL POP",
           "debe": 0,
-          "haber": 29
+          "haber": 29,
+          "punteado": false
         }
       ]
     },
@@ -3300,14 +3585,16 @@
           "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
           "detalleApunte": "COMPRA DE MERCADERÍAS FC2026/00016",
           "debe": 51.9,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. COMPRA FC2026/00016 - CAJA LABORAL POP",
           "debe": 0,
-          "haber": 51.9
+          "haber": 51.9,
+          "punteado": false
         }
       ]
     },
@@ -3323,21 +3610,24 @@
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "VENTA PLATAFORMA ETSY UC PEDIDO 4063988617",
           "debe": 495,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "70000001",
           "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
           "detalleApunte": "VENTA MERCADERÍAS ART00380",
           "debe": 0,
-          "haber": 416.31
+          "haber": 416.31,
+          "punteado": false
         },
         {
           "cuenta": "47702121",
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "detalleApunte": "FV2026/00009",
           "debe": 0,
-          "haber": 78.69
+          "haber": 78.69,
+          "punteado": false
         }
       ]
     },
@@ -3353,21 +3643,24 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "COBRO FRA. ETSY FV2026/00009 - CLIENTES VARIOS-PLA",
           "debe": 435.93,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "A CUENTA FACTURA ETSY MAYO",
           "debe": 59.07,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "43000001",
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "COBRO FRA. ETSY FV2026/00009 -",
           "debe": 0,
-          "haber": 495
+          "haber": 495,
+          "punteado": false
         }
       ]
     },
@@ -3383,21 +3676,24 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "STARPACK TERRESTRE ES2026PRO0001432157",
           "debe": 135.14,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200021",
           "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
           "detalleApunte": "FRA. ES26FC03107623",
           "debe": 28.38,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000008",
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "FRA. ES26FC03107623",
           "debe": 0,
-          "haber": 163.52
+          "haber": 163.52,
+          "punteado": false
         }
       ]
     },
@@ -3413,14 +3709,16 @@
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "PAGO S/FRA. PAGO ES26FC03107623 - AUCTANE S.L.",
           "debe": 163.52,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAGO ES26FC03107623 - CAJA LABORAL POP",
           "debe": 0,
-          "haber": 163.52
+          "haber": 163.52,
+          "punteado": false
         }
       ]
     },
@@ -3436,21 +3734,24 @@
           "nombreCuenta": "Deudas a c/p con partes vinculantes",
           "detalleApunte": "PAGO CUOTA 4/120 STOCK INICIAL",
           "debe": 109.03,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "66200000",
           "nombreCuenta": "Intereses de deudas",
           "detalleApunte": "PAGO S/FRA. CUOTA 4/120 STOCK - INTERESES DE DEUDA",
           "debe": 40.58,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. CUOTA 4/120 STOCK - CAJA LABORAL POPUL",
           "debe": 0,
-          "haber": 149.61
+          "haber": 149.61,
+          "punteado": false
         }
       ]
     },
@@ -3466,14 +3767,16 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "CUOTA MAYO SUSCRIPCIÓN GOOGLE ONE DRIVE",
           "debe": 1.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. SUSCRIPCIÓN ONE DRIVE - CAJA LABORAL P",
           "debe": 0,
-          "haber": 1.99
+          "haber": 1.99,
+          "punteado": false
         }
       ]
     },
@@ -3489,14 +3792,16 @@
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "VENTA PLATAFORMA ETSY IRELAND UC PEDIDO  406941140",
           "debe": 560,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "70000003",
           "nombreCuenta": "Ventas de mercaderías IVA Exento exportaciones",
           "detalleApunte": "VENTA PLATAFORMA ETSY ART00366",
           "debe": 0,
-          "haber": 560
+          "haber": 560,
+          "punteado": false
         }
       ]
     },
@@ -3512,14 +3817,16 @@
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "VENTA PLATAFORMA ETSY IRELAND UC PEDIDO 4074689667",
           "debe": 585,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "70000003",
           "nombreCuenta": "Ventas de mercaderías IVA Exento exportaciones",
           "detalleApunte": "VENTA MERCADERÍAS ETSY ART00371",
           "debe": 0,
-          "haber": 585
+          "haber": 585,
+          "punteado": false
         }
       ]
     },
@@ -3535,21 +3842,24 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "COBRO FRA. COBRO ETSY FV2026/00010 Y 11 - CLIENTES",
           "debe": 873.25,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "43000001",
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "COBRO FRA. COBRO ETSY FV2026/00010 Y 11 -",
           "debe": 0,
-          "haber": 1145
+          "haber": 1145,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "A CUENTA FACTURA MAYO",
           "debe": 271.75,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         }
       ]
     },
@@ -3565,28 +3875,32 @@
           "nombreCuenta": "Comisiones plataformas Etsy Ireland UC",
           "detalleApunte": "FACTURA ETSY MAYO",
           "debe": 333.37,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 977731456",
           "debe": 70.01,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000001",
           "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
           "detalleApunte": "PLATAFORMA ETSY IRELAND UC FRA. 977731456",
           "debe": 0,
-          "haber": 333.37
+          "haber": 333.37,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 977731456",
           "debe": 0,
-          "haber": 70.01
+          "haber": 70.01,
+          "punteado": false
         }
       ]
     },
@@ -3602,14 +3916,16 @@
           "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
           "detalleApunte": "PAGO S/FRA. ETSY 977731456 - ACREEDORES - ETSY IRE",
           "debe": 333.37,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "PAGO S/FRA. ETSY 977731456 - Etsy facturas pendien",
           "debe": 0,
-          "haber": 333.37
+          "haber": 333.37,
+          "punteado": false
         }
       ]
     },
@@ -3625,14 +3941,16 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "TRANSPORTE ART00371",
           "debe": 141.88,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000008",
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "EXPORTACIÓN DE BIENES - EXENTO IVA",
           "debe": 0,
-          "haber": 141.88
+          "haber": 141.88,
+          "punteado": false
         }
       ]
     },
@@ -3648,14 +3966,16 @@
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "PAGO S/FRA. PAGO ES26FC033242 - AUCTANE S.L.",
           "debe": 141.88,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAGO ES26FC033242 - CAJA LABORAL POPUL",
           "debe": 0,
-          "haber": 141.88
+          "haber": 141.88,
+          "punteado": false
         }
       ]
     },
@@ -3671,14 +3991,16 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "ZELERIS GLOBAL AÉREO ES2026PRO0001542367",
           "debe": 85.06,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000008",
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "FRA. ES26FC0332428",
           "debe": 0,
-          "haber": 85.06
+          "haber": 85.06,
+          "punteado": false
         }
       ]
     },
@@ -3694,14 +4016,16 @@
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "PAGO S/FRA. PAGO 26FC0332428 - AUCTANE S.L.",
           "debe": 85.06,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAGO 26FC0332428 - CAJA LABORAL POPULA",
           "debe": 0,
-          "haber": 85.06
+          "haber": 85.06,
+          "punteado": false
         }
       ]
     },
@@ -3717,14 +4041,16 @@
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "A CUENTA FACTURA ETSY",
           "debe": 2.55,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "A CUENTA FACTURA ETYS JUNIO",
           "debe": 0,
-          "haber": 2.55
+          "haber": 2.55,
+          "punteado": false
         }
       ]
     },
@@ -3740,14 +4066,16 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "MANTENIMIENTO HOSTINGER",
           "debe": 10.16,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. HOSTINGER.COM - CAJA LABORAL POPULAR,",
           "debe": 0,
-          "haber": 10.16
+          "haber": 10.16,
+          "punteado": false
         }
       ]
     },
@@ -3763,21 +4091,24 @@
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "VENTA PLATAFORMA ETSY IRELAND UC PEDIDO 4080642833",
           "debe": 60,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "70000001",
           "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
           "detalleApunte": "VENTA MERCADERÍAS ART00131",
           "debe": 0,
-          "haber": 50.46
+          "haber": 50.46,
+          "punteado": false
         },
         {
           "cuenta": "47702121",
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "detalleApunte": "",
           "debe": 0,
-          "haber": 9.54
+          "haber": 9.54,
+          "punteado": false
         }
       ]
     },
@@ -3793,14 +4124,16 @@
           "nombreCuenta": "Compras de embalajes, cajas y material protección",
           "detalleApunte": "COMPRA DE EMBALAJES",
           "debe": 19.4,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA.  - CAJA LABORAL POPULAR, COOP. DE CRÉD",
           "debe": 0,
-          "haber": 19.4
+          "haber": 19.4,
+          "punteado": false
         }
       ]
     },
@@ -3816,21 +4149,24 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "ES2026PRO0002239259",
           "debe": 10.34,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000008",
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "SEUR SHOP2SHOP",
           "debe": 0,
-          "haber": 12.51
+          "haber": 12.51,
+          "punteado": false
         },
         {
           "cuenta": "47200021",
           "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
           "detalleApunte": "ES26FC04767151",
           "debe": 2.17,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         }
       ]
     },
@@ -3846,14 +4182,16 @@
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "PAGO S/FRA. AUCTANE ES26FC0476 - AUCTANE S.L.",
           "debe": 12.51,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. AUCTANE ES26FC0476 - CAJA LABORAL POPU",
           "debe": 0,
-          "haber": 12.51
+          "haber": 12.51,
+          "punteado": false
         }
       ]
     },
@@ -3869,14 +4207,16 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "TRANSPORTE FRA. ES26FC03453634",
           "debe": 15.58,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000008",
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "TRANSPORTE FRA. ES26FC03453634",
           "debe": 0,
-          "haber": 15.58
+          "haber": 15.58,
+          "punteado": false
         }
       ]
     },
@@ -3892,14 +4232,16 @@
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "PAGO S/FRA. ES26FC03453634 - AUCTANE S.L.",
           "debe": 15.58,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. ES26FC03453634 - CAJA LABORAL POPULAR,",
           "debe": 0,
-          "haber": 15.58
+          "haber": 15.58,
+          "punteado": false
         }
       ]
     },
@@ -3915,14 +4257,16 @@
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "VENTA PLATAFORMA ETSY IRELAND UC PEDIDO 4085113677",
           "debe": 695,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "70000003",
           "nombreCuenta": "Ventas de mercaderías IVA Exento exportaciones",
           "detalleApunte": "VENTA MERCADERÍAS ART00073",
           "debe": 0,
-          "haber": 695
+          "haber": 695,
+          "punteado": false
         }
       ]
     },
@@ -3938,14 +4282,16 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "SUSCRIPCIÓN APP INVENTORY",
           "debe": 2.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. SUSCRIPCIÓN APP INVENTORY - CAJA LABOR",
           "debe": 0,
-          "haber": 2.99
+          "haber": 2.99,
+          "punteado": false
         }
       ]
     },
@@ -3961,21 +4307,24 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "GATOS DE ENVÍO ART00131",
           "debe": 15.69,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200021",
           "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
           "detalleApunte": "GATOS DE ENVÍO ART00131",
           "debe": 3.29,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000008",
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "FRA. ES26FC03517016",
           "debe": 0,
-          "haber": 18.98
+          "haber": 18.98,
+          "punteado": false
         }
       ]
     },
@@ -3991,14 +4340,16 @@
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "PAGO S/FRA. PAGO ES26FC03517016 - AUCTANE S.L.",
           "debe": 18.98,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAGO ES26FC03517016 - CAJA LABORAL POP",
           "debe": 0,
-          "haber": 18.98
+          "haber": 18.98,
+          "punteado": false
         }
       ]
     },
@@ -4014,21 +4365,24 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "COBRO FRA. ETSY FV2026/00012 -",
           "debe": 51.78,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "A CUENTA FACTURA JUNIO",
           "debe": 8.22,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "43000001",
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "COBRO FRA. ETSY FV2026/00012 -",
           "debe": 0,
-          "haber": 60
+          "haber": 60,
+          "punteado": false
         }
       ]
     },
@@ -4044,21 +4398,24 @@
           "nombreCuenta": "Devoluciones de ventas y operaciones similares",
           "detalleApunte": "DEVOLUCIÓN ART00380 FV2026/00009",
           "debe": 416.31,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47202121",
           "nombreCuenta": "HP. REBU 21%",
           "detalleApunte": "FR2026/00001",
           "debe": 78.69,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "43000001",
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "PLATAFORMA ETSY IRELAND UC PEDIDO 4063988617",
           "debe": 0,
-          "haber": 495
+          "haber": 495,
+          "punteado": false
         }
       ]
     },
@@ -4074,14 +4431,16 @@
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "PAGO S/FRA. ETSY FR2026/00001 - CLIENTES VARIOS-PL",
           "debe": 474.9,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. ETSY FR2026/00001 - CAJA LABORAL POPUL",
           "debe": 0,
-          "haber": 474.9
+          "haber": 474.9,
+          "punteado": false
         }
       ]
     },
@@ -4097,21 +4456,24 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "COBRO FRA. ETSY FV2026/00013 - CLIENTES VARIOS-PLA",
           "debe": 615.14,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "A CUENTA FACTURA JUNIO",
           "debe": 79.86,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "43000001",
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "COBRO FRA. ETSY FV2026/00013 -",
           "debe": 0,
-          "haber": 695
+          "haber": 695,
+          "punteado": false
         }
       ]
     },
@@ -4127,28 +4489,32 @@
           "nombreCuenta": "PAMONO GMBH (ISP)",
           "detalleApunte": "CUOTA MENSUAL PAMONO 983FE488-0061",
           "debe": 69,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "CUOTA MENSUAL PAMONO 983FE488-0061",
           "debe": 14.49,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000006",
           "nombreCuenta": "Pamono GmbH",
           "detalleApunte": "CUOTA MENSUAL PAMONO 983FE488-0061",
           "debe": 0,
-          "haber": 69
+          "haber": 69,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "983FE488-006",
           "debe": 0,
-          "haber": 14.49
+          "haber": 14.49,
+          "punteado": false
         }
       ]
     },
@@ -4164,14 +4530,16 @@
           "nombreCuenta": "Pamono GmbH",
           "detalleApunte": "PAGO S/FRA. PAGO 983FE488-006 - PAMONO GmbH",
           "debe": 69,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAGO 983FE488-006 - PAMONO GmbH",
           "debe": 0,
-          "haber": 69
+          "haber": 69,
+          "punteado": false
         }
       ]
     },
@@ -4187,14 +4555,16 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "SUSCRIPCIÓN JUNIO GOOGLE ONE DRIVE",
           "debe": 1.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "SUSCRIPCIÓN JUNIO GOOGLE ONE DRIVE",
           "debe": 0,
-          "haber": 1.99
+          "haber": 1.99,
+          "punteado": false
         }
       ]
     },
@@ -4210,14 +4580,16 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "COBRO FRA. FR2026/00001 - ACREEDORES - ETSY IRELAN",
           "debe": 35.74,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "COBRO FRA. FR2026/00001 -",
           "debe": 0,
-          "haber": 35.74
+          "haber": 35.74,
+          "punteado": false
         }
       ]
     },
@@ -4233,14 +4605,16 @@
           "nombreCuenta": "Comisiones y servicios bancarios",
           "detalleApunte": "INTERESES Y COMISIONES",
           "debe": 25,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. BANCO INTERESES Y COMISIONES - CAJA LA",
           "debe": 0,
-          "haber": 25
+          "haber": 25,
+          "punteado": false
         }
       ]
     },
@@ -4256,14 +4630,16 @@
           "nombreCuenta": "Compras de embalajes, cajas y material protección",
           "detalleApunte": "BAZAR RONGO EMBALAJES",
           "debe": 8,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA.  - CAJA LABORAL POPULAR, COOP. DE CRÉD",
           "debe": 0,
-          "haber": 8
+          "haber": 8,
+          "punteado": false
         }
       ]
     },
@@ -4279,14 +4655,16 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "TRANSPORTE CORREOS EXPRESS EEUU",
           "debe": 81.14,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000008",
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "GASTOS DE ENVÍO",
           "debe": 0,
-          "haber": 81.14
+          "haber": 81.14,
+          "punteado": false
         }
       ]
     },
@@ -4302,14 +4680,16 @@
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "PAGO S/FRA. PAGO 26FC0364833 - AUCTANE S.L.",
           "debe": 81.14,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAGO 26FC0364833 - CAJA LABORAL POPULA",
           "debe": 0,
-          "haber": 81.14
+          "haber": 81.14,
+          "punteado": false
         }
       ]
     },
@@ -4325,28 +4705,32 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "CUOTA JUNIO SHOPIFY",
           "debe": 29,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "CUOTA JUNIO SHOPIFY",
           "debe": 6.09,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000003",
           "nombreCuenta": "Shopify Internacional Limited",
           "detalleApunte": "CUOTA JUNIO SHOPIFY",
           "debe": 0,
-          "haber": 29
+          "haber": 29,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "CUOTA JUNIO SHOPIFY",
           "debe": 0,
-          "haber": 6.09
+          "haber": 6.09,
+          "punteado": false
         }
       ]
     },
@@ -4362,14 +4746,16 @@
           "nombreCuenta": "Shopify Internacional Limited",
           "detalleApunte": "PAGO S/FRA. PAGO 544079456 - ACREEDORES - SHOPIFY",
           "debe": 29,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAGO 544079456 - CAJA LABORAL POPULAR,",
           "debe": 0,
-          "haber": 29
+          "haber": 29,
+          "punteado": false
         }
       ]
     },
@@ -4385,21 +4771,24 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "UPS-STANDARD ACCESS POINT",
           "debe": 18.44,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200021",
           "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
           "detalleApunte": "UPS-STANDARD ACCESS POINT",
           "debe": 3.87,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000008",
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "26FC0371435",
           "debe": 0,
-          "haber": 22.31
+          "haber": 22.31,
+          "punteado": false
         }
       ]
     },
@@ -4415,21 +4804,24 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "MONDIAL RELAY-INPOST-",
           "debe": 3.23,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200021",
           "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
           "detalleApunte": "ES26FC03683097",
           "debe": 0.68,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000008",
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "ES26FC03683097",
           "debe": 0,
-          "haber": 3.91
+          "haber": 3.91,
+          "punteado": false
         }
       ]
     },
@@ -4445,14 +4837,16 @@
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "PAGO S/FRA. PAGO FRA. ES26FC03683097 - AUCTANE S.L",
           "debe": 3.91,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAGO FRA. ES26FC03683097 - CAJA LABORA",
           "debe": 0,
-          "haber": 3.91
+          "haber": 3.91,
+          "punteado": false
         }
       ]
     },
@@ -4468,14 +4862,16 @@
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "PAGO S/FRA. ES26FC03714359 - AUCTANE S.L.",
           "debe": 22.31,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. ES26FC03714359 - CAJA LABORAL POPULAR,",
           "debe": 0,
-          "haber": 22.31
+          "haber": 22.31,
+          "punteado": false
         }
       ]
     },
@@ -4491,21 +4887,24 @@
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "VENTA PLATAFORMA ETSY PEDIDO",
           "debe": 135,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "70000001",
           "nombreCuenta": "Ventas mercaderías Régimen Especial de los Bienes Usados",
           "detalleApunte": "VENTA DE MERCADERÍAS ART00278",
           "debe": 0,
-          "haber": 112.29
+          "haber": 112.29,
+          "punteado": false
         },
         {
           "cuenta": "47702121",
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "detalleApunte": "FV2026/00014",
           "debe": 0,
-          "haber": 22.71
+          "haber": 22.71,
+          "punteado": false
         }
       ]
     },
@@ -4521,21 +4920,24 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "COBRO FRA. ETSY FV2026/00014 - CLIENTES VARIOS-PLA",
           "debe": 117.34,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "A CUENTA FACTURA JUNIO",
           "debe": 17.66,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "43000001",
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "COBRO FRA. ETSY FV2026/00014 -",
           "debe": 0,
-          "haber": 135
+          "haber": 135,
+          "punteado": false
         }
       ]
     },
@@ -4551,14 +4953,16 @@
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "VENTA PLATAFORNA ETSY PEDIDO",
           "debe": 200,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "70000003",
           "nombreCuenta": "Ventas de mercaderías IVA Exento exportaciones",
           "detalleApunte": "VENTA DE MERCADERÍAS ART00416",
           "debe": 0,
-          "haber": 200
+          "haber": 200,
+          "punteado": false
         }
       ]
     },
@@ -4574,21 +4978,24 @@
           "nombreCuenta": "Deudas a c/p con partes vinculantes",
           "detalleApunte": "PAGO S/FRA. CUOTA 5/120 STOCK INICIAL - OTRAS DEUD",
           "debe": 109.32,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "66200000",
           "nombreCuenta": "Intereses de deudas",
           "detalleApunte": "PAGO S/FRA. CUOTA 5/120 STOCK INICIAL - INTERESES",
           "debe": 40.29,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. CUOTA 5/120 STOCK INICIAL - CAJA LABOR",
           "debe": 0,
-          "haber": 149.61
+          "haber": 149.61,
+          "punteado": false
         }
       ]
     },
@@ -4604,14 +5011,16 @@
           "nombreCuenta": "Compras de piezas y mercaderías (REBU)",
           "detalleApunte": "COMPRA MERCADERÍAS ART00495",
           "debe": 46.65,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. FC2026/00017 - CAJA LABORAL POPULAR, C",
           "debe": 0,
-          "haber": 46.65
+          "haber": 46.65,
+          "punteado": false
         }
       ]
     },
@@ -4627,21 +5036,24 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "COBRO FRA. ETSY FV2026/00015 -",
           "debe": 150.9,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "A CUENTA FACTURA JUNIO",
           "debe": 49.1,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "43000001",
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "COBRO FRA. ETSY FV2026/00015 -",
           "debe": 0,
-          "haber": 200
+          "haber": 200,
+          "punteado": false
         }
       ]
     },
@@ -4657,14 +5069,16 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "CORREOS EXPRESS-INTERNACIONAL EXPRESS",
           "debe": 36.79,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000008",
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "FRA. ES25FC03915261",
           "debe": 0,
-          "haber": 36.79
+          "haber": 36.79,
+          "punteado": false
         }
       ]
     },
@@ -4680,14 +5094,16 @@
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "PAGO S/FRA. PAGO ES25FC039152 - AUCTANE S.L.",
           "debe": 36.79,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAGO ES25FC039152 - CAJA LABORAL POPUL",
           "debe": 0,
-          "haber": 36.79
+          "haber": 36.79,
+          "punteado": false
         }
       ]
     },
@@ -4703,28 +5119,32 @@
           "nombreCuenta": "Comisiones plataformas Etsy Ireland UC",
           "detalleApunte": "FACTURA ETSY IRELAND UC JUNIO",
           "debe": 122.16,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 100079627",
           "debe": 25.65,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000001",
           "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
           "detalleApunte": "FACTURA ETSY IRELAND UC JUNIO",
           "debe": 0,
-          "haber": 122.16
+          "haber": 122.16,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 100079627",
           "debe": 0,
-          "haber": 25.65
+          "haber": 25.65,
+          "punteado": false
         }
       ]
     },
@@ -4740,21 +5160,24 @@
           "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
           "detalleApunte": "PAGO S/FRA. ETSY 1000700627 - ACREEDORES - ETSY IR",
           "debe": 128.79,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "PAGO S/FRA. ETSY 1000700627 - Etsy facturas pendie",
           "debe": 0,
-          "haber": 108.69
+          "haber": 108.69,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "PAGO S/FRA. ETSY 1000700627 - Etsy facturas pendie",
           "debe": 0,
-          "haber": 20.1
+          "haber": 20.1,
+          "punteado": false
         }
       ]
     },
@@ -4770,42 +5193,48 @@
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "LIQUIDACION IVA : Abril - Junio",
           "debe": 155.58,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47702121",
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "detalleApunte": "LIQUIDACION IVA : Abril - Junio",
           "debe": 110.94,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200021",
           "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
           "detalleApunte": "LIQUIDACION IVA : Abril - Junio",
           "debe": 0,
-          "haber": 38.58
+          "haber": 38.58,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "LIQUIDACION IVA : Abril - Junio",
           "debe": 0,
-          "haber": 155.58
+          "haber": 155.58,
+          "punteado": false
         },
         {
           "cuenta": "47202121",
           "nombreCuenta": "HP. REBU 21%",
           "detalleApunte": "LIQUIDACION IVA : Abril - Junio",
           "debe": 0,
-          "haber": 78.69
+          "haber": 78.69,
+          "punteado": false
         },
         {
           "cuenta": "47000000",
           "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
           "detalleApunte": "LIQUIDACION IVA : Abril - Junio",
           "debe": 6.33,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         }
       ]
     },
@@ -4821,14 +5250,16 @@
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "",
           "debe": 3.06,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "",
           "debe": 0,
-          "haber": 3.06
+          "haber": 3.06,
+          "punteado": false
         }
       ]
     },
@@ -4844,14 +5275,16 @@
           "nombreCuenta": "Comisiones y servicios bancarios",
           "detalleApunte": "MANTENIMIENTO C.L. NET EMPRESAS",
           "debe": 30,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "MANTENIMIENTO C.L. NET EMPRESAS",
           "debe": 0,
-          "haber": 30
+          "haber": 30,
+          "punteado": false
         }
       ]
     },
@@ -4867,28 +5300,32 @@
           "nombreCuenta": "HP ACREEDORA POR ITP APLAZADO",
           "detalleApunte": "PAGO S/FRA. PRIMER PLAZO ITP DGA - HP ACREEDORA PO",
           "debe": 204.14,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PRIMER PLAZO ITP DGA - CAJA LABORAL PO",
           "debe": 0,
-          "haber": 204.14
+          "haber": 204.14,
+          "punteado": false
         },
         {
           "cuenta": "66900000",
           "nombreCuenta": "OTROS GASTOS FINANCIEROS",
           "detalleApunte": "INTERESES",
           "debe": 2.77,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47581000",
           "nombreCuenta": "HP ACREEDORA POR ITP APLAZADO",
           "detalleApunte": "INTERESES POR LIQUIDAR",
           "debe": 0,
-          "haber": 2.77
+          "haber": 2.77,
+          "punteado": false
         }
       ]
     },
@@ -4904,14 +5341,16 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "SUSCRIPCIÓN MENSUAL STOCK INVENTORY",
           "debe": 2.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. 420318865852493836 - CAJA LABORAL POPU",
           "debe": 0,
-          "haber": 2.99
+          "haber": 2.99,
+          "punteado": false
         }
       ]
     },
@@ -4927,28 +5366,32 @@
           "nombreCuenta": "PAMONO GMBH (ISP)",
           "detalleApunte": "CUOTA MENSUAL PAMONO GMBH JULIO",
           "debe": 69,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000006",
           "nombreCuenta": "Pamono GmbH",
           "detalleApunte": "CUOTA MENSUAL PAMONO FRA 983FE488-0062",
           "debe": 0,
-          "haber": 69
+          "haber": 69,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "CUOTA MENSUAL PAMONO FRA 983FE488-0062",
           "debe": 14.49,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "",
           "debe": 0,
-          "haber": 14.49
+          "haber": 14.49,
+          "punteado": false
         }
       ]
     },
@@ -4964,14 +5407,16 @@
           "nombreCuenta": "Pamono GmbH",
           "detalleApunte": "PAGO S/FRA. PAMONO 983FE488-0062 - PAMONO GmbH",
           "debe": 69,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAMONO 983FE488-0062 - CAJA LABORAL PO",
           "debe": 0,
-          "haber": 69
+          "haber": 69,
+          "punteado": false
         }
       ]
     },
@@ -4987,28 +5432,32 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "CUOTA SHOPIFY JULIO",
           "debe": 29,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 558091704",
           "debe": 6.09,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000003",
           "nombreCuenta": "Shopify Internacional Limited",
           "detalleApunte": "FACTURA SHOPIFY 558091704",
           "debe": 0,
-          "haber": 29
+          "haber": 29,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "",
           "debe": 0,
-          "haber": 6.09
+          "haber": 6.09,
+          "punteado": false
         }
       ]
     },
@@ -5024,14 +5473,16 @@
           "nombreCuenta": "Shopify Internacional Limited",
           "detalleApunte": "PAGO S/FRA. SHOPIFY 558091704 - ACREEDORES - SHOPI",
           "debe": 29,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. SHOPIFY 558091704 - CAJA LABORAL POPUL",
           "debe": 0,
-          "haber": 29
+          "haber": 29,
+          "punteado": false
         }
       ]
     },
@@ -5047,14 +5498,16 @@
           "nombreCuenta": "RETENCIONES TRABAJADORES",
           "detalleApunte": "LIQUIDACIÓN 2T IRPF",
           "debe": 76,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "LIQUIDACIÓN 2T IRPF",
           "debe": 0,
-          "haber": 76
+          "haber": 76,
+          "punteado": false
         }
       ]
     },
@@ -5070,21 +5523,24 @@
           "nombreCuenta": "Deudas a c/p con partes vinculantes",
           "detalleApunte": "PAGO S/FRA. CUOTA 6/120  STOCK INICIAL - OTRAS DEU",
           "debe": 109.62,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "66200000",
           "nombreCuenta": "Intereses de deudas",
           "detalleApunte": "PAGO S/FRA. CUOTA 6/120  STOCK INICIAL - OTRAS DEU",
           "debe": 39.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. CUOTA 6/120  STOCK INICIAL - CAJA LABO",
           "debe": 0,
-          "haber": 149.61
+          "haber": 149.61,
+          "punteado": false
         }
       ]
     },
@@ -5100,14 +5556,16 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "SUSCRIPCIÓN ONE DRIVE MICROSOFT JULIO",
           "debe": 1.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. 2243542775424764-43 - CAJA LABORAL POP",
           "debe": 0,
-          "haber": 1.99
+          "haber": 1.99,
+          "punteado": false
         }
       ]
     },
@@ -5123,28 +5581,32 @@
           "nombreCuenta": "Comisiones plataformas Etsy Ireland UC",
           "detalleApunte": "FACTURA PLATAFORMA ETSY IRELAND UC 102898573",
           "debe": 14.52,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FACTURA PLATAFORMA ETSY IRELAND UC 102898573",
           "debe": 3.05,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000001",
           "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
           "detalleApunte": "FACTURA PLATAFORMA ETSY IRELAND UC 102898573",
           "debe": 0,
-          "haber": 14.52
+          "haber": 14.52,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FACTURA PLATAFORMA ETSY IRELAND UC 102898573",
           "debe": 0,
-          "haber": 3.05
+          "haber": 3.05,
+          "punteado": false
         }
       ]
     },
@@ -5160,14 +5622,16 @@
           "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
           "detalleApunte": "PAGO S/FRA. ETSY 1022898573 - ACREEDORES - ETSY IR",
           "debe": 14.52,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. ETSY 1022898573 - CAJA LABORAL POPULAR",
           "debe": 0,
-          "haber": 14.52
+          "haber": 14.52,
+          "punteado": false
         }
       ]
     },
@@ -5183,14 +5647,16 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "SUSCRIPCIÓN STOCK INVENTORY AGOSTO",
           "debe": 2.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. 4203188658524938-37 - CAJA LABORAL POP",
           "debe": 0,
-          "haber": 2.99
+          "haber": 2.99,
+          "punteado": false
         }
       ]
     },
@@ -5206,28 +5672,32 @@
           "nombreCuenta": "PAMONO GMBH (ISP)",
           "detalleApunte": "FACTURA AGOSTO",
           "debe": 69,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "983FE488-0063",
           "debe": 14.49,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000006",
           "nombreCuenta": "Pamono GmbH",
           "detalleApunte": "CUOTA MENSUAL AGOSTO",
           "debe": 0,
-          "haber": 69
+          "haber": 69,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "",
           "debe": 0,
-          "haber": 14.49
+          "haber": 14.49,
+          "punteado": false
         }
       ]
     },
@@ -5243,14 +5713,16 @@
           "nombreCuenta": "Pamono GmbH",
           "detalleApunte": "PAGO S/FRA. PAMONO 983FE488-0063 - PAMONO GmbH",
           "debe": 69,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAMONO 983FE488-0063 - CAJA LABORAL PO",
           "debe": 0,
-          "haber": 69
+          "haber": 69,
+          "punteado": false
         }
       ]
     },
@@ -5266,28 +5738,32 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "MENSUALIDAD AGOSTO",
           "debe": 29,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "572675714",
           "debe": 6.09,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000003",
           "nombreCuenta": "Shopify Internacional Limited",
           "detalleApunte": "FRA. 572675714",
           "debe": 0,
-          "haber": 29
+          "haber": 29,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "",
           "debe": 0,
-          "haber": 6.09
+          "haber": 6.09,
+          "punteado": false
         }
       ]
     },
@@ -5303,14 +5779,16 @@
           "nombreCuenta": "Shopify Internacional Limited",
           "detalleApunte": "PAGO S/FRA. SHOPIFY  572675714 - ACREEDORES - SHOP",
           "debe": 29,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. SHOPIFY  572675714 - CAJA LABORAL POPU",
           "debe": 0,
-          "haber": 29
+          "haber": 29,
+          "punteado": false
         }
       ]
     },
@@ -5326,14 +5804,16 @@
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "VENTA ETSY IRELAND UC PEDIDO 4147738376",
           "debe": 215,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "70000003",
           "nombreCuenta": "Ventas de mercaderías IVA Exento exportaciones",
           "detalleApunte": "VENTA MERCADERÍAS ART00395",
           "debe": 0,
-          "haber": 215
+          "haber": 215,
+          "punteado": false
         }
       ]
     },
@@ -5349,21 +5829,24 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "COBRO FRA. ETSY FV2026/00016 - CLIENTES VARIOS-PLA",
           "debe": 184.62,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "A CUENTA FACTURA AGOSTO",
           "debe": 30.38,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "43000001",
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "COBRO FRA. ETSY FV2026/00016 -",
           "debe": 0,
-          "haber": 215
+          "haber": 215,
+          "punteado": false
         }
       ]
     },
@@ -5379,21 +5862,24 @@
           "nombreCuenta": "Deudas a c/p con partes vinculantes",
           "detalleApunte": "PAGO S/FRA. CUOTA 7/120 STOCK - OTRAS DEUDAS A C/P",
           "debe": 109.91,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "66200000",
           "nombreCuenta": "Intereses de deudas",
           "detalleApunte": "PAGO S/FRA. CUOTA 7/120 STOCK - INTERESES DE DEUDA",
           "debe": 39.7,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. CUOTA 7/120 STOCK - CAJA LABORAL POPUL",
           "debe": 0,
-          "haber": 149.61
+          "haber": 149.61,
+          "punteado": false
         }
       ]
     },
@@ -5409,14 +5895,16 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "SUSCRIPCIÓN MICROSOFT ONE DRIVE AGOSTO",
           "debe": 1.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "SUSCRIPCIÓN MICROSOFT ONE DRIVE AGOSTO",
           "debe": 0,
-          "haber": 1.99
+          "haber": 1.99,
+          "punteado": false
         }
       ]
     },
@@ -5432,28 +5920,32 @@
           "nombreCuenta": "Comisiones plataformas Etsy Ireland UC",
           "detalleApunte": "FACTURA AGOSTO ETSY IRELAND UC",
           "debe": 31.91,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "ETSY FRA. 1047595284",
           "debe": 6.7,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000001",
           "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
           "detalleApunte": "1047595284",
           "debe": 0,
-          "haber": 31.91
+          "haber": 31.91,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "ETSY FRA. 1047595284",
           "debe": 0,
-          "haber": 6.7
+          "haber": 6.7,
+          "punteado": false
         }
       ]
     },
@@ -5469,14 +5961,16 @@
           "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
           "detalleApunte": "PAGO S/FRA. ETSY 1047595284 - ACREEDORES - ETSY IR",
           "debe": 33.44,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "PAGO S/FRA. ETSY 1047595284 - Etsy facturas pendie",
           "debe": 0,
-          "haber": 33.44
+          "haber": 33.44,
+          "punteado": false
         }
       ]
     },
@@ -5492,14 +5986,16 @@
           "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
           "detalleApunte": "PAGO S/FRA. ETSY 1047595284 - ACREEDORES - ETSY IR",
           "debe": 1.53,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. ETSY 1047595284 - CAJA LABORAL POPULAR",
           "debe": 0,
-          "haber": 1.53
+          "haber": 1.53,
+          "punteado": false
         }
       ]
     },
@@ -5514,13 +6010,15 @@
           "cuenta": "43000001",
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "debe": 415,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "70000003",
           "nombreCuenta": "Ventas de mercaderías IVA Exento exportaciones",
           "debe": 0,
-          "haber": 415
+          "haber": 415,
+          "punteado": false
         }
       ]
     },
@@ -5536,14 +6034,16 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "SUSCRIPCIÓN STOCK INVENTORY SEPTIEMBRE",
           "debe": 2.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "SUSCRIPCIÓN STOCK INVENTORY SEPTIEMBRE",
           "debe": 0,
-          "haber": 2.99
+          "haber": 2.99,
+          "punteado": false
         }
       ]
     },
@@ -5559,21 +6059,24 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "COBRO FRA. ETSY FV2026/00017 - CLIENTES VARIOS-PLA",
           "debe": 316.82,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "A CUENTA FACTURA SEPTIEMBRE",
           "debe": 58.18,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "43000001",
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "COBRO FRA. ETSY FV2026/00017 -",
           "debe": 0,
-          "haber": 375
+          "haber": 375,
+          "punteado": false
         }
       ]
     },
@@ -5589,14 +6092,16 @@
           "nombreCuenta": "Comisiones y servicios bancarios",
           "detalleApunte": "LIQUIDACIÓN INTERESES Y COMISIONES",
           "debe": 25,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "LIQUIDACIÓN INTERESES Y COMISIONES",
           "debe": 0,
-          "haber": 25
+          "haber": 25,
+          "punteado": false
         }
       ]
     },
@@ -5612,14 +6117,16 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "PAQ. STANDARD INTERNACIONAL",
           "debe": 68.1,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000004",
           "nombreCuenta": "Sociedad Estatal Correos y Telégrafos",
           "detalleApunte": "FRA. F260548433",
           "debe": 0,
-          "haber": 68.1
+          "haber": 68.1,
+          "punteado": false
         }
       ]
     },
@@ -5635,14 +6142,16 @@
           "nombreCuenta": "Sociedad Estatal Correos y Telégrafos",
           "detalleApunte": "PAGO S/FRA. CORREOS F260548433",
           "debe": 68.1,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. CORREOS F260548433 - CAJA LABORAL POPU",
           "debe": 0,
-          "haber": 68.1
+          "haber": 68.1,
+          "punteado": false
         }
       ]
     },
@@ -5658,28 +6167,32 @@
           "nombreCuenta": "PAMONO GMBH (ISP)",
           "detalleApunte": "CUOTA MENSUAL SEPTIEMBRE",
           "debe": 69,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 983FE488-0064",
           "debe": 14.49,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000006",
           "nombreCuenta": "Pamono GmbH",
           "detalleApunte": "FRA. 983FE488-0064",
           "debe": 0,
-          "haber": 69
+          "haber": 69,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 983FE488-0064",
           "debe": 0,
-          "haber": 14.49
+          "haber": 14.49,
+          "punteado": false
         }
       ]
     },
@@ -5695,14 +6208,16 @@
           "nombreCuenta": "Pamono GmbH",
           "detalleApunte": "PAGO S/FRA. PAMONO 983FE488-0 - PAMONO GmbH",
           "debe": 69,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. PAMONO 983FE488-0 - CAJA LABORAL POPUL",
           "debe": 0,
-          "haber": 69
+          "haber": 69,
+          "punteado": false
         }
       ]
     },
@@ -5718,28 +6233,32 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "CUOTA MENSUAL SEPTIEMBRE SHOPIFY",
           "debe": 29,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA 587746597",
           "debe": 6.09,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000003",
           "nombreCuenta": "Shopify Internacional Limited",
           "detalleApunte": "FRA. 587746597",
           "debe": 0,
-          "haber": 29
+          "haber": 29,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 587746597",
           "debe": 0,
-          "haber": 6.09
+          "haber": 6.09,
+          "punteado": false
         }
       ]
     },
@@ -5755,14 +6274,16 @@
           "nombreCuenta": "Shopify Internacional Limited",
           "detalleApunte": "PAGO S/FRA. SHOPIFY 587746597 - ACREEDORES - SHOPI",
           "debe": 29,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. SHOPIFY 587746597 - CAJA LABORAL POPUL",
           "debe": 0,
-          "haber": 29
+          "haber": 29,
+          "punteado": false
         }
       ]
     },
@@ -5778,21 +6299,24 @@
           "nombreCuenta": "Deudas a c/p con partes vinculantes",
           "detalleApunte": "PAGO S/FRA. CUOTA 8/120 STOCK INICIAL - OTRAS DEUD",
           "debe": 110.21,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "66200000",
           "nombreCuenta": "Intereses de deudas",
           "detalleApunte": "PAGO S/FRA. CUOTA 8/120 STOCK INICIAL - INTERESES",
           "debe": 39.4,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. CUOTA 8/120 STOCK INICIAL - CAJA LABOR",
           "debe": 0,
-          "haber": 149.61
+          "haber": 149.61,
+          "punteado": false
         }
       ]
     },
@@ -5807,13 +6331,15 @@
           "cuenta": "43000001",
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "debe": 180,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "70000003",
           "nombreCuenta": "Ventas de mercaderías IVA Exento exportaciones",
           "debe": 0,
-          "haber": 180
+          "haber": 180,
+          "punteado": false
         }
       ]
     },
@@ -5829,14 +6355,16 @@
           "nombreCuenta": "Otros servicios",
           "detalleApunte": "SUSCRIPCIÓN MICROSOFT ONE DRIVE SEPTIEMBRE",
           "debe": 1.99,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "SUSCRIPCIÓN MICROSOFT ONE DRIVE SEPTIEMBRE",
           "debe": 0,
-          "haber": 1.99
+          "haber": 1.99,
+          "punteado": false
         }
       ]
     },
@@ -5852,14 +6380,16 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "PACK LIGHT  INTERNACIONAL",
           "debe": 13.83,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000004",
           "nombreCuenta": "Sociedad Estatal Correos y Telégrafos",
           "detalleApunte": "PACK LIGHT INTERNACIONAL",
           "debe": 0,
-          "haber": 13.83
+          "haber": 13.83,
+          "punteado": false
         }
       ]
     },
@@ -5875,14 +6405,16 @@
           "nombreCuenta": "Sociedad Estatal Correos y Telégrafos",
           "detalleApunte": "PAGO S/FRA. CORREOS F260458612 - ACREEDORES - SOCI",
           "debe": 13.83,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. CORREOS F260458612 - CAJA LABORAL POPU",
           "debe": 0,
-          "haber": 13.83
+          "haber": 13.83,
+          "punteado": false
         }
       ]
     },
@@ -5898,21 +6430,24 @@
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "COBRO FRA. ETSY FV2026/00018 - CLIENTES VARIOS-PLA",
           "debe": 152.74,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "A CUENTA FACTURA SEPTIEMBRE",
           "debe": 27.26,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "43000001",
           "nombreCuenta": "Clientes Plataforma Etsy Ireland UC",
           "detalleApunte": "COBRO FRA. ETSY FV2026/00018 -",
           "debe": 0,
-          "haber": 180
+          "haber": 180,
+          "punteado": false
         }
       ]
     },
@@ -5928,14 +6463,16 @@
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
           "detalleApunte": "CORREOS EXPRESS INTERNATIONAL STANDARD",
           "debe": 28.24,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000008",
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "FRA. ES26FC05833543",
           "debe": 0,
-          "haber": 28.24
+          "haber": 28.24,
+          "punteado": false
         }
       ]
     },
@@ -5951,14 +6488,16 @@
           "nombreCuenta": "Acreedores-Auctane",
           "detalleApunte": "PAGO S/FRA. AUCTANE ES26FC0583 - AUCTANE S.L.",
           "debe": 28.24,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. AUCTANE ES26FC0583 - CAJA LABORAL POPU",
           "debe": 0,
-          "haber": 28.24
+          "haber": 28.24,
+          "punteado": false
         }
       ]
     },
@@ -5974,28 +6513,32 @@
           "nombreCuenta": "Comisiones plataformas Etsy Ireland UC",
           "detalleApunte": "FACTURA ETSY SEPTIEMBRE",
           "debe": 127.06,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 1069979144",
           "debe": 26.68,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "41000001",
           "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
           "detalleApunte": "FACTURA 1069979144",
           "debe": 0,
-          "haber": 127.06
+          "haber": 127.06,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "detalleApunte": "FRA. 1069979144",
           "debe": 0,
-          "haber": 26.68
+          "haber": 26.68,
+          "punteado": false
         }
       ]
     },
@@ -6011,14 +6554,16 @@
           "nombreCuenta": "Acreedores-Plataforma Etsy Ireland UC",
           "detalleApunte": "PAGO S/FRA. ETSY 1069979144 - ACREEDORES - ETSY IR",
           "debe": 85.44,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "40090001",
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "detalleApunte": "PAGO S/FRA. ETSY 1069979144 - Etsy facturas pendie",
           "debe": 0,
-          "haber": 85.44
+          "haber": 85.44,
+          "punteado": false
         }
       ]
     },
@@ -6034,28 +6579,32 @@
           "nombreCuenta": "HP ACREEDORA POR ITP APLAZADO",
           "detalleApunte": "SEGUNDO PLAZO ITP DGA FC2026/00004",
           "debe": 204.14,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. SEGUNDO PLAZO ITP DGA - CAJA LABORAL P",
           "debe": 0,
-          "haber": 204.14
+          "haber": 204.14,
+          "punteado": false
         },
         {
           "cuenta": "66900000",
           "nombreCuenta": "OTROS GASTOS FINANCIEROS",
           "detalleApunte": "INTERESES SIN LIQUIDAR",
           "debe": 5.5,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47581000",
           "nombreCuenta": "HP ACREEDORA POR ITP APLAZADO",
           "detalleApunte": "INTERESES SIN LIQUIDAR",
           "debe": 0,
-          "haber": 5.5
+          "haber": 5.5,
+          "punteado": false
         }
       ]
     },
@@ -6071,21 +6620,24 @@
           "nombreCuenta": "Deudas a c/p con partes vinculantes",
           "detalleApunte": "PAGO S/FRA. CUOTA 9/120 - OTRAS DEUDAS A C/P CON P",
           "debe": 110.51,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "66200000",
           "nombreCuenta": "Intereses de deudas",
           "detalleApunte": "PAGO S/FRA. CUOTA 9/120 - OTRAS DEUDAS A C/P CON P",
           "debe": 39.1,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "PAGO S/FRA. CUOTA 9/120 - CAJA LABORAL POPULAR, CO",
           "debe": 0,
-          "haber": 149.61
+          "haber": 149.61,
+          "punteado": false
         }
       ]
     },
@@ -6101,14 +6653,16 @@
           "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
           "detalleApunte": "REGULARIZACIÓN IRPF 1T",
           "debe": 0,
-          "haber": 15.7
+          "haber": 15.7,
+          "punteado": false
         },
         {
           "cuenta": "55100000",
           "nombreCuenta": "Cuenta corriente con socios y administradores",
           "detalleApunte": "REGULARIZACIÓN IRP 1T",
           "debe": 15.7,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         }
       ]
     },
@@ -6124,14 +6678,16 @@
           "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
           "detalleApunte": "REGULARIZACIÓN IRPF 2T",
           "debe": 0,
-          "haber": 23.13
+          "haber": 23.13,
+          "punteado": false
         },
         {
           "cuenta": "55100000",
           "nombreCuenta": "Cuenta corriente con socios y administradores",
           "detalleApunte": "REGULARIZACIÓN IRPF 2T",
           "debe": 23.13,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         }
       ]
     },
@@ -6147,14 +6703,16 @@
           "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
           "detalleApunte": "REGULARIZACIÓN IRPF 3T",
           "debe": 0,
-          "haber": 22.63
+          "haber": 22.63,
+          "punteado": false
         },
         {
           "cuenta": "55100000",
           "nombreCuenta": "Cuenta corriente con socios y administradores",
           "detalleApunte": "REGULARIZACIÓN IRPF 3T",
           "debe": 22.63,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         }
       ]
     },
@@ -6170,42 +6728,48 @@
           "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
           "detalleApunte": "LIQUIDACIÓN IRPF ATRASADO 1T",
           "debe": 15.7,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "LIQUIDACIÓN IRPF ATRASADO 1T",
           "debe": 0,
-          "haber": 15.7
+          "haber": 15.7,
+          "punteado": false
         },
         {
           "cuenta": "47510004",
           "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
           "detalleApunte": "LIQUIDACIÓN IRPF ATRASADO 2T",
           "debe": 23.14,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "LIQUIDACIÓN IRPF ATRASADO 2T",
           "debe": 0,
-          "haber": 23.14
+          "haber": 23.14,
+          "punteado": false
         },
         {
           "cuenta": "47510004",
           "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
           "detalleApunte": "LIQUIDACIÓN IRPF ATRASADO 3T",
           "debe": 22.63,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
           "detalleApunte": "LIQUIDACIÓN IRPF ATRASADO 3T",
           "debe": 0,
-          "haber": 22.63
+          "haber": 22.63,
+          "punteado": false
         }
       ]
     },
@@ -6220,25 +6784,29 @@
           "cuenta": "47200021",
           "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
           "debe": 2.17,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "debe": 92.09,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
           "debe": 0,
-          "haber": 92.09
+          "haber": 92.09,
+          "punteado": false
         },
         {
           "cuenta": "47000000",
           "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
           "debe": 0,
-          "haber": 2.17
+          "haber": 2.17,
+          "punteado": false
         }
       ]
     },
@@ -6253,13 +6821,15 @@
           "cuenta": "47000000",
           "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
           "debe": 2.17,
-          "haber": 0
+          "haber": 0,
+          "punteado": false
         },
         {
           "cuenta": "47200021",
           "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
           "debe": 0,
-          "haber": 2.17
+          "haber": 2.17,
+          "punteado": false
         }
       ]
     }
