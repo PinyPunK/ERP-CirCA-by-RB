@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T23:04:23.816Z",
+  "ultimaModificacion": "2026-11-26T23:04:32.495Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -2298,31 +2298,6 @@
           "debe": 0,
           "haber": 20.34,
           "punteado": true
-        }
-      ]
-    },
-    {
-      "id": 1795622265563,
-      "numero": 70,
-      "fecha": "2026-03-16",
-      "concepto": "CRÉDITOS PIXVERSE",
-      "referencia": "FACTURA GOOGLE PLAY",
-      "apuntes": [
-        {
-          "cuenta": "62900000",
-          "nombreCuenta": "Otros servicios",
-          "detalleApunte": "CRÉDITOS PIXVERSE",
-          "debe": 5.99,
-          "haber": 0,
-          "punteado": false
-        },
-        {
-          "cuenta": "57200001",
-          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "detalleApunte": "PAGO S/FRA. FACTURA GOOGLE PLAY - CAJA LABORAL POP",
-          "debe": 0,
-          "haber": 5.99,
-          "punteado": false
         }
       ]
     },
