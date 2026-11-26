@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T22:47:47.806Z",
+  "ultimaModificacion": "2026-11-26T22:48:20.075Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -1431,7 +1431,7 @@
           "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
           "debe": 0,
           "haber": 5.83,
-          "punteado": false
+          "punteado": true
         }
       ]
     },
@@ -1448,7 +1448,7 @@
           "detalleApunte": "GASTOS DE ENVÍO SEUR CLASSIC S2D ES2026PRO00003933",
           "debe": 21.94,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "57200001",
