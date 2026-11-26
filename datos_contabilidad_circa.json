@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-26T22:19:33.130Z",
+  "ultimaModificacion": "2026-11-26T22:19:36.641Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -647,14 +647,14 @@
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
           "debe": 0.21,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "41000003",
           "nombreCuenta": "Shopify Internacional Limited",
           "debe": 0,
           "haber": 1,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "47700321",
