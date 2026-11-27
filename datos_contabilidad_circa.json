@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:36:35.264Z",
+  "ultimaModificacion": "2026-11-27T00:36:40.977Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -3947,7 +3947,7 @@
           "detalleApunte": "A CUENTA FACTURA ETYS JUNIO",
           "debe": 0,
           "haber": 2.55,
-          "punteado": false
+          "punteado": true
         }
       ]
     },
@@ -3964,7 +3964,7 @@
           "detalleApunte": "MANTENIMIENTO HOSTINGER",
           "debe": 10.16,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "57200001",
