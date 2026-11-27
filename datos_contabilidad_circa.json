@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T23:13:16.878Z",
+  "ultimaModificacion": "2026-11-27T23:14:30.484Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -2816,15 +2816,15 @@
           "punteado": true
         },
         {
-          "cuenta": "47000001",
+          "cuenta": "47000000",
           "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
           "debe": 0,
           "haber": 104.44,
-          "punteado": true
+          "punteado": false
         },
         {
-          "cuenta": "47500001",
-          "nombreCuenta": "H.P. Acreedora por IVA (Liquidación Trimestral 303)",
+          "cuenta": "47500000",
+          "nombreCuenta": "Hacienda Pública, acreedora por IVA",
           "debe": 0,
           "haber": 95.09,
           "punteado": false
