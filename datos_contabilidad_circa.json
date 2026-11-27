@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:53:43.851Z",
+  "ultimaModificacion": "2026-11-27T00:57:55.975Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -6625,6 +6625,50 @@
           "nombreCuenta": "H.P. Acreedora por IVA (Liquidación Trimestral 303)",
           "debe": 0,
           "haber": 95.09,
+          "punteado": false
+        }
+      ]
+    },
+    {
+      "id": 1795741075270,
+      "numero": 221,
+      "fecha": "2026-06-30",
+      "concepto": "Liquidación Trimestral IVA (Modelo 303)",
+      "referencia": "Mod. 303",
+      "apuntes": [
+        {
+          "cuenta": "47702121",
+          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
+          "debe": 32.23,
+          "haber": 0,
+          "punteado": false
+        },
+        {
+          "cuenta": "47700321",
+          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 155.58,
+          "haber": 0,
+          "punteado": false
+        },
+        {
+          "cuenta": "47200021",
+          "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
+          "debe": 0,
+          "haber": 38.58,
+          "punteado": false
+        },
+        {
+          "cuenta": "47200321",
+          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0,
+          "haber": 155.58,
+          "punteado": false
+        },
+        {
+          "cuenta": "47000001",
+          "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
+          "debe": 6.35,
+          "haber": 0,
           "punteado": false
         }
       ]
