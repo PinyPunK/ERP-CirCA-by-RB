@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:30:07.082Z",
+  "ultimaModificacion": "2026-11-27T00:30:09.819Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -3483,7 +3483,7 @@
           "detalleApunte": "COMPRA DE MERCADERÍAS FC2026/00016",
           "debe": 51.9,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "57200001",
