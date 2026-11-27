@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T01:11:46.277Z",
+  "ultimaModificacion": "2026-11-27T01:12:15.370Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -6295,43 +6295,6 @@
           "detalleApunte": "PAGO S/FRA. ETSY 1069979144 - Etsy facturas pendie",
           "debe": 0,
           "haber": 85.44,
-          "punteado": false
-        }
-      ]
-    },
-    {
-      "id": 1795658231273,
-      "numero": 212,
-      "fecha": "2026-09-30",
-      "concepto": "Liquidación IVA 3T 2026",
-      "referencia": "3T 2026",
-      "apuntes": [
-        {
-          "cuenta": "47200021",
-          "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
-          "debe": 2.17,
-          "haber": 0,
-          "punteado": false
-        },
-        {
-          "cuenta": "47200321",
-          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
-          "debe": 92.09,
-          "haber": 0,
-          "punteado": false
-        },
-        {
-          "cuenta": "47700321",
-          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
-          "debe": 0,
-          "haber": 92.09,
-          "punteado": false
-        },
-        {
-          "cuenta": "47000000",
-          "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
-          "debe": 0,
-          "haber": 2.17,
           "punteado": false
         }
       ]
