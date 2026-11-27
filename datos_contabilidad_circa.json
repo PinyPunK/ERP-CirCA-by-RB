@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:01:31.303Z",
+  "ultimaModificacion": "2026-11-27T00:02:01.524Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -2920,7 +2920,7 @@
           "detalleApunte": "CUOTA SUSCRIPCIÓN ABRIL",
           "debe": 13.01,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "47200321",
