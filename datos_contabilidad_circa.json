@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:05:17.874Z",
+  "ultimaModificacion": "2026-11-27T00:05:20.784Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -3259,7 +3259,7 @@
           "detalleApunte": "PAGO S/FRA. MANTENIMIENTO C.L.NET EMPRESA - CAJA L",
           "debe": 0,
           "haber": 10,
-          "punteado": false
+          "punteado": true
         }
       ]
     },
