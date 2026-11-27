@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T01:10:29.402Z",
+  "ultimaModificacion": "2026-11-27T01:10:41.975Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -6071,7 +6071,7 @@
           "nombreCuenta": "Ventas de mercaderías IVA Exento exportaciones",
           "debe": 0,
           "haber": 180,
-          "punteado": false
+          "punteado": true
         }
       ]
     },
@@ -6088,7 +6088,7 @@
           "detalleApunte": "SUSCRIPCIÓN MICROSOFT ONE DRIVE SEPTIEMBRE",
           "debe": 1.99,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "57200001",
