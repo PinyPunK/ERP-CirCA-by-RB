@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:49:19.457Z",
+  "ultimaModificacion": "2026-11-27T00:49:40.203Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -4683,7 +4683,7 @@
           "detalleApunte": "PAGO S/FRA. ES26FC03714359 - CAJA LABORAL POPULAR,",
           "debe": 0,
           "haber": 22.31,
-          "punteado": false
+          "punteado": true
         }
       ]
     },
@@ -4700,7 +4700,7 @@
           "detalleApunte": "VENTA PLATAFORMA ETSY PEDIDO",
           "debe": 135,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "70000001",
