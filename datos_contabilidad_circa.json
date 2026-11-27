@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T01:12:30.302Z",
+  "ultimaModificacion": "2026-11-27T01:14:30.075Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -6309,7 +6309,6 @@
         {
           "cuenta": "47581000",
           "nombreCuenta": "HP ACREEDORA POR ITP APLAZADO",
-          "detalleApunte": "SEGUNDO PLAZO ITP DGA FC2026/00004",
           "debe": 204.14,
           "haber": 0,
           "punteado": false
@@ -6317,25 +6316,8 @@
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "detalleApunte": "PAGO S/FRA. SEGUNDO PLAZO ITP DGA - CAJA LABORAL P",
           "debe": 0,
           "haber": 204.14,
-          "punteado": false
-        },
-        {
-          "cuenta": "66900000",
-          "nombreCuenta": "OTROS GASTOS FINANCIEROS",
-          "detalleApunte": "INTERESES SIN LIQUIDAR",
-          "debe": 5.5,
-          "haber": 0,
-          "punteado": false
-        },
-        {
-          "cuenta": "47581000",
-          "nombreCuenta": "HP ACREEDORA POR ITP APLAZADO",
-          "detalleApunte": "INTERESES SIN LIQUIDAR",
-          "debe": 0,
-          "haber": 5.5,
           "punteado": false
         }
       ]
