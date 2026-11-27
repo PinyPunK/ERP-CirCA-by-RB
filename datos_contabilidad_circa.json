@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:02:11.075Z",
+  "ultimaModificacion": "2026-11-27T00:02:51.147Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -2969,7 +2969,7 @@
           "detalleApunte": "PAGO S/FRA. PAGO FRA. 516230953 - CAJA LABORAL POP",
           "debe": 0,
           "haber": 13.01,
-          "punteado": false
+          "punteado": true
         }
       ]
     },
@@ -2986,7 +2986,7 @@
           "detalleApunte": "CORREOS PAQQ LIGHT OFICINA DOMICILIO",
           "debe": 11.25,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "47200021",
