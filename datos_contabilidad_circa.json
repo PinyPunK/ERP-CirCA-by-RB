@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:46:01.239Z",
+  "ultimaModificacion": "2026-11-27T00:47:40.355Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -4467,7 +4467,6 @@
         {
           "cuenta": "62400000",
           "nombreCuenta": "Transportes y envíos de ventas a clientes",
-          "detalleApunte": "TRANSPORTE CORREOS EXPRESS EEUU",
           "debe": 81.14,
           "haber": 0,
           "punteado": true
@@ -4475,10 +4474,9 @@
         {
           "cuenta": "41000008",
           "nombreCuenta": "Acreedores-Auctane",
-          "detalleApunte": "GASTOS DE ENVÍO",
           "debe": 0,
           "haber": 81.14,
-          "punteado": true
+          "punteado": false
         }
       ]
     },
