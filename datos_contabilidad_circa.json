@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T23:14:30.484Z",
+  "ultimaModificacion": "2026-11-27T23:15:19.917Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -2675,23 +2675,20 @@
         {
           "cuenta": "64000000",
           "nombreCuenta": "Sueldos y salarios Administradora Única",
-          "detalleApunte": "SUELDOS Y SALARIOS MARZO",
           "debe": 400,
           "haber": 0,
           "punteado": true
         },
         {
-          "cuenta": "47510003",
-          "nombreCuenta": "RETENCIONES TRABAJADORES",
-          "detalleApunte": "RETENCIÓN 19% IRPF",
+          "cuenta": "47510002",
+          "nombreCuenta": "Retenciones trabajadores",
           "debe": 0,
           "haber": 76,
-          "punteado": true
+          "punteado": false
         },
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "detalleApunte": "PAGO NÓMINA MARZO 2026",
           "debe": 0,
           "haber": 324,
           "punteado": true
