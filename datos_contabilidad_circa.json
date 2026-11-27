@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T01:09:44.775Z",
+  "ultimaModificacion": "2026-11-27T01:09:47.047Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -5949,7 +5949,7 @@
           "detalleApunte": "PAGO S/FRA. PAMONO 983FE488-0 - CAJA LABORAL POPUL",
           "debe": 0,
           "haber": 69,
-          "punteado": false
+          "punteado": true
         }
       ]
     },
@@ -5966,7 +5966,7 @@
           "detalleApunte": "CUOTA MENSUAL SEPTIEMBRE SHOPIFY",
           "debe": 29,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "47200321",
