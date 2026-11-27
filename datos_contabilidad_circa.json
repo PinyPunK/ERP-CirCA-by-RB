@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:59:00.657Z",
+  "ultimaModificacion": "2026-11-27T00:59:07.358Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -5053,7 +5053,7 @@
           "detalleApunte": "PAGO S/FRA. PRIMER PLAZO ITP DGA - HP ACREEDORA PO",
           "debe": 204.14,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "57200001",
