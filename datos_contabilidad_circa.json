@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:32:49.689Z",
+  "ultimaModificacion": "2026-11-27T00:33:11.564Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -3549,7 +3549,7 @@
           "detalleApunte": "A CUENTA FACTURA ETSY MAYO",
           "debe": 59.07,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "43000001",
@@ -3557,7 +3557,7 @@
           "detalleApunte": "COBRO FRA. ETSY FV2026/00009 -",
           "debe": 0,
           "haber": 495,
-          "punteado": false
+          "punteado": true
         }
       ]
     },
@@ -3574,7 +3574,7 @@
           "detalleApunte": "STARPACK TERRESTRE ES2026PRO0001432157",
           "debe": 135.14,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "47200021",
