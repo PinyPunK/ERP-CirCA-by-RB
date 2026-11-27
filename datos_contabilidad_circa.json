@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:37:07.904Z",
+  "ultimaModificacion": "2026-11-27T00:38:03.980Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -4006,31 +4006,6 @@
           "debe": 0,
           "haber": 9.54,
           "punteado": true
-        }
-      ]
-    },
-    {
-      "id": 1795622265625,
-      "numero": 129,
-      "fecha": "2026-06-04",
-      "concepto": "COMPRA DE EMBALAJES",
-      "referencia": "",
-      "apuntes": [
-        {
-          "cuenta": "60200000",
-          "nombreCuenta": "Compras de embalajes, cajas y material protección",
-          "detalleApunte": "COMPRA DE EMBALAJES",
-          "debe": 19.4,
-          "haber": 0,
-          "punteado": false
-        },
-        {
-          "cuenta": "57200001",
-          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "detalleApunte": "PAGO S/FRA.  - CAJA LABORAL POPULAR, COOP. DE CRÉD",
-          "debe": 0,
-          "haber": 19.4,
-          "punteado": false
         }
       ]
     },
