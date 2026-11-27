@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T23:20:28.492Z",
+  "ultimaModificacion": "2026-11-27T23:20:46.552Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -105,11 +105,6 @@
     {
       "codigo": "61000000",
       "nombre": "Variación de existencias de mercaderías",
-      "tipo": "Gasto"
-    },
-    {
-      "codigo": "62300001",
-      "nombre": "Servicios de profesionales independientes (Gestoría/Legal)",
       "tipo": "Gasto"
     },
     {
