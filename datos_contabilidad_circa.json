@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T23:20:05.134Z",
+  "ultimaModificacion": "2026-11-27T23:20:17.739Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -101,11 +101,6 @@
       "codigo": "57200002",
       "nombre": "Pasarelas de cobro (Stripe / PayPal)",
       "tipo": "Activo"
-    },
-    {
-      "codigo": "60200001",
-      "nombre": "Compras de embalajes, cajas y material protección",
-      "tipo": "Gasto"
     },
     {
       "codigo": "61000001",
