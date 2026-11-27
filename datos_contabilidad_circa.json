@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T23:07:56.502Z",
+  "ultimaModificacion": "2026-11-27T23:08:11.648Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -2387,7 +2387,6 @@
         {
           "cuenta": "57200001",
           "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "detalleApunte": "COBRO FRA. COBRO FV2026/00004- CLIENTES VARIOS",
           "debe": 41.12,
           "haber": 0,
           "punteado": true
@@ -2395,18 +2394,16 @@
         {
           "cuenta": "41000002",
           "nombreCuenta": "Acreedores-Plataforma Catawiki B.V.",
-          "detalleApunte": "A CUENTA FACTURA COMISIÓN",
           "debe": 0.88,
           "haber": 0,
           "punteado": true
         },
         {
-          "cuenta": "43000003",
-          "nombreCuenta": "Clientes Pamono GmbH",
-          "detalleApunte": "COBRO FRA. COBRO FV2026/00004-",
+          "cuenta": "43000002",
+          "nombreCuenta": "Clientes Catawiki B.V.",
           "debe": 0,
           "haber": 42,
-          "punteado": true
+          "punteado": false
         }
       ]
     },
