@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:03:52.540Z",
+  "ultimaModificacion": "2026-11-27T00:04:17.126Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -3127,7 +3127,7 @@
           "detalleApunte": "SUSCRIPCIÓN ABRIL ONE DRIVE",
           "debe": 1.99,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "57200001",
