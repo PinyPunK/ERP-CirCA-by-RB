@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:41:28.787Z",
+  "ultimaModificacion": "2026-11-27T00:41:31.823Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -4138,7 +4138,7 @@
           "detalleApunte": "FRA. ES26FC03517016",
           "debe": 0,
           "haber": 18.98,
-          "punteado": false
+          "punteado": true
         }
       ]
     },
@@ -4155,7 +4155,7 @@
           "detalleApunte": "PAGO S/FRA. PAGO ES26FC03517016 - AUCTANE S.L.",
           "debe": 18.98,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "57200001",
