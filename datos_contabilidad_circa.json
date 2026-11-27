@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:04:25.999Z",
+  "ultimaModificacion": "2026-11-27T00:04:28.053Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -3185,7 +3185,7 @@
           "detalleApunte": "FACTURA ETSY ABRIL 955725604",
           "debe": 7.31,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "47200321",
