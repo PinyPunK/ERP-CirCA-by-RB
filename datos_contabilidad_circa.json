@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:00:34.369Z",
+  "ultimaModificacion": "2026-11-27T00:01:07.771Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -2848,14 +2848,13 @@
     {
       "id": 1795622265584,
       "numero": 89,
-      "fecha": "2026-04-13",
+      "fecha": "2026-04-09",
       "concepto": "CUOTA ABRIL",
       "referencia": "983FE488-0059",
       "apuntes": [
         {
           "cuenta": "62900004",
           "nombreCuenta": "PAMONO GMBH (ISP)",
-          "detalleApunte": "CUOTA ABRIL",
           "debe": 69,
           "haber": 0,
           "punteado": false
@@ -2863,7 +2862,6 @@
         {
           "cuenta": "47200321",
           "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
-          "detalleApunte": "FACTURA 983FE488-0059",
           "debe": 14.49,
           "haber": 0,
           "punteado": false
@@ -2871,7 +2869,6 @@
         {
           "cuenta": "41000006",
           "nombreCuenta": "Pamono GmbH",
-          "detalleApunte": "983FE488-0059",
           "debe": 0,
           "haber": 69,
           "punteado": false
@@ -2879,7 +2876,6 @@
         {
           "cuenta": "47700321",
           "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
-          "detalleApunte": "983FE488-0059",
           "debe": 0,
           "haber": 14.49,
           "punteado": false
