@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:53:12.778Z",
+  "ultimaModificacion": "2026-11-27T00:53:43.851Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -4986,64 +4986,7 @@
           "nombreCuenta": "Proveedores, facturas pendientes de recibir o formalizar Etsy Ireland UC",
           "debe": 0,
           "haber": 20.1,
-          "punteado": false
-        }
-      ]
-    },
-    {
-      "id": 1795622265662,
-      "numero": 166,
-      "fecha": "2026-06-30",
-      "concepto": "LIQUIDACION IVA : Abril - Junio",
-      "referencia": "",
-      "apuntes": [
-        {
-          "cuenta": "47700321",
-          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
-          "detalleApunte": "LIQUIDACION IVA : Abril - Junio",
-          "debe": 155.58,
-          "haber": 0,
-          "punteado": false
-        },
-        {
-          "cuenta": "47702121",
-          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
-          "detalleApunte": "LIQUIDACION IVA : Abril - Junio",
-          "debe": 110.94,
-          "haber": 0,
-          "punteado": false
-        },
-        {
-          "cuenta": "47200021",
-          "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
-          "detalleApunte": "LIQUIDACION IVA : Abril - Junio",
-          "debe": 0,
-          "haber": 38.58,
-          "punteado": false
-        },
-        {
-          "cuenta": "47200321",
-          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
-          "detalleApunte": "LIQUIDACION IVA : Abril - Junio",
-          "debe": 0,
-          "haber": 155.58,
-          "punteado": false
-        },
-        {
-          "cuenta": "47202121",
-          "nombreCuenta": "HP. REBU 21%",
-          "detalleApunte": "LIQUIDACION IVA : Abril - Junio",
-          "debe": 0,
-          "haber": 78.69,
-          "punteado": false
-        },
-        {
-          "cuenta": "47000000",
-          "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
-          "detalleApunte": "LIQUIDACION IVA : Abril - Junio",
-          "debe": 6.33,
-          "haber": 0,
-          "punteado": false
+          "punteado": true
         }
       ]
     },
