@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:39:58.836Z",
+  "ultimaModificacion": "2026-11-27T00:40:05.044Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -4006,39 +4006,6 @@
           "debe": 0,
           "haber": 9.54,
           "punteado": true
-        }
-      ]
-    },
-    {
-      "id": 1795622265626,
-      "numero": 130,
-      "fecha": "2026-06-04",
-      "concepto": "ES2026PRO0002239259",
-      "referencia": "ES26FC04767151",
-      "apuntes": [
-        {
-          "cuenta": "62400000",
-          "nombreCuenta": "Transportes y envíos de ventas a clientes",
-          "detalleApunte": "ES2026PRO0002239259",
-          "debe": 10.34,
-          "haber": 0,
-          "punteado": false
-        },
-        {
-          "cuenta": "41000008",
-          "nombreCuenta": "Acreedores-Auctane",
-          "detalleApunte": "SEUR SHOP2SHOP",
-          "debe": 0,
-          "haber": 12.51,
-          "punteado": false
-        },
-        {
-          "cuenta": "47200021",
-          "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
-          "detalleApunte": "ES26FC04767151",
-          "debe": 2.17,
-          "haber": 0,
-          "punteado": false
         }
       ]
     },
