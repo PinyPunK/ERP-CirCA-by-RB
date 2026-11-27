@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T01:14:30.075Z",
+  "ultimaModificacion": "2026-11-27T01:14:41.623Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -6311,7 +6311,7 @@
           "nombreCuenta": "HP ACREEDORA POR ITP APLAZADO",
           "debe": 204.14,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "57200001",
