@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:41:26.861Z",
+  "ultimaModificacion": "2026-11-27T00:41:28.787Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -4130,7 +4130,7 @@
           "detalleApunte": "GATOS DE ENVÍO ART00131",
           "debe": 3.29,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "41000008",
