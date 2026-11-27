@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T23:11:25.788Z",
+  "ultimaModificacion": "2026-11-27T23:13:16.878Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -2788,8 +2788,52 @@
       ]
     },
     {
-      "id": 1795622265582,
+      "id": 1795734960264,
       "numero": 87,
+      "fecha": "2026-03-31",
+      "concepto": "Liquidación Trimestral IVA (Modelo 303)",
+      "referencia": "Mod. 303",
+      "apuntes": [
+        {
+          "cuenta": "47702121",
+          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
+          "debe": 199.53,
+          "haber": 0,
+          "punteado": true
+        },
+        {
+          "cuenta": "47700321",
+          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 69.67,
+          "haber": 0,
+          "punteado": true
+        },
+        {
+          "cuenta": "47200321",
+          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0,
+          "haber": 69.67,
+          "punteado": true
+        },
+        {
+          "cuenta": "47000001",
+          "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
+          "debe": 0,
+          "haber": 104.44,
+          "punteado": true
+        },
+        {
+          "cuenta": "47500001",
+          "nombreCuenta": "H.P. Acreedora por IVA (Liquidación Trimestral 303)",
+          "debe": 0,
+          "haber": 95.09,
+          "punteado": false
+        }
+      ]
+    },
+    {
+      "id": 1795622265582,
+      "numero": 88,
       "fecha": "2026-04-06",
       "concepto": "SUSCRIPCIÓN APP STOCK ABRIL",
       "referencia": "SUSCR. APP STOCK ABRIL",
@@ -2814,7 +2858,7 @@
     },
     {
       "id": 1795622265583,
-      "numero": 88,
+      "numero": 89,
       "fecha": "2026-04-06",
       "concepto": "PAGO A CUENTA ETSY FACTURA ABRIL",
       "referencia": "PAGOS A CUENTA ETSY",
@@ -2839,7 +2883,7 @@
     },
     {
       "id": 1795622265584,
-      "numero": 89,
+      "numero": 90,
       "fecha": "2026-04-09",
       "concepto": "CUOTA ABRIL",
       "referencia": "983FE488-0059",
@@ -2876,7 +2920,7 @@
     },
     {
       "id": 1795622265585,
-      "numero": 90,
+      "numero": 91,
       "fecha": "2026-04-13",
       "concepto": "PAGO S/FRA. PAGO FRA 983FE488-0059 - PAMONO GmbH",
       "referencia": "PAGO FRA 983FE488-0059",
@@ -2901,7 +2945,7 @@
     },
     {
       "id": 1795622265586,
-      "numero": 91,
+      "numero": 92,
       "fecha": "2026-04-15",
       "concepto": "CUOTA SUSCRIPCIÓN ABRIL",
       "referencia": "FRA 516230953",
@@ -2942,7 +2986,7 @@
     },
     {
       "id": 1795622265587,
-      "numero": 92,
+      "numero": 93,
       "fecha": "2026-04-15",
       "concepto": "PAGO S/FRA. PAGO FRA. 516230953 - ACREEDORES - SHO",
       "referencia": "PAGO FRA. 516230953",
@@ -2967,7 +3011,7 @@
     },
     {
       "id": 1795622265589,
-      "numero": 93,
+      "numero": 94,
       "fecha": "2026-04-16",
       "concepto": "CORREOS PAQQ LIGHT OFICINA DOMICILIO",
       "referencia": "ES26FC02328085",
@@ -3000,7 +3044,7 @@
     },
     {
       "id": 1795622265590,
-      "numero": 94,
+      "numero": 95,
       "fecha": "2026-04-16",
       "concepto": "PAGO S/FRA. PAGO FRA. ES26FC0232 - AUCTANE S.L.",
       "referencia": "PAGO FRA. ES26FC0232",
@@ -3025,7 +3069,7 @@
     },
     {
       "id": 1795622265591,
-      "numero": 95,
+      "numero": 96,
       "fecha": "2026-04-20",
       "concepto": "PAGO S/FRA. PAGO LIQUIDACIÓN IRPF - LIQUIDACIÓN TR",
       "referencia": "PAGO LIQUIDACIÓN IRPF",
@@ -3050,7 +3094,7 @@
     },
     {
       "id": 1795622265592,
-      "numero": 96,
+      "numero": 97,
       "fecha": "2026-04-20",
       "concepto": "RECAUDACIÓN 303-369",
       "referencia": "PAGO LIQUIDACIÓN 1T IVA",
@@ -3075,7 +3119,7 @@
     },
     {
       "id": 1795622265593,
-      "numero": 97,
+      "numero": 98,
       "fecha": "2026-04-21",
       "concepto": "PAGO S/FRA. CUOTA 3/120 STOCK - OTRAS DEUDAS A C/P",
       "referencia": "CUOTA 3/120 STOCK",
@@ -3108,7 +3152,7 @@
     },
     {
       "id": 1795622265594,
-      "numero": 98,
+      "numero": 99,
       "fecha": "2026-04-27",
       "concepto": "SUSCRIPCIÓN ABRIL ONE DRIVE",
       "referencia": "GOOGLE ONE DRIVE",
@@ -3133,7 +3177,7 @@
     },
     {
       "id": 1795622265595,
-      "numero": 99,
+      "numero": 100,
       "fecha": "2026-04-29",
       "concepto": "SALARIO ABRIL",
       "referencia": "NÓMINA ABRIL",
@@ -3166,7 +3210,7 @@
     },
     {
       "id": 1795622265596,
-      "numero": 100,
+      "numero": 101,
       "fecha": "2026-04-30",
       "concepto": "FACTURA ETSY ABRIL 955725604",
       "referencia": "FRA. ETSY955725604",
@@ -3207,7 +3251,7 @@
     },
     {
       "id": 1795622265597,
-      "numero": 101,
+      "numero": 102,
       "fecha": "2026-04-30",
       "concepto": "PAGO S/FRA. PAGO FRA. 955725604 - ACREEDORES - ETS",
       "referencia": "PAGO FRA. 955725604",
@@ -3232,7 +3276,7 @@
     },
     {
       "id": 1795622265598,
-      "numero": 102,
+      "numero": 103,
       "fecha": "2026-05-01",
       "concepto": "MANTENIMIENTO C.L.NET EMPRESAS MAYO",
       "referencia": "MANTENIMIENTO C.L.NET EMPRESA",
@@ -3257,7 +3301,7 @@
     },
     {
       "id": 1795622265599,
-      "numero": 103,
+      "numero": 104,
       "fecha": "2026-05-01",
       "concepto": "A CUENTA FACTURA ETSY",
       "referencia": "A CUENTA FACTURA ETSY",
@@ -3282,7 +3326,7 @@
     },
     {
       "id": 1795622265600,
-      "numero": 104,
+      "numero": 105,
       "fecha": "2026-05-01",
       "concepto": "COMPRA DE MERCADERÍAS FC2026/00015",
       "referencia": "PEDIDO VINTED FC2026/00015",
@@ -3307,7 +3351,7 @@
     },
     {
       "id": 1795622265601,
-      "numero": 105,
+      "numero": 106,
       "fecha": "2026-05-06",
       "concepto": "SUSCRIPCIÓN MAYO APP INVENTORY",
       "referencia": "SUSCRIPCIÓN APP INVENTORY",
@@ -3332,7 +3376,7 @@
     },
     {
       "id": 1795622265602,
-      "numero": 106,
+      "numero": 107,
       "fecha": "2026-05-12",
       "concepto": "CUOTA MAYO PAMONO",
       "referencia": "FACTURA PAMONO MAYO",
@@ -3373,7 +3417,7 @@
     },
     {
       "id": 1795622265603,
-      "numero": 107,
+      "numero": 108,
       "fecha": "2026-05-12",
       "concepto": "PAGO S/FRA. PAGO FRA. - PAMONO GmbH",
       "referencia": "PAGO FRA.",
@@ -3398,7 +3442,7 @@
     },
     {
       "id": 1795622265604,
-      "numero": 108,
+      "numero": 109,
       "fecha": "2026-05-15",
       "concepto": "SUSCRIPCIÓN SHOPIFY FRA. 530131992",
       "referencia": "SHOPIFY 530131992",
@@ -3439,7 +3483,7 @@
     },
     {
       "id": 1795622265605,
-      "numero": 109,
+      "numero": 110,
       "fecha": "2026-05-15",
       "concepto": "PAGO S/FRA. PAGO FRA. 530131992 - ACREEDORES - SHO",
       "referencia": "SHOPIFY 530131992",
@@ -3464,7 +3508,7 @@
     },
     {
       "id": 1795622265606,
-      "numero": 110,
+      "numero": 111,
       "fecha": "2026-05-15",
       "concepto": "COMPRA DE MERCADERÍAS FC2026/00016",
       "referencia": "COMPRA FC2026/00016",
@@ -3489,7 +3533,7 @@
     },
     {
       "id": 1795622265607,
-      "numero": 111,
+      "numero": 112,
       "fecha": "2026-05-15",
       "concepto": "VENTA PLATAFORMA ETSY UC PEDIDO 4063988617",
       "referencia": "FV2026/00009",
@@ -3522,7 +3566,7 @@
     },
     {
       "id": 1795622265608,
-      "numero": 112,
+      "numero": 113,
       "fecha": "2026-05-18",
       "concepto": "COBRO FRA. ETSY FV2026/00009 - CLIENTES VARIOS-PLA",
       "referencia": "ETSY FV2026/00009",
@@ -3555,7 +3599,7 @@
     },
     {
       "id": 1795622265609,
-      "numero": 113,
+      "numero": 114,
       "fecha": "2026-05-20",
       "concepto": "STARPACK TERRESTRE ES2026PRO0001432157",
       "referencia": "ES26FC03107623",
@@ -3588,7 +3632,7 @@
     },
     {
       "id": 1795622265610,
-      "numero": 114,
+      "numero": 115,
       "fecha": "2026-05-20",
       "concepto": "PAGO S/FRA. PAGO ES26FC03107623 - AUCTANE S.L.",
       "referencia": "AUCTANE ES26FC03107623",
@@ -3613,7 +3657,7 @@
     },
     {
       "id": 1795622265611,
-      "numero": 115,
+      "numero": 116,
       "fecha": "2026-05-21",
       "concepto": "PAGO CUOTA 4/120 STOCK INICIAL",
       "referencia": "CUOTA 4/120 STOCK",
@@ -3646,7 +3690,7 @@
     },
     {
       "id": 1795622265612,
-      "numero": 116,
+      "numero": 117,
       "fecha": "2026-05-27",
       "concepto": "CUOTA MAYO SUSCRIPCIÓN GOOGLE ONE DRIVE",
       "referencia": "SUSCRIPCIÓN ONE DRIVE",
@@ -3671,7 +3715,7 @@
     },
     {
       "id": 1795622265613,
-      "numero": 117,
+      "numero": 118,
       "fecha": "2026-05-27",
       "concepto": "VENTA PLATAFORMA ETSY IRELAND UC PEDIDO  406941140",
       "referencia": "FV2026/00010",
@@ -3696,7 +3740,7 @@
     },
     {
       "id": 1795622265614,
-      "numero": 118,
+      "numero": 119,
       "fecha": "2026-05-27",
       "concepto": "VENTA PLATAFORMA ETSY IRELAND UC PEDIDO 4074689667",
       "referencia": "FV2026/00011",
@@ -3721,7 +3765,7 @@
     },
     {
       "id": 1795622265615,
-      "numero": 119,
+      "numero": 120,
       "fecha": "2026-05-28",
       "concepto": "COBRO FRA. COBRO ETSY FV2026/00010 Y 11 - CLIENTES",
       "referencia": "ETSY FV2026/00010 Y 11",
@@ -3754,7 +3798,7 @@
     },
     {
       "id": 1795622265616,
-      "numero": 120,
+      "numero": 121,
       "fecha": "2026-05-31",
       "concepto": "FACTURA ETSY MAYO",
       "referencia": "977731456",
@@ -3795,7 +3839,7 @@
     },
     {
       "id": 1795622265617,
-      "numero": 121,
+      "numero": 122,
       "fecha": "2026-05-31",
       "concepto": "PAGO S/FRA. ETSY 977731456 - ACREEDORES - ETSY IRE",
       "referencia": "ETSY 977731456",
@@ -3820,7 +3864,7 @@
     },
     {
       "id": 1795622265618,
-      "numero": 122,
+      "numero": 123,
       "fecha": "2026-06-01",
       "concepto": "TRANSPORTE ART00371",
       "referencia": "FRA. ES26FC0332428",
@@ -3845,7 +3889,7 @@
     },
     {
       "id": 1795622265619,
-      "numero": 123,
+      "numero": 124,
       "fecha": "2026-06-01",
       "concepto": "PAGO S/FRA. PAGO ES26FC033242 - AUCTANE S.L.",
       "referencia": "PAGO ES26FC033242",
@@ -3870,7 +3914,7 @@
     },
     {
       "id": 1795622265620,
-      "numero": 124,
+      "numero": 125,
       "fecha": "2026-06-01",
       "concepto": "ZELERIS GLOBAL AÉREO ES2026PRO0001542367",
       "referencia": "FRA. ES26FC0332428",
@@ -3895,7 +3939,7 @@
     },
     {
       "id": 1795622265621,
-      "numero": 125,
+      "numero": 126,
       "fecha": "2026-06-01",
       "concepto": "PAGO S/FRA. PAGO 26FC0332428 - AUCTANE S.L.",
       "referencia": "PAGO 26FC0332428",
@@ -3920,7 +3964,7 @@
     },
     {
       "id": 1795622265622,
-      "numero": 126,
+      "numero": 127,
       "fecha": "2026-06-01",
       "concepto": "A CUENTA FACTURA ETSY",
       "referencia": "ETSY",
@@ -3945,7 +3989,7 @@
     },
     {
       "id": 1795622265623,
-      "numero": 127,
+      "numero": 128,
       "fecha": "2026-06-02",
       "concepto": "MANTENIMIENTO HOSTINGER",
       "referencia": "HOSTINGER.COM",
@@ -3970,7 +4014,7 @@
     },
     {
       "id": 1795622265624,
-      "numero": 128,
+      "numero": 129,
       "fecha": "2026-06-03",
       "concepto": "VENTA PLATAFORMA ETSY IRELAND UC PEDIDO 4080642833",
       "referencia": "FV2026/00012",
@@ -4003,7 +4047,7 @@
     },
     {
       "id": 1795622265628,
-      "numero": 132,
+      "numero": 130,
       "fecha": "2026-06-05",
       "concepto": "TRANSPORTE FRA. ES26FC03453634",
       "referencia": "AUCTANE ES26FC03453634",
@@ -4028,7 +4072,7 @@
     },
     {
       "id": 1795622265629,
-      "numero": 133,
+      "numero": 131,
       "fecha": "2026-06-05",
       "concepto": "PAGO S/FRA. ES26FC03453634 - AUCTANE S.L.",
       "referencia": "ES26FC03453634",
@@ -4053,7 +4097,7 @@
     },
     {
       "id": 1795622265630,
-      "numero": 134,
+      "numero": 132,
       "fecha": "2026-06-07",
       "concepto": "VENTA PLATAFORMA ETSY IRELAND UC PEDIDO 4085113677",
       "referencia": "FV2026/00013",
@@ -4078,7 +4122,7 @@
     },
     {
       "id": 1795622265631,
-      "numero": 135,
+      "numero": 133,
       "fecha": "2026-06-08",
       "concepto": "SUSCRIPCIÓN APP INVENTORY",
       "referencia": "SUSCRIPCIÓN APP INVENTORY",
@@ -4103,7 +4147,7 @@
     },
     {
       "id": 1795622265632,
-      "numero": 136,
+      "numero": 134,
       "fecha": "2026-06-08",
       "concepto": "GATOS DE ENVÍO ART00131",
       "referencia": "ES26FC03517016",
@@ -4136,7 +4180,7 @@
     },
     {
       "id": 1795622265633,
-      "numero": 137,
+      "numero": 135,
       "fecha": "2026-06-08",
       "concepto": "PAGO S/FRA. PAGO ES26FC03517016 - AUCTANE S.L.",
       "referencia": "PAGO ES26FC03517016",
@@ -4161,7 +4205,7 @@
     },
     {
       "id": 1795622265634,
-      "numero": 138,
+      "numero": 136,
       "fecha": "2026-06-08",
       "concepto": "COBRO FRA. ETSY FV2026/00012 -",
       "referencia": "ETSY FV2026/00012",
@@ -4194,7 +4238,7 @@
     },
     {
       "id": 1795622265635,
-      "numero": 139,
+      "numero": 137,
       "fecha": "2026-06-08",
       "concepto": "DEVOLUCIÓN ART00380 FV2026/00009",
       "referencia": "FR2026/00001",
@@ -4227,7 +4271,7 @@
     },
     {
       "id": 1795622265636,
-      "numero": 140,
+      "numero": 138,
       "fecha": "2026-06-08",
       "concepto": "PAGO S/FRA. ETSY FR2026/00001 - CLIENTES VARIOS-PL",
       "referencia": "ETSY FR2026/00001",
@@ -4252,7 +4296,7 @@
     },
     {
       "id": 1795622265637,
-      "numero": 141,
+      "numero": 139,
       "fecha": "2026-06-08",
       "concepto": "COBRO FRA. ETSY FV2026/00013 - CLIENTES VARIOS-PLA",
       "referencia": "ETSY FV2026/00013",
@@ -4285,7 +4329,7 @@
     },
     {
       "id": 1795622265638,
-      "numero": 142,
+      "numero": 140,
       "fecha": "2026-06-09",
       "concepto": "CUOTA MENSUAL PAMONO 983FE488-0061",
       "referencia": "983FE488-0061",
@@ -4326,7 +4370,7 @@
     },
     {
       "id": 1795622265639,
-      "numero": 143,
+      "numero": 141,
       "fecha": "2026-06-09",
       "concepto": "PAGO S/FRA. PAGO 983FE488-006 - PAMONO GmbH",
       "referencia": "PAGO 983FE488-006",
@@ -4351,7 +4395,7 @@
     },
     {
       "id": 1795622265640,
-      "numero": 144,
+      "numero": 142,
       "fecha": "2026-06-09",
       "concepto": "SUSCRIPCIÓN JUNIO GOOGLE ONE DRIVE",
       "referencia": "SUSCRIPCIÓN GOOGLE ONE DRIVE",
@@ -4376,7 +4420,7 @@
     },
     {
       "id": 1795622265641,
-      "numero": 145,
+      "numero": 143,
       "fecha": "2026-06-09",
       "concepto": "COBRO FRA. FR2026/00001 - ACREEDORES - ETSY IRELAN",
       "referencia": "FR2026/00001",
@@ -4401,7 +4445,7 @@
     },
     {
       "id": 1795622265642,
-      "numero": 146,
+      "numero": 144,
       "fecha": "2026-06-10",
       "concepto": "INTERESES Y COMISIONES",
       "referencia": "BANCO INTERESES Y COMISIONES",
@@ -4426,7 +4470,7 @@
     },
     {
       "id": 1795622265643,
-      "numero": 147,
+      "numero": 145,
       "fecha": "2026-06-10",
       "concepto": "BAZAR RONGO EMBALAJES",
       "referencia": "COMPRA EMBALAJES",
@@ -4451,7 +4495,7 @@
     },
     {
       "id": 1795622265644,
-      "numero": 148,
+      "numero": 146,
       "fecha": "2026-06-11",
       "concepto": "TRANSPORTE CORREOS EXPRESS EEUU",
       "referencia": "FRA. 26FC0364833",
@@ -4474,7 +4518,7 @@
     },
     {
       "id": 1795622265645,
-      "numero": 149,
+      "numero": 147,
       "fecha": "2026-06-12",
       "concepto": "PAGO S/FRA. PAGO 26FC0364833 - AUCTANE S.L.",
       "referencia": "PAGO 26FC0364833",
@@ -4499,7 +4543,7 @@
     },
     {
       "id": 1795622265646,
-      "numero": 150,
+      "numero": 148,
       "fecha": "2026-06-15",
       "concepto": "CUOTA JUNIO SHOPIFY",
       "referencia": "FRA. 544079456",
@@ -4540,7 +4584,7 @@
     },
     {
       "id": 1795622265647,
-      "numero": 151,
+      "numero": 149,
       "fecha": "2026-06-15",
       "concepto": "PAGO S/FRA. PAGO 544079456 - ACREEDORES - SHOPIFY",
       "referencia": "PAGO 544079456",
@@ -4565,7 +4609,7 @@
     },
     {
       "id": 1795622265648,
-      "numero": 152,
+      "numero": 150,
       "fecha": "2026-06-16",
       "concepto": "UPS-STANDARD ACCESS POINT",
       "referencia": "FRA. 26FC03714359",
@@ -4598,7 +4642,7 @@
     },
     {
       "id": 1795622265649,
-      "numero": 153,
+      "numero": 151,
       "fecha": "2026-06-16",
       "concepto": "MONDIAL RELAY-INPOST-",
       "referencia": "ES26FC03683097",
@@ -4631,7 +4675,7 @@
     },
     {
       "id": 1795622265650,
-      "numero": 154,
+      "numero": 152,
       "fecha": "2026-06-16",
       "concepto": "PAGO S/FRA. PAGO FRA. ES26FC03683097 - AUCTANE S.L",
       "referencia": "PAGO FRA. ES26FC03683097",
@@ -4656,7 +4700,7 @@
     },
     {
       "id": 1795622265651,
-      "numero": 155,
+      "numero": 153,
       "fecha": "2026-06-16",
       "concepto": "PAGO S/FRA. ES26FC03714359 - AUCTANE S.L.",
       "referencia": "ES26FC03714359",
@@ -4681,7 +4725,7 @@
     },
     {
       "id": 1795622265652,
-      "numero": 156,
+      "numero": 154,
       "fecha": "2026-06-16",
       "concepto": "VENTA PLATAFORMA ETSY PEDIDO",
       "referencia": "FV2026/00014",
@@ -4714,7 +4758,7 @@
     },
     {
       "id": 1795622265653,
-      "numero": 157,
+      "numero": 155,
       "fecha": "2026-06-17",
       "concepto": "COBRO FRA. ETSY FV2026/00014 - CLIENTES VARIOS-PLA",
       "referencia": "ETSY FV2026/00014",
@@ -4747,7 +4791,7 @@
     },
     {
       "id": 1795622265654,
-      "numero": 158,
+      "numero": 156,
       "fecha": "2026-06-22",
       "concepto": "VENTA PLATAFORNA ETSY PEDIDO",
       "referencia": "FV2026/00015",
@@ -4772,7 +4816,7 @@
     },
     {
       "id": 1795622265655,
-      "numero": 159,
+      "numero": 157,
       "fecha": "2026-06-22",
       "concepto": "PAGO S/FRA. CUOTA 5/120 STOCK INICIAL - OTRAS DEUD",
       "referencia": "CUOTA 5/120 STOCK INICIAL",
@@ -4805,7 +4849,7 @@
     },
     {
       "id": 1795622265656,
-      "numero": 160,
+      "numero": 158,
       "fecha": "2026-06-22",
       "concepto": "COMPRA MERCADERÍAS ART00495",
       "referencia": "FC2026/00017",
@@ -4830,7 +4874,7 @@
     },
     {
       "id": 1795622265657,
-      "numero": 161,
+      "numero": 159,
       "fecha": "2026-06-23",
       "concepto": "COBRO FRA. ETSY FV2026/00015 -",
       "referencia": "ETSY FV2026/00015",
@@ -4863,7 +4907,7 @@
     },
     {
       "id": 1795622265658,
-      "numero": 162,
+      "numero": 160,
       "fecha": "2026-06-25",
       "concepto": "CORREOS EXPRESS-INTERNACIONAL EXPRESS",
       "referencia": "ES26FC03915261",
@@ -4888,7 +4932,7 @@
     },
     {
       "id": 1795622265659,
-      "numero": 163,
+      "numero": 161,
       "fecha": "2026-06-25",
       "concepto": "PAGO S/FRA. PAGO ES25FC039152 - AUCTANE S.L.",
       "referencia": "PAGO ES25FC039152",
@@ -4913,7 +4957,7 @@
     },
     {
       "id": 1795622265660,
-      "numero": 164,
+      "numero": 162,
       "fecha": "2026-06-30",
       "concepto": "FACTURA ETSY IRELAND UC JUNIO",
       "referencia": "1000790627",
@@ -4954,7 +4998,7 @@
     },
     {
       "id": 1795622265661,
-      "numero": 165,
+      "numero": 163,
       "fecha": "2026-06-30",
       "concepto": "PAGO S/FRA. ETSY 1000700627 - ACREEDORES - ETSY IR",
       "referencia": "ETSY 1000700627",
@@ -4983,8 +5027,52 @@
       ]
     },
     {
+      "id": 1795741075270,
+      "numero": 164,
+      "fecha": "2026-06-30",
+      "concepto": "Liquidación Trimestral IVA (Modelo 303)",
+      "referencia": "Mod. 303",
+      "apuntes": [
+        {
+          "cuenta": "47702121",
+          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
+          "debe": 32.23,
+          "haber": 0,
+          "punteado": true
+        },
+        {
+          "cuenta": "47700321",
+          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 155.58,
+          "haber": 0,
+          "punteado": true
+        },
+        {
+          "cuenta": "47200021",
+          "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
+          "debe": 0,
+          "haber": 38.58,
+          "punteado": true
+        },
+        {
+          "cuenta": "47200321",
+          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
+          "debe": 0,
+          "haber": 155.58,
+          "punteado": true
+        },
+        {
+          "cuenta": "47000001",
+          "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
+          "debe": 6.35,
+          "haber": 0,
+          "punteado": true
+        }
+      ]
+    },
+    {
       "id": 1795622265663,
-      "numero": 167,
+      "numero": 165,
       "fecha": "2026-07-01",
       "concepto": "Asiento 169",
       "referencia": "FACTURA JUNIO",
@@ -5009,7 +5097,7 @@
     },
     {
       "id": 1795622265664,
-      "numero": 168,
+      "numero": 166,
       "fecha": "2026-07-01",
       "concepto": "MANTENIMIENTO C.L. NET EMPRESAS",
       "referencia": "MANTENIMIENTO C.L.NET EMPRESAS",
@@ -5034,7 +5122,7 @@
     },
     {
       "id": 1795622265665,
-      "numero": 169,
+      "numero": 167,
       "fecha": "2026-07-03",
       "concepto": "PAGO S/FRA. PRIMER PLAZO ITP DGA - HP ACREEDORA PO",
       "referencia": "PRIMER PLAZO ITP DGA",
@@ -5057,7 +5145,7 @@
     },
     {
       "id": 1795622265666,
-      "numero": 170,
+      "numero": 168,
       "fecha": "2026-07-06",
       "concepto": "SUSCRIPCIÓN MENSUAL STOCK INVENTORY",
       "referencia": "420318865852493836",
@@ -5082,7 +5170,7 @@
     },
     {
       "id": 1795622265667,
-      "numero": 171,
+      "numero": 169,
       "fecha": "2026-07-13",
       "concepto": "CUOTA MENSUAL PAMONO GMBH JULIO",
       "referencia": "983FE488-0062",
@@ -5123,7 +5211,7 @@
     },
     {
       "id": 1795622265668,
-      "numero": 172,
+      "numero": 170,
       "fecha": "2026-07-13",
       "concepto": "PAGO S/FRA. PAMONO 983FE488-0062 - PAMONO GmbH",
       "referencia": "PAMONO 983FE488-0062",
@@ -5148,7 +5236,7 @@
     },
     {
       "id": 1795622265669,
-      "numero": 173,
+      "numero": 171,
       "fecha": "2026-07-14",
       "concepto": "CUOTA SHOPIFY JULIO",
       "referencia": "558091704",
@@ -5189,7 +5277,7 @@
     },
     {
       "id": 1795622265670,
-      "numero": 174,
+      "numero": 172,
       "fecha": "2026-07-14",
       "concepto": "PAGO S/FRA. SHOPIFY 558091704 - ACREEDORES - SHOPI",
       "referencia": "SHOPIFY 558091704",
@@ -5214,7 +5302,7 @@
     },
     {
       "id": 1795622265671,
-      "numero": 175,
+      "numero": 173,
       "fecha": "2026-07-20",
       "concepto": "LIQUIDACIÓN 2T IRPF",
       "referencia": "LIQUIDACIÓN TRIMESTRAL IRPF 2T",
@@ -5239,7 +5327,7 @@
     },
     {
       "id": 1795622265672,
-      "numero": 176,
+      "numero": 174,
       "fecha": "2026-07-21",
       "concepto": "PAGO S/FRA. CUOTA 6/120  STOCK INICIAL - OTRAS DEU",
       "referencia": "CUOTA 6/120  STOCK INICIAL",
@@ -5272,7 +5360,7 @@
     },
     {
       "id": 1795622265673,
-      "numero": 177,
+      "numero": 175,
       "fecha": "2026-07-27",
       "concepto": "SUSCRIPCIÓN ONE DRIVE MICROSOFT JULIO",
       "referencia": "2243542775424764-43",
@@ -5297,7 +5385,7 @@
     },
     {
       "id": 1795622265674,
-      "numero": 178,
+      "numero": 176,
       "fecha": "2026-07-31",
       "concepto": "FACTURA PLATAFORMA ETSY IRELAND UC 102898573",
       "referencia": "1022898573",
@@ -5338,7 +5426,7 @@
     },
     {
       "id": 1795622265675,
-      "numero": 179,
+      "numero": 177,
       "fecha": "2026-08-03",
       "concepto": "PAGO S/FRA. ETSY 1022898573 - ACREEDORES - ETSY IR",
       "referencia": "ETSY 1022898573",
@@ -5357,6 +5445,59 @@
           "detalleApunte": "PAGO S/FRA. ETSY 1022898573 - CAJA LABORAL POPULAR",
           "debe": 0,
           "haber": 14.52,
+          "punteado": true
+        }
+      ]
+    },
+    {
+      "id": 1795820586594,
+      "numero": 178,
+      "fecha": "2026-08-04",
+      "concepto": "Gastos de envío Seur Shop2Shop ES2026PRO0002239259",
+      "referencia": "ES26FC04767151",
+      "apuntes": [
+        {
+          "cuenta": "62400000",
+          "nombreCuenta": "Transportes y envíos de ventas a clientes",
+          "debe": 10.34,
+          "haber": 0,
+          "punteado": true
+        },
+        {
+          "cuenta": "47200021",
+          "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
+          "debe": 2.17,
+          "haber": 0,
+          "punteado": true
+        },
+        {
+          "cuenta": "41000008",
+          "nombreCuenta": "Acreedores-Auctane",
+          "debe": 0,
+          "haber": 12.51,
+          "punteado": true
+        }
+      ]
+    },
+    {
+      "id": 1795820644989,
+      "numero": 179,
+      "fecha": "2026-08-04",
+      "concepto": "Pago factura Auctane",
+      "referencia": "ES26FC04767151",
+      "apuntes": [
+        {
+          "cuenta": "41000008",
+          "nombreCuenta": "Acreedores-Auctane",
+          "debe": 12.51,
+          "haber": 0,
+          "punteado": true
+        },
+        {
+          "cuenta": "57200001",
+          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
+          "debe": 0,
+          "haber": 12.51,
           "punteado": true
         }
       ]
@@ -6293,7 +6434,7 @@
     },
     {
       "id": 1795622265708,
-      "numero": 214,
+      "numero": 212,
       "fecha": "2026-10-20",
       "concepto": "SEGUNDO PLAZO ITP DGA FC2026/00004",
       "referencia": "SEGUNDO PLAZO ITP DGA",
@@ -6316,7 +6457,7 @@
     },
     {
       "id": 1795622265709,
-      "numero": 215,
+      "numero": 213,
       "fecha": "2026-10-21",
       "concepto": "PAGO S/FRA. CUOTA 9/120 - OTRAS DEUDAS A C/P CON P",
       "referencia": "CUOTA 9/120",
@@ -6349,7 +6490,7 @@
     },
     {
       "id": 1795622265710,
-      "numero": 216,
+      "numero": 214,
       "fecha": "2026-11-16",
       "concepto": "REGULARIZACIÓN IRPF 1T",
       "referencia": "REGULARIZACIÓN IRPF 1T",
@@ -6374,7 +6515,7 @@
     },
     {
       "id": 1795622265711,
-      "numero": 217,
+      "numero": 215,
       "fecha": "2026-11-16",
       "concepto": "REGULARIZACIÓN IRPF 2T",
       "referencia": "REGULARIZACIÓN IRPF 2T",
@@ -6399,7 +6540,7 @@
     },
     {
       "id": 1795622265712,
-      "numero": 218,
+      "numero": 216,
       "fecha": "2026-11-16",
       "concepto": "REGULARIZACIÓN IRPF 3T",
       "referencia": "REGULARIZACIÓN IRPF 3T",
@@ -6424,7 +6565,7 @@
     },
     {
       "id": 1795622265713,
-      "numero": 219,
+      "numero": 217,
       "fecha": "2026-11-16",
       "concepto": "LIQUIDACIÓN IRPF ATRASADO 1T",
       "referencia": "LIQUIDACIÓN IRPF",
@@ -6476,147 +6617,6 @@
           "debe": 0,
           "haber": 22.63,
           "punteado": false
-        }
-      ]
-    },
-    {
-      "id": 1795734960264,
-      "numero": 220,
-      "fecha": "2026-03-31",
-      "concepto": "Liquidación Trimestral IVA (Modelo 303)",
-      "referencia": "Mod. 303",
-      "apuntes": [
-        {
-          "cuenta": "47702121",
-          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
-          "debe": 199.53,
-          "haber": 0,
-          "punteado": true
-        },
-        {
-          "cuenta": "47700321",
-          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
-          "debe": 69.67,
-          "haber": 0,
-          "punteado": true
-        },
-        {
-          "cuenta": "47200321",
-          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
-          "debe": 0,
-          "haber": 69.67,
-          "punteado": true
-        },
-        {
-          "cuenta": "47000001",
-          "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
-          "debe": 0,
-          "haber": 104.44,
-          "punteado": true
-        },
-        {
-          "cuenta": "47500001",
-          "nombreCuenta": "H.P. Acreedora por IVA (Liquidación Trimestral 303)",
-          "debe": 0,
-          "haber": 95.09,
-          "punteado": false
-        }
-      ]
-    },
-    {
-      "id": 1795741075270,
-      "numero": 221,
-      "fecha": "2026-06-30",
-      "concepto": "Liquidación Trimestral IVA (Modelo 303)",
-      "referencia": "Mod. 303",
-      "apuntes": [
-        {
-          "cuenta": "47702121",
-          "nombreCuenta": "H.P. IVA Repercutido sobre Margen REBU / General (21%)",
-          "debe": 32.23,
-          "haber": 0,
-          "punteado": true
-        },
-        {
-          "cuenta": "47700321",
-          "nombreCuenta": "H.P. IVA Repercutido Inversión Sujeto Pasivo (ISP 21%)",
-          "debe": 155.58,
-          "haber": 0,
-          "punteado": true
-        },
-        {
-          "cuenta": "47200021",
-          "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
-          "debe": 0,
-          "haber": 38.58,
-          "punteado": true
-        },
-        {
-          "cuenta": "47200321",
-          "nombreCuenta": "H.P. IVA Soportado Inversión Sujeto Pasivo (ISP 21%)",
-          "debe": 0,
-          "haber": 155.58,
-          "punteado": true
-        },
-        {
-          "cuenta": "47000001",
-          "nombreCuenta": "H.P. Deudora por IVA (A compensar)",
-          "debe": 6.35,
-          "haber": 0,
-          "punteado": true
-        }
-      ]
-    },
-    {
-      "id": 1795820586594,
-      "numero": 222,
-      "fecha": "2026-08-04",
-      "concepto": "Gastos de envío Seur Shop2Shop ES2026PRO0002239259",
-      "referencia": "ES26FC04767151",
-      "apuntes": [
-        {
-          "cuenta": "62400000",
-          "nombreCuenta": "Transportes y envíos de ventas a clientes",
-          "debe": 10.34,
-          "haber": 0,
-          "punteado": true
-        },
-        {
-          "cuenta": "47200021",
-          "nombreCuenta": "H.P. IVA Soportado Deducible Régimen General (21%)",
-          "debe": 2.17,
-          "haber": 0,
-          "punteado": true
-        },
-        {
-          "cuenta": "41000008",
-          "nombreCuenta": "Acreedores-Auctane",
-          "debe": 0,
-          "haber": 12.51,
-          "punteado": true
-        }
-      ]
-    },
-    {
-      "id": 1795820644989,
-      "numero": 223,
-      "fecha": "2026-08-04",
-      "concepto": "Pago factura Auctane",
-      "referencia": "ES26FC04767151",
-      "apuntes": [
-        {
-          "cuenta": "41000008",
-          "nombreCuenta": "Acreedores-Auctane",
-          "debe": 12.51,
-          "haber": 0,
-          "punteado": true
-        },
-        {
-          "cuenta": "57200001",
-          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "debe": 0,
-          "haber": 12.51,
-          "punteado": true
         }
       ]
     }
