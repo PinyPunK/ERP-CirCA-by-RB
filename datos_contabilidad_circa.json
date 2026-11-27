@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:48:12.482Z",
+  "ultimaModificacion": "2026-11-27T00:48:42.976Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -4567,7 +4567,7 @@
           "detalleApunte": "PAGO S/FRA. PAGO 544079456 - CAJA LABORAL POPULAR,",
           "debe": 0,
           "haber": 29,
-          "punteado": false
+          "punteado": true
         }
       ]
     },
@@ -4584,7 +4584,7 @@
           "detalleApunte": "UPS-STANDARD ACCESS POINT",
           "debe": 18.44,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "47200021",
