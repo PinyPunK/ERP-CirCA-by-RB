@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:38:03.980Z",
+  "ultimaModificacion": "2026-11-27T00:39:58.836Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -4038,31 +4038,6 @@
           "detalleApunte": "ES26FC04767151",
           "debe": 2.17,
           "haber": 0,
-          "punteado": false
-        }
-      ]
-    },
-    {
-      "id": 1795622265627,
-      "numero": 131,
-      "fecha": "2026-06-04",
-      "concepto": "PAGO S/FRA. AUCTANE ES26FC0476 - AUCTANE S.L.",
-      "referencia": "AUCTANE ES26FC0476",
-      "apuntes": [
-        {
-          "cuenta": "41000008",
-          "nombreCuenta": "Acreedores-Auctane",
-          "detalleApunte": "PAGO S/FRA. AUCTANE ES26FC0476 - AUCTANE S.L.",
-          "debe": 12.51,
-          "haber": 0,
-          "punteado": false
-        },
-        {
-          "cuenta": "57200001",
-          "nombreCuenta": "Bancos c/c (Caja Laboral Popular / Laboral Kutxa)",
-          "detalleApunte": "PAGO S/FRA. AUCTANE ES26FC0476 - CAJA LABORAL POPU",
-          "debe": 0,
-          "haber": 12.51,
           "punteado": false
         }
       ]
