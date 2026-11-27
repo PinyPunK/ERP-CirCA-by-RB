@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:29:55.946Z",
+  "ultimaModificacion": "2026-11-27T00:30:00.328Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -3417,7 +3417,7 @@
           "detalleApunte": "SUSCRIPCIÓN SHOPIFY FRA. 530131992",
           "debe": 29,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "47200321",
