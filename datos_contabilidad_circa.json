@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:32:28.963Z",
+  "ultimaModificacion": "2026-11-27T00:32:44.221Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -3508,7 +3508,7 @@
           "detalleApunte": "VENTA PLATAFORMA ETSY UC PEDIDO 4063988617",
           "debe": 495,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "70000001",
