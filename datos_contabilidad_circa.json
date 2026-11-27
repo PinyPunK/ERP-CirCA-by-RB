@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:02:59.831Z",
+  "ultimaModificacion": "2026-11-27T00:03:20.177Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -3044,7 +3044,7 @@
           "detalleApunte": "PAGO S/FRA. PAGO LIQUIDACIÓN IRPF - LIQUIDACIÓN TR",
           "debe": 228,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "57200001",
