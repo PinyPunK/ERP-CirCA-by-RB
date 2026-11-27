@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:33:23.985Z",
+  "ultimaModificacion": "2026-11-27T00:33:25.798Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -3640,7 +3640,7 @@
           "detalleApunte": "PAGO S/FRA. CUOTA 4/120 STOCK - INTERESES DE DEUDA",
           "debe": 40.58,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "57200001",
@@ -3648,7 +3648,7 @@
           "detalleApunte": "PAGO S/FRA. CUOTA 4/120 STOCK - CAJA LABORAL POPUL",
           "debe": 0,
           "haber": 149.61,
-          "punteado": false
+          "punteado": true
         }
       ]
     },
