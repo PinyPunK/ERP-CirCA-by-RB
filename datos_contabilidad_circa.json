@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T23:16:56.526Z",
+  "ultimaModificacion": "2026-11-27T23:17:18.320Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -28,7 +28,7 @@
       "tipo": "Activo"
     },
     {
-      "codigo": "30000001",
+      "codigo": "30000000",
       "nombre": "Existencias de piezas Vintage (REBU)",
       "tipo": "Activo"
     },
