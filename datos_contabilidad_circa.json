@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T23:19:07.708Z",
+  "ultimaModificacion": "2026-11-27T23:19:40.923Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -344,7 +344,7 @@
     },
     {
       "codigo": "47581000",
-      "nombre": "HP ACREEDORA POR ITP APLAZADO",
+      "nombre": "HP acreedora por ITP aplazado",
       "tipo": "Pasivo"
     },
     {
@@ -1652,7 +1652,7 @@
         },
         {
           "cuenta": "47581000",
-          "nombreCuenta": "HP ACREEDORA POR ITP APLAZADO",
+          "nombreCuenta": "HP acreedora por ITP aplazado",
           "detalleApunte": "APLAZAMIENTO ITP FC2026/00004",
           "debe": 0,
           "haber": 612.41,
@@ -5108,7 +5108,7 @@
       "apuntes": [
         {
           "cuenta": "47581000",
-          "nombreCuenta": "HP ACREEDORA POR ITP APLAZADO",
+          "nombreCuenta": "HP acreedora por ITP aplazado",
           "debe": 204.14,
           "haber": 0,
           "punteado": true
@@ -6418,7 +6418,7 @@
       "apuntes": [
         {
           "cuenta": "47581000",
-          "nombreCuenta": "HP ACREEDORA POR ITP APLAZADO",
+          "nombreCuenta": "HP acreedora por ITP aplazado",
           "debe": 204.14,
           "haber": 0,
           "punteado": true
