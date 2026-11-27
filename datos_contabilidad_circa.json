@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T00:48:45.995Z",
+  "ultimaModificacion": "2026-11-27T00:49:07.711Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -4617,7 +4617,7 @@
           "detalleApunte": "MONDIAL RELAY-INPOST-",
           "debe": 3.23,
           "haber": 0,
-          "punteado": false
+          "punteado": true
         },
         {
           "cuenta": "47200021",
