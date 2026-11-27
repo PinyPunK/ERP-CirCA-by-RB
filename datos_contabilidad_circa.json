@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T23:18:38.997Z",
+  "ultimaModificacion": "2026-11-27T23:19:07.708Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -359,7 +359,7 @@
     },
     {
       "codigo": "47510003",
-      "nombre": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
+      "nombre": "Retención sobre el capital mobiliario",
       "tipo": "Pasivo"
     }
   ],
@@ -6474,7 +6474,7 @@
       "apuntes": [
         {
           "cuenta": "47510003",
-          "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
+          "nombreCuenta": "Retención sobre el capital mobiliario",
           "detalleApunte": "REGULARIZACIÓN IRPF 1T",
           "debe": 0,
           "haber": 15.7,
@@ -6499,7 +6499,7 @@
       "apuntes": [
         {
           "cuenta": "47510003",
-          "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
+          "nombreCuenta": "Retención sobre el capital mobiliario",
           "detalleApunte": "REGULARIZACIÓN IRPF 2T",
           "debe": 0,
           "haber": 23.13,
@@ -6524,7 +6524,7 @@
       "apuntes": [
         {
           "cuenta": "47510003",
-          "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
+          "nombreCuenta": "Retención sobre el capital mobiliario",
           "detalleApunte": "REGULARIZACIÓN IRPF 3T",
           "debe": 0,
           "haber": 22.63,
@@ -6549,7 +6549,7 @@
       "apuntes": [
         {
           "cuenta": "47510003",
-          "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
+          "nombreCuenta": "Retención sobre el capital mobiliario",
           "detalleApunte": "LIQUIDACIÓN IRPF ATRASADO 1T",
           "debe": 15.7,
           "haber": 0,
@@ -6565,7 +6565,7 @@
         },
         {
           "cuenta": "47510003",
-          "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
+          "nombreCuenta": "Retención sobre el capital mobiliario",
           "detalleApunte": "LIQUIDACIÓN IRPF ATRASADO 2T",
           "debe": 23.14,
           "haber": 0,
@@ -6581,7 +6581,7 @@
         },
         {
           "cuenta": "47510003",
-          "nombreCuenta": "RETENCIÓN SOBRE CAPITAL MOBILIARIO",
+          "nombreCuenta": "Retención sobre el capital mobiliario",
           "detalleApunte": "LIQUIDACIÓN IRPF ATRASADO 3T",
           "debe": 22.63,
           "haber": 0,
