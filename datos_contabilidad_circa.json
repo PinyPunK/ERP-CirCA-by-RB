@@ -1,6 +1,6 @@
 {
   "empresa": "Ágata Michi, S.L.U. (NIF ESB24796625) - CiRcA by R.B.",
-  "ultimaModificacion": "2026-11-27T23:20:52.710Z",
+  "ultimaModificacion": "2026-11-27T23:21:14.517Z",
   "cuentas": [
     {
       "codigo": "10000000",
@@ -315,11 +315,6 @@
     {
       "codigo": "63100000",
       "nombre": "Otros tributos",
-      "tipo": "Gasto"
-    },
-    {
-      "codigo": "62900099",
-      "nombre": "OTROS SERVICIOS (SUSCRIPCIÓN PAMONO GMBH)",
       "tipo": "Gasto"
     },
     {
